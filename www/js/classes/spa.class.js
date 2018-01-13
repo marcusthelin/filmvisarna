@@ -43,9 +43,16 @@ class PopStateHandler {
     // Get the current url
     let url = location.pathname;
 
-    // Change which menu link that is active
-    $('header a').removeClass('active');
-    $(`header a[href="${url}"]`).addClass('active');
+    // Remove the class active from all menu options
+    $('nav li.nav-item').removeClass('active');
+
+    //Add the class active to the right menu option
+    // Need document ready function because of no page reloadings
+    $(document).ready(function() {
+      $(`nav li a[href="${url}"]`).closest('li.nav-item').addClass('active');
+    });
+
+
 
     // A small "dictionary" of what method to call
     // on which url
@@ -75,11 +82,11 @@ class PopStateHandler {
             </button>
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
               <ul class="nav navbar-nav">
-                <li class="nav-item"><a href="/" class="nav-link">Startsida</a></li>
-                <li class="nav-item"><a href="/filmer" class="nav-link">Filmer</a></li>
-                <li class="nav-item"><a href="/boka" class="nav-link">Boka</a></li>
-                <li class="nav-item"><a href="/biljetter" class="nav-link">Biljetter</a></li>
-                <li class="nav-item"><a href="/omOss" class="nav-link">Om oss</a></li>
+                <li class="nav-item"><a href="/" class="nav-link pop">Startsida</a></li>
+                <li class="nav-item"><a href="/filmer" class="nav-link pop">Filmer</a></li>
+                <li class="nav-item"><a href="/boka" class="nav-link pop">Boka</a></li>
+                <li class="nav-item"><a href="/biljetter" class="nav-link pop">Biljetter</a></li>
+                <li class="nav-item"><a href="/omOss" class="nav-link pop">Om oss</a></li>
               </ul>
               <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                 <li class="dropdown order-1">
@@ -226,11 +233,11 @@ class PopStateHandler {
             </button>
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
               <ul class="nav navbar-nav">
-                <li class="nav-item"><a href="/" class="nav-link">Startsida</a></li>
-                <li class="nav-item"><a href="/filmer" class="nav-link">Filmer</a></li>
-                <li class="nav-item"><a href="/boka" class="nav-link">Boka</a></li>
-                <li class="nav-item"><a href="/biljetter" class="nav-link">Biljetter</a></li>
-                <li class="nav-item"><a href="/omOss" class="nav-link">Om oss</a></li>
+                <li class="nav-item"><a href="/" class="nav-link pop">Startsida</a></li>
+                <li class="nav-item"><a href="/filmer" class="nav-link pop">Filmer</a></li>
+                <li class="nav-item"><a href="/boka" class="nav-link pop">Boka</a></li>
+                <li class="nav-item"><a href="/biljetter" class="nav-link pop">Biljetter</a></li>
+                <li class="nav-item"><a href="/omOss" class="nav-link pop">Om oss</a></li>
               </ul>
               <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                 <li class="dropdown order-1">
@@ -365,11 +372,11 @@ class PopStateHandler {
             </button>
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
               <ul class="nav navbar-nav">
-                <li class="nav-item"><a href="/" class="nav-link">Startsida</a></li>
-                <li class="nav-item"><a href="/filmer" class="nav-link">Filmer</a></li>
-                <li class="nav-item"><a href="/boka" class="nav-link">Boka</a></li>
-                <li class="nav-item"><a href="/biljetter" class="nav-link">Biljetter</a></li>
-                <li class="nav-item"><a href="/omOss" class="nav-link">Om oss</a></li>
+                <li class="nav-item"><a href="/" class="nav-link pop">Startsida</a></li>
+                <li class="nav-item"><a href="/filmer" class="nav-link pop">Filmer</a></li>
+                <li class="nav-item"><a href="/boka" class="nav-link pop">Boka</a></li>
+                <li class="nav-item"><a href="/biljetter" class="nav-link pop">Biljetter</a></li>
+                <li class="nav-item"><a href="/omOss" class="nav-link pop">Om oss</a></li>
               </ul>
               <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                 <li class="dropdown order-1">
@@ -443,11 +450,11 @@ class PopStateHandler {
             </button>
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
               <ul class="nav navbar-nav">
-                <li class="nav-item"><a href="/" class="nav-link">Startsida</a></li>
-                <li class="nav-item"><a href="/filmer" class="nav-link">Filmer</a></li>
-                <li class="nav-item"><a href="/boka" class="nav-link">Boka</a></li>
-                <li class="nav-item"><a href="/biljetter" class="nav-link">Biljetter</a></li>
-                <li class="nav-item"><a href="/omOss" class="nav-link">Om oss</a></li>
+                <li class="nav-item"><a href="/" class="nav-link pop">Startsida</a></li>
+                <li class="nav-item"><a href="/filmer" class="nav-link pop">Filmer</a></li>
+                <li class="nav-item"><a href="/boka" class="nav-link pop">Boka</a></li>
+                <li class="nav-item"><a href="/biljetter" class="nav-link pop">Biljetter</a></li>
+                <li class="nav-item"><a href="/omOss" class="nav-link pop">Om oss</a></li>
               </ul>
               <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                 <li class="dropdown order-1">
@@ -557,11 +564,11 @@ class PopStateHandler {
             </button>
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
               <ul class="nav navbar-nav">
-                <li class="nav-item"><a href="/" class="nav-link">Startsida</a></li>
-                <li class="nav-item"><a href="/filmer" class="nav-link">Filmer</a></li>
-                <li class="nav-item"><a href="/boka" class="nav-link">Boka</a></li>
-                <li class="nav-item"><a href="/biljetter" class="nav-link">Biljetter</a></li>
-                <li class="nav-item"><a href="/omOss" class="nav-link">Om oss</a></li>
+                <li class="nav-item"><a href="/" class="nav-link pop">Startsida</a></li>
+                <li class="nav-item"><a href="/filmer" class="nav-link pop">Filmer</a></li>
+                <li class="nav-item"><a href="/boka" class="nav-link pop">Boka</a></li>
+                <li class="nav-item"><a href="/biljetter" class="nav-link pop">Biljetter</a></li>
+                <li class="nav-item"><a href="/omOss" class="nav-link pop">Om oss</a></li>
               </ul>
               <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                 <li class="dropdown order-1">
@@ -656,11 +663,11 @@ class PopStateHandler {
                 </button>
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
               <ul class="nav navbar-nav">
-                <li class="nav-item"><a href="/" class="nav-link">Startsida</a></li>
-                <li class="nav-item"><a href="/filmer" class="nav-link">Filmer</a></li>
-                <li class="nav-item"><a href="/boka" class="nav-link">Boka</a></li>
-                <li class="nav-item"><a href="/biljetter" class="nav-link">Biljetter</a></li>
-                <li class="nav-item"><a href="/omOss" class="nav-link">Om oss</a></li>
+                <li class="nav-item"><a href="/" class="nav-link pop">Startsida</a></li>
+                <li class="nav-item"><a href="/filmer" class="nav-link pop">Filmer</a></li>
+                <li class="nav-item"><a href="/boka" class="nav-link pop">Boka</a></li>
+                <li class="nav-item"><a href="/biljetter" class="nav-link pop">Biljetter</a></li>
+                <li class="nav-item"><a href="/omOss" class="nav-link pop">Om oss</a></li>
               </ul>
               <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                 <li class="dropdown order-1">
