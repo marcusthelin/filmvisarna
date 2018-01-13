@@ -261,49 +261,55 @@ class PopStateHandler {
           <div class="row col-lg-12 mt-2">
             <div class="col-lg-8">
               <div class="media border">
-                <a href="/film1" class="data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
+                <a href="/film1" class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid " src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
                 <div class="media-body">
-                  <h5 class="mt-0">Media heading Film 1</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  <h5 class="mt-0">Media heading Film 1</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 </div>
+                <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
+                <a class="btn btn-dark align-self-end" href="/film1" role="button">Mer information</a>
               </div>
               <div class="media border mt-2">
-                <img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image">
+                <a href="..." class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
                 <div class="media-body">
-                  <h5 class="mt-0">Media heading film 2</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  <h5 class="mt-0">Media heading film 2</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 </div>
+                <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
+                <a class="btn btn-dark align-self-end" href="/film1" role="button">Mer information</a>
               </div>
               <div class="media border mt-2">
-                <img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image">
+                <a href="..." class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
                 <div class="media-body">
-                  <h5 class="mt-0">Media heading film 3</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  <h5 class="mt-0">Media heading film 3</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 </div>
+                <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
+                <a class="btn btn-dark align-self-end" href="/film1" role="button">Mer information</a>
               </div>
               <div class="media border mt-2">
-                <img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image">
+                <a href="..." class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
                 <div class="media-body">
-                  <h5 class="mt-0">Media heading film 4</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  <h5 class="mt-0">Media heading film 4</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 </div>
+                <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
+                <a class="btn btn-dark align-self-end" href="/film1" role="button">Mer information</a>
               </div>
               <div class="media border mt-2">
-                <img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image">
+                <a href="..." class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
                 <div class="media-body">
-                  <h5 class="mt-0">Media heading film 5</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  <h5 class="mt-0">Media heading film 5</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 </div>
+                <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
+                <a class="btn btn-dark align-self-end" href="/film1" role="button">Mer information</a>
               </div>
               <div class="media border mt-2">
-                <img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image">
+                <a href="..." class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
                 <div class="media-body">
-                  <h5 class="mt-0">Media heading film 6</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  <h5 class="mt-0">Media heading film 6</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                 </div>
+                <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
+                <a class="btn btn-dark align-self-end" href="/film1" role="button">Mer information</a>
               </div>
 
-            </div>
+              </div>
             <div class="col-lg-4">
               <div class="kalendarium border">
                 <p>Kalendarium</p>
@@ -471,8 +477,28 @@ class PopStateHandler {
         <div class="container">
           <div class="row col-lg-12 mt-2">
             <div class="col-lg-8">
-              <div class="info border">
-                <p>Här kommer en ruta med information om hur biljetterna fungerar</p>
+              <div class="biljett-info">
+                <h2>Priser & Kort</h2>
+
+                <h4>Kino</h4>
+                <p>Kassan öppnar 30 minuter före första föreställning. Biljetterna är vanligtvis numrerade. Bokade biljetter måste hämtas senast 30 minuter före föreställningen. För Operaföreställningar och andra livesändningar gäller andra uthämtningstider.</p>
+                <p><b>Ord pris:</b> 85kr</p>
+                <p><b>Barn (under 12 år):</b> 65kr</p>
+                <p><b>Pensionärer:</b> 85kr</p>
+
+                <h4>Presentkort</h4>
+                <p>Ge någon en trevlig present! Presentkort finns i olika valörer och du köper dom i kassan på Kino som öppnar 30 min före första föreställning. </p>
+
+                <h4>Företagsbiljetter</h4>
+                <p>Vi säljer även företagsbiljetter. Fast pris, berättigar till en biljett på ordinarie filmvisningar, mängdrabatt ges. För mer information och beställning kontakta vårt kontor på info@kino.nu</p>
+
+                <h2>Åldersgränser på bio</h2>
+                <p>Sedan första mars 2017 fungerar 15-årsgränsen på samma sätt som de andra åldersgränserna.</p>
+                <p>Som vuxen räknas den som fyllt 18 år. </p>
+                <p><b>Barntillåten:</b> inga begränsningar</p>
+                <p><b>7 år:</b> barntillåten i sällskap med vuxen </p>
+                <p><b>11 år:</b> tillåten från 7 år i sällskap med vuxen</p>
+                <p><b>15 år:</b> tillåten från 11 år i sällskap med vuxen</p>
               </div>
 
             </div>
