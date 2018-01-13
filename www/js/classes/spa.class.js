@@ -67,7 +67,7 @@ class PopStateHandler {
   startsida() {
     $('body').html(`
       <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
           <div class="container">
             <img class="navbar-brand" href="#">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -122,6 +122,7 @@ class PopStateHandler {
               </div>
             </div>
           </div>
+          <h2 class="mt-2">Aktuella filmer på bio</h2>
           <div class="row mt-2">
             <div class="col-lg-8">
               <div class="row">
@@ -217,7 +218,7 @@ class PopStateHandler {
   filmer() {
     $('body').html(`
       <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
           <div class="container">
             <img class="navbar-brand" href="#">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -350,7 +351,7 @@ class PopStateHandler {
   boka() {
     $('body').html(`
       <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
           <div class="container">
             <img class="navbar-brand" href="#">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -428,7 +429,7 @@ class PopStateHandler {
   biljetter() {
     $('body').html(`
       <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
           <div class="container">
             <img class="navbar-brand" href="#">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -522,7 +523,7 @@ class PopStateHandler {
   omOss() {
     $('body').html(`
       <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
           <div class="container">
             <img class="navbar-brand" href="#">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -621,7 +622,7 @@ class PopStateHandler {
   film1(){
     $('body').html(`
       <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
           <div class="container">
             <img class="navbar-brand" href="#">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
