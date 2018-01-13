@@ -466,6 +466,22 @@ class PopStateHandler {
         </nav>
       </header>
       <main>
+        <div class="container">
+          <div class="row col-lg-12 mt-2">
+            <div class="col-lg-8">
+              <div class="info border">
+                <p>Här kommer en ruta med information om hur biljetterna fungerar</p>
+              </div>
+
+            </div>
+            <div class="col-lg-4">
+              <div class="kalendarium border">
+                <p>Kalendarium</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </main>
       <footer class="container-fluid bg-light">
         <section class="row mt-3 mb-3">
@@ -544,6 +560,28 @@ class PopStateHandler {
         </nav>
       </header>
       <main>
+        <div class="container">
+          <div class="row col-lg-12 mt-2">
+            <div class="col-lg-8">
+              <div class="info border">
+                <p>Här kommer en ruta med information om Salongerna</p>
+              </div>
+              <div class="info border">
+                <p>Här kommer en ruta med information om Godis och försäljning</p>
+              </div>
+              <div class="info border">
+                <p>Här kommer en ruta med information om hur man hittar hit och lite mer info om oss</p>
+              </div>
+
+            </div>
+            <div class="col-lg-4">
+              <div class="kalendarium border">
+                <p>Kalendarium</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </main>
       <footer class="container-fluid bg-light">
         <section class="row mt-3 mb-3">
