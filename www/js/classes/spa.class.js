@@ -134,43 +134,61 @@ class PopStateHandler {
             <div class="col-lg-8">
               <div class="row">
               <div class="card col-lg-6 border-0">
-                <img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap">
+                <a href="/film1"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                    Boka
+                  </button>
                 </div>
               </div>
               <div class="card col-lg-6 border-0">
                 <img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap">
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                    Boka
+                  </button>
                 </div>
               </div>
               </div>
               <div class="row">
               <div class="card col-lg-6 mt-2 border-0">
-                <img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap">
+                <a href="/film1"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                    Boka
+                  </button>
                 </div>
               </div>
               <div class="card col-lg-6 mt-2 border-0">
-                <img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap">
+                <a href="/film1"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                    Boka
+                  </button>
                 </div>
               </div>
               </div>
               <div class="row">
               <div class="card col-lg-6 mt-2 border-0">
-                <img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap">
+                <a href="/film1"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                    Boka
+                  </button>
                 </div>
               </div>
               <div class="card col-lg-6 mt-2 border-0">
-                <img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap">
+                <a href="/film1"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                    Boka
+                  </button>
                 </div>
               </div>
               </div>
@@ -186,6 +204,26 @@ class PopStateHandler {
 
 
         </div>
+        <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Här kommer titlen på filmen</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Här ska det vara saker
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </main>
       <footer class="container-fluid bg-light">
         <section class="row mt-3 mb-3">
