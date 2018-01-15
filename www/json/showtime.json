@@ -1,0 +1,698 @@
+[
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-02-22",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-02-22",
+    "time": "19.20"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-02-22",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Wind river",
+    "date": "2018-02-22",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-02-23",
+    "time": "15.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-02-23",
+    "time": "17.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-02-23",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-02-23",
+    "time": "18.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-02-23",
+    "time": "20.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-02-24",
+    "time": "117.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Wind river",
+    "date": "2018-02-24",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-02-24",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-02-25",
+    "time": "17.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-02-25",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-02-25",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-02-25",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Wind river",
+    "date": "2018-02-26",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-02-26",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-02-26",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-02-26",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-02-26",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-02-27",
+    "time": "16.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-02-27",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-02-27",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-02-28",
+    "time": "18.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Wind river",
+    "date": "2018-02-28",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-02-28",
+    "time": "19.20"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-02-28",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-02-28",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-01",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-01",
+    "time": "19.20"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-01",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Wind river",
+    "date": "2018-03-01",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-03-02",
+    "time": "15.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-02",
+    "time": "17.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-02",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-02",
+    "time": "18.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-02",
+    "time": "20.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-03",
+    "time": "117.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Wind river",
+    "date": "2018-03-03",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-03",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-03-04",
+    "time": "17.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-04",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-04",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-04",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Wind river",
+    "date": "2018-03-05",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-05",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-05",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-05",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-05",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-03-06",
+    "time": "16.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-06",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-06",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-07",
+    "time": "18.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Wind river",
+    "date": "2018-03-07",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-07",
+    "time": "19.20"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-07",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-07",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-08",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-08",
+    "time": "19.20"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-08",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Wind river",
+    "date": "2018-03-08",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-03-09",
+    "time": "15.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-09",
+    "time": "17.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-09",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-09",
+    "time": "18.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-09",
+    "time": "20.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-10",
+    "time": "117.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Wind river",
+    "date": "2018-03-10",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-10",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-03-11",
+    "time": "17.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-11",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-11",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-11",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Wind river",
+    "date": "2018-03-12",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-12",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-12",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-12",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-12",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-03-13",
+    "time": "16.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-13",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-13",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-14",
+    "time": "18.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Wind river",
+    "date": "2018-03-14",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-14",
+    "time": "19.20"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-14",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-14",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-15",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-15",
+    "time": "19.20"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-15",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Wind river",
+    "date": "2018-03-15",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-03-16",
+    "time": "15.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-16",
+    "time": "17.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-16",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-16",
+    "time": "18.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-16",
+    "time": "20.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-17",
+    "time": "117.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Wind river",
+    "date": "2018-03-17",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-17",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-03-18",
+    "time": "17.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-18",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-18",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-18",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Wind river",
+    "date": "2018-03-19",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-19",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-19",
+    "time": "19.00"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-19",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-19",
+    "time": "21.10"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Gordon och Paddy",
+    "date": "2018-03-20",
+    "time": "16.30"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-20",
+    "time": "17.30"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-20",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The party",
+    "date": "2018-03-21",
+    "time": "18.00"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Wind river",
+    "date": "2018-03-21",
+    "time": "18.40"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call me by your name",
+    "date": "2018-03-21",
+    "time": "19.20"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Nattskuggor",
+    "date": "2018-03-21",
+    "time": "20.50"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Let the sunshine in",
+    "date": "2018-03-21",
+    "time": "21.10"
+  },
+]
