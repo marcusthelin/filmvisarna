@@ -248,7 +248,7 @@ class Templates {
               <a class="btn btn-dark align-self-end" href="/film1" role="button">Mer information</a>
             </div>
             <div class="media border mt-2">
-              <a href="..." class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
+              <a href="/film2" class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
               <div class="media-body">
                 <h5 class="mt-0">Media heading film 2</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </div>
@@ -256,7 +256,7 @@ class Templates {
               <a class="btn btn-dark align-self-end" href="/film2" role="button">Mer information</a>
             </div>
             <div class="media border mt-2">
-              <a href="..." class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
+              <a href="/film3" class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
               <div class="media-body">
                 <h5 class="mt-0">Media heading film 3</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </div>
@@ -264,7 +264,7 @@ class Templates {
               <a class="btn btn-dark align-self-end" href="/film3" role="button">Mer information</a>
             </div>
             <div class="media border mt-2">
-              <a href="..." class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
+              <a href="/film4" class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
               <div class="media-body">
                 <h5 class="mt-0">Media heading film 4</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </div>
@@ -272,7 +272,7 @@ class Templates {
               <a class="btn btn-dark align-self-end" href="/film4" role="button">Mer information</a>
             </div>
             <div class="media border mt-2">
-              <a href="..." class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
+              <a href="/film4" class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
               <div class="media-body">
                 <h5 class="mt-0">Media heading film 5</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </div>
@@ -280,7 +280,7 @@ class Templates {
               <a class="btn btn-dark align-self-end" href="/film5" role="button">Mer information</a>
             </div>
             <div class="media border mt-2">
-              <a href="..." class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
+              <a href="/film5" class="" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
               <div class="media-body">
                 <h5 class="mt-0">Media heading film 6</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </div>
