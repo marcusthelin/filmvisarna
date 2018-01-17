@@ -166,7 +166,7 @@ class Templates {
       '/film/Star_Wars:_The_Last_Jedi': 2,
       '/film/Thor:_Ragnarok': 3,
       '/film/Interstellar': 4,
-      '/film/The Incredibles': 5
+      '/film/The_Incredibles': 5
     };
     let movieNr = numbers[url];
     this.getMovie(movieNr);
