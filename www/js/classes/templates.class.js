@@ -332,14 +332,29 @@ class Templates {
       <div class="container">
         <div class="row col-lg-12 mt-2">
           <div class="col-lg-8">
-            <div class="info border">
-              <p>Här kommer en ruta med information om Salongerna</p>
+            <div class="info">
+							<h2>Biogragen Filmvisarna</h2>
+							<p>Adress: Filmgatan 12, 12343 Malmö</p>
+              <p>Biografen byggdes 1936 och hette fram till 1993 Reflex, då SF lämnade den i och med öppnandet av Filmstaden. Biografens gathus revs i början av åttiotalet för att ge plats åt ett kontorskomplex och utökning av den intilliggande bankens lokaler, med ny biografentré som följd. Baldakinen försvann och entrén flyttades några meter norrut.</p>
+							<p>Folkets Bio och Filmstudion öppnade under namnet Filmvisarna i februari 1994. Sommaren 2000 totalrenoverades biografen, vars tidigare enda salong delades upp på två. Detta skedde dels genom skapandet av en hög gradäng som ersatte det gamla, svagt sluttande golvet och dels genom utgrävningar. På så vis gavs plats för en ny salong under den gamla, numera höjda. Salong 1 har kvar samma duk som gamla Filmvisarna, men annars är allt ombyggt.
+							Sedan 2009 driver Folkets Bio i Malmö ensamt biografen.</p>
+							<h2>Tillgänglighet</h2>
+							<p>I salong 1 är två stolar bortplockade på rad 1, på salongens bokningssida på nätet syns de som två röda kryss. Pga bokningssystemets begränsningar går dessa endast att boka på Kino eller över telefon</p>
+							<p>I salong 2 går den gulmarkerade stolen längst bak att plocka bort, den går att boka på hemsidan.</p>
+							<h2>Salongerna</h2>
+							<p>Vi erbjuder två salonger av högsta klass, med det bästa ljudet och de bästa projektorerna för att du som kund ska kunna få den bästa upplevelsen på bio</p>
+						</div>
+            <div class="info">
+						<h2 class="">Försäljning</h2>
+              <p>Vad vore bio utan något kallt att dricka till eller popcorn?</p>
+							<p>Vi erbjuder både dryck och snacks till förmånliga priser. Då vi har ett stort utbud av lösviktsgodis och chips, samt även de klassiska bio snacksen</p>
             </div>
-            <div class="info border">
-              <p>Här kommer en ruta med information om Godis och försäljning</p>
-            </div>
-            <div class="info border">
-              <p>Här kommer en ruta med information om hur man hittar hit och lite mer info om oss</p>
+            <div class="info">
+							<h2>Hitta hit</h2>
+              <p><b>Biografen Filmvisarna</b></p>
+							<p>Du hittar oss här Filmgatan 12, 12343 Malmö. där det finns goda möjligheter för parkering också</p>
+							<p>För mer information om bokingar eller generella frågor så svarar vi gärna i telefonen</p>
+							<p>Telefon: 040-12 33 21</p>
             </div>
 
           </div>
