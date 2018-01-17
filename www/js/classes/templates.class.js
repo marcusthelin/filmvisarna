@@ -15,7 +15,7 @@ class Templates {
 	  	<ul class="nav navbar-nav flex-row justify-content-between ml-auto log">
 			  <li class="dropdown order-1">
 			    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
-			    <ul class="dropdown-menu dropdown-menu-right mt-1">
+			    <ul class="dropdown-menu dropdown-menu-right mt-1 bg-dark text-white">
 			      <li class="p-3">
 			        <form class="px-2 py-2">
 			          <div class="form-group">
@@ -29,8 +29,8 @@ class Templates {
 			          <button type="submit" class="btn btn-primary">Logga in</button>
 			        </form>
 			        <div class="dropdown-divider"></div>
-			        <a class="dropdown-item skapa" href="#">Skapa konto</a>
-			        <a class="dropdown-item" href="#">Glömt ditt lösenord?</a>
+			        <a class="dropdown-item skapa text-white" href="#">Skapa konto</a>
+			        <a class="dropdown-item text-white" href="#">Glömt ditt lösenord?</a>
 			      </li>
 			    </ul>
 			  </li>
