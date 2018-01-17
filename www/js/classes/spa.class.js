@@ -63,7 +63,7 @@ class Spa {
       '/film/Call_Me_by_Your_Name': 'filmInfo',
       '/film/Star_Wars:_The_Last_Jedi': 'filmInfo',
       '/film/Thor:_Ragnarok': 'filmInfo',
-      '/film/Intersteller': 'filmInfo',
+      '/film/Interstellar': 'filmInfo',
       '/film/The_Incredibles': 'filmInfo'
     };
 
