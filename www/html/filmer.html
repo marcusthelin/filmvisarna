@@ -7,7 +7,7 @@ Object.assign(Templates.prototype, { filmer(){ return `
             <a href="/film/The_Martian" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid " src="/imgs/test2.jpg" alt="Generic placeholder image"></a>
           </div>
           <div class="media-body">
-            <h5 class="mt-0">The Martian</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0">${Templates.movies[0].title}</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
           <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
           <a class="btn btn-dark align-self-end pop" href="/film/The_Martian" role="button">Mer information</a>
@@ -17,7 +17,7 @@ Object.assign(Templates.prototype, { filmer(){ return `
             <a href="/film/Call_Me_by_Your_Name" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/call-me-poster3.jpg" alt="Generic placeholder image"></a>
           </div>
           <div class="media-body">
-            <h5 class="mt-0">Media heading film 2</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0">${Templates.movies[1].title}</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
           <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
           <a class="btn btn-dark align-self-end pop" href="/film/Call_Me_by_Your_Name" role="button">Mer information</a>
@@ -27,7 +27,7 @@ Object.assign(Templates.prototype, { filmer(){ return `
             <a href="/film/Star_Wars:_The_Last_Jedi" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/last-jedi-poster3.jpg" alt="Generic placeholder image"></a>
           </div>
           <div class="media-body">
-            <h5 class="mt-0">Media heading film 3</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0">${Templates.movies[2].title}</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
           <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
           <a class="btn btn-dark align-self-end pop" href="/film/Star_Wars:_The_Last_Jedi" role="button">Mer information</a>
@@ -37,7 +37,7 @@ Object.assign(Templates.prototype, { filmer(){ return `
             <a href="/film/Thor:_Ragnarok" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/thor-ragnarok-poster3.jpg" alt="Generic placeholder image"></a>
           </div>
           <div class="media-body">
-            <h5 class="mt-0">Media heading film 4</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0">${Templates.movies[3].title}</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
           <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
           <a class="btn btn-dark align-self-end pop" href="/film/Thor:_Ragnarok" role="button">Mer information</a>
@@ -47,7 +47,7 @@ Object.assign(Templates.prototype, { filmer(){ return `
             <a href="/film/Interstellar" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/intersteller-poster3.jpg" alt="Generic placeholder image"></a>
           </div>
           <div class="media-body">
-            <h5 class="mt-0">Media heading film 5</h5>
+            <h5 class="mt-0">${Templates.movies[4].title}</h5>
           </div>
           <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
           <a class="btn btn-dark align-self-end pop" href="/film/Intersteller" role="button">Mer information</a>
@@ -57,7 +57,7 @@ Object.assign(Templates.prototype, { filmer(){ return `
             <a href="/film/The_Incredibles" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/incredibles-poster3.jpg" alt="Generic placeholder image"></a>
           </div>
           <div class="media-body">
-            <h5 class="mt-0">Media heading film 6</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0">${Templates.movies[5].title}</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
           <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
           <a class="btn btn-dark align-self-end pop" href="/film/The_Incredibles" role="button">Mer information</a>

@@ -136,27 +136,25 @@ class Templates {
   }
 
   getMovie(nr){
-    let that = this;
-    JSON._load('movies.json').then(function(movie){
-      new Movie(
-          movie[nr].images,
-          movie[nr].youtubeTrailers,
-					movie[nr].imdblinks,
-          movie[nr].title,
-          movie[nr].description,
-          [`<b>Land:</b> ${movie[nr].productionCountries.join(', ')}`,
-          `<b>Produktionsår:</b> ${movie[nr].productionYear}`,
-          `<b>Längd</b> ${movie[nr].length}`,
-          `<b>Genre:</b> ${movie[nr].genre}`,
-          `<b>Distributör:</b> ${movie[nr].distributor}`,
-          `<b>Språk:</b> ${movie[nr].language}`,
-          `<b>Textning:</b> ${movie[nr].subtitles}`,
-          `<b>Regissör:</b> ${movie[nr].director}`,
-          `<b>Skådespelare:</b> ${movie[nr].actors.join(', ')}`],
-          movie[nr].reviews,
-          that
-      );
-    });
+		let movie = Templates.movies[nr];
+    new Movie(
+        movie.images,
+        movie.youtubeTrailers,
+				movie.imdblinks,
+        movie.title,
+        movie.description,
+        [`<b>Land:</b> ${movie.productionCountries.join(', ')}`,
+        `<b>Produktionsår:</b> ${movie.productionYear}`,
+        `<b>Längd</b> ${movie.length}`,
+        `<b>Genre:</b> ${movie.genre}`,
+        `<b>Distributör:</b> ${movie.distributor}`,
+        `<b>Språk:</b> ${movie.language}`,
+        `<b>Textning:</b> ${movie.subtitles}`,
+        `<b>Regissör:</b> ${movie.director}`,
+        `<b>Skådespelare:</b> ${movie.actors.join(', ')}`],
+        movie.reviews,
+				this
+    );
   }
 
   filmInfo(){
