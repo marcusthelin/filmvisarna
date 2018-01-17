@@ -73,7 +73,7 @@ class PopStateHandler {
     //Because i moved all the methods to the Templates class
     // we need to first point to that class & then call the method from.
     if(!(methodName == '/')){
-      this.templates[methodName]();
+      $('main').html( this.templates[methodName]() );
     }
   }
 }
