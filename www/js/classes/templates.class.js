@@ -141,6 +141,7 @@ class Templates {
       new Movie(
           movie[nr].images,
           movie[nr].youtubeTrailers,
+					movie[nr].imdblinks,
           movie[nr].title,
           movie[nr].description,
           [`<b>Land:</b> ${movie[nr].productionCountries.join(', ')}`,
@@ -165,7 +166,7 @@ class Templates {
       '/film/Call_Me_by_Your_Name': 1,
       '/film/Star_Wars:_The_Last_Jedi': 2,
       '/film/Thor:_Ragnarok': 3,
-      '/film/Intersteller': 4,
+      '/film/Interstellar': 4,
       '/film/The_Incredibles': 5
     };
     let movieNr = numbers[url];
