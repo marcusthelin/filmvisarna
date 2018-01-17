@@ -57,7 +57,6 @@ class Spa {
     let urls = {
       '/': 'startsida',
       '/filmer': 'filmer',
-      '/boka': 'boka',
       '/biljetter': 'biljetter',
       '/omOss': 'omOss',
       '/film1': 'filmInfo',
