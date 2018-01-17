@@ -141,6 +141,7 @@ class Templates {
       new Movie(
           movie[nr].images,
           movie[nr].youtubeTrailers,
+					movie[nr].imdblinks,
           movie[nr].title,
           movie[nr].description,
           [`<b>Land:</b> ${movie[nr].productionCountries.join(', ')}`,

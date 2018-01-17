@@ -1,7 +1,8 @@
 class Movie{
-  constructor(img, trailer, title, description, facts, reviews, templatesClass){
+  constructor(img, trailer, imdb, title, description, facts, reviews, templatesClass){
     this.img = img;
     this.trailer = trailer;
+    this.imdb = imdb;
     this.title = title;
     this.description = description;
     this.facts = '<li>' + facts.join('</li><li>') + '</li>';
@@ -102,7 +103,7 @@ class Movie{
                   </div>
                 </div>
                 <div class="imdb-info text-center bg-secondary">
-                  <span class="fa fa-imdb mr-3 imdb"></span><a target="blank" href="http://www.imdb.com/title/tt3659388/?ref_=nv_sr_1">Filmen på imdb</span></a>
+                  <span class="fa fa-imdb mr-3 imdb"></span><a target="blank" href="http://www.imdb.com/title/${this.imdb}">Filmen på imdb</span></a>
                 </div>
               </div>
             </div>
