@@ -289,18 +289,6 @@ class Templates {
     `);
   }
 
-  boka() {
-    $('main').html(`
-      <div class="container">
-        <div class="row col-lg-12 mt-2">
-          <div class="col-lg-8">
-            <h1>Boka</h1>
-          </div>
-          ${this.calendarTable()}
-        </div>
-      </div>
-      `);
-  }
 
   biljetter() {
     $('main').html(`
@@ -344,14 +332,29 @@ class Templates {
       <div class="container">
         <div class="row col-lg-12 mt-2">
           <div class="col-lg-8">
-            <div class="info border">
-              <p>Här kommer en ruta med information om Salongerna</p>
+            <div class="info">
+							<h2>Biogragen Filmvisarna</h2>
+							<p>Adress: Filmgatan 12, 12343 Malmö</p>
+              <p>Biografen byggdes 1936 och hette fram till 1993 Reflex, då SF lämnade den i och med öppnandet av Filmstaden. Biografens gathus revs i början av åttiotalet för att ge plats åt ett kontorskomplex och utökning av den intilliggande bankens lokaler, med ny biografentré som följd. Baldakinen försvann och entrén flyttades några meter norrut.</p>
+							<p>Folkets Bio och Filmstudion öppnade under namnet Filmvisarna i februari 1994. Sommaren 2000 totalrenoverades biografen, vars tidigare enda salong delades upp på två. Detta skedde dels genom skapandet av en hög gradäng som ersatte det gamla, svagt sluttande golvet och dels genom utgrävningar. På så vis gavs plats för en ny salong under den gamla, numera höjda. Salong 1 har kvar samma duk som gamla Filmvisarna, men annars är allt ombyggt.
+							Sedan 2009 driver Folkets Bio i Malmö ensamt biografen.</p>
+							<h2>Tillgänglighet</h2>
+							<p>I salong 1 är två stolar bortplockade på rad 1, på salongens bokningssida på nätet syns de som två röda kryss. Pga bokningssystemets begränsningar går dessa endast att boka på Kino eller över telefon</p>
+							<p>I salong 2 går den gulmarkerade stolen längst bak att plocka bort, den går att boka på hemsidan.</p>
+							<h2>Salongerna</h2>
+							<p>Vi erbjuder två salonger av högsta klass, med det bästa ljudet och de bästa projektorerna för att du som kund ska kunna få den bästa upplevelsen på bio</p>
+						</div>
+            <div class="info">
+						<h2 class="">Försäljning</h2>
+              <p>Vad vore bio utan något kallt att dricka till eller popcorn?</p>
+							<p>Vi erbjuder både dryck och snacks till förmånliga priser. Då vi har ett stort utbud av lösviktsgodis och chips, samt även de klassiska bio snacksen</p>
             </div>
-            <div class="info border">
-              <p>Här kommer en ruta med information om Godis och försäljning</p>
-            </div>
-            <div class="info border">
-              <p>Här kommer en ruta med information om hur man hittar hit och lite mer info om oss</p>
+            <div class="info">
+							<h2>Hitta hit</h2>
+              <p><b>Biografen Filmvisarna</b></p>
+							<p>Du hittar oss här Filmgatan 12, 12343 Malmö. där det finns goda möjligheter för parkering också</p>
+							<p>För mer information om bokingar eller generella frågor så svarar vi gärna i telefonen</p>
+							<p>Telefon: 040-12 33 21</p>
             </div>
 
           </div>
@@ -370,7 +373,8 @@ class Templates {
 	          <div class="col-11 col-md-7 col-lg-12 col-xl-10 color d-flex justify-content-center align-items-center myheight">
 	            <p class="mb-1"><span class="fa fa-address-card mr-2"></span><span class="d-none d-lg-inline">Adress:</span></p>
 	            <p class="ml-5 pl-2">
-	              Fyrairadgatan 4<br> Fyrgatan 44<br> 44 044 Malmö
+	              Filmgatan 12 <br>
+								12343, Malmö
 	            </p>
 	          </div>
 	        </div>
@@ -380,7 +384,7 @@ class Templates {
 	          <div class="col-11 col-md-7 col-lg-12 col-xl-10 color d-flex justify-content-center align-items-center myheight">
 	            <div>
 	              <p class="mb-1 pr-2"><span class="fa fa-facebook mr-3"></span><a href="#">Möt oss på Facebook!</span></a></p>
-	              <p class="mb-1 pr-2"><span class="fa fa-envelope mr-3"> </span><a href="#">us@fourinarow.se</a></p>
+	              <p class="mb-1 pr-2"><span class="fa fa-envelope mr-3"> </span><a href="#">info@filmvisarna.se</a></p>
 	            </div>
 	          </div>
 	        </div>
@@ -388,7 +392,7 @@ class Templates {
 	      <div class="col-lg-4 py-2 ">
 	        <div class="row justify-content-center">
 	          <div class="col-11 col-md-7 col-lg-11 col-xl-10 color d-flex justify-content-center align-items-center myheight">
-	            <p class="mb-1 pr-2"><span class="fa fa-phone mr-3"></span>Telefon: 040-44 33 44</span>
+	            <p class="mb-1 pr-2"><span class="fa fa-phone mr-3"></span>Telefon: 040-12 33 21</span>
 	            </p>
 	          </div>
 	        </div>
