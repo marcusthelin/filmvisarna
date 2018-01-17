@@ -1,4 +1,4 @@
-class PopStateHandler {
+class Spa {
 
   // Note: Only instantiate PopStateHandler once!
 
@@ -77,6 +77,3 @@ class PopStateHandler {
     }
   }
 }
-
-// Create an instance of the class
-new PopStateHandler();
