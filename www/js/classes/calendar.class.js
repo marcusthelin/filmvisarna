@@ -1,5 +1,5 @@
 const SHOWTIME_JSON = 'showtime.json';
-const TODAY = new Date('2018-02-22');
+const TODAY = new Date('2018-02-22'); // we can chenge this date
 
 class Calendar {
   constructor() {
@@ -31,22 +31,29 @@ class Calendar {
 
   movieTableFactory() {
     const movies = this.getMovies(TODAY);
-    let table;
-    movies.forEach((movie) => {
-      table += this.movieFactory(movie.time, movie.film);
+    let tableForToday;
+    let tableForTomorrow;
+    movies[0].forEach((movie) => {
+      tableForToday += this.movieFactory(movie.time, movie.film);
     });
-    $('.today-table').html(table);
+    $('.today-table').html(tableForToday);
+
+    movies[1].forEach((movie) => {
+      tableForTomorrow += this.movieFactory(movie.time, movie.film);
+    });
+    $('.tomorrow-table').html(tableForTomorrow);
   }
 
   getMovies(date) {
-    const movies = [];
-    this.data.forEach((movie) => {
-      let movieDate = new Date(movie.date).getTime();
-      if (date.getTime() === movieDate) {
-        movies.push(movie);
-      }
-    });
-    return movies;
+    const schedule = [];
+
+    let todayMovies = this.data.filter(movie => movie.date == date.getFullYear()+'-0'+(date.getMonth()+1)+'-'+date.getDate());
+    schedule.push(todayMovies);
+
+    let tomorrowMovies = this.data.filter(movie => movie.date == date.getFullYear()+'-0'+(date.getMonth()+1)+'-'+(date.getDate()+1));
+    schedule.push(tomorrowMovies);
+
+    return schedule;
   }
 
   renderHTML() {

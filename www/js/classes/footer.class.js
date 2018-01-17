@@ -18,4 +18,6 @@ class Footer {
   }
 }
 
-const fixMe = new Footer();
+$(document).ready(function() {
+  const fixMe = new Footer();
+});
