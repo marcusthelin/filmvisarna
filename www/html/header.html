@@ -2,6 +2,9 @@ Object.assign(Templates.prototype, { header(){ return `
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
     <div class="container">
       <img class="navbar-brand" href="#">
+      <a class="button d-lg-none" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+        <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+      </a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
           &#9776;
       </button>
@@ -16,4 +19,15 @@ Object.assign(Templates.prototype, { header(){ return `
       </div>
     </div>
   </nav>
+
+
+  <!-- Card with calendar only visible when on md and less -->
+  <div id="accordion" role="tablist">
+    <div class="card border-0">
+      <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          ${this.calendarTable()}
+      </div>
+    </div>
+  </div>
 `;}});

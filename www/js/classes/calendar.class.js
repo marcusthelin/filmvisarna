@@ -24,7 +24,7 @@ class Calendar {
     return `
     <tr>
       <th scope="row">${time}</th>
-      <td><a target='_blank' href="/film/${title.replace(/ /g,"_")}">${title}</a></td>
+      <td><a class="pop" href="/film/${title.replace(/ /g,"_")}">${title}</a></td>
     </tr>
     `
   }
@@ -58,7 +58,7 @@ class Calendar {
 
   renderHTML() {
     return `
-    <div class="col-lg-4">
+    <div class="col-12">
       <div class="calendar">
         <table class="table table-hover table-sm">
           <thead>

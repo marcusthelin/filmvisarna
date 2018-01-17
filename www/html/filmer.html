@@ -51,7 +51,9 @@ Object.assign(Templates.prototype, { filmer(){ return `
           <a class="btn btn-dark align-self-end pop" href="/film/The_Incredibles" role="button">Mer information</a>
         </div>
         </div>
-      ${this.calendarTable()}
+        <div class="row d-none d-lg-block">
+          ${this.calendarTable()}
+        </div>
     </div>
   </div>
 `;}});
