@@ -74,6 +74,10 @@ class Spa {
     if(!(methodName == '/')){
       $('main').html( this.templates[methodName]() );
     }
+    //Scroll to top when route has changed
     window.scrollTo(0, 0);
+
+    //Hide collapse navbar (hamburgerbar)
+    $('.navbar-collapse').collapse('hide');
   }
 }
