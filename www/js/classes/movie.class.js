@@ -106,7 +106,7 @@ class Movie{
                 </div>
               </div>
             </div>
-            ${this.templatesClass.calendar()}
+            ${this.templatesClass.calendarTable()}
           </div>
         </div>
     `);
