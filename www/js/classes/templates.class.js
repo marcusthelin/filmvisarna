@@ -289,18 +289,6 @@ class Templates {
     `);
   }
 
-  boka() {
-    $('main').html(`
-      <div class="container">
-        <div class="row col-lg-12 mt-2">
-          <div class="col-lg-8">
-            <h1>Boka</h1>
-          </div>
-          ${this.calendarTable()}
-        </div>
-      </div>
-      `);
-  }
 
   biljetter() {
     $('main').html(`
@@ -370,7 +358,8 @@ class Templates {
 	          <div class="col-11 col-md-7 col-lg-12 col-xl-10 color d-flex justify-content-center align-items-center myheight">
 	            <p class="mb-1"><span class="fa fa-address-card mr-2"></span><span class="d-none d-lg-inline">Adress:</span></p>
 	            <p class="ml-5 pl-2">
-	              Fyrairadgatan 4<br> Fyrgatan 44<br> 44 044 Malmö
+	              Filmgatan 12 <br>
+								12343, Malmö
 	            </p>
 	          </div>
 	        </div>
@@ -380,7 +369,7 @@ class Templates {
 	          <div class="col-11 col-md-7 col-lg-12 col-xl-10 color d-flex justify-content-center align-items-center myheight">
 	            <div>
 	              <p class="mb-1 pr-2"><span class="fa fa-facebook mr-3"></span><a href="#">Möt oss på Facebook!</span></a></p>
-	              <p class="mb-1 pr-2"><span class="fa fa-envelope mr-3"> </span><a href="#">us@fourinarow.se</a></p>
+	              <p class="mb-1 pr-2"><span class="fa fa-envelope mr-3"> </span><a href="#">info@filmvisarna.se</a></p>
 	            </div>
 	          </div>
 	        </div>
@@ -388,7 +377,7 @@ class Templates {
 	      <div class="col-lg-4 py-2 ">
 	        <div class="row justify-content-center">
 	          <div class="col-11 col-md-7 col-lg-11 col-xl-10 color d-flex justify-content-center align-items-center myheight">
-	            <p class="mb-1 pr-2"><span class="fa fa-phone mr-3"></span>Telefon: 040-44 33 44</span>
+	            <p class="mb-1 pr-2"><span class="fa fa-phone mr-3"></span>Telefon: 040-12 33 21</span>
 	            </p>
 	          </div>
 	        </div>
