@@ -28,19 +28,19 @@
     "reviews": [
       {
         "source": "Sydsvenskan",
-        "quote": "<a href='https://www.sydsvenskan.se/2015-10-02/trevlig-rymdresa-utan-nerv'>Trevlig rymdresa utan nerv</a>",
+        "quote": "<a target='_blank' href='https://www.sydsvenskan.se/2015-10-02/trevlig-rymdresa-utan-nerv'>Trevlig rymdresa utan nerv</a>",
         "stars": 4,
         "max": 5
       },
       {
         "source": "Svenska Dagbladet",
-        "quote": "<a href='https://www.svd.se/snygg-rymdthriller-i-discotakt/om/planeten-mars-5xfu'>Snygg rymdthriller i discotakt</a>",
+        "quote": "<a target='_blank' href='https://www.svd.se/snygg-rymdthriller-i-discotakt/om/planeten-mars-5xfu'>Snygg rymdthriller i discotakt</a>",
         "stars": 5,
         "max": 5
       },
       {
         "source": "DN",
-        "quote": "<a href='https://www.dn.se/kultur-noje/filmrecensioner/recension-av-the-martian-med-matt-damon/'>Även om Matt Damons karaktär är en notorisk töntig skämtare och verkar immun mot existentiella grubblerier är det oavlåtligt spännande att följa hans kamp för överlevnad</a>",
+        "quote": "<a target='_blank' href='https://www.dn.se/kultur-noje/filmrecensioner/recension-av-the-martian-med-matt-damon/'>Även om Matt Damons karaktär är en notorisk töntig skämtare och verkar immun mot existentiella grubblerier är det oavlåtligt spännande att följa hans kamp för överlevnad</a>",
         "stars": 3,
         "max": 5
       }
@@ -75,19 +75,19 @@
     "reviews": [
       {
         "source": "Sydsvenskan",
-        "quote": "<a href='https://www.sydsvenskan.se/2017-12-22/call-me-by-your-name-gripande-och-sensuell-karleksfilm'>ett drama berättat med stor ömhet</a>",
+        "quote": "<a target='_blank' href='https://www.sydsvenskan.se/2017-12-22/call-me-by-your-name-gripande-och-sensuell-karleksfilm'>ett drama berättat med stor ömhet</a>",
         "stars": 4,
         "max": 5
       },
       {
         "source": "Svenska Dagbladet",
-        "quote": "<a href='https://www.svd.se/vackert-samspel-i-film-att-foralska-sig-i'>en film att förälska sig i</a>",
+        "quote": "<a target='_blank' href='https://www.svd.se/vackert-samspel-i-film-att-foralska-sig-i'>en film att förälska sig i</a>",
         "stars": 5,
         "max": 5
       },
       {
         "source": "DN",
-        "quote": "<a href='https://www.dn.se/kultur-noje/filmrecensioner/filmrecension-call-me-by-your-name-en-het-romans-i-attiotalskostym/'>en het romans i åttiotalskostym</a>",
+        "quote": "<a target='_blank' href='https://www.dn.se/kultur-noje/filmrecensioner/filmrecension-call-me-by-your-name-en-het-romans-i-attiotalskostym/'>en het romans i åttiotalskostym</a>",
         "stars": 4,
         "max": 5
       }
@@ -122,19 +122,19 @@
     "reviews": [
       {
         "source": "Aftonbladet",
-        "quote": "<a href='https://www.aftonbladet.se/nojesbladet/a/WLbwzQ/the-last-jedi-ar-en-stark-och-ovanlig-star-wars-film'>”The last jedi” är en stark och ovanlig ”Star wars”-film</a>",
+        "quote": "<a target='_blank' href='https://www.aftonbladet.se/nojesbladet/a/WLbwzQ/the-last-jedi-ar-en-stark-och-ovanlig-star-wars-film'>”The last jedi” är en stark och ovanlig ”Star wars”-film</a>",
         "stars": 4,
         "max": 5
       },
       {
         "source": "Svenska Dagbladet",
-        "quote": "<a href='https://www.svd.se/sa-bra-ar-den-nya-star-wars-filmen'>Så bra är nya Star Wars-filmen: Ett utmärkt äventyr</a>",
+        "quote": "<a target='_blank' href='https://www.svd.se/sa-bra-ar-den-nya-star-wars-filmen'>Så bra är nya Star Wars-filmen: Ett utmärkt äventyr</a>",
         "stars": 4,
         "max": 5
       },
       {
         "source": "DN",
-        "quote": "<a href='https://www.dn.se/kultur-noje/filmrecensioner/filmrecension-kittlande-publikfrieri-i-nya-star-wars-filmen/'>Publikfrieri och gåshud. Så här bra är nya ”Star Wars”-filmen</a>",
+        "quote": "<a target='_blank' href='https://www.dn.se/kultur-noje/filmrecensioner/filmrecension-kittlande-publikfrieri-i-nya-star-wars-filmen/'>Publikfrieri och gåshud. Så här bra är nya ”Star Wars”-filmen</a>",
         "stars": 3,
         "max": 5
       }
@@ -169,19 +169,19 @@
     "reviews": [
       {
         "source": "Sydsvenskan",
-        "quote": "<a href='https://www.sydsvenskan.se/2017-10-27/nytt-blod-till-fanig-genre'>Thor – Ragnarök: Nytt blod till fånig genre</a>",
+        "quote": "<a target='_blank' href='https://www.sydsvenskan.se/2017-10-27/nytt-blod-till-fanig-genre'>Thor – Ragnarök: Nytt blod till fånig genre</a>",
         "stars": 3,
         "max": 5
       },
       {
         "source": "Aftonbladet",
-        "quote": "<a href='http://film.aftonbladet.se/2017/10/basta-thor-filmen-ar-komiskt-rymdaventyr/'>Bästa Thor-filmen är komiskt rymdäventyr</a>",
+        "quote": "<a target='_blank' href='http://film.aftonbladet.se/2017/10/basta-thor-filmen-ar-komiskt-rymdaventyr/'>Bästa Thor-filmen är komiskt rymdäventyr</a>",
         "stars": 4,
         "max": 5
       },
       {
         "source": "Filmtopp",
-        "quote": "<a href='https://www.filmtopp.se/2017/10/27/recension-thor-ragnarok/'>“Thor: Ragnarök” är mycket av allt – på gott och ont.</a>",
+        "quote": "<a target='_blank' href='https://www.filmtopp.se/2017/10/27/recension-thor-ragnarok/'>“Thor: Ragnarök” är mycket av allt – på gott och ont.</a>",
         "stars": 3,
         "max": 5
       }
@@ -216,19 +216,19 @@
     "reviews": [
       {
         "source": "SVT Nyheter",
-        "quote": "<a href='https://www.svt.se/kultur/film/interstellar-1'>Vida vyer i eggande rymdfararfantasi om svarta hål och nya dimensioner</a>",
+        "quote": "<a target='_blank' href='https://www.svt.se/kultur/film/interstellar-1'>Vida vyer i eggande rymdfararfantasi om svarta hål och nya dimensioner</a>",
         "stars": 4,
         "max": 5
       },
       {
         "source": "GP",
-        "quote": "<a href='http://www.gp.se/kultur/film/interstellar-1.254632'>Interstellar, som är ett science fiction-drama, är filosofisk, meditativ, matematisk, visuellt hänförande</a>",
+        "quote": "<a target='_blank' href='http://www.gp.se/kultur/film/interstellar-1.254632'>Interstellar, som är ett science fiction-drama, är filosofisk, meditativ, matematisk, visuellt hänförande</a>",
         "stars": 4,
         "max": 5
       },
       {
         "source": "DN",
-        "quote": "<a href='https://www.dn.se/kultur-noje/filmrecensioner/interstellar/'>Rymdresa med separationsångest. Det är lätt att bli yr av det intergalaktiska äventyret ”Interstellar” </a>",
+        "quote": "<a target='_blank' href='https://www.dn.se/kultur-noje/filmrecensioner/interstellar/'>Rymdresa med separationsångest. Det är lätt att bli yr av det intergalaktiska äventyret ”Interstellar” </a>",
         "stars": 4,
         "max": 5
       }
@@ -260,19 +260,19 @@
     "reviews": [
       {
         "source": "Moviezine",
-        "quote": "<a href='https://www.moviezine.se/movies/superhjaltarna'>Riktigt bra, men på tok för lång</a>",
+        "quote": "<a target='_blank' href='https://www.moviezine.se/movies/superhjaltarna'>Riktigt bra, men på tok för lång</a>",
         "stars": 3,
         "max": 5
       },
       {
         "source": "Aftonbladet",
-        "quote": "<a href='http://wwwc.aftonbladet.se/puls/film/recension/0,1300,2000046235,00.html'>Snacka om besvikelse.</a>",
+        "quote": "<a target='_blank' href='http://wwwc.aftonbladet.se/puls/film/recension/0,1300,2000046235,00.html'>Snacka om besvikelse.</a>",
         "stars": 2,
         "max": 5
       },
       {
         "source": "Russin",
-        "quote": "<a href='http://www.russin.nu/filmview.php?filmid=821'>Konsten att leva under sina tillgångar</a>",
+        "quote": "<a target='_blank' href='http://www.russin.nu/filmview.php?filmid=821'>Konsten att leva under sina tillgångar</a>",
         "stars": 4,
         "max": 5
       }

@@ -162,10 +162,10 @@ class Templates {
     let url = location.pathname;
     let numbers = {
       '/film/The_Martian': 0,
-      '/film/Call_me_by_your_name': 1,
+      '/film/Call_Me_by_Your_Name': 1,
       '/film/Star_Wars:_The_Last_Jedi': 2,
       '/film/Thor:_Ragnarok': 3,
-      '/film/Interstellar': 4,
+      '/film/Intersteller': 4,
       '/film/The_Incredibles': 5
     };
     let movieNr = numbers[url];
