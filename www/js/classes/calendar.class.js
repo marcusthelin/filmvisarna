@@ -24,7 +24,7 @@ class Calendar {
     return `
     <tr>
       <th scope="row">${time}</th>
-      <td><a href="/film/${title.replace(/ /g,"_")}">${title}</a></td>
+      <td><a target='_blank' href="/film/${title.replace(/ /g,"_")}">${title}</a></td>
     </tr>
     `
   }
