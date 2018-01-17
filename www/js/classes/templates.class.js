@@ -180,13 +180,13 @@ class Templates {
           <div class="col-lg-8">
             <div class="row">
             <div class="card col-lg-6 border-0">
-              <a href="/film1" class"pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
+              <a href="/film1" class="pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
             <div class="card col-lg-6 border-0">
-              <a href="/film2" class"pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
+              <a href="/film2" class="pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
@@ -194,13 +194,13 @@ class Templates {
             </div>
             <div class="row">
             <div class="card col-lg-6 mt-2 border-0">
-              <a href="/film3" class"pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"><7a>
+              <a href="/film3" class="pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"><7a>
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
             <div class="card col-lg-6 mt-2 border-0">
-              <a href="/film4" class"pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
+              <a href="/film4" class="pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
@@ -208,13 +208,13 @@ class Templates {
             </div>
             <div class="row">
             <div class="card col-lg-6 mt-2 border-0">
-              <a href="/film5" class"pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
+              <a href="/film5" class="pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
             <div class="card col-lg-6 mt-2 border-0">
-              <a href="/film6" class"pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
+              <a href="/film6" class="pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
