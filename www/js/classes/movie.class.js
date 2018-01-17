@@ -38,7 +38,7 @@ class Movie{
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-              <div class="border col-lg-12">
+              <div class=" col-lg-12">
                 <h2 class="text-center">${this.title}</h2>
                 <div class="om-film mt-2">
                   <p>${this.description}</p>
@@ -101,8 +101,8 @@ class Movie{
                     </div>
                   </div>
                 </div>
-                <div class="imdb-info text-center">
-                  <a target="blank" href="http://www.imdb.com/title/tt3659388/?ref_=nv_sr_1">Filmen på Imdb</a>
+                <div class="imdb-info text-center bg-secondary">
+                  <span class="fa fa-imdb mr-3 imdb"></span><a target="blank" href="http://www.imdb.com/title/tt3659388/?ref_=nv_sr_1">Filmen på imdb</span></a>
                 </div>
               </div>
             </div>
