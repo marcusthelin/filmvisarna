@@ -74,5 +74,6 @@ class Spa {
     if(!(methodName == '/')){
       $('main').html( this.templates[methodName]() );
     }
+    window.scrollTo(0, 0);
   }
 }
