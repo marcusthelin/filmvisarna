@@ -5,14 +5,9 @@ class Templates {
     this.skapaKonto();
 	}
 
-  kalendarium(){
-    return `
-     <div class="col-lg-4">
-        <div class="kalendarium border">
-          <p>Kalendarium</p>
-        </div>
-      </div>
-    `;
+  calendarTable(){
+    this.calendar = new Calendar();
+    return this.calendar.renderHTML();
   }
 
 	login(){
@@ -227,7 +222,7 @@ class Templates {
             </div>
             </div>
           </div>
-          ${this.kalendarium()}
+          ${this.calendarTable()}
         </div>
       </div>
     `);
@@ -288,7 +283,7 @@ class Templates {
               <a class="btn btn-dark align-self-end" href="/film6" role="button">Mer information</a>
             </div>
             </div>
-          ${this.kalendarium()}
+          ${this.calendarTable()}
         </div>
       </div>
     `);
@@ -301,7 +296,7 @@ class Templates {
           <div class="col-lg-8">
             <h1>Boka</h1>
           </div>
-          ${this.kalendarium()}
+          ${this.calendarTable()}
         </div>
       </div>
       `);
@@ -337,7 +332,7 @@ class Templates {
             </div>
 
           </div>
-          ${this.kalendarium()}
+          ${this.calendarTable()}
 
         </div>
       </div>
@@ -360,7 +355,7 @@ class Templates {
             </div>
 
           </div>
-          ${this.kalendarium()}
+          ${this.calendarTable()}
 
         </div>
       </div>
