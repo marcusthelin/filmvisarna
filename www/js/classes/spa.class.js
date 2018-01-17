@@ -59,12 +59,12 @@ class Spa {
       '/filmer': 'filmer',
       '/biljetter': 'biljetter',
       '/omOss': 'omOss',
-      '/film1': 'filmInfo',
-      '/film2': 'filmInfo',
-      '/film3': 'filmInfo',
-      '/film4': 'filmInfo',
-      '/film5': 'filmInfo',
-      '/film6': 'filmInfo'
+      '/film/The_Martian': 'filmInfo',
+      '/film/Call_me_by_your_name': 'filmInfo',
+      '/film/Star_Wars:_The_Last_Jedi': 'filmInfo',
+      '/film/Thor:_Ragnarok': 'filmInfo',
+      '/film/Interstellar': 'filmInfo',
+      '/film/The Incredibles': 'filmInfo'
     };
 
     // Call the right method

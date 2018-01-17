@@ -161,12 +161,12 @@ class Templates {
   filmInfo(){
     let url = location.pathname;
     let numbers = {
-      '/film1': 0,
-      '/film2': 1,
-      '/film3': 2,
-      '/film4': 3,
-      '/film5': 4,
-      '/film6': 5
+      '/film/The_Martian': 0,
+      '/film/Call_me_by_your_name': 1,
+      '/film/Star_Wars:_The_Last_Jedi': 2,
+      '/film/Thor:_Ragnarok': 3,
+      '/film/Interstellar': 4,
+      '/film/The Incredibles': 5
     };
     let movieNr = numbers[url];
     this.getMovie(movieNr);
