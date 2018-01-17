@@ -2,22 +2,22 @@
   {
     "title": "The Martian",
     "productionCountries": [
-      "UK",
       "USA"
     ],
     "productionYear": 2015,
-    "length": "144 min",
-    "genre": "Adventure | Drama | Sci-Fi",
+    "length": "141 min",
+    "genre": "Action | Äventyr | Sci-Fi",
     "distributor": "20th Century Fox",
-    "language": "Engelska",
-    "subtitles": "Svenska",
+    "language": "engelska",
+    "subtitles": "svenska",
     "director": "Ridley Scott",
     "actors": [
       "Matt Damon",
       "Jessica Chasin",
-      "Kristen Wiig"
+      "Kristen Wiig",
+      "Kate Mara"
     ],
-    "description": "Filmen utspelas i norra Italien sommaren 1983. En ung amerikansk-italienare blir förälskad i en amerikansk student som kommer för att studera och bo hos hans familj.</p><p>Tillsammans upplever de en oförglömlig sommar - full av musik, mat och kärlek - som för evigt kommer att förändra dem.", 
+    "description": "Astronauten Mark Watney blir kvarlämnad på Mars av resterande besättningen som tror att han omkommit efter en kraftig storm i rymden. Ensam kvar måste han med sin intelligens och styrka hitta ett sätt att överleva på den lilla mat han har och signalera till jorden att han lever. Miljontals mil bort jobbar NASAs forskare dygnet runt med att hitta ett sätt att få hem honom och besättningen planerar samtidigt en livsfarlig räddningsaktion. Världens befolkning är alla engagerade i Watneys öde och tillsammans är vi starka.", 
     "images": [
        "the-martian-poster1.jpg",
        "the-martian-poster2.jpg"
@@ -28,20 +28,20 @@
     "reviews": [
       {
         "source": "Sydsvenskan",
-        "quote": "ett drama berättat med stor ömhet",
+        "quote": "<a href='https://www.sydsvenskan.se/2015-10-02/trevlig-rymdresa-utan-nerv'>Trevlig rymdresa utan nerv</a>",
         "stars": 4,
         "max": 5
       },
       {
         "source": "Svenska Dagbladet",
-        "quote": "en film att förälska sig i",
+        "quote": "<a href='https://www.svd.se/snygg-rymdthriller-i-discotakt/om/planeten-mars-5xfu'>Snygg rymdthriller i discotakt</a>",
         "stars": 5,
         "max": 5
       },
       {
         "source": "DN",
-        "quote": "en het romans i åttiotalskostym",
-        "stars": 4,
+        "quote": "<a href='https://www.dn.se/kultur-noje/filmrecensioner/recension-av-the-martian-med-matt-damon/'>Även om Matt Damons karaktär är en notorisk töntig skämtare och verkar immun mot existentiella grubblerier är det oavlåtligt spännande att följa hans kamp för överlevnad</a>",
+        "stars": 3,
         "max": 5
       }
     ]
@@ -64,7 +64,7 @@
       "Timothée Chalamet",
       "Michael Stuhlbarg"
     ],
-    "description": "<p>Filmen utspelas i norra Italien sommaren 1983. En ung amerikansk-italienare blir förälskad i en amerikansk student som kommer för att studera och bo hos hans familj.</p><p>Tillsammans upplever de en oförglömlig sommar - full av musik, mat och kärlek - som för evigt kommer att förändra dem.</p>",
+    "description": "Filmen utspelas i norra Italien sommaren 1983. En ung amerikansk-italienare blir förälskad i en amerikansk student som kommer för att studera och bo hos hans familj.</p><p>Tillsammans upplever de en oförglömlig sommar - full av musik, mat och kärlek - som för evigt kommer att förändra dem.",
     "images": [
        "call-me-poster1.jpg",
        "call-me-poster2.jpg"
@@ -75,19 +75,204 @@
     "reviews": [
       {
         "source": "Sydsvenskan",
-        "quote": "ett drama berättat med stor ömhet",
+        "quote": "<a href='https://www.sydsvenskan.se/2017-12-22/call-me-by-your-name-gripande-och-sensuell-karleksfilm'>ett drama berättat med stor ömhet</a>",
         "stars": 4,
         "max": 5
       },
       {
         "source": "Svenska Dagbladet",
-        "quote": "en film att förälska sig i",
+        "quote": "<a href='https://www.svd.se/vackert-samspel-i-film-att-foralska-sig-i'>en film att förälska sig i</a>",
         "stars": 5,
         "max": 5
       },
       {
         "source": "DN",
-        "quote": "en het romans i åttiotalskostym",
+        "quote": "<a href='https://www.dn.se/kultur-noje/filmrecensioner/filmrecension-call-me-by-your-name-en-het-romans-i-attiotalskostym/'>en het romans i åttiotalskostym</a>",
+        "stars": 4,
+        "max": 5
+      }
+    ]
+  },
+  {
+    "title": "Star Wars: The Last Jedi",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2017,
+    "length": "152min",
+    "genre": "Action | Äventyr | Sci-Fi",
+    "distributor": "Walt Disney Pictures",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Rian Johnson",
+    "actors": [
+      "Daisy Ridley",
+      "Tom Hardy",
+      "Billie Lourd",
+      "Andy Serkis"
+    ],
+    "description": "Den episka Skywalker-sagan fortsätter när hjältarna från The Force Awakens ansluter sig till de galaktiska legenderna i ett storslaget äventyr som avslöjar Kraftens uråldriga mysterier och chockerande sanningar från det förflutna.",
+    "images": [
+       "last-jedi-poster1.jpg",
+       "last-jedi-poster2.jpg"
+    ],
+    "youtubeTrailers": [
+      "Q0CbN8sfihY"
+    ], 
+    "reviews": [
+      {
+        "source": "Aftonbladet",
+        "quote": "<a href='https://www.aftonbladet.se/nojesbladet/a/WLbwzQ/the-last-jedi-ar-en-stark-och-ovanlig-star-wars-film'>”The last jedi” är en stark och ovanlig ”Star wars”-film</a>",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "<a href='https://www.svd.se/sa-bra-ar-den-nya-star-wars-filmen'>Så bra är nya Star Wars-filmen: Ett utmärkt äventyr</a>",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "DN",
+        "quote": "<a href='https://www.dn.se/kultur-noje/filmrecensioner/filmrecension-kittlande-publikfrieri-i-nya-star-wars-filmen/'>Publikfrieri och gåshud. Så här bra är nya ”Star Wars”-filmen</a>",
+        "stars": 3,
+        "max": 5
+      }
+    ]
+  },
+   {
+    "title": "Thor: Ragnarök",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2017,
+    "length": "130min",
+    "genre": "Action | Äventyr | Komedi | Fantasy",
+    "distributor": "Walt Disney Pictures",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Taika Waititi",
+    "actors": [
+      "Tessa Thompson",
+      "Benedict Cumberbatch",
+      "Idris Elba",
+      "Cate Blanchett"
+    ],
+    "description": "I Thor: Ragnarök hålls Thor fängslad på andra sidan universum utan sin mäktiga hammare. Han för en kamp mot tiden för att ta sig tillbaka till Asgård för att stoppa Ragnarök – förstörelsen av hans hemvärld och slutet för hela den Asgårdska civilisationen. Thor ställs inför ett nytt hot, den mäktiga och hänsynslösa Hela. Men innan dess måsta han överleva en dödlig gladiatortävling där han tvingas kämpa mot sin forna bundsförvant och vän från Avengers – Hulken.",
+    "images": [
+       "thor-ragnarok-poster1.jpg",
+       "thor-ragnarok-poster2.jpg"
+    ],
+    "youtubeTrailers": [
+      "ue80QwXMRHg"
+    ], 
+    "reviews": [
+      {
+        "source": "Sydsvenskan",
+        "quote": "<a href='https://www.sydsvenskan.se/2017-10-27/nytt-blod-till-fanig-genre'>Thor – Ragnarök: Nytt blod till fånig genre</a>",
+        "stars": 3,
+        "max": 5
+      },
+      {
+        "source": "Aftonbladet",
+        "quote": "<a href='http://film.aftonbladet.se/2017/10/basta-thor-filmen-ar-komiskt-rymdaventyr/'>Bästa Thor-filmen är komiskt rymdäventyr</a>",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "Filmtopp",
+        "quote": "<a href='https://www.filmtopp.se/2017/10/27/recension-thor-ragnarok/'>“Thor: Ragnarök” är mycket av allt – på gott och ont.</a>",
+        "stars": 3,
+        "max": 5
+      }
+    ]
+  },
+  {
+    "title": "Interstellar",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2014,
+    "length": "169min",
+    "genre": "Thriller | Äventyr | Sci-Fi",
+    "distributor": "Warner Bros",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Christopher Nolan",
+    "actors": [
+      "Anne Hathaway",
+      "Matthew McConaughey",
+      "Jessica Chastain",
+      "Michael Caine"
+    ],
+    "description": "'Interstellar'  tar oss till en nära framtid där jordens tillgångar börjar ta slut. En grupp forskare får ett avgörande uppdrag - att resa till andra stjärnsystem och utforska om vi har en framtid i rymden.",
+    "images": [
+       "intersteller-poster1.jpg",
+       "intersteller-poster2.jpg"
+    ],
+    "youtubeTrailers": [
+      "zSWdZVtXT7E"
+    ], 
+    "reviews": [
+      {
+        "source": "SVT Nyheter",
+        "quote": "<a href='https://www.svt.se/kultur/film/interstellar-1'>Vida vyer i eggande rymdfararfantasi om svarta hål och nya dimensioner</a>",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "GP",
+        "quote": "<a href='http://www.gp.se/kultur/film/interstellar-1.254632'>Interstellar, som är ett science fiction-drama, är filosofisk, meditativ, matematisk, visuellt hänförande</a>",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "DN",
+        "quote": "<a href='https://www.dn.se/kultur-noje/filmrecensioner/interstellar/'>Rymdresa med separationsångest. Det är lätt att bli yr av det intergalaktiska äventyret ”Interstellar” </a>",
+        "stars": 4,
+        "max": 5
+      }
+    ]
+  },
+  {
+    "title": "Superhjältarna (The Incredibles)",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2004,
+    "length": "115min",
+    "genre": "Action | Komedi | Animerat",
+    "distributor": "Walt Disney Pictures",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Brad Bird",
+    "actors": [
+      "Craig T. Nelson"
+    ],
+    "description": "Superhjälten Mr. Incredible bildar familj med Elastigirl och beslutar sig för att leva ett helt vanligt liv, men blir efterhand alltmer frusterad i sin Svenssontillvaro och antar därför ett tvivelaktigt superhjälteuppdrag.",
+    "images": [
+       "incredibles-poster1.jpg",
+       "incredibles-poster2.jpg"
+    ],
+    "youtubeTrailers": [
+      "eZbzbC9285I"
+    ], 
+    "reviews": [
+      {
+        "source": "Moviezine",
+        "quote": "<a href='https://www.moviezine.se/movies/superhjaltarna'>Riktigt bra, men på tok för lång</a>",
+        "stars": 3,
+        "max": 5
+      },
+      {
+        "source": "Aftonbladet",
+        "quote": "<a href='http://wwwc.aftonbladet.se/puls/film/recension/0,1300,2000046235,00.html'>Snacka om besvikelse.</a>",
+        "stars": 2,
+        "max": 5
+      },
+      {
+        "source": "Russin",
+        "quote": "<a href='http://www.russin.nu/filmview.php?filmid=821'>Konsten att leva under sina tillgångar</a>",
         "stars": 4,
         "max": 5
       }
