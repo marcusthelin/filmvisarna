@@ -60,10 +60,10 @@ class Spa {
       '/biljetter': 'biljetter',
       '/omOss': 'omOss',
       '/film/The_Martian': 'filmInfo',
-      '/film/Call_me_by_your_name': 'filmInfo',
+      '/film/Call_Me_by_Your_Name': 'filmInfo',
       '/film/Star_Wars:_The_Last_Jedi': 'filmInfo',
       '/film/Thor:_Ragnarok': 'filmInfo',
-      '/film/Interstellar': 'filmInfo',
+      '/film/Intersteller': 'filmInfo',
       '/film/The_Incredibles': 'filmInfo'
     };
 
