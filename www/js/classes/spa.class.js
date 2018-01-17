@@ -64,7 +64,7 @@ class Spa {
       '/film/Star_Wars:_The_Last_Jedi': 'filmInfo',
       '/film/Thor:_Ragnarok': 'filmInfo',
       '/film/Interstellar': 'filmInfo',
-      '/film/The Incredibles': 'filmInfo'
+      '/film/The_Incredibles': 'filmInfo'
     };
 
     // Call the right method
