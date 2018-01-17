@@ -58,7 +58,7 @@ class Calendar {
 
   renderHTML() {
     return `
-    <div class="col-12">
+    <div class="col-lg-4">
       <div class="calendar">
         <table class="table table-hover table-sm">
           <thead>
