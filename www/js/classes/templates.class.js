@@ -147,7 +147,6 @@ class Templates {
             <ul class="nav navbar-nav">
               <li class="nav-item"><a href="/" class="nav-link pop">Startsida</a></li>
               <li class="nav-item"><a href="/filmer" class="nav-link pop">Filmer</a></li>
-              <li class="nav-item"><a href="/boka" class="nav-link pop">Boka</a></li>
               <li class="nav-item"><a href="/biljetter" class="nav-link pop">Biljetter</a></li>
               <li class="nav-item"><a href="/omOss" class="nav-link pop">Om oss</a></li>
             </ul>
