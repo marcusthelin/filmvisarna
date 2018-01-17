@@ -40,10 +40,11 @@ class Movie{
                 </a>
               </div>
               <div class=" col-lg-12">
-                <h2 class="text-center">${this.title}</h2>
                 <div class="om-film mt-2">
+                <h2 class="text-center">${this.title}</h2>
                   <p>${this.description}</p>
                 </div>
+
 
                 <div id="accordion" role="tablist">
                   <div class="card">
@@ -102,12 +103,18 @@ class Movie{
                     </div>
                   </div>
                 </div>
-                <div class="imdb-info text-center bg-secondary">
+                <div class="mt-2">
+                <button type="button" class=" mt-2 btn btn-outline-info btn-lg btn-block">Boka</button>
+                </div>
+                <div class="imdb-info text-center mt-2">
                   <span class="fa fa-imdb mr-3 imdb"></span><a target="blank" href="http://www.imdb.com/title/${this.imdb}">Filmen på imdb</span></a>
                 </div>
+
               </div>
             </div>
+            <div class=""
             ${this.templatesClass.calendarTable()}
+            </div>
           </div>
         </div>
     `);
