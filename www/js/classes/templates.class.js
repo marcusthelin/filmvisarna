@@ -301,10 +301,10 @@ class Templates {
               <p>Kassan öppnar 30 minuter före första föreställning. Biljetterna är vanligtvis numrerade. Bokade biljetter måste hämtas senast 30 minuter före föreställningen. För Operaföreställningar och andra livesändningar gäller andra uthämtningstider.</p>
               <p><b>Ord pris:</b> 85kr</p>
               <p><b>Barn (under 12 år):</b> 65kr</p>
-              <p><b>Pensionärer:</b> 85kr</p>
+              <p><b>Pensionärer:</b> 75kr</p>
 
               <h4>Presentkort</h4>
-              <p>Ge någon en trevlig present! Presentkort finns i olika valörer och du köper dom i kassan på Kino som öppnar 30 min före första föreställning. </p>
+              <p>Ge någon en trevlig present! Presentkort finns i olika valörer och du köper dom i kassan på Filmvisarna som öppnar 30 min före första föreställning. </p>
 
               <h4>Företagsbiljetter</h4>
               <p>Vi säljer även företagsbiljetter. Fast pris, berättigar till en biljett på ordinarie filmvisningar, mängdrabatt ges. För mer information och beställning kontakta vårt kontor på info@kino.nu</p>
