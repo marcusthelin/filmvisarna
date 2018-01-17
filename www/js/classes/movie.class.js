@@ -74,7 +74,7 @@ class Movie{
                     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                       <div class="card">
                         <div class="card-body">
-                          <blockquote class="blockquote mb-0">
+                          <blockquote class="blockquote mb-0 lala">
                             <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[0].stars}<small>/${this.reviews[0].max}</small></h4>
                             <p>${this.reviews[0].quote}</p>
                             <div class="blockquote-footer">${this.reviews[0].source}</div>
