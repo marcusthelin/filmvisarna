@@ -1,5 +1,5 @@
 const SHOWTIME_JSON = 'showtime.json';
-const TODAY = new Date('2018-02-22'); // we can chenge this date
+const TODAY = new Date();
 
 class Calendar {
   constructor() {
