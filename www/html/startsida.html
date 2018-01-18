@@ -20,13 +20,13 @@ Object.assign(Templates.prototype, { startsida(){ return `
       <div class="col-lg-8">
         <div class="row">
         <div class="card col-lg-6 border-0">
-          <a href="/film/The_Martian" class="pop"><img class="card-img-top" src="/imgs/test2.jpg" alt="Card image cap"></a>
+          <a href="/film/${Templates.movies[0].title.replace(/ /g,'_')}" class="pop"><img class="card-img-top" src="/imgs/${Templates.movies[0].images[2]}" alt="Card image cap"></a>
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
         <div class="card col-lg-6 border-0">
-          <a href="/film/Call_me_by_your_name" class="pop"><img class="card-img-top" src="/imgs/call-me-poster3.jpg" alt="Card image cap"></a>
+          <a href="/film/${Templates.movies[1].title.replace(/ /g,'_')}" class="pop"><img class="card-img-top" src="/imgs/${Templates.movies[1].images[2]}" alt="Card image cap"></a>
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
@@ -34,13 +34,13 @@ Object.assign(Templates.prototype, { startsida(){ return `
         </div>
         <div class="row">
         <div class="card col-lg-6 mt-2 border-0">
-          <a href="/film/Star_Wars:_The_Last_Jedi" class="pop"><img class="card-img-top" src="/imgs/last-jedi-poster3.jpg" alt="Card image cap"></a>
+          <a href="/film/${Templates.movies[2].title.replace(/ /g,'_')}" class="pop"><img class="card-img-top" src="/imgs/${Templates.movies[2].images[2]}" alt="Card image cap"></a>
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
         <div class="card col-lg-6 mt-2 border-0">
-          <a href="/film/Thor:_Ragnarok" class="pop"><img class="card-img-top" src="/imgs/thor-ragnarok-poster3.jpg" alt="Card image cap"></a>
+          <a href="/film/${Templates.movies[3].title.replace(/ /g,'_')}" class="pop"><img class="card-img-top" src="/imgs/${Templates.movies[3].images[2]}" alt="Card image cap"></a>
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
@@ -48,13 +48,13 @@ Object.assign(Templates.prototype, { startsida(){ return `
         </div>
         <div class="row">
         <div class="card col-lg-6 mt-2 border-0">
-          <a href="/film/Interstellar" class="pop"><img class="card-img-top" src="/imgs/intersteller-poster3.jpg" alt="Card image cap"></a>
+          <a href="/film/${Templates.movies[4].title.replace(/ /g,'_')}" class="pop"><img class="card-img-top" src="/imgs/${Templates.movies[4].images[2]}" alt="Card image cap"></a>
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
         <div class="card col-lg-6 mt-2 border-0">
-          <a href="/film/The_Incredibles" class="pop"><img class="card-img-top" src="/imgs/incredibles-poster3.jpg" alt="Card image cap"></a>
+          <a href="/film/${Templates.movies[5].title.replace(/ /g,'_')}" class="pop"><img class="card-img-top" src="/imgs/${Templates.movies[5].images[2]}" alt="Card image cap"></a>
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
