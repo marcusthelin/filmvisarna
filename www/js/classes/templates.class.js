@@ -29,8 +29,8 @@ class Templates {
 			          <button type="submit" class="btn btn-primary">Logga in</button>
 			        </form>
 			        <div class="dropdown-divider"></div>
-			        <a class="dropdown-item skapa text-white" href="#">Skapa konto</a>
-			        <a class="dropdown-item text-white" href="#">Glömt ditt lösenord?</a>
+              <button type="button" class="btn btn-primary skapa btn-sm btn-block" data-toggle="modal" data-target="#skapaKonto">Skapa konto</button>
+			        <button type="button" class="btn btn-primary mt-2 btn-sm btn-block " data-toggle="modal" data-target="">Glömt ditt lösenord?</button>
 			      </li>
 			    </ul>
 			  </li>
@@ -41,6 +41,7 @@ class Templates {
   skapaKonto(){
     $(document).on('click', '.skapa', function(){
       new Modal(
+        `skapaKonto`,
         `Skapa Konto`,
         `
           <form class="form-horizontal" role="form">
