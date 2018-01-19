@@ -1,71 +1,35 @@
-Object.assign(Templates.prototype, { filmer(){ return `
+Object.assign(Templates.prototype, { filmer(){
+
+  let movies = "";
+  for(let i = 0; i < Templates.movies.length; i++){
+    movies += `<div class="media border">
+      <div class="media-img ml-1 mr-1">
+        <a href="/film/${Templates.movies[i].title.replace(/ /g,'_')}" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid " src="/imgs/${Templates.movies[i].images[2]}" alt="Generic placeholder image"></a>
+      </div>
+      <div class="media-body">
+        <h3 class="mt-0">${Templates.movies[i].title}</h3>
+        <p><strong>${Templates.movies[i].genre} av ${Templates.movies[i].director}</strong></p>
+        <div class="col-lg-12 justify-content-between buttons mb-1">
+          <a class="btn btn-dark float-right mr-1 pop" href="/film/${Templates.movies[i].title.replace(/ /g,'_')}" role="button">Mer information</a>
+          <button type="button" class="btn btn-dark float-right mr-1">Boka</button>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  return `
   <div class="container">
-    <div class="row col-lg-12 mt-2">
-      <div class="col-lg-8">
-        <div class="media border">
-          <div class="media-img ml-1 mr-1">
-            <a href="/film/${Templates.movies[0].title.replace(/ /g,'_')}" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid " src="/imgs/${Templates.movies[0].images[2]}" alt="Generic placeholder image"></a>
-          </div>
-          <div class="media-body">
-            <h5 class="mt-0">${Templates.movies[0].title}</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-          <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
-          <a class="btn btn-dark align-self-end pop" href="/film/${Templates.movies[0].title.replace(/ /g,'_')}" role="button">Mer information</a>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row mt-2">
+          ${movies}
         </div>
-        <div class="media border mt-2">
-          <div class="media-img ml-1 mr-1">
-            <a href="/film/${Templates.movies[1].title.replace(/ /g,'_')}" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/${Templates.movies[1].images[2]}" alt="Generic placeholder image"></a>
-          </div>
-          <div class="media-body">
-            <h5 class="mt-0">${Templates.movies[1].title}</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-          <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
-          <a class="btn btn-dark align-self-end pop" href="/film/${Templates.movies[1].title.replace(/ /g,'_')}" role="button">Mer information</a>
-        </div>
-        <div class="media border mt-2">
-          <div class="media-img ml-1 mr-1">
-            <a href="/film/${Templates.movies[2].title.replace(/ /g,'_')}" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/${Templates.movies[2].images[2]}" alt="Generic placeholder image"></a>
-          </div>
-          <div class="media-body">
-            <h5 class="mt-0">${Templates.movies[2].title}</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-          <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
-          <a class="btn btn-dark align-self-end pop" href="/film/${Templates.movies[2].title.replace(/ /g,'_')}" role="button">Mer information</a>
-        </div>
-        <div class="media border mt-2">
-          <div class="media-img ml-1 mr-1">
-            <a href="/film/${Templates.movies[3].title.replace(/ /g,'_')}" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/${Templates.movies[3].images[2]}" alt="Generic placeholder image"></a>
-          </div>
-          <div class="media-body">
-            <h5 class="mt-0">${Templates.movies[3].title}</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-          <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
-          <a class="btn btn-dark align-self-end pop" href="/film/${Templates.movies[3].title.replace(/ /g,'_')}" role="button">Mer information</a>
-        </div>
-        <div class="media border mt-2">
-          <div class="media-img ml-1 mr-1">
-            <a href="/film/${Templates.movies[4].title.replace(/ /g,'_')}" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/${Templates.movies[4].images[2]}" alt="Generic placeholder image"></a>
-          </div>
-          <div class="media-body">
-            <h5 class="mt-0">${Templates.movies[4].title}</h5>
-          </div>
-          <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
-          <a class="btn btn-dark align-self-end pop" href="/film/${Templates.movies[4].title.replace(/ /g,'_')}" role="button">Mer information</a>
-        </div>
-        <div class="media border mt-2">
-          <div class="media-img ml-1 mr-1">
-            <a href="/film/${Templates.movies[5].title.replace(/ /g,'_')}" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid" src="/imgs/${Templates.movies[5].images[2]}" alt="Generic placeholder image"></a>
-          </div>
-          <div class="media-body">
-            <h5 class="mt-0">${Templates.movies[5].title}</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-          <button type="button" class="btn btn-dark align-self-end mr-1">Boka</button>
-          <a class="btn btn-dark align-self-end pop" href="/film/${Templates.movies[5].title.replace(/ /g,'_')}" role="button">Mer information</a>
-        </div>
-        </div>
+      </div>
+      <div class="col-md-4">
         <div class="row d-none d-lg-block">
           ${this.calendarTable()}
         </div>
+      </div>
     </div>
   </div>
 `;}});

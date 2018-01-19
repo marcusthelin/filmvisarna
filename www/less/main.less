@@ -8,6 +8,11 @@ body{
 
 
 main{
+
+  button{
+    cursor: pointer;
+  }
+
 	.fa-star{
 		color: #e6e629;
 	}
@@ -27,7 +32,17 @@ main{
     height: 100%;
   }
 
+  .media-body{
+    height: 100%;
+    position: relative;
 
+    .buttons{
+      position: absolute;
+      overflow: hidden;
+      bottom: 0;
+      right: 0;
+    }
+  }
 }
 
 .imdb-info{
