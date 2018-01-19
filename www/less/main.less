@@ -50,17 +50,34 @@ main{
 
   .card{
     img {
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    filter: brightness(90%);
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+    // filter: brightness(70%);
+    &:hover{
+      cursor: pointer;
+      }
+    }
+    .card-info{
+      display: none;
+      background-color: grey;
+      width: 90%;
+      margin: 0 auto;
+      opacity: 0.8;
+      height: 92%;
+      border-radius: 5px;
+      p,h4,h5{
+        color: black;
+      }
     }
   }
 
   .card:hover{
     img{
-      -webkit-filter: brightness(110%);
-      filter: brightness(110%);
-      transform: scale(1.05);
+
+      filter: blur(5px);
+      // -webkit-filter: brightness(110%);
+      // filter: brightness(110%);
+      // transform: scale(1.05);
     }
   }
 }

@@ -1,17 +1,31 @@
 Object.assign(Templates.prototype, { startsida(){ let movies = ""; for(let i = 0; i
-< Templates.movies.length; i++){ movies +=` <div class="card col-lg-4 mt-2 border-0">
-  <a href="/film/${Templates.movies[i].title.replace(/ /g,'_')}" class="pop" data-toggle="tooltip" data-placement="right" title="Mer information"><img class="d-flex mr-3 img-fluid " src="/imgs/${Templates.movies[i].images[2]}" alt="Generic placeholder image"></a>
-  <div class="card-body">
-    <h3 class="mt-0">${Templates.movies[i].title}</h3>
-    <p><strong>${Templates.movies[i].genre} av ${Templates.movies[i].director}</strong></p>
-    <div class="col-lg-12 justify-content-between buttons mb-1">
-      <a class="btn btn-dark float-right mr-1 pop" href="/film/${Templates.movies[i].title.replace(/ /g,'_')}" role="button">Mer information</a>
-      <button type="button" class="btn btn-dark float-right mr-1">Boka</button>
-    </div>
-  </div>
-  </div>`; } return `
+< Templates.movies.length; i++){ movies += `
+  <div class="card card-inverse col-lg-4 mt-2 border-0 ">
+    <a href="/film/${Templates.movies[i].title.replace(/ /g,'_')}" class="pop" data-toggle="tooltip" data-placement="right">
+      <img class="d-flex mr-3 img-fluid " src="/imgs/${Templates.movies[i].images[2]}" alt="Generic placeholder image">
+      <div class="card-img-overlay card-info">
+        <h4>${Templates.movies[i].title}</h4>
+        <h5>${Templates.movies[i].genre} av ${Templates.movies[i].director}</h5>
+        <p>${Templates.movies[i].description}</p>
+      </div>
+    </a>
 
+      <div class="card-body">
 
+      </div>
+  </div>`;
+    }
+
+  $(document).on({
+    mouseenter: function(){
+      $(this).find('.card-info').show();
+    },
+    mouseleave: function(){
+      $(this).find('.card-info').hide();
+    }
+  }, '.card');
+
+  return `
 
   <div class="container-fluid">
     <div class="row">
