@@ -167,7 +167,6 @@ class Templates {
       '/film/Interstellar': 4,
       '/film/The_Incredibles': 5
     };
-    let movieNr = numbers[url];
-    this.getMovie(movieNr);
+    this.getMovie(numbers[url]);
   }
 }

@@ -69,11 +69,8 @@ class Spa {
 
     // Call the right method
     let methodName = urls[url] || '/';
-    //Because i moved all the methods to the Templates class
-    // we need to first point to that class & then call the method from.
-    if(!(methodName == '/')){
-      $('main').html( this.templates[methodName]() );
-    }
+    $('main').html( this.templates[methodName]() );
+    
     //Scroll to top when route has changed
     window.scrollTo(0, 0);
 
