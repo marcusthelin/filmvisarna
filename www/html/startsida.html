@@ -19,10 +19,10 @@ Object.assign(Templates.prototype, { startsida(){ let movies = ""; for(let i = 0
 
   $(document).on({
     mouseenter: function(){
-      $(this).find('.card-info').show();
+      $(this).find('.card-info').fadeIn(300);
     },
     mouseleave: function(){
-      $(this).find('.card-info').hide();
+      $(this).find('.card-info').fadeOut(300);
     }
   }, '.card');
 
