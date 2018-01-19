@@ -7,15 +7,16 @@ footer {
   height: auto;
   line-height: 30px;
   /* Vertically center the text there */
-  border-top: 1px solid #e0e0e0;
-  .color {
-    border-radius: 200px 5px;
-    padding: 10px 30px;
-  }
+
+  background-color: @dark-purple;
+  // .color {
+  //   border-radius: 200px 5px;
+  //   padding: 10px 30px;
+  // }
   p {
     line-height: 1.6em;
     margin-bottom: 0;
-    color: #3f3f3f;
+    // color: #3f3f3f;
     // Icons
     .fa {
       line-height: 30px;
@@ -25,15 +26,16 @@ footer {
       text-align:center;
       text-decoration: none;
     }
-    .fa-facebook {
-      color: black;
-    }
-    .fa-envelope, .fa-address-card, .fa-phone  {
-      color: black;
-    }
+    // .fa-facebook {
+    //   color: black;
+    // }
+    // .fa-envelope, .fa-address-card, .fa-phone  {
+    //   color: black;
+    // }
     // Links in footer
-    a, a:hover {
-      color: #3f3f3f;
+    a.text-light:hover {
+      color: @somecolor !important;
+
     }
   }
   // Set hight for boxes
