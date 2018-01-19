@@ -63,17 +63,18 @@ class Spa {
       '/film/Call_Me_by_Your_Name': 'filmInfo',
       '/film/Star_Wars:_The_Last_Jedi': 'filmInfo',
       '/film/Thor:_Ragnarok': 'filmInfo',
-      '/film/Intersteller': 'filmInfo',
+      '/film/Interstellar': 'filmInfo',
       '/film/The_Incredibles': 'filmInfo'
     };
 
     // Call the right method
     let methodName = urls[url] || '/';
-    //Because i moved all the methods to the Templates class
-    // we need to first point to that class & then call the method from.
-    if(!(methodName == '/')){
-      $('main').html( this.templates[methodName]() );
-    }
+    $('main').html( this.templates[methodName]() );
+    
+    //Scroll to top when route has changed
     window.scrollTo(0, 0);
+
+    //Hide collapse navbar (hamburgerbar)
+    $('.navbar-collapse').collapse('hide');
   }
 }

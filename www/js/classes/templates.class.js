@@ -15,7 +15,7 @@ class Templates {
 	  	<ul class="nav navbar-nav flex-row justify-content-between ml-auto log">
 			  <li class="dropdown order-1">
 			    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
-			    <ul class="dropdown-menu dropdown-menu-right mt-1">
+			    <ul class="dropdown-menu dropdown-menu-right mt-1 bg-dark text-white">
 			      <li class="p-3">
 			        <form class="px-2 py-2">
 			          <div class="form-group">
@@ -29,8 +29,8 @@ class Templates {
 			          <button type="submit" class="btn btn-primary">Logga in</button>
 			        </form>
 			        <div class="dropdown-divider"></div>
-			        <a class="dropdown-item skapa" href="#">Skapa konto</a>
-			        <a class="dropdown-item" href="#">Glömt ditt lösenord?</a>
+			        <a class="dropdown-item skapa text-white" href="#">Skapa konto</a>
+			        <a class="dropdown-item text-white" href="#">Glömt ditt lösenord?</a>
 			      </li>
 			    </ul>
 			  </li>
@@ -136,26 +136,25 @@ class Templates {
   }
 
   getMovie(nr){
-    let that = this;
-    JSON._load('movies.json').then(function(movie){
-      new Movie(
-          movie[nr].images,
-          movie[nr].youtubeTrailers,
-          movie[nr].title,
-          movie[nr].description,
-          [`<b>Land:</b> ${movie[nr].productionCountries.join(', ')}`,
-          `<b>Produktionsår:</b> ${movie[nr].productionYear}`,
-          `<b>Längd</b> ${movie[nr].length}`,
-          `<b>Genre:</b> ${movie[nr].genre}`,
-          `<b>Distributör:</b> ${movie[nr].distributor}`,
-          `<b>Språk:</b> ${movie[nr].language}`,
-          `<b>Textning:</b> ${movie[nr].subtitles}`,
-          `<b>Regissör:</b> ${movie[nr].director}`,
-          `<b>Skådespelare:</b> ${movie[nr].actors.join(', ')}`],
-          movie[nr].reviews,
-          that
-      );
-    });
+		let movie = Templates.movies[nr];
+    new Movie(
+        movie.images,
+        movie.youtubeTrailers,
+				movie.imdblinks,
+        movie.title,
+        movie.description,
+        [`<b>Land:</b> ${movie.productionCountries.join(', ')}`,
+        `<b>Produktionsår:</b> ${movie.productionYear}`,
+        `<b>Längd</b> ${movie.length}`,
+        `<b>Genre:</b> ${movie.genre}`,
+        `<b>Distributör:</b> ${movie.distributor}`,
+        `<b>Språk:</b> ${movie.language}`,
+        `<b>Textning:</b> ${movie.subtitles}`,
+        `<b>Regissör:</b> ${movie.director}`,
+        `<b>Skådespelare:</b> ${movie.actors.join(', ')}`],
+        movie.reviews,
+				this
+    );
   }
 
   filmInfo(){
@@ -165,10 +164,9 @@ class Templates {
       '/film/Call_Me_by_Your_Name': 1,
       '/film/Star_Wars:_The_Last_Jedi': 2,
       '/film/Thor:_Ragnarok': 3,
-      '/film/Intersteller': 4,
+      '/film/Interstellar': 4,
       '/film/The_Incredibles': 5
     };
-    let movieNr = numbers[url];
-    this.getMovie(movieNr);
+    this.getMovie(numbers[url]);
   }
 }

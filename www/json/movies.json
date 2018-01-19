@@ -17,13 +17,17 @@
       "Kristen Wiig",
       "Kate Mara"
     ],
-    "description": "Astronauten Mark Watney blir kvarlämnad på Mars av resterande besättningen som tror att han omkommit efter en kraftig storm i rymden. Ensam kvar måste han med sin intelligens och styrka hitta ett sätt att överleva på den lilla mat han har och signalera till jorden att han lever. Miljontals mil bort jobbar NASAs forskare dygnet runt med att hitta ett sätt att få hem honom och besättningen planerar samtidigt en livsfarlig räddningsaktion. Världens befolkning är alla engagerade i Watneys öde och tillsammans är vi starka.", 
+    "description": "Astronauten Mark Watney blir kvarlämnad på Mars av resterande besättningen som tror att han omkommit efter en kraftig storm i rymden. Ensam kvar måste han med sin intelligens och styrka hitta ett sätt att överleva på den lilla mat han har och signalera till jorden att han lever. Miljontals mil bort jobbar NASAs forskare dygnet runt med att hitta ett sätt att få hem honom och besättningen planerar samtidigt en livsfarlig räddningsaktion. Världens befolkning är alla engagerade i Watneys öde och tillsammans är vi starka.",
     "images": [
        "the-martian-poster1.jpg",
-       "the-martian-poster2.jpg"
+       "the-martian-poster2.jpg",
+       "the-martian-poster3.jpg"
     ],
     "youtubeTrailers": [
       "ej3ioOneTy8"
+    ],
+    "imdblinks": [
+      "tt3659388"
     ],
     "reviews": [
       {
@@ -47,7 +51,7 @@
     ]
   },
   {
-    "title": "Call me by your name",
+    "title": "Call Me by Your Name",
     "productionCountries": [
       "Italien",
       "USA"
@@ -67,11 +71,15 @@
     "description": "Filmen utspelas i norra Italien sommaren 1983. En ung amerikansk-italienare blir förälskad i en amerikansk student som kommer för att studera och bo hos hans familj.</p><p>Tillsammans upplever de en oförglömlig sommar - full av musik, mat och kärlek - som för evigt kommer att förändra dem.",
     "images": [
        "call-me-poster1.jpg",
-       "call-me-poster2.jpg"
+       "call-me-poster2.jpg",
+       "call-me-poster3.jpg"
     ],
     "youtubeTrailers": [
       "Z9AYPxH5NTM"
-    ], 
+    ],
+    "imdblinks":[
+      "tt5726616"
+    ],
     "reviews": [
       {
         "source": "Sydsvenskan",
@@ -114,11 +122,15 @@
     "description": "Den episka Skywalker-sagan fortsätter när hjältarna från The Force Awakens ansluter sig till de galaktiska legenderna i ett storslaget äventyr som avslöjar Kraftens uråldriga mysterier och chockerande sanningar från det förflutna.",
     "images": [
        "last-jedi-poster1.jpg",
-       "last-jedi-poster2.jpg"
+       "last-jedi-poster2.jpg",
+       "last-jedi-poster3.jpg"
     ],
     "youtubeTrailers": [
       "Q0CbN8sfihY"
-    ], 
+    ],
+    "imdblinks":[
+      "tt2527336"
+    ],
     "reviews": [
       {
         "source": "Aftonbladet",
@@ -161,11 +173,15 @@
     "description": "I Thor: Ragnarök hålls Thor fängslad på andra sidan universum utan sin mäktiga hammare. Han för en kamp mot tiden för att ta sig tillbaka till Asgård för att stoppa Ragnarök – förstörelsen av hans hemvärld och slutet för hela den Asgårdska civilisationen. Thor ställs inför ett nytt hot, den mäktiga och hänsynslösa Hela. Men innan dess måsta han överleva en dödlig gladiatortävling där han tvingas kämpa mot sin forna bundsförvant och vän från Avengers – Hulken.",
     "images": [
        "thor-ragnarok-poster1.jpg",
-       "thor-ragnarok-poster2.jpg"
+       "thor-ragnarok-poster2.jpg",
+       "thor-ragnarok-poster3.jpg"
     ],
     "youtubeTrailers": [
       "ue80QwXMRHg"
-    ], 
+    ],
+    "imdblinks":[
+      "tt3501632"
+    ],
     "reviews": [
       {
         "source": "Sydsvenskan",
@@ -208,11 +224,15 @@
     "description": "'Interstellar'  tar oss till en nära framtid där jordens tillgångar börjar ta slut. En grupp forskare får ett avgörande uppdrag - att resa till andra stjärnsystem och utforska om vi har en framtid i rymden.",
     "images": [
        "intersteller-poster1.jpg",
-       "intersteller-poster2.jpg"
+       "intersteller-poster2.jpg",
+       "intersteller-poster3.jpg"
     ],
     "youtubeTrailers": [
       "zSWdZVtXT7E"
-    ], 
+    ],
+    "imdblinks":[
+      "tt0816692"
+    ],
     "reviews": [
       {
         "source": "SVT Nyheter",
@@ -252,11 +272,15 @@
     "description": "Superhjälten Mr. Incredible bildar familj med Elastigirl och beslutar sig för att leva ett helt vanligt liv, men blir efterhand alltmer frusterad i sin Svenssontillvaro och antar därför ett tvivelaktigt superhjälteuppdrag.",
     "images": [
        "incredibles-poster1.jpg",
-       "incredibles-poster2.jpg"
+       "incredibles-poster2.jpg",
+       "incredibles-poster3.jpg"
     ],
     "youtubeTrailers": [
       "eZbzbC9285I"
-    ], 
+    ],
+    "imdblinks":[
+      "tt0317705"
+    ],
     "reviews": [
       {
         "source": "Moviezine",
