@@ -48,7 +48,15 @@ main{
     padding-right: 0 !important;
   }
 
-  .card{
+  .current-movies{
+    &:hover{
+      img{
+        filter: blur(5px);
+        // -webkit-filter: brightness(110%);
+        // filter: brightness(110%);
+        // transform: scale(1.05);
+      }
+    }
     img {
     -webkit-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
@@ -56,6 +64,7 @@ main{
     &:hover{
       cursor: pointer;
       }
+
     }
     .card-info{
       display: none;
@@ -71,16 +80,6 @@ main{
       p{
         font-size: 0.8rem;
       }
-    }
-  }
-
-  .card:hover{
-    img{
-
-      filter: blur(5px);
-      // -webkit-filter: brightness(110%);
-      // filter: brightness(110%);
-      // transform: scale(1.05);
     }
   }
 }
