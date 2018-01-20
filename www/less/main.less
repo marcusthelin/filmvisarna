@@ -51,6 +51,7 @@ main{
   .current-movies, .coming-movies{
     &:hover{
       img{
+        -webkit-filter: blur(5px);
         filter: blur(5px);
         opacity: 0.5;
         transform: scale(0.99);
@@ -79,7 +80,7 @@ main{
       padding: 50px;
       p,h4,h6{
         color: black;
-        
+
       }
       p{
         font-size: 0.8rem;
