@@ -7,7 +7,7 @@ Object.assign(Templates.prototype, { startsida(){
       <img class="d-flex mr-3 img-fluid " src="/imgs/${Templates.movies[i].images[2]}" alt="Generic placeholder image">
       <div class="card-img-overlay card-info">
         <h4>${Templates.movies[i].title}</h4>
-        <h5>${Templates.movies[i].genre} av ${Templates.movies[i].director}</h5>
+        <h6>${Templates.movies[i].genre} av ${Templates.movies[i].director}</h6>
         <p>${Templates.movies[i].description}</p>
         <p>Medverkande: <strong>${Templates.movies[i].actors.join(', ')}</strong></p>
       </div>
