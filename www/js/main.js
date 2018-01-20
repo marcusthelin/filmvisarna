@@ -5,3 +5,5 @@ JSON._load('movies.json').then(function(movie){
   // Templates.comingMovies = comingMovies;
   spa = new Spa();
 });
+
+$(document).on('click', 'main', () => $('.navbar-collapse').collapse('hide'));
