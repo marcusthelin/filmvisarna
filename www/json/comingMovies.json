@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Black Panther",
+    "genre": "Action | Äventyr | Sci-Fi",
+    "director": "Ryan Coogler",
+    "actors": [
+      "Chadwick Boseman",
+      "Michael B. Jordan",
+      "Lupita Nyong'o"
+    ],
+    "images": [
+       "black-panther-poster.jpg"
+    ]
+  },
+  {
+    "title": "Solo: A Star Wars Story",
+    "genre": "Action | Äventyr | Sci-Fi",
+    "director": "Ron Howard",
+    "actors": [
+      "Emilia Clarke",
+      "Alden Ehrenreich",
+       "Woody Harrelson",
+       "Donald Glover"
+    ],
+    "images": [
+       "solo-poster.jpg"
+    ]
+  },
+  {
+    "title": "Tomb Raider",
+    "genre": "Action | Äventyr",
+    "director": "Roar Uthaug",
+    "actors": [
+      "Alicia Vikander",
+      "Hannah John-Kamen",
+       "Walton Goggins"
+    ],
+    "images": [
+       "tomb-raider-poster.jpg"
+    ]
+  }
+]

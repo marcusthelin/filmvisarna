@@ -19,8 +19,14 @@ Object.assign(Templates.prototype, { startsida(){
     let comingMovies = "";
     for(let i = 0; i < 3; i++){
       comingMovies += `
-      <div class="card col-md-4 border-0 mt-2">
-        <img class="card-img-top" src="/imgs/the-martian-poster1.jpg" alt="Card image cap">
+      <div class="card col-md-4 border-0 mt-2 coming-movies card card-inverse">
+        <img class="card-img-top" src="/imgs/solo-poster.jpg" alt="Card image cap">
+        <div class="card-img-overlay card-info">
+          <h4>${Templates.movies[i].title}</h4>
+          <h5>${Templates.movies[i].genre} av ${Templates.movies[i].director}</h5>
+          <p>Medverkande: <strong>${Templates.movies[i].actors.join(', ')}</strong></p>
+          <h4><b>Kommer under 2018</b></h4>
+        </div>
       </div>
       `;
     }
@@ -55,7 +61,7 @@ Object.assign(Templates.prototype, { startsida(){
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container lala">
     <h2 class="mt-5 mb-5">Kommande filmer på bio</h2>
     <div class="col-md-12">
       <div class="row mt-2">
