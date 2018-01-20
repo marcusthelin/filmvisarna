@@ -1,6 +1,8 @@
-Object.assign(Templates.prototype, { startsida(){ let movies = ""; for(let i = 0; i
-< Templates.movies.length; i++){ movies += `
-  <div class="current-movies card card-inverse col-lg-4 mt-2 border-0 ">
+Object.assign(Templates.prototype, { startsida(){
+
+  let movies = "";
+  for(let i = 0; i< Templates.movies.length; i++){
+    movies += `<div class="current-movies card card-inverse col-lg-4 mt-2 border-0 ">
     <a href="/film/${Templates.movies[i].title.replace(/ /g,'_')}" class="pop" data-toggle="tooltip" data-placement="right">
       <img class="d-flex mr-3 img-fluid " src="/imgs/${Templates.movies[i].images[2]}" alt="Generic placeholder image">
       <div class="card-img-overlay card-info">
@@ -10,11 +12,17 @@ Object.assign(Templates.prototype, { startsida(){ let movies = ""; for(let i = 0
         <p>Medverkande: <strong>${Templates.movies[i].actors.join(', ')}</strong></p>
       </div>
     </a>
+  </div>
+  `;
+    }
 
-      <div class="card-body">
-
+    let comingMovies = "";
+    for(let i = 0; i < 3; i++){
+      comingMovies += `
+      <div class="card col-md-4 border-0 mt-2">
+        <img class="card-img-top" src="/imgs/the-martian-poster1.jpg" alt="Card image cap">
       </div>
-  </div>`;
+      `;
     }
 
   $(document).on({
@@ -51,15 +59,7 @@ Object.assign(Templates.prototype, { startsida(){ let movies = ""; for(let i = 0
     <h2 class="mt-5 mb-5">Kommande filmer på bio</h2>
     <div class="col-md-12">
       <div class="row mt-2">
-        <div class="card col-md-4 border-0 mt-2">
-          <img class="card-img-top" src="/imgs/the-martian-poster1.jpg" alt="Card image cap">
-        </div>
-        <div class="card col-md-4 border-0 mt-2">
-          <img class="card-img-top" src="/imgs/the-martian-poster1.jpg" alt="Card image cap">
-        </div>
-        <div class="card col-md-4 border-0 mt-2">
-          <img class="card-img-top" src="/imgs/the-martian-poster1.jpg" alt="Card image cap">
-        </div>
+        ${comingMovies}
       </div>
     </div>
 
