@@ -61,7 +61,9 @@ class PopStateHandler {
       '/film/Star_Wars:_The_Last_Jedi': 'filmInfo',
       '/film/Thor:_Ragnarok': 'filmInfo',
       '/film/Interstellar': 'filmInfo',
-      '/film/The_Incredibles': 'filmInfo'
+      '/film/The_Incredibles': 'filmInfo',
+      '/film/Downsizing': 'filmInfo',
+      '/film/Three_Billboards_Outside_Ebbing,_Missouri': 'filmInfo'
     };
 
     // Call the right method
@@ -90,7 +92,9 @@ class PopStateHandler {
       '/film/Star_Wars:_The_Last_Jedi': 2,
       '/film/Thor:_Ragnarok': 3,
       '/film/Interstellar': 4,
-      '/film/The_Incredibles': 5
+      '/film/The_Incredibles': 5,
+      '/film/Downsizing': 6,
+      '/film/Three_Billboards_Outside_Ebbing,_Missouri': 7
     };
     $('.karusell').empty();
     $('main').empty();
@@ -114,5 +118,5 @@ class PopStateHandler {
     $('main').empty();
     this.app.filmer.render('main');
   }
-  
+
 }

@@ -6,7 +6,7 @@ Object.assign(Movie.prototype, { template2(){ return `
     <div class="card-img-overlay card-info">
       <h4>${this.title}</h4>
       <h6>${this.genre} av ${this.director}</h6>
-      <p>${this.description}</p>
+      <p>${this.descriptionShort}</p>
       <p>Medverkande: <strong>${this.actors.join(', ')}</strong></p>
     </div>
   </a>
