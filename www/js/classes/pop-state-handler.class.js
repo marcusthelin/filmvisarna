@@ -112,9 +112,9 @@ class PopStateHandler {
   calendar(){
     $('.karusell').empty();
     $('main').empty();
-
+    this.app.startsidan.render('.karusell', '2');
     this.app.filmer.render('main');
 
   }
-  
+
 }

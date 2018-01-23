@@ -2,7 +2,7 @@ Object.assign(Filmer.prototype, { template(){ return `
 
 <div class="row">
 	<div class="col-12">
-    <h2>Idag</h2>
+    <h2 class="mb-2">Idag</h2>
 		<ul class="list-group listor">
         ${this.todayMovies.render()}
     </ul>
@@ -10,13 +10,20 @@ Object.assign(Filmer.prototype, { template(){ return `
 </div>
 <div class="row">
 	<div class="col-12">
-    <h2>Imorgon</h2>
+    <h2 class="mt-4 mb-2">Imorgon</h2>
 		<ul class="list-group listor">
         ${this.tomorrowMovies.render()}
     </ul>
 	</div>
 </div>
-
+<div class="row">
+	<div class="col-12">
+    <h2 class="mt-4 mb-2">${this.dayAfterTomorrow[0].date}</h2>
+		<ul class="list-group listor">
+        ${this.dayAfterTomorrow.render()}
+    </ul>
+	</div>
+</div>
 
 
 `;}});
