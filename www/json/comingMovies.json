@@ -1,6 +1,7 @@
 [
   {
     "title": "Black Panther",
+    "releasedate": "14 Februari, 2018",
     "genre": "Action | Äventyr | Sci-Fi",
     "director": "Ryan Coogler",
     "actors": [
@@ -14,6 +15,7 @@
   },
   {
     "title": "Solo: A Star Wars Story",
+    "releasedate": "23 Maj, 2018",
     "genre": "Action | Äventyr | Sci-Fi",
     "director": "Ron Howard",
     "actors": [
@@ -28,6 +30,7 @@
   },
   {
     "title": "Tomb Raider",
+    "releasedate": "16 Mars, 2018",
     "genre": "Action | Äventyr",
     "director": "Roar Uthaug",
     "actors": [

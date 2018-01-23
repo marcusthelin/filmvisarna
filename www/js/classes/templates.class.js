@@ -158,19 +158,19 @@ class Templates {
     );
   }
 
-	// getComingMovie(nr){
-	// 	let comingMovie = Templates.comingMovies[nr];
-  //   new comingMovie(
-  //       comingMovie.images,
-  //       comingMovie.title,
-  //       comingMovie.description,
-  //       [
-  //       `<b>Genre:</b> ${comingMovie.genre}`,
-  //       `<b>Regissör:</b> ${comingMovie.director}`,
-  //       `<b>Skådespelare:</b> ${comingMovie.actors.join(', ')}`],
-	// 			this
-  //   );
-  // }
+	getComingMovie(nr){
+		let comingMovie = Templates.comingMovies[nr];
+    new comingMovie(
+        comingMovie.images,
+        comingMovie.title,
+        comingMovie.releasedate,
+        [
+        `<b>Genre:</b> ${comingMovie.genre}`,
+        `<b>Regissör:</b> ${comingMovie.director}`,
+        `<b>Skådespelare:</b> ${comingMovie.actors.join(', ')}`],
+				this
+    );
+  }
 
   filmInfo(){
     let url = location.pathname;

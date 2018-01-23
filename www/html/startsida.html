@@ -17,15 +17,15 @@ Object.assign(Templates.prototype, { startsida(){
     }
 
     let comingMovies = "";
-    for(let i = 0; i < 3; i++){
+    for(let i = 0; i < Templates.comingMovies.length; i++){
       comingMovies += `
       <div class="card col-md-4 border-0 mt-2 coming-movies card card-inverse">
-        <img class="card-img-top" src="/imgs/solo-poster.jpg" alt="Card image cap">
+        <img class="card-img-top" src="/imgs/${Templates.comingMovies[i].images}" alt="Card image cap">
         <div class="card-img-overlay card-info">
-          <h4>${Templates.movies[i].title}</h4>
-          <h5>${Templates.movies[i].genre} av ${Templates.movies[i].director}</h5>
-          <p>Medverkande: <strong>${Templates.movies[i].actors.join(', ')}</strong></p>
-          <h4><b>Kommer under 2018</b></h4>
+          <h4>${Templates.comingMovies[i].title}</h4>
+          <h5>${Templates.comingMovies[i].genre}</h5> <h5>av ${Templates.comingMovies[i].director}</h5>
+          <p>Medverkande: <strong>${Templates.comingMovies[i].actors.join(', ')}</strong></p>
+          <h4><b>Kommer den ${Templates.comingMovies[i].releasedate}</b></h4>
         </div>
       </div>
       `;
