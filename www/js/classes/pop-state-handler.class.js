@@ -112,11 +112,8 @@ class PopStateHandler {
   calendar(){
     $('.karusell').empty();
     $('main').empty();
-   /* for(let obj of this.app.showtime){
-      obj.todayMovies = '';
-      console.log(obj);
-    }*/
-    this.app.showtime.render('main');
+
+    this.app.filmer.render('main');
 
   }
   
