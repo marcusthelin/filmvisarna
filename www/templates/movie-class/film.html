@@ -11,8 +11,9 @@ Object.assign(Movie.prototype, { template3(){ return `
           <img class="d-block w-100" src="/imgs/${this.images[1]}" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <!--Måste bestämma storleken på bilderna-->
-          <iframe width="690" height="431" src="https://www.youtube.com/embed/${this.youtubeTrailers}" frameborder="0" encrypted-media="allowfullscreen"></iframe>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${this.youtubeTrailers}" frameborder="0" encrypted-media="allowfullscreen"></iframe>
+          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
