@@ -55,7 +55,7 @@ class PopStateHandler {
       '/': 'startsidan',
       '/biljetter': 'biljetter',
       '/om_oss': 'OmOss',
-      '/filmer': 'filmer',
+      '/filmer': 'calendar',
       '/film/The_Martian': 'filmInfo',
       '/film/Call_Me_by_Your_Name': 'filmInfo',
       '/film/Star_Wars:_The_Last_Jedi': 'filmInfo',
@@ -113,10 +113,12 @@ class PopStateHandler {
     this.app.omOss.render('main');
   }
 
-  filmer(){
+  calendar(){
     $('.karusell').empty();
     $('main').empty();
+    this.app.startsidan.render('.karusell', '2');
     this.app.filmer.render('main');
+
   }
 
 }

@@ -1,23 +1,29 @@
 Object.assign(Filmer.prototype, { template(){ return `
 
-
 <div class="row">
 	<div class="col-12">
-      <h2>2018-01-19</h2>
-  		<ul class="list-group">
-          <li class="list-group-item p-4">
-            <h3 class="d-inline-block pr-4">18:40</h3>
-            <a href="https://placeholder.com"><img src="http://via.placeholder.com/80x100"></a>
-            <div class="d-inline-block pl-3">
-              <a href="#"><h5 class="mb-0"><b>The Martian</b></h5></a>
-            	<p>Stora Salongen</p>
-            </div>
-            <div class="float-right mt-4">
-            	<a class="btn btn-secondary" href="#" role="button">Mer information</a>
-            </div>
-          </li>
-      </ul>
+    <h2 class="mb-2">Idag</h2>
+		<ul class="list-group listor">
+        ${this.todayMovies.render()}
+    </ul>
 	</div>
 </div>
+<div class="row">
+	<div class="col-12">
+    <h2 class="mt-4 mb-2">Imorgon</h2>
+		<ul class="list-group listor">
+        ${this.tomorrowMovies.render()}
+    </ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12">
+    <h2 class="mt-4 mb-2">${this.dayAfterTomorrow[0].date}</h2>
+		<ul class="list-group listor">
+        ${this.dayAfterTomorrow.render()}
+    </ul>
+	</div>
+</div>
+
 
 `;}});
