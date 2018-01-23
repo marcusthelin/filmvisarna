@@ -17,14 +17,42 @@ html {
   min-height: 100%;
 }
 body {
-  padding-top: 56px;
-}
-body .karusell {
-  padding-left: 0;
-  padding-right: 0;
+  background-color: #000;
 }
 body .btn {
   cursor: pointer;
+}
+body .carousel-caption {
+  top: auto;
+  bottom: 10px;
+  right: 900px;
+}
+body .first-carousel-caption {
+  top: auto;
+  bottom: 20px;
+  right: 700px;
+  color: #fff;
+}
+body .carousel-caption-avatar {
+  top: auto;
+  bottom: 10px;
+  right: 950px;
+}
+body .film-title {
+  font-size: 50px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+}
+body .film-title-color {
+  color: #000;
+}
+body .carousel-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 43px;
+}
+body .empty-space {
+  padding-top: 70px;
 }
 main .current-movies .card-info,
 main .coming-movies .card-info {
