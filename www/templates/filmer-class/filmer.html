@@ -1,0 +1,22 @@
+Object.assign(Filmer.prototype, { template(){ return `
+
+<div class="row">
+	<div class="col-12">
+    <h2>Idag</h2>
+		<ul class="list-group listor">
+        ${this.todayMovies.render()}
+    </ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12">
+    <h2>Imorgon</h2>
+		<ul class="list-group listor">
+        ${this.tomorrowMovies.render()}
+    </ul>
+	</div>
+</div>
+
+
+
+`;}});
