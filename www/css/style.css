@@ -22,36 +22,40 @@ body {
 body .btn {
   cursor: pointer;
 }
-body .carousel-caption {
+.karusell .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.karusell .carousel-caption {
   top: auto;
   bottom: 10px;
   right: 900px;
 }
-body .first-carousel-caption {
+.karusell .first-carousel-caption {
   top: auto;
   bottom: 20px;
   right: 700px;
   color: #fff;
 }
-body .carousel-caption-avatar {
+.karusell .carousel-caption-avatar {
   top: auto;
   bottom: 10px;
   right: 950px;
 }
-body .film-title {
+.karusell .film-title {
   font-size: 50px;
   font-family: 'Exo', sans-serif;
   font-weight: 900;
 }
-body .film-title-color {
+.karusell .film-title-color {
   color: #000;
 }
-body .carousel-padding {
+.karusell .carousel-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-top: 43px;
 }
-body .empty-space {
+.karusell .empty-space {
   padding-top: 70px;
 }
 main .current-movies .card-info,
