@@ -12,6 +12,9 @@ class App {
 
     JSON._load('showtime.json').then((showtime)=>{
       this.showtime = showtime;
+      for(let obj of this.showtime){
+        obj.app = this;
+      }
       console.log(this.showtime);
     });
 
