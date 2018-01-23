@@ -1,27 +1,71 @@
-header nav > .container > a {
-  color: white;
-}
-header nav > .container > a:hover,
-header nav > .container > a:active,
-header nav > .container > a:focus {
-  color: white;
-}
 header .dropdown-item:hover {
   background-color: #66717b !important;
+}
+header .navbar-brand {
+  width: 20%;
+}
+header nav {
+  background-color: #2b0258;
+}
+header nav a {
+  color: white;
+}
+header nav a:hover,
+header nav a:active,
+header nav a:focus {
+  color: #f2b600;
 }
 html {
   position: relative;
   min-height: 100%;
 }
 body {
-  padding-top: 56px;
-}
-body .karusell {
-  padding-left: 0;
-  padding-right: 0;
+  background-color: #000;
 }
 body .btn {
   cursor: pointer;
+}
+.karusell .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.karusell .carousel-caption {
+  top: auto;
+  bottom: 10px;
+  right: 900px;
+}
+.karusell .first-carousel-caption {
+  top: auto;
+  bottom: 20px;
+  right: 700px;
+  color: #fff;
+}
+.karusell .carousel-caption-avatar {
+  top: auto;
+  bottom: 10px;
+  right: 950px;
+}
+.karusell .film-title {
+  font-size: 50px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+}
+.karusell .film-title-color {
+  color: #000;
+}
+.karusell .carousel-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 43px;
+}
+.karusell .empty-space {
+  padding-top: 70px;
+}
+main .card {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+main .empty-space {
+  padding-top: 70px;
 }
 main .current-movies .card-info,
 main .coming-movies .card-info {
@@ -34,7 +78,7 @@ main .current-movies .card-info h4,
 main .coming-movies .card-info h4,
 main .current-movies .card-info h6,
 main .coming-movies .card-info h6 {
-  color: black;
+  color: white;
 }
 main .current-movies .card-info p,
 main .coming-movies .card-info p {
@@ -60,6 +104,14 @@ main .current-movies img {
 main .fa-star {
   color: #e6e629;
 }
+main p,
+main h5,
+main h6,
+main h2,
+main h3,
+main h4 {
+  color: white;
+}
 footer {
   position: absolute;
   bottom: 0;
@@ -68,16 +120,11 @@ footer {
   height: auto;
   line-height: 30px;
   /* Vertically center the text there */
-  border-top: 1px solid #e0e0e0;
-}
-footer .color {
-  border-radius: 200px 5px;
-  padding: 10px 30px;
+  background-color: #2b0258;
 }
 footer p {
   line-height: 1.6em;
   margin-bottom: 0;
-  color: #3f3f3f;
 }
 footer p .fa {
   line-height: 30px;
@@ -87,18 +134,37 @@ footer p .fa {
   text-align: center;
   text-decoration: none;
 }
-footer p .fa-facebook {
-  color: black;
-}
-footer p .fa-envelope,
-footer p .fa-address-card,
-footer p .fa-phone {
-  color: black;
-}
-footer p a,
-footer p a:hover {
-  color: #3f3f3f;
+footer p a.text-light:hover {
+  color: #f2b600 !important;
 }
 footer .myheight {
   height: 100px;
+}
+#accordion {
+  background-color: #ffffff;
+  border-radius: 2%;
+}
+#accordion a {
+  color: black;
+}
+#accordion a:hover {
+  color: #f2b600;
+  text-decoration: none;
+}
+.movie-btn button:hover {
+  color: #f2b600;
+}
+.blockquote a {
+  text-decoration: none;
+  color: black;
+}
+.film-produkt-info li {
+  list-style: none;
+}
+.imdb-info a {
+  text-decoration: none;
+  color: white;
+}
+.imdb-info a:hover {
+  color: #f2b600;
 }

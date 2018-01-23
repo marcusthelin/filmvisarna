@@ -44,5 +44,20 @@
        "tomb-raider-poster.jpg"
     ],
     "⚙": "Movie"
+  },
+  {
+    "title": "Deadpool 2",
+    "releasedate": "18 Maj, 2018",
+    "genre": "Action | Äventyr | Komedi",
+    "director": "David Leitch",
+    "actors": [
+      "Ryan Reynolds",
+      "Morena Baccarin",
+       "Josh Brolin"
+    ],
+    "images": [
+       "deadpool2-poster.jpg"
+    ],
+    "⚙": "Movie"
   }
 ]

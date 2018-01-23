@@ -3,24 +3,70 @@ html {
   min-height: 100%;
 }
 body{
-  padding-top: 56px;
-  .karusell{
-    padding-left: 0;
-    padding-right: 0;
-  }
+  background-color: #000;
   .btn{
     cursor: pointer;
   }
 }
 
+.karusell{
+  .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .carousel-caption {
+    top: auto;
+    bottom: 10px;
+    right: 900px;
+  }
+  .first-carousel-caption {
+    top: auto;
+    bottom: 20px;
+    right: 700px;
+    color: #fff;
+  }
+
+  .carousel-caption-avatar {
+    top: auto;
+    bottom: 10px;
+    right: 950px;
+  }
+
+  .film-title {
+    font-size: 50px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 900;
+  }
+
+  .film-title-color {
+    color: #000;
+  }
+
+  .carousel-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 43px;
+  }
+
+  .empty-space {
+    padding-top: 70px;
+  }
+}
+
 
 main{
+  .card{
+    background-color: rgba(0,0,0,0.15);
+  }
+  .empty-space {
+    padding-top: 70px;
+  }
   .current-movies, .coming-movies{
     .card-info{
       display: none;
       padding: 50px;
       p,h4,h6{
-        color: black;
+        color: white;
       }
       p{
         font-size: 0.8rem;
@@ -41,6 +87,7 @@ main{
       }
     }
   }
+
   .current-movies{
     img{
       cursor: pointer;
@@ -49,6 +96,8 @@ main{
   .fa-star{
     color: #e6e629;
   }
-  
-}
+  p, h5, h6, h2, h3, h4{
+    color: white;
+  }
 
+}
