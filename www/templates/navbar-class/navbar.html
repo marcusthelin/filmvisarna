@@ -2,7 +2,8 @@ Object.assign(Navbar.prototype, { template(){ return `
 
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 		<div class="container">
-		  <img class="navbar-brand img-fluid" src="/imgs/filmvisarna-logo.png" alt="logo">
+		  <img class="navbar-brand img-fluid d-none d-lg-block" src="/imgs/filmvisarna-logo.png" alt="logo">
+			<img class="navbar-brand img-fluid d-lg-none" src="/imgs/fv-logo.png" alt="logo">
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
