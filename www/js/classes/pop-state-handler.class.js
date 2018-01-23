@@ -70,6 +70,8 @@ class PopStateHandler {
     // Set the right menu item active
     this.app.navbar.setActive(url);
 
+    //Scroll to top of page
+    window.scrollTo(1, 1);
   }
 
   startsidan(){
@@ -105,5 +107,5 @@ class PopStateHandler {
     $('main').empty();
     this.app.omOss.render('main');
   }
-  
+
 }
