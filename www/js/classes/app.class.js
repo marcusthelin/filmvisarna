@@ -2,27 +2,31 @@ class App {
 
   constructor(){
 
+    this.load();
+
+  }
+
+  async load(){
+
     // Tell jsonflex to recreate instances of the class Garment
     JSON._classes(Movie, Calendar);
 
-    // Load garments, add as a property, then start the app
-    JSON._load('movies.json').then((movies)=>{
-      this.movies = movies;
-    });
+    this.movies = await JSON._load('movies.json');
 
-    JSON._load('showtime.json').then((showtime)=>{
-      this.showtime = showtime;
-      for(let obj of this.showtime){
-        obj.app = this;
+    this.showtime = await JSON._load('showtime.json');
+
+    for(let i = 0; i < this.showtime.length; i++){
+      for(let x = 0; x < this.movies.length; x++){
+        if(this.showtime[i].film == this.movies[x].title){
+          this.showtime[i].image = this.movies[x].images[2];
+        }
       }
-      console.log(this.showtime);
-    });
+    }
 
+    this.comingMovies = await JSON._load('comingMovies.json');
 
-    JSON._load('comingMovies.json').then((comingMovies)=>{
-      this.comingMovies = comingMovies;
-      this.start();
-    });
+    this.start();
+
   }
 
   start(){

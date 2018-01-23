@@ -60,6 +60,10 @@ main .current-movies img {
 main .fa-star {
   color: #e6e629;
 }
+main .img-calendar {
+  width: 80px;
+  height: 100px;
+}
 footer {
   position: absolute;
   bottom: 0;
