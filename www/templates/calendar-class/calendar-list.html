@@ -5,7 +5,7 @@ Object.assign(Calendar.prototype, { template(){ return `
   <h3 class="d-inline-block pr-4">${this.time}</h3>
   <a class="pop" href="/film/${this.film.replace(/ /g,'_')}"><img class="img-calendar" src="/imgs/${this.image}"></a>
   <div class="d-inline-block pl-3">
-    <a href="#"><h5 class="mb-0"><b>${this.film}</b></h5></a>
+    <a href="/film/${this.film.replace(/ /g,'_')}"><h5 class="mb-0"><b>${this.film}</b></h5></a>
   	<p>${this.auditorium}</p>
   </div>
   <div class="float-right mt-4">
