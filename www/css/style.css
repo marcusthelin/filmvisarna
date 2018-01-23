@@ -112,6 +112,12 @@ main h3,
 main h4 {
   color: white;
 }
+main .comingMoviesHeader,
+main .currentMoviesHeader {
+  background-color: #110123;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
 footer {
   position: absolute;
   bottom: 0;
