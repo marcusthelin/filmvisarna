@@ -30,6 +30,7 @@ class App {
 
     // Create pages
     this.startsidan = new Startsidan(this);
+    this.filmer = new Filmer(this);
     this.biljetter = new Biljetter(this);
     this.omOss = new OmOss(this);
 
