@@ -3,12 +3,18 @@ class App {
   constructor(){
 
     // Tell jsonflex to recreate instances of the class Garment
-    JSON._classes(Movie);
+    JSON._classes(Movie, Calendar);
 
     // Load garments, add as a property, then start the app
     JSON._load('movies.json').then((movies)=>{
       this.movies = movies;
     });
+
+    JSON._load('showtime.json').then((showtime)=>{
+      this.showtime = showtime;
+      console.log(this.showtime);
+    });
+
 
     JSON._load('comingMovies.json').then((comingMovies)=>{
       this.comingMovies = comingMovies;
@@ -30,7 +36,7 @@ class App {
 
     // Create pages
     this.startsidan = new Startsidan(this);
-    this.filmer = new Filmer(this);
+    /*this.calendar = new Calendar(this);*/
     this.biljetter = new Biljetter(this);
     this.omOss = new OmOss(this);
 

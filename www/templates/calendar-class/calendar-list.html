@@ -1,0 +1,16 @@
+Object.assign(Calendar.prototype, { template2(){ return `
+
+
+<li class="list-group-item p-4">
+  <h3 class="d-inline-block pr-4">${this.time}</h3>
+  <a href="https://placeholder.com"><img src="http://via.placeholder.com/80x100"></a>
+  <div class="d-inline-block pl-3">
+    <a href="#"><h5 class="mb-0"><b>${this.film}</b></h5></a>
+  	<p>${this.auditorium}</p>
+  </div>
+  <div class="float-right mt-4">
+  	<a class="btn btn-secondary" href="#" role="button">Mer information</a>
+  </div>
+</li>
+
+`;}});
