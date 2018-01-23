@@ -9,6 +9,9 @@ header nav > .container > a:focus {
 header .dropdown-item:hover {
   background-color: #66717b !important;
 }
+header .navbar-brand {
+  width: 20%;
+}
 html {
   position: relative;
   min-height: 100%;
