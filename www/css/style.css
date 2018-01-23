@@ -111,11 +111,15 @@ main h2,
 main h3,
 main h4 {
   color: white;
+  font-family: 'PT Serif', serif;
 }
 main .comingMoviesHeader,
 main .currentMoviesHeader {
   background-color: #110123;
   text-align: center;
+}
+main .comingMoviesHeader h2,
+main .currentMoviesHeader h2 {
   font-family: 'Oswald', sans-serif;
 }
 footer {
