@@ -1,7 +1,7 @@
 Object.assign(Movie.prototype, { template3(){ return `
 
-<div class="row col-lg-12 mt-2 empty-space">
-  <div class="col-lg-8">
+<div class="row col-lg-12 mt-2 empty-space justify-content-center">
+  <div class="col-lg-10 ">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -35,7 +35,7 @@ Object.assign(Movie.prototype, { template3(){ return `
         <div class="card">
           <div class="card-header" role="tab" id="headingOne">
             <h5 class="mb-0">
-                  <a class="text-dark" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                  <a class="" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
                     Produktions Information
                   </a>
                 </h5>
@@ -60,7 +60,7 @@ Object.assign(Movie.prototype, { template3(){ return `
         <div class="card">
           <div class="card-header" role="tab" id="headingTwo">
             <h5 class="mb-0">
-                  <a class="collapsed text-dark" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
                     Recensioner
                   </a>
                 </h5>
@@ -96,11 +96,11 @@ Object.assign(Movie.prototype, { template3(){ return `
           </div>
         </div>
       </div>
-      <div class="mt-2">
-      <button type="button" class=" mt-2 btn btn-outline-info btn-lg btn-block">Boka</button>
+      <div class="mt-2 movie-btn">
+      <button type="button" class=" mt-2 btn btn-lg btn-block">Boka</button>
       </div>
       <div class="imdb-info text-center mt-2">
-        <span class="fa fa-imdb mr-3 imdb"></span><a target="blank" href="http://www.imdb.com/title/${this.imdblinks}">Filmen på imdb</span></a>
+        <a target="blank" href="http://www.imdb.com/title/${this.imdblinks}"><span class="fa fa-imdb mr-3 imdb"></span>Filmen på imdb</span></a>
       </div>
 
     </div>

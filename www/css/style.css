@@ -142,4 +142,29 @@ footer .myheight {
 }
 #accordion {
   background-color: #ffffff;
+  border-radius: 2%;
+}
+#accordion a {
+  color: black;
+}
+#accordion a:hover {
+  color: #f2b600;
+  text-decoration: none;
+}
+.movie-btn button:hover {
+  color: #f2b600;
+}
+.blockquote a {
+  text-decoration: none;
+  color: black;
+}
+.film-produkt-info li {
+  list-style: none;
+}
+.imdb-info a {
+  text-decoration: none;
+  color: white;
+}
+.imdb-info a:hover {
+  color: #f2b600;
 }
