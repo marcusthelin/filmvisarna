@@ -129,6 +129,9 @@ main .comingMoviesHeader h2,
 main .currentMoviesHeader h2 {
   font-family: 'Oswald', sans-serif;
 }
+main .carousel-control-prev {
+  bottom: 30px !important;
+}
 footer {
   position: absolute;
   bottom: 0;
