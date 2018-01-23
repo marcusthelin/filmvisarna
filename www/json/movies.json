@@ -48,7 +48,8 @@
         "stars": 3,
         "max": 5
       }
-    ]
+    ],
+    "⚙": "Movie"
   },
   {
     "title": "Call Me by Your Name",
@@ -99,7 +100,8 @@
         "stars": 4,
         "max": 5
       }
-    ]
+    ],
+    "⚙": "Movie"
   },
   {
     "title": "Star Wars: The Last Jedi",
@@ -150,7 +152,8 @@
         "stars": 3,
         "max": 5
       }
-    ]
+    ],
+    "⚙": "Movie"
   },
    {
     "title": "Thor: Ragnarok",
@@ -201,7 +204,8 @@
         "stars": 3,
         "max": 5
       }
-    ]
+    ],
+    "⚙": "Movie"
   },
   {
     "title": "Interstellar",
@@ -252,7 +256,8 @@
         "stars": 4,
         "max": 5
       }
-    ]
+    ],
+    "⚙": "Movie"
   },
   {
     "title": "The Incredibles",
@@ -300,6 +305,7 @@
         "stars": 4,
         "max": 5
       }
-    ]
+    ],
+    "⚙": "Movie"
   }
 ]

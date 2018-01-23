@@ -1,0 +1,13 @@
+Object.assign(Movie.prototype, { template(){ return `
+
+<div class="card col-md-4 border-0 mt-2 coming-movies card card-inverse">
+  <img class="card-img-top" src="/imgs/${this.images}" alt="Card image cap">
+  <div class="card-img-overlay card-info">
+    <h4>${this.title}</h4>
+    <h6>${this.genre} av ${this.director}</h6>
+    <p>Medverkande: <strong>${this.actors.join(', ')}</strong></p>
+    <h4><b>Kommer ${this.releasedate}</b></h4>
+  </div>
+</div>
+
+`;}});

@@ -1,0 +1,104 @@
+header nav > .container > a {
+  color: white;
+}
+header nav > .container > a:hover,
+header nav > .container > a:active,
+header nav > .container > a:focus {
+  color: white;
+}
+header .dropdown-item:hover {
+  background-color: #66717b !important;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: 56px;
+}
+body .karusell {
+  padding-left: 0;
+  padding-right: 0;
+}
+body .btn {
+  cursor: pointer;
+}
+main .current-movies .card-info,
+main .coming-movies .card-info {
+  display: none;
+  padding: 50px;
+}
+main .current-movies .card-info p,
+main .coming-movies .card-info p,
+main .current-movies .card-info h4,
+main .coming-movies .card-info h4,
+main .current-movies .card-info h6,
+main .coming-movies .card-info h6 {
+  color: black;
+}
+main .current-movies .card-info p,
+main .coming-movies .card-info p {
+  font-size: 0.8rem;
+}
+main .current-movies:hover .card-info,
+main .coming-movies:hover .card-info {
+  display: block;
+}
+main .current-movies:hover img,
+main .coming-movies:hover img {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  opacity: 0.5;
+  transform: scale(0.99);
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+main .current-movies img {
+  cursor: pointer;
+}
+main .fa-star {
+  color: #e6e629;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  line-height: 30px;
+  /* Vertically center the text there */
+  border-top: 1px solid #e0e0e0;
+}
+footer .color {
+  border-radius: 200px 5px;
+  padding: 10px 30px;
+}
+footer p {
+  line-height: 1.6em;
+  margin-bottom: 0;
+  color: #3f3f3f;
+}
+footer p .fa {
+  line-height: 30px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+footer p .fa-facebook {
+  color: black;
+}
+footer p .fa-envelope,
+footer p .fa-address-card,
+footer p .fa-phone {
+  color: black;
+}
+footer p a,
+footer p a:hover {
+  color: #3f3f3f;
+}
+footer .myheight {
+  height: 100px;
+}

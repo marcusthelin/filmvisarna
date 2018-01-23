@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Black Panther",
+    "releasedate": "14 Februari, 2018",
+    "genre": "Action | Äventyr | Sci-Fi",
+    "director": "Ryan Coogler",
+    "actors": [
+      "Chadwick Boseman",
+      "Michael B. Jordan",
+      "Lupita Nyong'o"
+    ],
+    "images": [
+       "black-panther-poster.jpg"
+    ],
+    "⚙": "Movie"
+  },
+  {
+    "title": "Solo: A Star Wars Story",
+    "releasedate": "23 Maj, 2018",
+    "genre": "Action | Äventyr | Sci-Fi",
+    "director": "Ron Howard",
+    "actors": [
+      "Emilia Clarke",
+      "Alden Ehrenreich",
+       "Woody Harrelson",
+       "Donald Glover"
+    ],
+    "images": [
+       "solo-poster.jpg"
+    ],
+    "⚙": "Movie"
+  },
+  {
+    "title": "Tomb Raider",
+    "releasedate": "16 Mars, 2018",
+    "genre": "Action | Äventyr",
+    "director": "Roar Uthaug",
+    "actors": [
+      "Alicia Vikander",
+      "Hannah John-Kamen",
+       "Walton Goggins"
+    ],
+    "images": [
+       "tomb-raider-poster.jpg"
+    ],
+    "⚙": "Movie"
+  }
+]

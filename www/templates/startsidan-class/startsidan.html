@@ -1,0 +1,17 @@
+Object.assign(Startsidan.prototype, { template(){ return `
+  <div class="row">
+    <h2 class="mt-5 mb-5">Kommande filmer</h2>
+    <div class="col-md-12">
+      <div class="row mt-2 kommande-filmer">
+        ${this.app.comingMovies.render()}
+      </div>
+    </div>
+
+    <h2 class="mt-5">Aktuella filmer</h2>
+    <div class="col-md-12">
+      <div class="row mt-2 aktuella-filmer">
+        ${this.app.movies.render('', '2')}
+      </div>
+    </div>
+  </div>
+`;}});

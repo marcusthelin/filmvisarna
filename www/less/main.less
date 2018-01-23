@@ -3,51 +3,52 @@ html {
   min-height: 100%;
 }
 body{
-  padding-top: 70px;
+  padding-top: 56px;
+  .karusell{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .btn{
+    cursor: pointer;
+  }
 }
 
 
 main{
-
-  button{
-    cursor: pointer;
-  }
-
-	.fa-star{
-		color: #e6e629;
-	}
-  .blockquote{
-    a{
-      text-decoration: none;
-      color: black;
+  .current-movies, .coming-movies{
+    .card-info{
+      display: none;
+      padding: 50px;
+      p,h4,h6{
+        color: black;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+    &:hover{
+      .card-info{
+        display: block;
+      }
+      img{
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        opacity: 0.5;
+        transform: scale(0.99);
+        cursor: pointer;
+       -webkit-transition: 0.1s ease-in-out;
+        transition: 0.1s ease-in-out;
+      }
     }
   }
-  .film-produkt-info{
-    li{
-      list-style: none;
+  .current-movies{
+    img{
+      cursor: pointer;
     }
   }
-  .media-img{
-    width: 20%;
-    height: 100%;
+  .fa-star{
+    color: #e6e629;
   }
-
-  .media-body{
-    height: 100%;
-    position: relative;
-
-    .buttons{
-      position: absolute;
-      overflow: hidden;
-      bottom: 0;
-      right: 0;
-    }
-  }
+  
 }
 
-.imdb-info{
-  a{
-    text-decoration: none;
-    color: black;
-  }
-}

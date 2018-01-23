@@ -1,12 +1,12 @@
-class Footer {
-  constructor() {
-    this.footerFix();
-    this.fixOnResize();
-  }
+class Footer extends Base{
+	constructor(){
+		super();
+		this.footerFix();
+		this.fixOnResize();
+	}
 
-
-  footerFix(){
-    let height = $('footer').height() + 40;
+	footerFix(){
+    let height = $('footer').outerHeight() + 190;
     $('body').css({marginBottom: height});
   }
 
@@ -17,7 +17,3 @@ class Footer {
     });
   }
 }
-
-$(document).ready(function() {
-  const fixMe = new Footer();
-});
