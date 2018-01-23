@@ -101,6 +101,9 @@ main .coming-movies:hover img {
 main .current-movies img {
   cursor: pointer;
 }
+main .coming-movies .card-info {
+  cursor: context-menu;
+}
 main .fa-star {
   color: #e6e629;
 }
