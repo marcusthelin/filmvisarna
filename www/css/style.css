@@ -140,3 +140,6 @@ footer p a.text-light:hover {
 footer .myheight {
   height: 100px;
 }
+#accordion {
+  background-color: #ffffff;
+}
