@@ -1,16 +1,19 @@
-header nav > .container > a {
-  color: white;
-}
-header nav > .container > a:hover,
-header nav > .container > a:active,
-header nav > .container > a:focus {
-  color: white;
-}
 header .dropdown-item:hover {
   background-color: #66717b !important;
 }
 header .navbar-brand {
   width: 20%;
+}
+header nav {
+  background-color: #2b0258;
+}
+header nav a {
+  color: white;
+}
+header nav a:hover,
+header nav a:active,
+header nav a:focus {
+  color: #f2b600;
 }
 html {
   position: relative;
@@ -61,6 +64,9 @@ body .btn {
 main .card {
   background-color: rgba(0, 0, 0, 0.15);
 }
+main .empty-space {
+  padding-top: 70px;
+}
 main .current-movies .card-info,
 main .coming-movies .card-info {
   display: none;
@@ -97,6 +103,14 @@ main .current-movies img {
 }
 main .fa-star {
   color: #e6e629;
+}
+main p,
+main h5,
+main h6,
+main h2,
+main h3,
+main h4 {
+  color: white;
 }
 footer {
   position: absolute;

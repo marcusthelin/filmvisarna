@@ -1,10 +1,10 @@
 header {
-  nav > .container > a {
-    color: white;
-    &:hover,&:active,&:focus{
-      color: white;
-    }
-  }
+  // nav > .container > a {
+  //   color: white;
+  //   &:hover,&:active,&:focus{
+  //     color: @somecolor;
+  //   }
+  // }
 
   .dropdown-item:hover{
     background-color: #66717b !important;
@@ -12,5 +12,15 @@ header {
 
   .navbar-brand{
     width: 20%;
+  }
+
+  nav{
+    background-color: @purplepueple;
+    a{
+      color: white;
+      &:hover,&:active,&:focus{
+        color: @somecolor;
+      }
+    }
   }
 }
