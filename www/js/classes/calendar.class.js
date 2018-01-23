@@ -1,8 +1,7 @@
 class Calendar extends Base {
-	constructor(app){
+	constructor(){
 		super();
-		this.app = app;
-		console.log(this.film);
+		this.render('main');
 	}
 
 }

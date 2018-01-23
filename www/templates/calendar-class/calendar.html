@@ -4,18 +4,11 @@ Object.assign(Calendar.prototype, { template(){ return `
 <div class="row">
 	<div class="col-12">
     <h2>Idag</h2>
-		<ul class="list-group">
-        ${this.app.showtime.render('', '2')}
+		<ul class="list-group listor">
+        ${this.render('', '2')}
     </ul>
 	</div>
 </div>
-<!-- <div class="row">
-  <div class="col-12">
-    <h2>Imorgon</h2>
-    <ul class="list-group">
-        ${this.app.showtime.render('', '2')}
-    </ul>
-  </div>
-</div> -->
+
 
 `;}});

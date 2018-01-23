@@ -116,7 +116,6 @@ class PopStateHandler {
       obj.todayMovies = '';
       console.log(obj);
     }*/
-    
     this.app.showtime.render('main');
 
   }
