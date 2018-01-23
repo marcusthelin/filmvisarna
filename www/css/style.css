@@ -58,6 +58,9 @@ body .btn {
 .karusell .empty-space {
   padding-top: 70px;
 }
+main .card {
+  background-color: rgba(0, 0, 0, 0.15);
+}
 main .current-movies .card-info,
 main .coming-movies .card-info {
   display: none;
@@ -69,7 +72,7 @@ main .current-movies .card-info h4,
 main .coming-movies .card-info h4,
 main .current-movies .card-info h6,
 main .coming-movies .card-info h6 {
-  color: black;
+  color: white;
 }
 main .current-movies .card-info p,
 main .coming-movies .card-info p {
@@ -103,16 +106,11 @@ footer {
   height: auto;
   line-height: 30px;
   /* Vertically center the text there */
-  border-top: 1px solid #e0e0e0;
-}
-footer .color {
-  border-radius: 200px 5px;
-  padding: 10px 30px;
+  background-color: #2b0258;
 }
 footer p {
   line-height: 1.6em;
   margin-bottom: 0;
-  color: #3f3f3f;
 }
 footer p .fa {
   line-height: 30px;
@@ -122,17 +120,8 @@ footer p .fa {
   text-align: center;
   text-decoration: none;
 }
-footer p .fa-facebook {
-  color: black;
-}
-footer p .fa-envelope,
-footer p .fa-address-card,
-footer p .fa-phone {
-  color: black;
-}
-footer p a,
-footer p a:hover {
-  color: #3f3f3f;
+footer p a.text-light:hover {
+  color: #f2b600 !important;
 }
 footer .myheight {
   height: 100px;

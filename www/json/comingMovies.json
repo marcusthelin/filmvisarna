@@ -44,5 +44,20 @@
        "tomb-raider-poster.jpg"
     ],
     "⚙": "Movie"
+  },
+  {
+    "title": "Tomb Raider",
+    "releasedate": "16 Mars, 2018",
+    "genre": "Action | Äventyr",
+    "director": "Roar Uthaug",
+    "actors": [
+      "Alicia Vikander",
+      "Hannah John-Kamen",
+       "Walton Goggins"
+    ],
+    "images": [
+       "tomb-raider-poster.jpg"
+    ],
+    "⚙": "Movie"
   }
 ]

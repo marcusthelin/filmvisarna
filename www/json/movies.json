@@ -307,5 +307,109 @@
       }
     ],
     "⚙": "Movie"
+  },
+  {
+    "title": "The Martian",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2015,
+    "length": "141 min",
+    "genre": "Action | Äventyr | Sci-Fi",
+    "distributor": "20th Century Fox",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Ridley Scott",
+    "actors": [
+      "Matt Damon",
+      "Jessica Chasin",
+      "Kristen Wiig",
+      "Kate Mara"
+    ],
+    "description": "Astronauten Mark Watney blir kvarlämnad på Mars av resterande besättningen som tror att han omkommit efter en kraftig storm i rymden. Ensam kvar måste han med sin intelligens och styrka hitta ett sätt att överleva på den lilla mat han har och signalera till jorden att han lever. Miljontals mil bort jobbar NASAs forskare dygnet runt med att hitta ett sätt att få hem honom och besättningen planerar samtidigt en livsfarlig räddningsaktion. Världens befolkning är alla engagerade i Watneys öde och tillsammans är vi starka.",
+    "images": [
+       "the-martian-poster1.jpg",
+       "the-martian-poster2.jpg",
+       "the-martian-poster3.jpg"
+    ],
+    "youtubeTrailers": [
+      "ej3ioOneTy8"
+    ],
+    "imdblinks": [
+      "tt3659388"
+    ],
+    "reviews": [
+      {
+        "source": "Sydsvenskan",
+        "quote": "<a target='_blank' href='https://www.sydsvenskan.se/2015-10-02/trevlig-rymdresa-utan-nerv'>Trevlig rymdresa utan nerv</a>",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "<a target='_blank' href='https://www.svd.se/snygg-rymdthriller-i-discotakt/om/planeten-mars-5xfu'>Snygg rymdthriller i discotakt</a>",
+        "stars": 5,
+        "max": 5
+      },
+      {
+        "source": "DN",
+        "quote": "<a target='_blank' href='https://www.dn.se/kultur-noje/filmrecensioner/recension-av-the-martian-med-matt-damon/'>Även om Matt Damons karaktär är en notorisk töntig skämtare och verkar immun mot existentiella grubblerier är det oavlåtligt spännande att följa hans kamp för överlevnad</a>",
+        "stars": 3,
+        "max": 5
+      }
+    ],
+    "⚙": "Movie"
+  },
+  {
+    "title": "The Martian",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2015,
+    "length": "141 min",
+    "genre": "Action | Äventyr | Sci-Fi",
+    "distributor": "20th Century Fox",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Ridley Scott",
+    "actors": [
+      "Matt Damon",
+      "Jessica Chasin",
+      "Kristen Wiig",
+      "Kate Mara"
+    ],
+    "description": "Astronauten Mark Watney blir kvarlämnad på Mars av resterande besättningen som tror att han omkommit efter en kraftig storm i rymden. Ensam kvar måste han med sin intelligens och styrka hitta ett sätt att överleva på den lilla mat han har och signalera till jorden att han lever. Miljontals mil bort jobbar NASAs forskare dygnet runt med att hitta ett sätt att få hem honom och besättningen planerar samtidigt en livsfarlig räddningsaktion. Världens befolkning är alla engagerade i Watneys öde och tillsammans är vi starka.",
+    "images": [
+       "the-martian-poster1.jpg",
+       "the-martian-poster2.jpg",
+       "the-martian-poster3.jpg"
+    ],
+    "youtubeTrailers": [
+      "ej3ioOneTy8"
+    ],
+    "imdblinks": [
+      "tt3659388"
+    ],
+    "reviews": [
+      {
+        "source": "Sydsvenskan",
+        "quote": "<a target='_blank' href='https://www.sydsvenskan.se/2015-10-02/trevlig-rymdresa-utan-nerv'>Trevlig rymdresa utan nerv</a>",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "<a target='_blank' href='https://www.svd.se/snygg-rymdthriller-i-discotakt/om/planeten-mars-5xfu'>Snygg rymdthriller i discotakt</a>",
+        "stars": 5,
+        "max": 5
+      },
+      {
+        "source": "DN",
+        "quote": "<a target='_blank' href='https://www.dn.se/kultur-noje/filmrecensioner/recension-av-the-martian-med-matt-damon/'>Även om Matt Damons karaktär är en notorisk töntig skämtare och verkar immun mot existentiella grubblerier är det oavlåtligt spännande att följa hans kamp för överlevnad</a>",
+        "stars": 3,
+        "max": 5
+      }
+    ],
+    "⚙": "Movie"
   }
 ]
