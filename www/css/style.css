@@ -133,6 +133,9 @@ main .carousel-control-prev,
 main .carousel-control-next {
   bottom: 30px !important;
 }
+main .lala {
+  background-color: #110123;
+}
 footer {
   position: absolute;
   bottom: 0;
