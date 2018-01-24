@@ -12,31 +12,34 @@ header {
     .nav-item.active{
       font-weight: bold;
     }
-    
-    background-color: #0b0c10;
+
+    background-color: #13141b;
     a{
       color: white;
       &:hover,&:active,&:focus{
         color: @somecolor;
       }
     }
-    .btn-outline-secondary{ 
-      color: white; 
-      border-color: @somecolor; 
-      &:hover{ 
-        background-color: @somecolor; 
-        color: #000; 
-      } 
-    } 
-    .log{ 
-      background-color: #0b0c10; 
-    } 
-    .show>.btn-outline-secondary.dropdown-toggle{ 
-      background-color: #0b0c10; 
-      border-color: @somecolor; 
-      &:focus{ 
-        box-shadow: 0 0 0 2px rgba(193, 175, 15, 0.55); 
-      } 
-    }  
+    .btn-outline-secondary{
+      color: white;
+      border-color: @somecolor;
+      &:hover{
+        background-color: @somecolor;
+        color: #000;
+      }
+    }
+    .yellow {
+      background-color: @somecolor;
+    }
+    .log{
+      background-color: #0b0c10;
+    }
+    .show>.btn-outline-secondary.dropdown-toggle{
+      background-color: #0b0c10;
+      border-color: @somecolor;
+      &:focus{
+        box-shadow: 0 0 0 2px rgba(193, 175, 15, 0.55);
+      }
+    }
   }
 }
