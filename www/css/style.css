@@ -7,6 +7,9 @@ header .navbar-brand {
 header nav {
   background-color: #0b0c10;
 }
+header nav .nav-item.active {
+  font-weight: bold;
+}
 header nav a {
   color: white;
 }
