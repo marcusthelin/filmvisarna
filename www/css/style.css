@@ -282,6 +282,9 @@ footer .myheight {
   color: #2d0970;
   text-decoration: none;
 }
+#accordion h4 {
+  color: black;
+}
 .movie-btn button {
   background-color: #f2b600;
   opacity: 0.5;
