@@ -141,7 +141,8 @@ main .biljett-info {
   border-radius: 5px;
 }
 main .biljett-info h2,
-main .biljett-info h3 {
+main .biljett-info h3,
+main .biljett-info h4 {
   font-family: 'Oswald', sans-serif;
 }
 main .om-oss {
