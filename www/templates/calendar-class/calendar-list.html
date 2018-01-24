@@ -2,15 +2,25 @@ Object.assign(Calendar.prototype, { template(){ return `
 
 
 <li class="list-group-item p-4 lala">
-  <h3 class="d-inline-block pr-4">${this.time}</h3>
-  <a class="pop" href="/film/${this.film.replace(/ /g,'_')}"><img class="img-calendar" src="/imgs/${this.image}"></a>
-  <div class="d-inline-block pl-3">
-    <a class="pop" href="/film/${this.film.replace(/ /g,'_')}"><h5 class="mb-0"><b>${this.film}</b></h5></a>
-  	<p>${this.auditorium}</p>
+  
+ <div class="d-flex">
+  <div class="p-2">
+  	<h3 class="d-inline-block pr-4">${this.time}</h3>
   </div>
-  <div class="float-right mt-4">
-  	<a class="btn btn-secondary pop" href="/film/${this.film.replace(/ /g,'_')}" role="button">Mer information</a>
+  <div class="p-2">
+	  	 <a class="pop" href="/film/${this.film.replace(/ /g,'_')}"><img class="img-calendar" src="/imgs/${this.image}"></a>
   </div>
+  <div class="p-2">
+  	<a class="pop" href="/film/${this.film.replace(/ /g,'_')}"><h5 class="mb-0"><b>${this.film}</b></h5></a>
+	  	<p>${this.auditorium}</p>
+  </div>
+  <div class="ml-auto p-2 d-none d-md-block">
+  	<a class="btn btn-secondary pop" href="/film/${this.film.replace(/ /g,'_')}" role="button">Boka</a>
+  </div>
+</div>
 </li>
+
+
+
 
 `;}});
