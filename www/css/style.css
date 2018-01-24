@@ -121,6 +121,11 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   color: #f2b600 !important;
   text-decoration: none;
 }
+.filmer h2 {
+  border-bottom: 2px solid #f2b600;
+  display: inline-block;
+  text-transform: uppercase;
+}
 .biljett-info img {
   width: 150px;
 }
