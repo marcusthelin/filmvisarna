@@ -198,16 +198,20 @@ main .current-movies .card-info p,
 main .coming-movies .card-info p {
   font-size: 0.8rem;
 }
-@media only screen and (max-width: 758px) {
+main .current-movies:hover .card-info,
+main .coming-movies:hover .card-info {
+  display: block;
+}
+@media only screen and (max-width: 1199px) {
+  main .current-movies:hover .card-info,
+  main .coming-movies:hover .card-info {
+    padding: 15px 25px;
+  }
+}
+@media only screen and (max-width: 991px) {
   main .current-movies:hover .card-info,
   main .coming-movies:hover .card-info {
     display: none;
-  }
-}
-@media only screen and (min-width: 800px) {
-  main .current-movies:hover .card-info,
-  main .coming-movies:hover .card-info {
-    display: block;
   }
 }
 main .current-movies:hover img,
