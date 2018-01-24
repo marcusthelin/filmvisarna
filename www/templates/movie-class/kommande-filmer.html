@@ -7,6 +7,9 @@ Object.assign(Movie.prototype, { template(){ return `
     <h6>${this.genre} av ${this.director}</h6>
     <p>Medverkande: <strong>${this.actors.join(', ')}</strong></p>
     <h4><b>Kommer ${this.releasedate}</b></h4>
+    <div class="imdb-info text-center mt-2">
+      <a target="blank" href="http://www.imdb.com/title/${this.imdblinks}"><span class="fa fa-imdb mr-3 imdb"></span>Filmen på imdb</span></a>
+    </div>
   </div>
 </div>
 
