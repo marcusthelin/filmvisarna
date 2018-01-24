@@ -1,7 +1,7 @@
 header .dropdown-item:hover {
   background-color: #66717b !important;
 }
-header .navbar-brand {
+header a.nav-logo {
   width: 20%;
 }
 header nav {
