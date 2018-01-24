@@ -17,6 +17,9 @@ main{
     padding-top: 70px;
   }
   .current-movies, .coming-movies{
+    a{
+      text-decoration: none;
+    }
     .card-info{
       display: none;
       padding: 50px;
@@ -29,7 +32,12 @@ main{
     }
     &:hover{
       .card-info{
-        display: block;
+        @media only screen and (max-width: 758px) {
+          display: none;
+       }
+        @media only screen and (min-width: 800px) {
+          display: block;
+        }
       }
       img{
         -webkit-filter: blur(5px);
