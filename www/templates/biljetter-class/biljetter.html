@@ -1,12 +1,11 @@
 Object.assign(Biljetter.prototype, { template(){ return `
 
- <div class="row col-lg-12 mt-2 empty-space">
-  <div class="col-lg-8">
-    <div class="biljett-info mb-3">
+ <div class="row col-12 mt-2 empty-space">
+    <div class="biljett-info mb-3 col-lg-8 col-md-12">
       <h2>Priser & Kort</h2>
-      
+
       <p>Kassan öppnar 30 minuter före första föreställning. Biljetterna är vanligtvis numrerade. Bokade biljetter måste hämtas senast 30 minuter före föreställningen. För Operaföreställningar och andra livesändningar gäller andra uthämtningstider.</p>
-      <img class="img-fluid float-right" src="/imgs/biljett1.png" alt="">
+      <img class="img-fluid float-right d-none d-md-block" src="/imgs/biljett1.png" alt="">
       <p><b>Ord pris:</b> 85kr</p>
       <p><b>Barn (under 12 år):</b> 65kr</p>
       <p><b>Pensionärer:</b> 85kr</p>
@@ -17,8 +16,7 @@ Object.assign(Biljetter.prototype, { template(){ return `
       <h4>Företagsbiljetter</h4>
       <p>Vi säljer även företagsbiljetter. Fast pris, berättigar till en biljett på ordinarie filmvisningar, mängdrabatt ges. För mer information och beställning kontakta vårt kontor på info@kino.nu</p>
     </div>
-  </div>
-  <div class="biljett-info col-4">
+  <div class="biljett-info col-lg-4 col-md-12 ">
     <h2>Åldersgränser på bio</h2>
       <p>Sedan första mars 2017 fungerar 15-årsgränsen på samma sätt som de andra åldersgränserna.</p>
       <p>Som vuxen räknas den som fyllt 18 år. </p>
