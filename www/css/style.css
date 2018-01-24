@@ -67,6 +67,10 @@ main .card {
 main .empty-space {
   padding-top: 70px;
 }
+main .current-movies a,
+main .coming-movies a {
+  text-decoration: none;
+}
 main .current-movies .card-info,
 main .coming-movies .card-info {
   display: none;
@@ -84,9 +88,17 @@ main .current-movies .card-info p,
 main .coming-movies .card-info p {
   font-size: 0.8rem;
 }
-main .current-movies:hover .card-info,
-main .coming-movies:hover .card-info {
-  display: block;
+@media only screen and (max-width: 758px) {
+  main .current-movies:hover .card-info,
+  main .coming-movies:hover .card-info {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  main .current-movies:hover .card-info,
+  main .coming-movies:hover .card-info {
+    display: block;
+  }
 }
 main .current-movies:hover img,
 main .coming-movies:hover img {

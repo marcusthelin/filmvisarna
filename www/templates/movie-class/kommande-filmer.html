@@ -1,6 +1,7 @@
 Object.assign(Movie.prototype, { template(){ return `
 
 <div class="card col-md-3 border-0 mt-2 coming-movies card card-inverse">
+  <a target="blank" href="http://www.imdb.com/title/${this.imdblinks}">
   <img class="card-img-top" src="/imgs/${this.images}" alt="Card image cap">
   <div class="card-img-overlay card-info">
     <h4>${this.title}</h4>
@@ -11,6 +12,7 @@ Object.assign(Movie.prototype, { template(){ return `
       <a target="blank" href="http://www.imdb.com/title/${this.imdblinks}"><span class="fa fa-imdb mr-3 imdb"></span>Filmen på imdb</span></a>
     </div>
   </div>
+  </a>
 </div>
 
 `;}});
