@@ -220,7 +220,7 @@ footer {
   height: auto;
   line-height: 30px;
   /* Vertically center the text there */
-  background-color: #0b0c10;
+  background-color: #3a3f5354;
 }
 footer p {
   line-height: 1.6em;
@@ -249,14 +249,17 @@ footer .myheight {
   color: black;
 }
 #accordion a:hover {
-  color: #f2b600;
+  color: #2d0970;
   text-decoration: none;
 }
+.movie-btn button {
+  background-color: #f2b600;
+  opacity: 0.5;
+}
 .movie-btn button:hover {
-  color: #f2b600;
+  opacity: 1.0;
 }
 .om-film {
-  background-color: #110123;
   border-radius: 10px;
 }
 .om-film h2 {
