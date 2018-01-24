@@ -13,6 +13,7 @@ body{
   a{
     color: white;
     &:hover{
+      color: @somecolor;
       text-decoration: none;
     }
   }
@@ -119,12 +120,26 @@ main{
   }
 
   .comingMoviesHeader, .currentMoviesHeader{
-    background-color: #ffe70f;
+    background-color: @somecolor;
     text-align: center;
     h2{
       font-family: 'Oswald', sans-serif;
       color: #000;
  
+    }
+  }
+
+  .list-group-item{
+    a{
+      h5{
+          &:hover{
+          color: @somecolor !important;
+        }
+      }
+      &:hover{
+        color: @somecolor !important;
+        text-decoration: none;
+      }
     }
   }
 
@@ -144,11 +159,11 @@ main{
     background-color: #0b0c10;
     border-color: #000;
     .btn{
-      border-color: #ffe70f;
+      border-color: @somecolor;
       background-color: #0b0c10;
       &:hover{
-        background-color: #ffe70f;
-        color: #000;
+        background-color: @somecolor;
+        color: black !important;
       }
     }
   }
@@ -160,7 +175,7 @@ main{
     h2, h3, h4{
       font-family: 'Oswald', sans-serif;
       text-decoration: none;
-      border-bottom: 3px solid #ffe70f;
+      border-bottom: 3px solid @somecolor;
       border-width: 50%;
       display: inline-block;
       line-height: 1.5;
@@ -174,7 +189,7 @@ main{
     h2, h3{
       font-family: 'Oswald', sans-serif;
       text-decoration: none;
-      border-bottom: 3px solid #ffe70f;
+      border-bottom: 3px solid @somecolor;
       border-width: 50%;
       display: inline-block;
       line-height: 1.5;

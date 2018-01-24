@@ -17,10 +17,10 @@ header nav a:focus {
 }
 header nav .btn-outline-secondary {
   color: white;
-  border-color: #ffe70f;
+  border-color: #f2b600;
 }
 header nav .btn-outline-secondary:hover {
-  background-color: #ffe70f;
+  background-color: #f2b600;
   color: #000;
 }
 header nav .log {
@@ -28,7 +28,7 @@ header nav .log {
 }
 header nav .show > .btn-outline-secondary.dropdown-toggle {
   background-color: #0b0c10;
-  border-color: #ffe70f;
+  border-color: #f2b600;
 }
 header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 2px rgba(193, 175, 15, 0.55);
@@ -47,6 +47,7 @@ body .btn {
   color: white;
 }
 .karusell a:hover {
+  color: #f2b600;
   text-decoration: none;
 }
 .karusell .container-fluid {
@@ -146,13 +147,20 @@ main h4 {
 }
 main .comingMoviesHeader,
 main .currentMoviesHeader {
-  background-color: #ffe70f;
+  background-color: #f2b600;
   text-align: center;
 }
 main .comingMoviesHeader h2,
 main .currentMoviesHeader h2 {
   font-family: 'Oswald', sans-serif;
   color: #000;
+}
+main .list-group-item a h5:hover {
+  color: #f2b600 !important;
+}
+main .list-group-item a:hover {
+  color: #f2b600 !important;
+  text-decoration: none;
 }
 main .biljett-info img {
   width: 150px;
@@ -166,12 +174,12 @@ main .lala {
   border-color: #000;
 }
 main .lala .btn {
-  border-color: #ffe70f;
+  border-color: #f2b600;
   background-color: #0b0c10;
 }
 main .lala .btn:hover {
-  background-color: #ffe70f;
-  color: #000;
+  background-color: #f2b600;
+  color: black !important;
 }
 main .biljett-info {
   background-color: #0b0c10;
@@ -183,7 +191,7 @@ main .biljett-info h3,
 main .biljett-info h4 {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
-  border-bottom: 3px solid #ffe70f;
+  border-bottom: 3px solid #f2b600;
   border-width: 50%;
   display: inline-block;
   line-height: 1.5;
@@ -197,7 +205,7 @@ main .om-oss h2,
 main .om-oss h3 {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
-  border-bottom: 3px solid #ffe70f;
+  border-bottom: 3px solid #f2b600;
   border-width: 50%;
   display: inline-block;
   line-height: 1.5;
@@ -226,6 +234,7 @@ footer p .fa {
 }
 footer p a.text-light:hover {
   color: #f2b600 !important;
+  text-decoration: none;
 }
 footer .myheight {
   height: 100px;
