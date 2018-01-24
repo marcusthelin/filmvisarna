@@ -136,6 +136,22 @@ main .carousel-control-next {
 main .lala {
   background-color: #110123;
 }
+main .biljett-info {
+  background-color: #110123;
+  border-radius: 5px;
+}
+main .biljett-info h2,
+main .biljett-info h3 {
+  font-family: 'Oswald', sans-serif;
+}
+main .om-oss {
+  background-color: #110123;
+  border-radius: 5px;
+}
+main .om-oss h2,
+main .om-oss h3 {
+  font-family: 'Oswald', sans-serif;
+}
 footer {
   position: absolute;
   bottom: 0;
@@ -165,7 +181,7 @@ footer .myheight {
   height: 100px;
 }
 #accordion {
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 2%;
 }
 #accordion a {
@@ -177,6 +193,13 @@ footer .myheight {
 }
 .movie-btn button:hover {
   color: #f2b600;
+}
+.om-film {
+  background-color: #110123;
+  border-radius: 10px;
+}
+.om-film h2 {
+  font-family: 'Oswald', sans-serif;
 }
 .blockquote a {
   text-decoration: none;
