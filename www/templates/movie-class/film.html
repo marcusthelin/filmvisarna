@@ -34,7 +34,7 @@ Object.assign(Movie.prototype, { template3(){ return `
 
       <div id="accordion" role="tablist">
         <div class="card">
-          <div class="card-header" role="tab" id="headingOne">
+          <div class="card-header bg-light" role="tab" id="headingOne">
             <h5 class="mb-0">
                   <a class="" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
                     Produktions Information
@@ -43,7 +43,7 @@ Object.assign(Movie.prototype, { template3(){ return `
           </div>
 
           <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
+            <div class="card-body bg-light">
               <ul class="film-produkt-info">
                 <li><b>Land:</b> ${this.productionCountries.join(', ')}</li>
 					      <li><b>Produktionsår:</b> ${this.productionYear}</li>
@@ -59,7 +59,7 @@ Object.assign(Movie.prototype, { template3(){ return `
           </div>
         </div>
         <div class="card">
-          <div class="card-header" role="tab" id="headingTwo">
+          <div class="card-header bg-light" role="tab" id="headingTwo">
             <h5 class="mb-0">
                   <a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
                     Recensioner
@@ -68,7 +68,7 @@ Object.assign(Movie.prototype, { template3(){ return `
           </div>
           <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body bg-light">
                 <blockquote class="blockquote mb-0">
                   <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[0].stars}<small>/${this.reviews[0].max}</small></h4>
                   <p>${this.reviews[0].quote}</p>
@@ -77,7 +77,7 @@ Object.assign(Movie.prototype, { template3(){ return `
               </div>
             </div>
             <div class="card">
-              <div class="card-body">
+              <div class="card-body bg-light">
                 <blockquote class="blockquote mb-0">
                   <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[1].stars}<small>/${this.reviews[1].max}</small></h4>
                   <p>${this.reviews[1].quote}</p>
@@ -86,7 +86,7 @@ Object.assign(Movie.prototype, { template3(){ return `
               </div>
             </div>
             <div class="card">
-              <div class="card-body">
+              <div class="card-body bg-light">
                 <blockquote class="blockquote mb-0">
                   <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[2].stars}<small>/${this.reviews[2].max}</small></h4>
                   <p>${this.reviews[2].quote}</p>
