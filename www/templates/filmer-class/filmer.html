@@ -1,6 +1,6 @@
 Object.assign(Filmer.prototype, { template(){ return `
 
-<div class="row mt-5 mt-md-0">
+<div class="row mt-5 mt-md-0 filmer">
 	<div class="col-12 mt-3 mt-md-0">
     <h2 class="mb-2">Idag</h2>
 		<ul class="list-group listor">
@@ -8,7 +8,7 @@ Object.assign(Filmer.prototype, { template(){ return `
     </ul>
 	</div>
 </div>
-<div class="row">
+<div class="row filmer">
 	<div class="col-12">
     <h2 class="mt-4 mb-2">Imorgon</h2>
 		<ul class="list-group listor">
@@ -16,7 +16,7 @@ Object.assign(Filmer.prototype, { template(){ return `
     </ul>
 	</div>
 </div>
-<div class="row">
+<div class="row filmer">
 	<div class="col-12">
     <h2 class="mt-4 mb-2">${this.dayAfterTomorrow[0].date}</h2>
 		<ul class="list-group listor">

@@ -118,6 +118,13 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
 .biljett-info img {
   width: 150px;
 }
+.filmer h2 {
+  border-bottom: 4px solid #f2b600;
+  padding-bottom: 5px;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
 .carousel-control-prev,
 .carousel-control-next {
   bottom: 30px !important;
@@ -220,7 +227,7 @@ footer {
   height: auto;
   line-height: 30px;
   /* Vertically center the text there */
-  background-color: #3a3f5354;
+  background-color: #0b0c10;
 }
 footer p {
   line-height: 1.6em;
