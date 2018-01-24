@@ -70,9 +70,18 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   right: 950px;
 }
 .karusell .film-title {
-  font-size: 25px;
+  font-size: 50px;
   font-family: 'Exo', sans-serif;
   font-weight: 900;
+  text-shadow: 2px 2px #000;
+}
+@media screen and (max-width: 800px) {
+  .karusell .film-title {
+    font-size: 25px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px #000;
+  }
 }
 .karusell .film-title-color {
   color: #000;
