@@ -5,7 +5,7 @@ header .navbar-brand {
   width: 20%;
 }
 header nav {
-  background-color: #2b0258;
+  background-color: #0b0c10;
 }
 header nav a {
   color: white;
@@ -14,6 +14,24 @@ header nav a:hover,
 header nav a:active,
 header nav a:focus {
   color: #f2b600;
+}
+header nav .btn-outline-secondary {
+  color: white;
+  border-color: #ffe70f;
+}
+header nav .btn-outline-secondary:hover {
+  background-color: #ffe70f;
+  color: #000;
+}
+header nav .log {
+  background-color: #0b0c10;
+}
+header nav .show > .btn-outline-secondary.dropdown-toggle {
+  background-color: #0b0c10;
+  border-color: #ffe70f;
+}
+header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 2px rgba(193, 175, 15, 0.55);
 }
 html {
   position: relative;
@@ -122,19 +140,29 @@ main h4 {
 }
 main .comingMoviesHeader,
 main .currentMoviesHeader {
-  background-color: #110123;
+  background-color: #ffe70f;
   text-align: center;
 }
 main .comingMoviesHeader h2,
 main .currentMoviesHeader h2 {
   font-family: 'Oswald', sans-serif;
+  color: #000;
 }
 main .carousel-control-prev,
 main .carousel-control-next {
   bottom: 30px !important;
 }
 main .lala {
-  background-color: #110123;
+  background-color: #0b0c10;
+  border-color: #000;
+}
+main .lala .btn {
+  border-color: #ffe70f;
+  background-color: #0b0c10;
+}
+main .lala .btn:hover {
+  background-color: #ffe70f;
+  color: #000;
 }
 main .biljett-info {
   background-color: #110123;
@@ -161,7 +189,7 @@ footer {
   height: auto;
   line-height: 30px;
   /* Vertically center the text there */
-  background-color: #2b0258;
+  background-color: #0b0c10;
 }
 footer p {
   line-height: 1.6em;

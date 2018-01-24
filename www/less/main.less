@@ -113,10 +113,11 @@ main{
   }
 
   .comingMoviesHeader, .currentMoviesHeader{
-    background-color: rgb(16.86, 0.78, 34.51, 0.21);
+    background-color: #ffe70f;
     text-align: center;
     h2{
       font-family: 'Oswald', sans-serif;
+      color: #000;
     }
   }
 
@@ -130,7 +131,16 @@ main{
   }
 
   .lala{
-    background-color: @betterpurple;
+    background-color: #0b0c10;
+    border-color: #000;
+    .btn{
+      border-color: #ffe70f;
+      background-color: #0b0c10;
+      &:hover{
+        background-color: #ffe70f;
+        color: #000;
+      }
+    }
   }
 
   .biljett-info{
