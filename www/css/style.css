@@ -152,6 +152,7 @@ main .comingMoviesHeader,
 main .currentMoviesHeader {
   background-color: #f2b600;
   text-align: center;
+  box-shadow: 0 0 3px 3px #000 inset;
 }
 main .comingMoviesHeader h2,
 main .currentMoviesHeader h2 {
