@@ -75,7 +75,7 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   font-weight: 900;
   text-shadow: 2px 2px #000;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1035px) {
   .karusell .film-title {
     font-size: 25px;
     font-family: 'Exo', sans-serif;
