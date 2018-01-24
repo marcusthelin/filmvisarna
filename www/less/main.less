@@ -9,58 +9,6 @@ body{
   }
 }
 
-.karusell{
-  a{
-    color: white;
-    &:hover{
-      color: @somecolor;
-      text-decoration: none;
-    }
-  }
-  .container-fluid{
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .carousel-caption {
-    top: auto;
-    bottom: 10px;
-    right: 900px;
-  }
-  .first-carousel-caption {
-    top: auto;
-    bottom: 20px;
-    right: 700px;
-    color: #fff;
-  }
-
-  .carousel-caption-avatar {
-    top: auto;
-    bottom: 10px;
-    right: 950px;
-  }
-
-  .film-title {
-    font-size: 50px;
-    font-family: 'Exo', sans-serif;
-    font-weight: 900;
-  }
-
-  .film-title-color {
-    color: #000;
-  }
-
-  .carousel-padding {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    padding-top: 43px;
-  }
-
-  .empty-space {
-    padding-top: 70px;
-  }
-}
-
-
 main{
   .card{
     background-color: rgba(0,0,0,0.15);
@@ -93,20 +41,15 @@ main{
         transition: 0.1s ease-in-out;
       }
     }
-  }
-
-  .current-movies{
     img{
       cursor: pointer;
     }
   }
+
   .coming-movies{
     .card-info{
       cursor: context-menu;
     }
-  }
-  .fa-star{
-    color: #e6e629;
   }
 
   .img-calendar{
@@ -130,70 +73,5 @@ main{
     }
   }
 
-  .list-group-item{
-    a{
-      h5{
-          &:hover{
-          color: @somecolor !important;
-        }
-      }
-      &:hover{
-        color: @somecolor !important;
-        text-decoration: none;
-      }
-    }
-  }
 
-  .biljett-info{
-    // background-color: rgb(16.86, 0.78, 34.51, 0.21);
-    // border-radius: 15px;
-    img{
-      width: 150px;
-    }
-  }
-
-  .carousel-control-prev,.carousel-control-next{
-    bottom: 30px !important;
-  }
-
-  .lala{
-    background-color: #0b0c10;
-    border-color: #000;
-    .btn{
-      border-color: @somecolor;
-      background-color: #0b0c10;
-      &:hover{
-        background-color: @somecolor;
-        color: black !important;
-      }
-    }
-  }
-
-  .biljett-info{
-    background-color: #0b0c10;
-    border-radius: 5px;
-    padding: 50px;
-    h2, h3, h4{
-      font-family: 'Oswald', sans-serif;
-      text-decoration: none;
-      border-bottom: 3px solid @somecolor;
-      border-width: 50%;
-      display: inline-block;
-      line-height: 1.5;
-    }
-  }
-
-  .om-oss{
-    background-color: #0b0c10;
-    border-radius: 5px;
-    padding: 50px;
-    h2, h3{
-      font-family: 'Oswald', sans-serif;
-      text-decoration: none;
-      border-bottom: 3px solid @somecolor;
-      border-width: 50%;
-      display: inline-block;
-      line-height: 1.5;
-    }
-  }
 }

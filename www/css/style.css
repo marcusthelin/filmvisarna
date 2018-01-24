@@ -36,16 +36,6 @@ header nav .show > .btn-outline-secondary.dropdown-toggle {
 header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 2px rgba(193, 175, 15, 0.55);
 }
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  background-color: #000;
-}
-body .btn {
-  cursor: pointer;
-}
 .karusell a {
   color: white;
 }
@@ -89,6 +79,71 @@ body .btn {
 .karusell .empty-space {
   padding-top: 70px;
 }
+.biljett-info {
+  background-color: #0b0c10;
+  border-radius: 5px;
+  padding: 50px;
+}
+.biljett-info h2,
+.biljett-info h3,
+.biljett-info h4 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid #f2b600;
+  border-width: 50%;
+  display: inline-block;
+  line-height: 1.5;
+}
+.om-oss {
+  background-color: #0b0c10;
+  border-radius: 5px;
+  padding: 50px;
+}
+.om-oss h2,
+.om-oss h3 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid #f2b600;
+  border-width: 50%;
+  display: inline-block;
+  line-height: 1.5;
+}
+.list-group-item a h5:hover {
+  color: #f2b600 !important;
+}
+.list-group-item a:hover {
+  color: #f2b600 !important;
+  text-decoration: none;
+}
+.biljett-info img {
+  width: 150px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  bottom: 30px !important;
+}
+.lala {
+  background-color: #0b0c10;
+  border-color: #000;
+}
+.lala .btn {
+  border-color: #f2b600;
+  background-color: #0b0c10;
+}
+.lala .btn:hover {
+  background-color: #f2b600;
+  color: black !important;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color: #000;
+}
+body .btn {
+  cursor: pointer;
+}
 main .card {
   background-color: rgba(0, 0, 0, 0.15);
 }
@@ -126,14 +181,12 @@ main .coming-movies:hover img {
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
 }
-main .current-movies img {
+main .current-movies img,
+main .coming-movies img {
   cursor: pointer;
 }
 main .coming-movies .card-info {
   cursor: context-menu;
-}
-main .fa-star {
-  color: #e6e629;
 }
 main .img-calendar {
   width: 59px;
@@ -158,61 +211,6 @@ main .comingMoviesHeader h2,
 main .currentMoviesHeader h2 {
   font-family: 'Oswald', sans-serif;
   color: #000;
-}
-main .list-group-item a h5:hover {
-  color: #f2b600 !important;
-}
-main .list-group-item a:hover {
-  color: #f2b600 !important;
-  text-decoration: none;
-}
-main .biljett-info img {
-  width: 150px;
-}
-main .carousel-control-prev,
-main .carousel-control-next {
-  bottom: 30px !important;
-}
-main .lala {
-  background-color: #0b0c10;
-  border-color: #000;
-}
-main .lala .btn {
-  border-color: #f2b600;
-  background-color: #0b0c10;
-}
-main .lala .btn:hover {
-  background-color: #f2b600;
-  color: black !important;
-}
-main .biljett-info {
-  background-color: #0b0c10;
-  border-radius: 5px;
-  padding: 50px;
-}
-main .biljett-info h2,
-main .biljett-info h3,
-main .biljett-info h4 {
-  font-family: 'Oswald', sans-serif;
-  text-decoration: none;
-  border-bottom: 3px solid #f2b600;
-  border-width: 50%;
-  display: inline-block;
-  line-height: 1.5;
-}
-main .om-oss {
-  background-color: #0b0c10;
-  border-radius: 5px;
-  padding: 50px;
-}
-main .om-oss h2,
-main .om-oss h3 {
-  font-family: 'Oswald', sans-serif;
-  text-decoration: none;
-  border-bottom: 3px solid #f2b600;
-  border-width: 50%;
-  display: inline-block;
-  line-height: 1.5;
 }
 footer {
   position: absolute;
@@ -277,4 +275,7 @@ footer .myheight {
 }
 .imdb-info a:hover {
   color: #f2b600;
+}
+.fa-star {
+  color: #e6e629;
 }
