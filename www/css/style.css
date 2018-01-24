@@ -26,6 +26,9 @@ header nav .btn-outline-secondary:hover {
   background-color: #f2b600;
   color: #000;
 }
+header nav .yellow {
+  background-color: #f2b600;
+}
 header nav .log {
   background-color: #0b0c10;
 }
