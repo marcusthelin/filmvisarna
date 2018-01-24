@@ -27,6 +27,10 @@ class App {
       }
     }
 
+    for(let x = 0; x < this.movies.length; x++){
+      this.movies[x].gatherMovies();
+    }
+
 
 
     this.comingMovies = await JSON._load('comingMovies.json');

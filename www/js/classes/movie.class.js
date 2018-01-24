@@ -9,20 +9,22 @@ class Movie extends Base {
 
     let date = new Date();
 
-    date = date.getFullYear()+'-0'+(date.getMonth()+1)+'-'+date.getDate()
+    date = new Date(date.getFullYear()+'-0'+(date.getMonth()+1)+'-'+date.getDate());
 
-
-
-    let i = 0;
-    for(i; i < this.app.showtime.length; i++){
-      if(this.app.showtime[i].film == this.title && this.app.showtime[i].date == date){
-        for(let x = i; x < this.app.showtime.length; x++){
-          if(this.app.showtime[x].film == this.title){
-            this.movies.push(this.app.showtime[x])
-          }
-        }
+    for(let i = 0; i < this.app.showtime.length; i++){
+      let m = this.app.showtime[i];
+      if(m.film == this.title && date <= new Date(m.date)){
+        this.movies.push(m)
       }
     }
+
+    this.movies.length > 7 && (this.movies = this.movies.slice(0,7));
+    // same but an alternative way of writing it
+    // this.movies = this.movies.length > 7 ? this.movies.slice(0,7) : this.movies;
+
+    console.log(this.movies);
+
   }
+
 
 }
