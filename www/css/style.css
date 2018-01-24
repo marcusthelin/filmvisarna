@@ -182,6 +182,14 @@ main .om-oss {
 main .om-oss h2,
 main .om-oss h3 {
   font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid #ffe70f;
+  border-width: 50%;
+  display: inline-block;
+  line-height: 1.5;
+}
+main .side-col {
+  border-left: 3px solid black;
 }
 footer {
   position: absolute;
