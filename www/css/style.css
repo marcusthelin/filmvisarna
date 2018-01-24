@@ -192,6 +192,9 @@ footer .myheight {
   color: #f2b600;
   text-decoration: none;
 }
+#accordion ul {
+  padding-left: 5px;
+}
 .movie-btn button:hover {
   color: #f2b600;
 }
