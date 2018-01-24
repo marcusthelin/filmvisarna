@@ -5,20 +5,23 @@
     color: black;
   }
   a:hover{
-    color: @somecolor;
+    color: rgb(45, 9, 112);
     text-decoration: none;
 
   }
 }
 
 .movie-btn{
-  button:hover{
-  color: @somecolor;
-}
+  button {
+    background-color: @somecolor;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1.0;
+    }
+  }
 }
 
 .om-film{
-  background-color: @betterpurple;
   border-radius: 10px;
   h2{
     font-family: 'Oswald', sans-serif;
