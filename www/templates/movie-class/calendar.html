@@ -2,11 +2,12 @@ Object.assign(Calendar.prototype, { template2(){
 
   return `
 
-    <tr>
+    <li class="list-group-item">${this.date} ${this.time} ${this.auditorium}</li>
+    <!-- <tr>
       <td>${this.date}</td>
       <td>${this.time}</td>
       <td>${this.auditorium}</td>
-    </tr>
+    </tr> -->
 
 
 `;}});

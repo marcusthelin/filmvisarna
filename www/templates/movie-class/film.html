@@ -29,19 +29,23 @@ Object.assign(Movie.prototype, { template3(){ return `
   <div class="col-lg-4">
     <div class="col-12">
       <div class="calendar">
-        <table class="table table-hover table-sm">
+        <!-- <table class="table table-hover table-sm">
           <thead>
             <tr>
-              <th>Datum</th>
-              <th>Tid</th>
-              <th>Salong</th>
+              <th scope="col">Datum</th>
+              <th scope="col">Tid</th>
+              <th scope="col">Salong</th>
             </tr>
           </thead>
           <tbody>
             ${this.movies.render('', '2')}
           </tbody>
 
-        </table>
+        </table> -->
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-secondary">Datum - Tid - Salong</li>
+          <li>${this.movies.render('', '2')}</li>
+        </ul>
       </div>
     </div>
   </div>
