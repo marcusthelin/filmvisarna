@@ -98,6 +98,7 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   background-color: #13141b;
   border-radius: 5px;
   padding: 50px;
+  height: 100%;
 }
 .biljett-info h2,
 .biljett-info h3,
@@ -113,6 +114,7 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   background-color: #13141b;
   border-radius: 5px;
   padding: 50px;
+  height: 100%;
 }
 .om-oss h2,
 .om-oss h3 {
