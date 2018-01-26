@@ -200,9 +200,11 @@ main .current-movies .card-info p,
 main .coming-movies .card-info p {
   font-size: 0.8rem;
 }
-main .current-movies:hover .card-info,
-main .coming-movies:hover .card-info {
-  display: block;
+@media only screen and (max-width: 758px) {
+  main .current-movies:hover .card-info,
+  main .coming-movies:hover .card-info {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1199px) {
   main .current-movies:hover .card-info,
@@ -257,14 +259,6 @@ main .currentMoviesHeader h2 {
   font-family: 'Oswald', sans-serif;
   color: #000;
 }
-main .om-oss {
-  background-color: #110123;
-  border-radius: 5px;
-}
-main .om-oss h2,
-main .om-oss h3 {
-  font-family: 'Oswald', sans-serif;
-}
 footer {
   position: absolute;
   bottom: 0;
@@ -307,9 +301,6 @@ footer .myheight {
 }
 #accordion h4 {
   color: black;
-}
-#accordion ul {
-  padding-left: 5px;
 }
 .movie-btn button {
   background-color: #f2b600;
