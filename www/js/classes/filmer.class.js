@@ -4,17 +4,24 @@ class Filmer extends Base {
 		this.app = app;
 		this.getMovies();
 	}
-  
-  getMovies(){
-  	this.schedule = [];
-  	for(let days = 0; days < 7; days++){
-			let date = moment().add(days, 'days').format("YYYY-MM-DD");
-  		this.movies = [this.app.showtime.filter(movie => movie.date == date)];
-			for(let i = 0; i< this.movies.length; i++){
-				this.schedule.push(this.movies[i]);
-			}
-			this.movies = [];
-  	}
+
+
+	getMovies(date) {
+    // set time at 00:00:00, will be calculated by based on this time
+    const baseDate = new Date(date.setHours(0, 0, 0, 0));
+    const oneDayInMs = 24 * 60 * 60 * 1000;
+    this.schedule = [];
+
+    // collect movies within 7 days
+    // this.schedule[0] is today's movies
+    // this.schedule[1] is tomorrow's movies
+    for (let i = 0; i < 7; i++) {
+      this.schedule[i] = this.app.showtime.filter(movie => {
+        const movieDate = new Date(movie.date);
+        const diffTime = movieDate.getTime() - baseDate.getTime();
+        return diffTime >= oneDayInMs * i && diffTime < oneDayInMs * (i + 1);
+      });
+    }
   }
 
 }

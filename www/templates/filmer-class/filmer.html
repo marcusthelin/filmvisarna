@@ -1,62 +1,49 @@
-Object.assign(Filmer.prototype, { template(){ return `
+const dailyMovieHtml = (day, formatedDate, movies) => {
+  let html = `
+    <div class="row mt-5 mt-md-0 filmer">
+		<div class="col-12 mt-3 mt-md-0">
+  `;
+  switch(day) {
+    case 0:
+      html += `<h2 class="mb-2">Idag, ${formatedDate}</h2>`;
+      break;
+    case 1:
+      html += `<h2 class="mb-2">Imorgon, ${formatedDate}</h2>`;
+      break;
+    default:
+      html += `<h2 class="mb-2">${formatedDate}</h2>`;
+      break;
+  }
+  html += `<ul class="list-group listor">`;
 
-	<div class="row mt-5 mt-md-0 filmer">
-		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mb-2">Idag, ${moment(this.schedule[0][0].date).format('dddd DD MMMM')}</h2>
-			<ul class="list-group listor">
-	        ${this.schedule[0].render()}
-	    </ul>
-		</div>
-	</div>
-	<div class="row mt-5 mt-md-0 filmer">
-		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mt-3">Imorgon, ${moment(this.schedule[1][0].date).format('dddd DD MMMM')}</h2>
-			<ul class="list-group listor">
-	        ${this.schedule[1].render()}
-	    </ul>
-		</div>
-	</div>
-	<div class="row mt-5 mt-md-0 filmer">
-		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mt-3">${moment(this.schedule[2][0].date).format('dddd DD MMMM')}</h2>
-			<ul class="list-group listor">
-	        ${this.schedule[2].render()}
-	    </ul>
-		</div>
-	</div>
-	<div class="row mt-5 mt-md-0 filmer">
-		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mt-3">${moment(this.schedule[3][0].date).format('dddd DD MMMM')}</h2>
-			<ul class="list-group listor">
-	        ${this.schedule[3].render()}
-	    </ul>
-		</div>
-	</div>
-		<div class="row mt-5 mt-md-0 filmer">
-		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mt-3">${moment(this.schedule[4][0].date).format('dddd DD MMMM')}</h2>
-			<ul class="list-group listor">
-	        ${this.schedule[4].render()}
-	    </ul>
-		</div>
-	</div>
-	<div class="row mt-5 mt-md-0 filmer">
-		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mt-3">${moment(this.schedule[5][0].date).format('dddd DD MMMM')}</h2>
-			<ul class="list-group listor">
-	        ${this.schedule[5].render()}
-	    </ul>
-		</div>
-	</div>
-		<div class="row mt-5 mt-md-0 filmer">
-		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mt-3">${moment(this.schedule[6][0].date).format('dddd DD MMMM')}</h2>
-			<ul class="list-group listor">
-	        ${this.schedule[6].render()}
-	    </ul>
-		</div>
-	</div>
+  movies.forEach(movie => {
+    html += `${movie.render()}`;
+  })
 
+  html += `
+    </ul>
+    </div>
+    </div>
+  `;
 
+  return html;
+}
 
-`;}});
+Object.assign(Filmer.prototype, { template(){
+  const sevenDaysMovies = [];
+
+  // create 7 days movies html
+  // sevenDaysMovies[0]: today's movies html
+  // sevenDaysMovies[1]: tomorrow's movies html
+  this.schedule.forEach((movies, index) => {
+    sevenDaysMovies.push(
+      dailyMovieHtml(
+        index,
+        this.format.format(new Date(movies[0].date)),
+        movies
+      )
+    );
+  })
+
+  return sevenDaysMovies.join('');
+}});
