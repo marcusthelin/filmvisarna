@@ -12,6 +12,9 @@
     "images": [
        "black-panther-poster.jpg"
     ],
+    "imdblinks": [
+      "tt1825683"
+    ],
     "⚙": "Movie"
   },
   {
@@ -28,6 +31,9 @@
     "images": [
        "solo-poster.jpg"
     ],
+    "imdblinks": [
+      "tt3778644"
+    ],
     "⚙": "Movie"
   },
   {
@@ -43,6 +49,9 @@
     "images": [
        "tomb-raider-poster.jpg"
     ],
+    "imdblinks": [
+      "tt1365519"
+    ],
     "⚙": "Movie"
   },
   {
@@ -57,6 +66,9 @@
     ],
     "images": [
        "deadpool2-poster.jpg"
+    ],
+    "imdblinks": [
+      "tt5463162"
     ],
     "⚙": "Movie"
   }
