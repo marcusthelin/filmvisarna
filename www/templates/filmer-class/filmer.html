@@ -32,29 +32,6 @@ Object.assign(Filmer.prototype, { template(){ return `
 	    </ul>
 		</div>
 	</div>
-	<div class="row mt-5 mt-md-0 filmer">
-		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mt-3">${this.format.format(new Date(this.schedule[4][0].date))}</h2>
-			<ul class="list-group listor">
-	        ${this.schedule[4].render()}
-	    </ul>
-		</div>
-	</div>
-	<div class="row mt-5 mt-md-0 filmer">
-		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mt-3">${this.format.format(new Date(this.schedule[5][0].date))}</h2>
-			<ul class="list-group listor">
-	        ${this.schedule[5].render()}
-	    </ul>
-		</div>
-	</div>
-	<div class="row mt-5 mt-md-0 filmer">
-		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mt-3">${this.format.format(new Date(this.schedule[6][0].date))}</h2>
-			<ul class="list-group listor">
-	        ${this.schedule[6].render()}
-	    </ul>
-		</div>
-	</div>
+
 
 `;}});

@@ -9,7 +9,7 @@ class Filmer extends Base {
 
 	getMovies(date) {
 		this.schedule = [];
-		for(let days = 0; days< 7; days++){
+		for(let days = 0; days< 4; days++){
 			this.movies = [this.app.showtime.filter(movie => movie.date == date.getFullYear()+'-0'+(date.getMonth()+1)+'-'+(date.getDate()+days))];
 			for(let i = 0; i< this.movies.length; i++ ){
 				this.schedule.push(this.movies[i]);
