@@ -5,12 +5,9 @@
     color: black;
   }
   a:hover{
-    color: rgb(45, 9, 112);
+    color: @somecolor;
     text-decoration: none;
 
-  }
-  h4{
-    color: black;
   }
 
   ul{
@@ -19,16 +16,13 @@
 }
 
 .movie-btn{
-  button {
-    background-color: @somecolor;
-    opacity: 0.5;
-    &:hover {
-      opacity: 1.0;
-    }
-  }
+  button:hover{
+  color: @somecolor;
+}
 }
 
 .om-film{
+  background-color: @betterpurple;
   border-radius: 10px;
   h2{
     font-family: 'Oswald', sans-serif;
@@ -55,8 +49,4 @@
     a:hover{
       color: @somecolor;
     }
-  }
-
-  .fa-star{
-    color: #e6e629;
   }
