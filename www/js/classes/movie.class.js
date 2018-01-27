@@ -32,5 +32,7 @@ class Movie extends Base {
         this.lillaSalongen.push(this.movies[i]);
       }
     }
+    
+    console.log(this.storaSalongen);
   }
 }
