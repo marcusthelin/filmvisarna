@@ -82,6 +82,7 @@ class PopStateHandler {
     $('main').empty();
     this.app.startsidan.render('.karusell', '2');
     this.app.startsidan.render('main');
+    this.app.startsidan.callCarousel();
   }
 
   filmInfo(){
@@ -118,6 +119,7 @@ class PopStateHandler {
     $('main').empty();
     this.app.startsidan.render('.karusell', '2');
     this.app.filmer.render('main');
+    this.app.startsidan.callCarousel();
 
   }
 
