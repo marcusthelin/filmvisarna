@@ -1,10 +1,10 @@
 class Filmer extends Base {
 	constructor(app){
 		super();
-		this.app = app;
-		this.getMovies();
+    this.app = app;
+    this.getMovies(new Date());
+    this.format = new Intl.DateTimeFormat("sv", {weekday:"long", day:"numeric", month: "long" });
 	}
-
 
 	getMovies(date) {
     // set time at 00:00:00, will be calculated by based on this time
