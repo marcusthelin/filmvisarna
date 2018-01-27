@@ -28,23 +28,12 @@ Object.assign(Movie.prototype, { template3(){ return `
   </div>
   <div class="col-lg-4">
     <div class="col-12">
-      <div class="calendar">
-        <!-- <table class="table table-hover table-sm">
-          <thead>
-            <tr>
-              <th scope="col">Datum</th>
-              <th scope="col">Tid</th>
-              <th scope="col">Salong</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${this.movies.render('', '2')}
-          </tbody>
-
-        </table> -->
+      <div class="calendar d-none d-lg-block">
         <ul class="list-group">
-          <li class="list-group-item list-group-item-secondary">Datum - Tid - Salong</li>
-          <li>${this.movies.render('', '2')}</li>
+          <li class="list-group-item no-word-space list-group-item-secondary"><h3>Stora salongen</h3></li>
+          <li>${this.storaSalongen.render('', '2')}</li>
+          <li class="list-group-item no-word-space list-group-item-secondary"><h3>Lilla salongen</h3></li>
+          <li>${this.lillaSalongen.render('', '2')}</li>
         </ul>
       </div>
     </div>

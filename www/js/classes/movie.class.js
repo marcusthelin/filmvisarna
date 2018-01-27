@@ -2,6 +2,8 @@ class Movie extends Base {
   constructor(){
     super();
     this.movies = [];
+    this.storaSalongen = [];
+    this.lillaSalongen = [];
   }
 
   gatherMovies(){
@@ -22,9 +24,13 @@ class Movie extends Base {
     // same but an alternative way of writing it
     // this.movies = this.movies.length > 7 ? this.movies.slice(0,7) : this.movies;
 
-    console.log(this.movies);
-
+    //Sort movies based on auditorium.
+    for(let i = 0; i < this.movies.length; i++){
+      if(this.movies[i].auditorium == "Stora Salongen"){
+        this.storaSalongen.push(this.movies[i]);
+      } else if(this.movies[i].auditorium == "Lilla Salongen"){
+        this.lillaSalongen.push(this.movies[i]);
+      }
+    }
   }
-
-
 }
