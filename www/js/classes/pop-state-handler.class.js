@@ -78,6 +78,7 @@ class PopStateHandler {
   }
 
   startsidan(){
+    $('title').text('Filmvisarna');
     $('.karusell').empty();
     $('main').empty();
     this.app.startsidan.render('.karusell', '2');
@@ -100,27 +101,30 @@ class PopStateHandler {
     $('.karusell').empty();
     $('main').empty();
     this.app.movies[numbers[url]].render('main','3');
+    $('title').text($('h2').text()+ ' - Filmvisarna');
   }
 
   biljetter(){
     $('.karusell').empty();
     $('main').empty();
     this.app.biljetter.render('main');
+    $('title').text('Biljetter - Filmvisarna');
   }
 
   OmOss(){
     $('.karusell').empty();
     $('main').empty();
     this.app.omOss.render('main');
+    $('title').text('Om oss - Filmvisarna');
   }
 
   calendar(){
     $('.karusell').empty();
     $('main').empty();
     this.app.startsidan.render('.karusell', '2');
+    $('title').text('Filmer - Filmvisarna');
     this.app.filmer.render('main');
     this.app.startsidan.callCarousel();
-
   }
 
 }
