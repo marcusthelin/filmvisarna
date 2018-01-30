@@ -61,6 +61,122 @@ body .btn {
 .karusell .empty-space {
   padding-top: 70px;
 }
+/* Start of fading transition*/
+.carousel-fade .carousel-item {
+  opacity: 0;
+  -webkit-transition-duration: .6s;
+  transition-duration: .6s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+@supports (transform-style: preserve-3d) {
+  .carousel-fade .carousel-item-next,
+  .carousel-fade .carousel-item-prev,
+  .carousel-fade .carousel-item.active,
+  .carousel-fade .active.carousel-item-left,
+  .carousel-fade .active.carousel-item-prev {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* End of fading transition */
+.biljett-info {
+  background-color: #13141b;
+  border-radius: 5px;
+  padding: 50px;
+  height: 100%;
+}
+.biljett-info h2,
+.biljett-info h3,
+.biljett-info h4 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid #f2b600;
+  border-width: 50%;
+  display: inline-block;
+  line-height: 1.5;
+}
+.om-oss {
+  background-color: #13141b;
+  border-radius: 5px;
+  padding: 50px;
+  height: 100%;
+}
+.om-oss h2,
+.om-oss h3 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid #f2b600;
+  border-width: 50%;
+  display: inline-block;
+  line-height: 1.5;
+}
+.list-group-item a h5:hover {
+  color: #f2b600 !important;
+}
+.list-group-item a:hover {
+  color: #f2b600 !important;
+  text-decoration: none;
+}
+.filmer h2 {
+  border-bottom: 2px solid #f2b600;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.biljett-info img {
+  width: 150px;
+}
+.filmer h2 {
+  border-bottom: 4px solid #f2b600;
+  padding-bottom: 5px;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  bottom: 30px !important;
+}
+.lala {
+  background-color: #13141b;
+  border-color: #000;
+}
+.lala .btn {
+  border-color: #f2b600;
+  background-color: #0b0c10;
+}
+.lala .btn:hover {
+  background-color: #f2b600;
+  color: black !important;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color: #000;
+}
+body .btn {
+  cursor: pointer;
+}
 main .card {
   background-color: rgba(0, 0, 0, 0.15);
 }

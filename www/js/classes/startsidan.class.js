@@ -3,4 +3,10 @@ class Startsidan extends Base {
 		super();
 		this.app = app;
 	}
+
+	callCarousel(){
+		$(document).ready(function() {
+			$('#carouselExampleControls').carousel('cycle');
+		});
+	}
 }
