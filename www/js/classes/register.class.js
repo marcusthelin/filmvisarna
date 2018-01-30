@@ -1,6 +1,7 @@
 class Register extends Base{
 	constructor(){
 		super();
+		this.checkClick();
 	}
 
 	drawRegisterModal(){
@@ -9,10 +10,13 @@ class Register extends Base{
 		$('#register-modal').modal();
 	}
 
-	click(event){
-    if($(event.target).hasClass('register')){
-      console.log('hej');
-    }
-  }
+	
+	checkClick(){
+		$(document).on('click', '.register', function(){
+			let username = $('#name').val();
+			let password = $('#password').val();
+			console.log(username, password);
+		});
+	}
 
 }
