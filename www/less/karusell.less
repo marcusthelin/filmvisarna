@@ -1,0 +1,101 @@
+.karusell{
+  a{
+    color: white;
+    &:hover{
+      color: @somecolor;
+      text-decoration: none;
+    }
+  }
+  .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .carousel-caption {
+    top: auto;
+    bottom: 10px;
+    right: 900px;
+  }
+  .first-carousel-caption {
+    top: auto;
+    bottom: 20px;
+    right: 700px;
+    color: #fff;
+  }
+
+  .carousel-caption-avatar {
+    top: auto;
+    bottom: 10px;
+    right: 950px;
+  }
+
+  .film-title {
+    @media screen and (max-width: 1035px) {
+      font-size: 25px;
+      font-family: 'Exo', sans-serif;
+      font-weight: 900;
+      text-shadow: 2px 2px #000;
+    }
+    font-size: 50px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px #000;
+  }
+
+  .film-title-color {
+    color: #000;
+  }
+
+  .carousel-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 43px;
+  }
+
+  .empty-space {
+    padding-top: 70px;
+  }
+}
+
+
+
+/* Start of fading transition*/
+.carousel-fade .carousel-item {
+    opacity: 0;
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@supports (transform-style: preserve-3d) {
+    .carousel-fade .carousel-item-next,
+    .carousel-fade .carousel-item-prev,
+    .carousel-fade .carousel-item.active,
+    .carousel-fade .active.carousel-item-left,
+    .carousel-fade .active.carousel-item-prev {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+/* End of fading transition */

@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Black Panther",
+    "releasedate": "14 Februari, 2018",
+    "genre": "Action | Äventyr | Sci-Fi",
+    "director": "Ryan Coogler",
+    "actors": [
+      "Chadwick Boseman",
+      "Michael B. Jordan",
+      "Lupita Nyong'o"
+    ],
+    "images": [
+       "black-panther-poster.jpg"
+    ],
+    "imdblinks": [
+      "tt1825683"
+    ],
+    "⚙": "Movie"
+  },
+  {
+    "title": "Solo: A Star Wars Story",
+    "releasedate": "23 Maj, 2018",
+    "genre": "Action | Äventyr | Sci-Fi",
+    "director": "Ron Howard",
+    "actors": [
+      "Emilia Clarke",
+      "Alden Ehrenreich",
+       "Woody Harrelson",
+       "Donald Glover"
+    ],
+    "images": [
+       "solo-poster.jpg"
+    ],
+    "imdblinks": [
+      "tt3778644"
+    ],
+    "⚙": "Movie"
+  },
+  {
+    "title": "Tomb Raider",
+    "releasedate": "16 Mars, 2018",
+    "genre": "Action | Äventyr",
+    "director": "Roar Uthaug",
+    "actors": [
+      "Alicia Vikander",
+      "Hannah John-Kamen",
+       "Walton Goggins"
+    ],
+    "images": [
+       "tomb-raider-poster.jpg"
+    ],
+    "imdblinks": [
+      "tt1365519"
+    ],
+    "⚙": "Movie"
+  },
+  {
+    "title": "Deadpool 2",
+    "releasedate": "18 Maj, 2018",
+    "genre": "Action | Äventyr | Komedi",
+    "director": "David Leitch",
+    "actors": [
+      "Ryan Reynolds",
+      "Morena Baccarin",
+       "Josh Brolin"
+    ],
+    "images": [
+       "deadpool2-poster.jpg"
+    ],
+    "imdblinks": [
+      "tt5463162"
+    ],
+    "⚙": "Movie"
+  }
+]

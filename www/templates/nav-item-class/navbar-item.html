@@ -1,0 +1,11 @@
+Object.assign(NavbarItem.prototype, { template(){ return `
+	<li class="nav-item ${this.active ? 'active' : ''}">
+  	<a class="nav-link pop" href="${this.url}">${this.name}
+    	${this.active ? '<span class="sr-only">(current)</span>' : ''}
+  	</a>
+	</li>
+
+
+
+
+`;}});

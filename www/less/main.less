@@ -1,0 +1,86 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body{
+  background-color: #000;
+  .btn{
+    cursor: pointer;
+  }
+}
+
+main{
+  .card{
+    background-color: rgba(0,0,0,0.15);
+  }
+  .empty-space {
+    padding-top: 70px;
+  }
+  .current-movies, .coming-movies{
+    a{
+      text-decoration: none;
+    }
+    .card-info{
+      display: none;
+      padding: 50px;
+      p,h4,h6{
+        color: white;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+    &:hover{
+      .card-info{
+        display: block;
+        @media only screen and (max-width: 1199px) {
+          padding: 15px 25px;
+        }
+        @media only screen and (max-width: 991px) {
+          display: none;
+       }
+      }
+      img{
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        opacity: 0.5;
+        transform: scale(0.99);
+        cursor: pointer;
+       -webkit-transition: 0.1s ease-in-out;
+        transition: 0.1s ease-in-out;
+      }
+    }
+    img{
+      cursor: pointer;
+    }
+  }
+
+  .coming-movies{
+    .card-info{
+      cursor: context-menu;
+    }
+  }
+
+  .img-calendar{
+    width: 59px;
+    height: 87px;
+  }
+
+  p, h5, h6, h2, h3, h4{
+    color: white;
+    font-family: 'PT Serif', serif;
+  }
+
+  .comingMoviesHeader, .currentMoviesHeader{
+    background-color: @somecolor;
+    text-align: center;
+    box-shadow: 0 0 3px 3px #000 inset;
+    h2{
+      font-family: @oswald;
+      color: #000;
+
+    }
+  }
+
+
+}
