@@ -3,7 +3,7 @@ Object.assign(Startsidan.prototype, { template2(){ return `
   <div class="container-fluid d-none d-md-block">
     <div class="row">
       <div class="col-12 carousel-padding">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="6000" >
           <div class="carousel-inner">
             <div class="carousel-item active">
               <a href="/film/Call_Me_by_Your_Name" class="pop"><img class="d-block w-100" src="/imgs/call-me.jpg" alt="First slide"></a>
@@ -41,7 +41,5 @@ Object.assign(Startsidan.prototype, { template2(){ return `
         </div>
       </div>
     </div>
-  </div>
-
   </div>
 `;}});

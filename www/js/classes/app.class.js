@@ -1,7 +1,7 @@
 class App {
 
   constructor(){
-
+    moment.locale('sv');
     this.load();
 
   }
