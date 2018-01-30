@@ -1,7 +1,7 @@
 Object.assign(Movie.prototype, { template3(){ return `
 
 <div class="row col-lg-12 mt-2 empty-space justify-content-center">
-  <div class="col-lg-10 ">
+  <div class="col-lg-8 ">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -25,74 +25,85 @@ Object.assign(Movie.prototype, { template3(){ return `
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <div class=" col-lg-12">
-      <div class="om-film mt-2">
-      <h2 class="text-center">${this.title}</h2>
-        <p>${this.description}</p>
+  </div>
+  <div class="col-lg-4">
+    <div class="col-12">
+      <div class="calendar d-none d-lg-block">
+        <ul class="list-group">
+          <li class="list-group-item no-word-space list-group-item-secondary"><h3>Stora salongen</h3></li>
+          ${this.storaSalongen.render('', '2') || '<li class="list-group-item no-word-space">Inga visningar</li>'}
+          <li class="list-group-item no-word-space list-group-item-secondary"><h3>Lilla salongen</h3></li>
+          ${this.lillaSalongen.render('', '2') || '<li class="list-group-item no-word-space">Inga visningar</li>'}
+        </ul>
       </div>
-
-
-      <div id="accordion" role="tablist">
-        <div class="card">
-          <div class="card-header" role="tab" id="headingOne">
-            <h5 class="mb-0">
-                  <a class="" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
-                    Produktions Information
-                  </a>
-                </h5>
-          </div>
-
-          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              <ul class="film-produkt-info">
-                <li><b>Land:</b> ${this.productionCountries.join(', ')}</li>
-					      <li><b>Produktionsår:</b> ${this.productionYear}</li>
-					      <li><b>Längd</b> ${this.length}</li>
-					      <li><b>Genre:</b> ${this.genre}</li>
-					      <li><b>Distributör:</b> ${this.distributor}</li>
-					      <li><b>Språk:</b> ${this.language}</li>
-					      <li><b>Textning:</b> ${this.subtitles}</li>
-					      <li><b>Regissör:</b> ${this.director}</li>
-					      <li><b>Skådespelare:</b> ${this.actors.join(', ')}</li>
-              </ul>
-            </div>
-          </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class=" col-lg-12">
+    <div class="om-film mt-2">
+    <h2 class="text-center">${this.title}</h2>
+      <p>${this.description}</p>
+    </div>
+    <div id="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+          <h5 class="mb-0">
+                <a class="" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                  Produktions Information
+                </a>
+              </h5>
         </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingTwo">
-            <h5 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
-                    Recensioner
-                  </a>
-                </h5>
+      </div>
+      <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          <ul class="film-produkt-info">
+            <li><b>Land:</b> ${this.productionCountries.join(', ')}</li>
+			      <li><b>Produktionsår:</b> ${this.productionYear}</li>
+			      <li><b>Längd</b> ${this.length}</li>
+			      <li><b>Genre:</b> ${this.genre}</li>
+			      <li><b>Distributör:</b> ${this.distributor}</li>
+			      <li><b>Språk:</b> ${this.language}</li>
+			      <li><b>Textning:</b> ${this.subtitles}</li>
+			      <li><b>Regissör:</b> ${this.director}</li>
+			      <li><b>Skådespelare:</b> ${this.actors.join(', ')}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingTwo">
+          <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                  Recensioner
+                </a>
+              </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[0].stars}<small>/${this.reviews[0].max}</small></h4>
+                <p>${this.reviews[0].quote}</p>
+                <div class="blockquote-footer">${this.reviews[0].source}</div>
+              </blockquote>
+            </div>
           </div>
-          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card">
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[0].stars}<small>/${this.reviews[0].max}</small></h4>
-                  <p>${this.reviews[0].quote}</p>
-                  <div class="blockquote-footer">${this.reviews[0].source}</div>
-                </blockquote>
-              </div>
+          <div class="card">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[1].stars}<small>/${this.reviews[1].max}</small></h4>
+                <p>${this.reviews[1].quote}</p>
+                <div class="blockquote-footer">${this.reviews[1].source}</div>
+              </blockquote>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[1].stars}<small>/${this.reviews[1].max}</small></h4>
-                  <p>${this.reviews[1].quote}</p>
-                  <div class="blockquote-footer">${this.reviews[1].source}</div>
-                </blockquote>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[2].stars}<small>/${this.reviews[2].max}</small></h4>
-                  <p>${this.reviews[2].quote}</p>
-                  <div class="blockquote-footer">${this.reviews[2].source}</div>
-                </blockquote>
-              </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[2].stars}<small>/${this.reviews[2].max}</small></h4>
+                <p>${this.reviews[2].quote}</p>
+                <div class="blockquote-footer">${this.reviews[2].source}</div>
+              </blockquote>
             </div>
           </div>
         </div>
@@ -103,8 +114,8 @@ Object.assign(Movie.prototype, { template3(){ return `
       <div class="imdb-info text-center mt-2">
         <a target="blank" href="http://www.imdb.com/title/${this.imdblinks}"><span class="fa fa-imdb mr-3 imdb"></span>Filmen på imdb</span></a>
       </div>
-
     </div>
   </div>
+</div>
 
 `;}});

@@ -13,6 +13,10 @@ class App {
 
     this.movies = await JSON._load('movies.json');
 
+    for(let obj of this.movies){
+      obj.app = this;
+    }
+
     this.showtime = await JSON._load('showtime.json');
 
     for(let i = 0; i < this.showtime.length; i++){
@@ -22,6 +26,12 @@ class App {
         }
       }
     }
+
+    for(let x = 0; x < this.movies.length; x++){
+      this.movies[x].gatherMovies();
+    }
+
+
 
     this.comingMovies = await JSON._load('comingMovies.json');
 

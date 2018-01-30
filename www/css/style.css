@@ -165,6 +165,24 @@ main .om-oss h2,
 main .om-oss h3 {
   font-family: 'Oswald', sans-serif;
 }
+main .calendar {
+  height: 245px;
+}
+main .calendar h3 {
+  color: black;
+  text-decoration: underline;
+}
+main .calendar ul {
+  position: absolute;
+  right: 20px;
+  bottom: -150px;
+  top: 0;
+  overflow: scroll;
+  width: 90%;
+}
+main .calendar .list-group-item:not(.no-word-space) {
+  word-spacing: 20px;
+}
 footer {
   position: absolute;
   bottom: 0;
