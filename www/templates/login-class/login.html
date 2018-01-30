@@ -1,6 +1,6 @@
 Object.assign(LogIn.prototype, { template(){ return `
 
-<ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+	<ul class="nav navbar-nav flex-row justify-content-between ml-auto">
 	  <li class="dropdown order-1">
 	    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
 	    <ul class="dropdown-menu dropdown-menu-right mt-1 text-white log">
@@ -17,7 +17,7 @@ Object.assign(LogIn.prototype, { template(){ return `
 	          <button type="submit" class="btn yellow">Logga in</button>
 	        </form>
 	        <div class="dropdown-divider"></div>
-          <button type="button" class="btn skapa btn-sm btn-block yellow" data-toggle="modal" data-target="#skapaKonto">Skapa konto</button>
+          <button type="button" class="btn skapa-konto btn-sm btn-block yellow" data-toggle="modal" data-target="#register-modal">Skapa konto</button>
 	        <button type="button" class="btn mt-2 btn-sm btn-block yellow" data-toggle="modal" data-target="">Glömt ditt lösenord?</button>
 	      </li>
 	    </ul>

@@ -1,0 +1,110 @@
+Object.assign(Register.prototype, { template(){ return `
+
+	<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2 class="modal-title text-danger">Skapa Konto</h2>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        &times;
+	      </button>
+	      </div>
+	      <div class="modal-body mx-4">
+	        <form class="form-horizontal" role="form">
+            <div class="row">
+              <div class="col-md-3 field-label-responsive">
+                <label for="name">Användarnamn</label>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                    <input type="text" name="name" class="form-control" id="name"
+                    placeholder="Användarnamn" required autofocus>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-control-feedback">
+                  <span class="text-danger align-middle">
+                    <!-- Put name validation error messages here -->
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 field-label-responsive">
+                <label for="email">E-post</label>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                    <input type="text" name="email" class="form-control" id="email"
+                    placeholder="you@example.com" required autofocus>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-control-feedback">
+                  <span class="text-danger align-middle">
+                    <!-- Put e-mail validation error messages here -->
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 field-label-responsive">
+                <label for="password">Lösenord</label>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group has-danger">
+                  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                    <input type="password" name="password" class="form-control" id="password"
+                    placeholder="Lösenord" required>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-control-feedback">
+                  <span class="text-danger align-middle">
+                    <i class="fa fa-close"> Example Error Message</i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 field-label-responsive">
+                <label for="password">Upprepa lösenord</label>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem">
+                      <i class="fa fa-repeat"></i>
+                    </div>
+                    <input type="password" name="password-confirmation" class="form-control"
+                    id="password-confirm" placeholder="Lösenord" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-success register"><i class="fa fa-user-plus"></i>Skapa konto</button>
+              </div>
+            </div>
+          </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        Stäng
+	      </button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+`;}});
