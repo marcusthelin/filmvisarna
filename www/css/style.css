@@ -2,7 +2,10 @@ header .dropdown-item:hover {
   background-color: #66717b !important;
 }
 header .navbar-brand {
-  width: 20%;
+  width: 200px;
+}
+header .d-lg-none {
+  width: 150px;
 }
 header nav {
   background-color: #13141b;
