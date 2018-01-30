@@ -33,7 +33,6 @@ class Movie extends Base {
       }
     }
 
-    console.log(this.storaSalongen);
   }
 
 
