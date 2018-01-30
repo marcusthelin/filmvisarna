@@ -56,6 +56,7 @@ class App {
     this.filmer = new Filmer(this);
     this.biljetter = new Biljetter(this);
     this.omOss = new OmOss(this);
+    
 
     // Initiate handling of SPA push/pop-state
     new PopStateHandler(this);
