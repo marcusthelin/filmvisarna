@@ -1,7 +1,6 @@
 html {
   position: relative;
   min-height: 100%;
-
 }
 body{
   background-color: #000;
@@ -9,51 +8,6 @@ body{
     cursor: pointer;
   }
 }
-
-.karusell{
-  .container-fluid{
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .carousel-caption {
-    top: auto;
-    bottom: 10px;
-    right: 900px;
-  }
-  .first-carousel-caption {
-    top: auto;
-    bottom: 20px;
-    right: 700px;
-    color: #fff;
-  }
-
-  .carousel-caption-avatar {
-    top: auto;
-    bottom: 10px;
-    right: 950px;
-  }
-
-  .film-title {
-    font-size: 50px;
-    font-family: 'Exo', sans-serif;
-    font-weight: 900;
-  }
-
-  .film-title-color {
-    color: #000;
-  }
-
-  .carousel-padding {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    padding-top: 43px;
-  }
-
-  .empty-space {
-    padding-top: 70px;
-  }
-}
-
 
 main{
   .card{
@@ -78,12 +32,13 @@ main{
     }
     &:hover{
       .card-info{
-        @media only screen and (max-width: 758px) {
+        display: block;
+        @media only screen and (max-width: 1199px) {
+          padding: 15px 25px;
+        }
+        @media only screen and (max-width: 991px) {
           display: none;
        }
-      @media only screen and (min-width: 800px) {
-          display: block;
-        }
       }
       img{
         -webkit-filter: blur(5px);
@@ -95,20 +50,15 @@ main{
         transition: 0.1s ease-in-out;
       }
     }
-  }
-
-  .current-movies{
     img{
       cursor: pointer;
     }
   }
+
   .coming-movies{
     .card-info{
       cursor: context-menu;
     }
-  }
-  .fa-star{
-    color: #e6e629;
   }
 
   .img-calendar{
@@ -122,58 +72,15 @@ main{
   }
 
   .comingMoviesHeader, .currentMoviesHeader{
-    background-color: rgb(16.86, 0.78, 34.51, 0.21);
+    background-color: @somecolor;
     text-align: center;
+    box-shadow: 0 0 3px 3px #000 inset;
     h2{
-      font-family: 'Oswald', sans-serif;
+      font-family: @oswald;
+      color: #000;
+
     }
   }
 
-  .biljett-info{
-    // background-color: rgb(16.86, 0.78, 34.51, 0.21);
-    // border-radius: 15px;
-  }
 
-  .carousel-control-prev,.carousel-control-next{
-    bottom: 30px !important;
-  }
-
-  .lala{
-    background-color: @betterpurple;
-  }
-
-  .biljett-info{
-    background-color: @betterpurple;
-    border-radius: 5px;
-    h2, h3, h4{
-      font-family: 'Oswald', sans-serif;
-    }
-  }
-
-  .om-oss{
-    background-color: @betterpurple;
-    border-radius: 5px;
-    h2, h3{
-      font-family: 'Oswald', sans-serif;
-    }
-  }
-
-  .calendar{
-    height: 245px;
-    h3{
-      color: black;
-      text-decoration: underline;
-    }
-    ul{
-      position: absolute;
-      right: 20px;
-      bottom: -150px;
-      top: 0;
-      overflow: scroll;
-      width: 90%;
-    }
-    .list-group-item:not(.no-word-space){
-      word-spacing: 20px;
-    }
-  }
 }
