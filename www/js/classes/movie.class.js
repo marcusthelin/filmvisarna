@@ -32,7 +32,17 @@ class Movie extends Base {
         this.lillaSalongen.push(this.movies[i]);
       }
     }
-    
+
     console.log(this.storaSalongen);
+  }
+
+
+  click(event) {
+    if ($(event.target).hasClass('film-modal-btn')) {
+      this.bokingModal = new bokingModal();
+      this.bokingModal.drawBokingModal();
+      console.log($(event.target));
+    }
+
   }
 }
