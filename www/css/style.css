@@ -213,6 +213,24 @@ body {
 body .btn {
   cursor: pointer;
 }
+main .calendar {
+  height: 245px;
+}
+main .calendar h3 {
+  color: black;
+  text-decoration: underline;
+}
+main .calendar ul {
+  position: absolute;
+  right: 20px;
+  bottom: -150px;
+  top: 0;
+  overflow: scroll;
+  width: 90%;
+}
+main .calendar .list-group-item:not(.no-word-space) {
+  word-spacing: 20px;
+}
 main .card {
   background-color: rgba(0, 0, 0, 0.15);
 }
@@ -369,4 +387,55 @@ footer .myheight {
 }
 .fa-star {
   color: #e6e629;
+}
+.user-page {
+  margin-top: 80px;
+}
+.user-page .heading {
+  padding: 0;
+}
+.user-page .heading h1 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  border-width: 50%;
+  display: inline-block;
+  line-height: 1.5;
+  padding: 20px;
+}
+.user-page .heading .fa-user-circle {
+  font-size: 50px;
+}
+.user-page .heading .card {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.user-page .content {
+  background-color: #13141b;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 20px 50px;
+}
+.user-page .content h2 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid #f2b600;
+  border-width: 50%;
+  display: inline-block;
+  line-height: 1.5;
+}
+.user-page .content .bokningar .card {
+  height: 100%;
+}
+.user-page .content .bokningar h5,
+.user-page .content .bokningar a {
+  font-family: 'Oswald', sans-serif;
+  color: #f2b600;
+}
+.user-page .content .bokningar h5:hover,
+.user-page .content .bokningar a:hover {
+  text-decoration: none;
+}
+.user-page .content .bokningar li {
+  color: #fff;
+  font-weight: normal;
 }
