@@ -1,15 +1,8 @@
 class bokingModal extends Base {
-  constructor() {
+  constructor(auditorium) {
     super();
-    this.load();
-    this.salong = new Salong();
-  }
+    this.salong = new Salong(auditorium);
 
-  async load(){
-  	JSON._classes(Salong);
-  	this.salonger = await JSON._load('salonger.json');
-    this.salong.createSalong(this.salonger[0].seatsPerRow);
-    this.salong.renderSalong(this.salonger[0].seatsPerRow);
   }
 
   drawBokingModal() {
@@ -17,6 +10,5 @@ class bokingModal extends Base {
     $('main').append(this.template());
     $('#boking-modal').modal();
   }
-
 }
 
