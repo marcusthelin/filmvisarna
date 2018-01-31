@@ -38,7 +38,7 @@ class Movie extends Base {
 
   click3(event) {
     if ($(event.target).hasClass('film-modal-btn')) {
-      this.bokingModal = new bokingModal();
+      this.bokingModal = new bokingModal(this);
       this.bokingModal.drawBokingModal();
       console.log($(event.target));
     }

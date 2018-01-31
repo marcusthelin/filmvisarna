@@ -3,14 +3,17 @@ Object.assign(bokingModal.prototype, { template(){ return `
   <div class="modal fade" id="boking-modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <div class="modal-header boking-header">
+          <div class="d-flex">
+            <div class="p-2"><img class="modal-poster" src="/imgs/${this.movieClass.images[2]}" alt=""></div>
+            <div class="p-2"><h5 class="modal-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small>${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p></div>
+            <div class="p-2"></div>
+          </div>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

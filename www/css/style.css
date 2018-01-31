@@ -370,3 +370,9 @@ footer .myheight {
 .fa-star {
   color: #e6e629;
 }
+.boking-header {
+  background-color: #000;
+}
+.modal-poster {
+  width: 120px;
+}

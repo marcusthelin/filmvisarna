@@ -1,6 +1,8 @@
 class bokingModal extends Base{
-    constructor(){
+    constructor(movieClass){
         super();
+        this.movieClass = movieClass;
+        console.log(movieClass);
     }
 
     drawBokingModal(){
