@@ -129,13 +129,14 @@ class PopStateHandler {
     this.app.startsidan.callCarousel();
   }
 
-  userPage(){
-    if(this.app.userPage.isLoggedIn){
+  async userPage(){
+    if(await this.app.userPage.isLoggedIn()){
       $('main').empty();
+      $('.karusell').empty();
       $('main').append(this.app.userPage.template());
     } else {
       location.pathname = '/';
-      
+
     }
 
   }

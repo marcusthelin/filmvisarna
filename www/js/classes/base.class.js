@@ -64,7 +64,6 @@ class Base {
     for(let type of types){
       let methodName = type + templateNo;
       if(this[methodName]){
-        console.log(this.baseEl);
         this.baseEl[type]((e) => this[methodName](e));
       }
     }
