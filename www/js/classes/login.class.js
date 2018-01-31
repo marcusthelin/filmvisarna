@@ -1,8 +1,10 @@
 class LogIn extends Base{
-	constructor(){
+	constructor(app){
 		super();
+		this.app = app;
 		this.checkClickLogin();
 		this.load();
+		this.loggedIn = false;
 	}
 
 	click(event){
@@ -28,9 +30,11 @@ class LogIn extends Base{
 				if (loginName == obj.username ) {
 					if(loginPW == obj.password){
 						console.log('stämmer bra');
+						that.loggedIn = true;
+						$('header').empty();
+						that.app.navbar.render('header');
+
 					}
-					$('header').empty();
-					${}
 					break;
 				}
 				else{

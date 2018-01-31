@@ -42,7 +42,7 @@ class App {
   start(){
 
     // Create a navbar
-    this.navbar = new Navbar();
+    this.navbar = new Navbar(this);
     $('header').empty();
     this.navbar.render('header');
 
