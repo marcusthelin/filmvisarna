@@ -39,7 +39,7 @@ class Movie extends Base {
   getAuditorium(date, time) {
     this.auditorium = '';
     this.movies.some(movie => {
-      if (movie.date === date && movie.time === time) {
+      if (moment(movie.date).format('ddd DD') === date && movie.time === time) {
         this.auditorium = movie.auditorium;
         return true;
       }
@@ -49,14 +49,15 @@ class Movie extends Base {
 
   // want to change 'Boka' button from the below to calendar
   click3(event) {
-    if ($(event.target).hasClass('list-group-item')) {
-      const regexp = /(\d{4}-\d{2}-\d{2})\s\|\s(\d+\.\d{2})/;
-      // get date and time ex.(2018-02-01 | 21.10) from $(event.target)[0].innerText
+    if ($(event.target).hasClass('boka-btn')) {
+      const regexp = /([a-zåäö]{3}\s\d{2})\,\s(\d{2}\.\d{2})/;
+      /*/(\w{3}\s\d{2}-\d{2})\s\|\s(\d+\.\d{2})/;*/
+      // get date and time ex. tor 01, 21.00 from $(event.target)[0].innerText
       const dateTime = $(event.target)[0].innerText;
       // ignore if there are not any screenings
       if (dateTime) {
         // ignore first element that contains entire matched string
-        const [, date, time] = dateTime.match(regexp);
+        const [,date, time] = dateTime.match(regexp);
         this.bokingModal = new bokingModal(this.getAuditorium(date, time),this);
         this.bokingModal.drawBokingModal();
       }

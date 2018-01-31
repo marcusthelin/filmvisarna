@@ -326,26 +326,44 @@ footer p a.text-light:hover {
 footer .myheight {
   height: 100px;
 }
+.film {
+  background-color: #13141b;
+  border-radius: 5px;
+  margin-top: 80px;
+  padding: 20px;
+  height: 100%;
+}
 #accordion {
   background-color: white;
-  border-radius: 2%;
+  border-radius: 0%;
 }
 #accordion a {
   color: black;
 }
 #accordion a:hover {
-  color: #2d0970;
   text-decoration: none;
 }
 #accordion h4 {
   color: black;
 }
-.movie-btn button {
-  background-color: #f2b600;
-  opacity: 0.5;
+#accordion .card {
+  border-radius: 0%;
 }
-.movie-btn button:hover {
+#accordion .card-header {
+  background-color: #f2b600;
+  opacity: 0.7;
+}
+#accordion .card-header:hover {
   opacity: 1.0;
+}
+#accordion .card-header button {
+  background-color: white;
+  font-weight: bold;
+  color: #f2b600;
+}
+#accordion .card-header button:hover {
+  background-color: #f2b600;
+  color: white;
 }
 .om-film {
   border-radius: 10px;
@@ -369,6 +387,9 @@ footer .myheight {
 }
 .fa-star {
   color: #e6e629;
+}
+.calendar .list-group-item.no-word-space.head {
+  background-color: #f2b600;
 }
 .boking-header {
   background-color: #000;
