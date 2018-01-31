@@ -5,6 +5,11 @@ class Register extends Base{
 		this.load();
 	}
 
+
+	async load(){
+		this.users = await JSON._load('users.json');
+	}
+
 	drawRegisterModal(){
 		$('main #register-modal').remove();
 		$('main').append(this.template());

@@ -11,10 +11,6 @@ class LogIn extends Base{
     }
   }
 
-	async load(){
-		this.users = await JSON._load('users.json');
-	}
-
 	checkClickLogin(){
 		let that = this;
 		$(document).on('click', '.login', function(){
