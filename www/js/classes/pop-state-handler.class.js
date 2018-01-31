@@ -64,7 +64,8 @@ class PopStateHandler {
       '/film/Interstellar': 'filmInfo',
       '/film/The_Incredibles': 'filmInfo',
       '/film/Downsizing': 'filmInfo',
-      '/film/Three_Billboards_Outside_Ebbing,_Missouri': 'filmInfo'
+      '/film/Three_Billboards_Outside_Ebbing,_Missouri': 'filmInfo',
+      '/mina_sidor': 'userPage'
     };
 
     // Call the right method
@@ -129,8 +130,14 @@ class PopStateHandler {
   }
 
   userPage(){
-    this.userPage = new UserPage();
-    $('main').append(this.userPage.template());
+    if(this.app.userPage.isLoggedIn){
+      $('main').empty();
+      $('main').append(this.app.userPage.template());
+    } else {
+      location.pathname = '/';
+      
+    }
+
   }
 
 }

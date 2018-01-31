@@ -44,6 +44,7 @@ class LogIn extends Base {
             that.loggedIn = true;
             $('header').empty();
             that.app.navbar.render('header');
+						that.app.userPage.isLoggedIn = true;
 
           }
           break;
