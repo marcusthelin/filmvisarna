@@ -344,12 +344,27 @@ footer p a.text-light:hover {
 footer .myheight {
   height: 100px;
 }
-.film {
+.booking h3 {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f2b600;
+  padding: 5px;
+  color: #000;
+}
+.booking .booking-list {
+  font-family: 'Oswald', sans-serif;
   background-color: #13141b;
-  border-radius: 5px;
-  margin-top: 80px;
-  padding: 20px;
-  height: 100%;
+  border-color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.booking .booking-list .btn-link {
+  color: #fff;
+}
+.booking .booking-list .btn-link:hover {
+  color: #000;
+}
+.booking .booking-list:hover {
+  background-color: #f2b600;
 }
 #accordion {
   background-color: white;

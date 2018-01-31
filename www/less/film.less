@@ -1,10 +1,28 @@
-.film {
-  background-color: @bg-gray;
-  border-radius: 5px;
-  margin-top: 80px;
-  padding: 20px;
-  height: 100%;
+.booking{
+  h3{
+    font-family: 'Oswald', sans-serif;
+    background-color: @somecolor;
+    padding: 5px;
+    color: #000;
+  }
+  .booking-list{
+    font-family: 'Oswald', sans-serif;
+    background-color: @bg-gray;
+    border-color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    .btn-link{
+      color: #fff;
+      &:hover{
+        color: #000;
+      }
+    }
+    &:hover{
+      background-color: @somecolor;
+    } 
+  }
 }
+
 
 #accordion{
   background-color: white;
