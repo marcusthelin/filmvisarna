@@ -23,10 +23,15 @@ class Register extends Base{
 			let username = $('#name').val();
 			let password = $('#password').val();
 			let memberNumber = Math.floor((Math.random() * 10000000) + 1);
+			console.log($('#password-confirm').val());
 
 			let newUser = {username: username, password: password, memberNumber: memberNumber};
+			if(username.length > 2 && password.length > 2){
+				if($('#password-confirm').val() !== password){
+					alert('Lösenord stämmer inte överrens!');
+				} else {that.users.push(newUser);}
+			} else {alert('Användarnamn och lösenord måste vara minst 2 tecken långt');}
 
-			that.users.push(newUser);
 
 			JSON._save('users.json', that.users);
 
