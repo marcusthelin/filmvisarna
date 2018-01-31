@@ -53,13 +53,13 @@ class Movie extends Base {
       const regexp = /(\d{4}-\d{2}-\d{2})\s\|\s(\d+\.\d{2})/;
       // get date and time ex.(2018-02-01 | 21.10) from $(event.target)[0].innerText
       const dateTime = $(event.target)[0].innerText;
-      // ignore first element that contains entire matched string
-      const [, date, time] = dateTime.match(regexp);
-
-      this.bokingModal = new bokingModal(this.getAuditorium(date, time));
-      this.bokingModal.drawBokingModal();
-
+      // ignore if there are not any screenings
+      if (dateTime) {
+        // ignore first element that contains entire matched string
+        const [, date, time] = dateTime.match(regexp);
+        this.bokingModal = new bokingModal(this.getAuditorium(date, time));
+        this.bokingModal.drawBokingModal();
+      }
     }
-
   }
 }
