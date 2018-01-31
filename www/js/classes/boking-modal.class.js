@@ -1,15 +1,14 @@
-class bokingModal extends Base{
-    constructor(movieClass){
-        super();
-        this.movieClass = movieClass;
-        console.log(movieClass);
-    }
+class bokingModal extends Base {
+  constructor(auditorium) {
+    super();
+    this.salong = new Salong(auditorium);
 
-    drawBokingModal(){
-       $('main #boking-modal').remove();
-       $('main').append(this.template());
-       $('#boking-modal').modal();
-   }
+  }
 
-
+  drawBokingModal() {
+    $('main #boking-modal').remove();
+    $('main').append(this.template());
+    $('#boking-modal').modal();
+  }
 }
+

@@ -35,13 +35,31 @@ class Movie extends Base {
 
   }
 
+  // getting which size of salon that was selected
+  getAuditorium(date, time) {
+    let auditorium = '';
+    this.movies.some(movie => {
+      if (movie.date === date && movie.time === time) {
+        auditorium = movie.auditorium;
+        return true;
+      }
+    });
+    return auditorium;
+  }
 
+  // want to change 'Boka' button from the below to calendar
   click3(event) {
-    if ($(event.target).hasClass('film-modal-btn')) {
-      this.bokingModal = new bokingModal(this);
-      this.bokingModal.drawBokingModal();
-      console.log($(event.target));
+    if ($(event.target).hasClass('list-group-item')) {
+      const regexp = /(\d{4}-\d{2}-\d{2})\s\|\s(\d+\.\d{2})/;
+      // get date and time ex.(2018-02-01 | 21.10) from $(event.target)[0].innerText
+      const dateTime = $(event.target)[0].innerText;
+      // ignore if there are not any screenings
+      if (dateTime) {
+        // ignore first element that contains entire matched string
+        const [, date, time] = dateTime.match(regexp);
+        this.bokingModal = new bokingModal(this.getAuditorium(date, time));
+        this.bokingModal.drawBokingModal();
+      }
     }
-
   }
 }
