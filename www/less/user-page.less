@@ -1,5 +1,5 @@
 .user-page{
-
+	margin-top: 80px;
 	.heading{	
 		padding: 0;
 	  h1{
@@ -22,7 +22,6 @@
 		 	background-color: @bg-gray;
 	    border-bottom-right-radius: 5px;
 	    border-bottom-left-radius: 5px;
-		  height: 100%;
 		  padding: 20px 50px;
 		 	h2{
 	    font-family: 'Oswald', sans-serif;
@@ -32,12 +31,22 @@
 	    display: inline-block;
 	    line-height: 1.5;
 	  }
-	  .bokning{
-	  	background-color: #fff;
-	  	border-radius: 3px;
+   .bokningar{
+   	.card{
+   		height: 100%;
+   	}
+	  	h5,a{
+	  		font-family: 'Oswald', sans-serif;
+	  		color: @somecolor;
+	  		&:hover{
+	  			text-decoration: none
+	  		}
+	  	}
+	  	li{
+	  		color: #fff;
+	  		font-weight: normal;
+	  	}
 	  }
-	 }
-	
-	 
+	} 
 
 }

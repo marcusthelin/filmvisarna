@@ -388,6 +388,9 @@ footer .myheight {
 .fa-star {
   color: #e6e629;
 }
+.user-page {
+  margin-top: 80px;
+}
 .user-page .heading {
   padding: 0;
 }
@@ -410,7 +413,6 @@ footer .myheight {
   background-color: #13141b;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  height: 100%;
   padding: 20px 50px;
 }
 .user-page .content h2 {
@@ -421,7 +423,19 @@ footer .myheight {
   display: inline-block;
   line-height: 1.5;
 }
-.user-page .content .bokning {
-  background-color: #fff;
-  border-radius: 3px;
+.user-page .content .bokningar .card {
+  height: 100%;
+}
+.user-page .content .bokningar h5,
+.user-page .content .bokningar a {
+  font-family: 'Oswald', sans-serif;
+  color: #f2b600;
+}
+.user-page .content .bokningar h5:hover,
+.user-page .content .bokningar a:hover {
+  text-decoration: none;
+}
+.user-page .content .bokningar li {
+  color: #fff;
+  font-weight: normal;
 }
