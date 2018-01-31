@@ -3,6 +3,7 @@ class Salong extends Base{
 		super();
 		this.app = app;
     this.seatHtml = [];
+    this.auditorium = auditorium;
     this.load().then(() => {
       this.salongSize = this.getSalongSize(auditorium);
       this.createSalong(this.salongSize);
@@ -27,19 +28,47 @@ class Salong extends Base{
     return salongSize;
   }
 
+  getMaxSeatNumber(line, salongObject) {
+    if (this.auditorium === "Lilla Salongen") {
+      switch(line) {
+        case "1": return 6;
+        case "2": return 14;
+        case "3": return 23;
+        case "4": return 33;
+        case "5": return 43;
+        case "6": return 55;
+      }
+    } else {
+      switch(line) {
+        case "1": return 8;
+        case "2": return 17;
+        case "3": return 27;
+        case "4": return 37;
+        case "5": return 47;
+        case "6": return 57;
+        case "7": return 69;
+        case "8": return 81;
+      }
+    }
+  }
+
 	createSalong(salongObject) {
     // create all seats of the salong
     for (let line in salongObject) {
       // salongObject[line] is number of seats in one line
       this.seat = new Array(salongObject[line]);
-      let y = 20 + 40 * line;
+      const y = 20 + 40 * line;
       // calculate distance from left side
-      let _x = 235 - (salongObject[line] * 30 + 5 * (salongObject[line] - 1)) / 2;
+      const _x = 235 - (salongObject[line] * 30 + 5 * (salongObject[line] - 1)) / 2;
 
+      const maxSeatNumber = this.getMaxSeatNumber(line);
       // create seats in one line
-      for (let i = 0, x = _x; i < salongObject[line]; i++) {
-        this.seat[i] = new Seat(x, y);
+      for (let i = 0, x = _x, seatNumber = maxSeatNumber;
+          i < salongObject[line];
+          i++, seatNumber--) {
+        this.seat[i] = new Seat(x, y, seatNumber);
         this.seatHtml.push(this.seat[i].htmlTemplate);
+        console.log(this.seat[i].seatNumber);
         x += 35;
       }
     }

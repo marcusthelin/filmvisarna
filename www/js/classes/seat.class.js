@@ -1,8 +1,9 @@
 class Seat {
-  constructor(x, y) {
+  constructor(x, y, seatNumber) {
     this.x = x;
     this.y = y;
     this.htmlTemplate = this.htmlSeatTemplate(x, y);
+    this.seatNumber = seatNumber;
   }
 
   htmlSeatTemplate(x, y) {
