@@ -57,7 +57,7 @@ class Movie extends Base {
       if (dateTime) {
         // ignore first element that contains entire matched string
         const [, date, time] = dateTime.match(regexp);
-        this.bokingModal = new bokingModal(this.getAuditorium(date, time));
+        this.bokingModal = new bokingModal(this.getAuditorium(date, time),this);
         this.bokingModal.drawBokingModal();
       }
     }

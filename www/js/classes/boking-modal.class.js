@@ -1,8 +1,8 @@
 class bokingModal extends Base {
-  constructor(auditorium) {
+  constructor(auditorium, movieClass) {
     super();
     this.salong = new Salong(auditorium);
-
+    this.movieClass = movieClass;
   }
 
   drawBokingModal() {
@@ -11,4 +11,3 @@ class bokingModal extends Base {
     $('#boking-modal').modal();
   }
 }
-
