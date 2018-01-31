@@ -1,12 +1,8 @@
 class Register extends Base{
 	constructor(){
 		super();
-		this.checkClick();
+		this.checkClickCreateUser();
 		this.load();
-	}
-
-	async load(){
-		this.users = await JSON._load('users.json');
 	}
 
 	drawRegisterModal(){
@@ -16,7 +12,7 @@ class Register extends Base{
 	}
 
 
-	checkClick(){
+	checkClickCreateUser(){
 		let that = this;
 		$(document).on('click', '.register', function(){
 			let username = $('#name').val();
@@ -29,29 +25,9 @@ class Register extends Base{
 			JSON._save('users.json', that.users);
 
 			console.log(that.users);
-
-
-
-
-
-			// console.log(username, password);
-			// console.log(this.users);
 		});
 
 
 	}
-
-
-	// save(data){
-	// 	this.users.push({
-	// 		username: data.username,
-	// 		password: data.password
-	// 	});
-	// 	JSON._save('users.json', {
-	// 		users: this.users;
-	// 	});
-  //
-	// 	console.log(this.users);
-	// }
 
 }
