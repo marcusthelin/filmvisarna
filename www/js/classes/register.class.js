@@ -33,6 +33,7 @@ class Register extends Base{
 			console.log($('#password-confirm').val());
 
 			let newUser = {username: username, password: password, memberNumber: memberNumber};
+			//fixes for password validation so they have to be the same.
 			if(username.length > 2 && password.length > 2){
 				if($('#password-confirm').val() !== password){
 					alert('Lösenord stämmer inte överrens!');
