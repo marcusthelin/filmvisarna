@@ -92,7 +92,7 @@ Object.assign(Movie.prototype, { template3(){ return `
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card d-md-block d-lg-none">
           <div class="card-header movie-btn px-0 py-0" role="tab" id="headingThree">
             <h5 class="mb-0">
               <a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseTwo">
@@ -104,7 +104,7 @@ Object.assign(Movie.prototype, { template3(){ return `
             <div class="card">
               <div class="card-body">
                 <div class="col-12">
-                  <div class="calendar d-none d-lg-block">
+                  <div class="calendar">
                     <ul class="list-group">
                       <li class="list-group-item no-word-space head"><h3>Stora salongen</h3></li>
                       ${this.storaSalongen.render('', '2') || '<li class="list-group-item no-word-space">Inga visningar</li>'}
