@@ -7,6 +7,7 @@ class Salong extends Base{
       this.salongSize = this.getSalongSize(auditorium);
       this.createSalong(this.salongSize);
       this.renderSalong();
+      $(window).resize(this.scaleSalong);
     });
   }
 
@@ -46,11 +47,28 @@ class Salong extends Base{
 
   renderSalong() {
   const salong = `
-    <svg width="470" height="500">
+    <svg width="800" height="800">
       ${this.seatHtml.join("")}
     </svg>
   `
   $('#salong').html(salong);
+  }
+
+  scaleSalong() {
+    let orgW = 800,
+        orgH = 800;
+    let w = $(window).width() - $("#salong").offset().left;
+    let h = $(window).height();
+    w -= 20 * 2;
+    h -= 20 * 2;
+    const wScale = w / orgW;
+    const hScale = h / orgH;
+    let scaling = Math.min(wScale, hScale);1
+    scaling > 1 && (scaling = 1);
+
+    $('#salong').css('transform', `scale(${scaling})`);
+    $('#salong-holder').width(orgW * scaling);
+    $('#salong-holder').height(orgH * scaling);
   }
 
 }
