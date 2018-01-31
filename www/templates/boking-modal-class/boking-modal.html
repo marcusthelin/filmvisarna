@@ -6,13 +6,35 @@ Object.assign(bokingModal.prototype, { template(){ return `
         <div class="modal-header boking-header">
           <div class="d-flex">
             <div class="p-2"><img class="modal-poster" src="/imgs/${this.movieClass.images[2]}" alt=""></div>
-            <div class="p-2"><h5 class="modal-title modal-film-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small>${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p><p><small>Plats: ${this.movieClass.auditorium}</small></p><p><small>Tid: ${$(event.target)[0].innerText}</small></p></div>
+            <div class="pl-2 title-box"><h5 class="modal-title modal-film-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small><i class="fa fa-clock-o" aria-hidden="true"></i> ${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p><p><small>Plats: ${this.movieClass.auditorium}</small></p><p><small>Tid: ${$(event.target)[0].innerText}</small></p></div>
           </div>
           <button type="button" class="close close-modal align-self-start" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
+          <div class="tickets">
+            <h2 class="ticket-choice pt-3 text-center">Antal Biljetter<i class="fa fa-ticket" aria-hidden="true"></i></h2>
+            <div class="container pt-4">
+              <div class="row">
+                <div class="col-4 text-center">
+                  <div class="ordinary">
+                    <p>Ordinarie</p>
+                  </div>
+                </div>
+                <div class="col-4 text-center">
+                  <div class="pensioner">
+                    <p>Pensionär</p>
+                  </div>
+                </div>
+                <div class="col-4 text-center">
+                  <div class="child">
+                    <p>Barn</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div id="salong-holder">
             <div id="salong">
             </div>

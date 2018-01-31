@@ -2,8 +2,12 @@
   background-color: #000;
 }
 
+.title-box {
+  background-color: @bg-gray;
+}
+
 .modal-poster {
-  width: 120px;
+  width: 130px;
 }
 
 .modal-film-title {
@@ -18,6 +22,9 @@ p {
 .close-modal {
   color: #fff;
   opacity: 1;
+  &:hover {
+    color: @somecolor;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -44,4 +51,32 @@ p {
     min-height: 100%;
     border-radius: 0;
   }
+}
+
+.modal-body {
+  padding: 0;
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+  }
+
+
+}
+
+.tickets {
+  background-color: @somecolor;
+  p, h2 {
+    color: black;
+  }
+
+  .ticket-choice {
+    font-family: @oswald;
+  }
+
+
+
+
+}
+.plus-btn, .minus-btn {
+  border-radius: 20px;
 }
