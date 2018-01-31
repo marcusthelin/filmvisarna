@@ -388,9 +388,40 @@ footer .myheight {
 .fa-star {
   color: #e6e629;
 }
-.user-page {
+.user-page .heading {
+  padding: 0;
+}
+.user-page .heading h1 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  border-width: 50%;
+  display: inline-block;
+  line-height: 1.5;
+  padding: 20px;
+}
+.user-page .heading .fa-user-circle {
+  font-size: 50px;
+}
+.user-page .heading .card {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.user-page .content {
   background-color: #13141b;
-  border-radius: 5px;
-  padding: 50px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   height: 100%;
+  padding: 20px 50px;
+}
+.user-page .content h2 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid #f2b600;
+  border-width: 50%;
+  display: inline-block;
+  line-height: 1.5;
+}
+.user-page .content .bokning {
+  background-color: #fff;
+  border-radius: 3px;
 }
