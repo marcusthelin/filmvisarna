@@ -388,3 +388,9 @@ footer .myheight {
 .fa-star {
   color: #e6e629;
 }
+.user-page {
+  background-color: #13141b;
+  border-radius: 5px;
+  padding: 50px;
+  height: 100%;
+}

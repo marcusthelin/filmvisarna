@@ -56,6 +56,7 @@ class PopStateHandler {
       '/biljetter': 'biljetter',
       '/om_oss': 'OmOss',
       '/filmer': 'calendar',
+      '/mina_sidor': 'userPage',
       '/film/The_Martian': 'filmInfo',
       '/film/Call_Me_by_Your_Name': 'filmInfo',
       '/film/Star_Wars:_The_Last_Jedi': 'filmInfo',
@@ -125,6 +126,11 @@ class PopStateHandler {
     $('title').text('Filmer - Filmvisarna');
     this.app.filmer.render('main');
     this.app.startsidan.callCarousel();
+  }
+
+  userPage(){
+    this.userPage = new UserPage();
+    $('main').append(this.userPage.template());
   }
 
 }
