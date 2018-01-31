@@ -37,14 +37,14 @@ class Movie extends Base {
 
   // getting which size of salon that was selected
   getAuditorium(date, time) {
-    let auditorium = '';
+    this.auditorium = '';
     this.movies.some(movie => {
       if (movie.date === date && movie.time === time) {
-        auditorium = movie.auditorium;
+        this.auditorium = movie.auditorium;
         return true;
       }
     });
-    return auditorium;
+    return this.auditorium;
   }
 
   // want to change 'Boka' button from the below to calendar

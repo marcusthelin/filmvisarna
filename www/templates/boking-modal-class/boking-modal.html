@@ -6,10 +6,9 @@ Object.assign(bokingModal.prototype, { template(){ return `
         <div class="modal-header boking-header">
           <div class="d-flex">
             <div class="p-2"><img class="modal-poster" src="/imgs/${this.movieClass.images[2]}" alt=""></div>
-            <div class="p-2"><h5 class="modal-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small>${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p></div>
-            <div class="p-2"></div>
+            <div class="p-2"><h5 class="modal-title modal-film-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small>${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p><p><small>Plats: ${this.movieClass.auditorium}</small></p><p><small>Tid: ${$(event.target)[0].innerText}</small></p></div>
           </div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close close-modal align-self-start" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
