@@ -50,8 +50,8 @@ class Movie extends Base {
   // want to change 'Boka' button from the below to calendar
   click3(event) {
     if ($(event.target).hasClass('boka-btn')) {
-      const regexp = /(\d{4}-\d{2}-\d{2})\s\|\s(\d+\.\d{2})/;
-      // get date and time ex.(2018-02-01 | 21.10) from $(event.target)[0].innerText
+      const regexp = /([a-zåäö]{3}\s\d{2}\,\s\d{2}\.\d{2})/;
+      // get date and time ex. tor 01, 21.00 from $(event.target)[0].innerText
       const dateTime = $(event.target)[0].innerText;
       // ignore if there are not any screenings
       if (dateTime) {

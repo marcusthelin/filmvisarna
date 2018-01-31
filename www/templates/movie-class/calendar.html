@@ -4,7 +4,7 @@ Object.assign(Calendar.prototype, { template2(){
   return `
     <li class="list-group-item list-group-item-action">
     <button type="button" class="boka-btn btn btn-link text-dark" data-toggle="tooltip" data-placement="right" title="Boka" data-target="#boking-modal">
-      ${this.date} | ${this.time}
+      ${moment(this.date).format('ddd DD')}, ${this.time}
     </button>
   </li>
 `;}});
