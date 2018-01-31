@@ -6,5 +6,10 @@
   {
     "username": "hejsan@svejsan.se",
     "password": "hallå"
+  },
+  {
+    "username": "hej@hej.se",
+    "password": "hej",
+    "memberNumber": 48436
   }
 ]

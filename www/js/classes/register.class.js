@@ -22,8 +22,9 @@ class Register extends Base{
 		$(document).on('click', '.register', function(){
 			let username = $('#name').val();
 			let password = $('#password').val();
+			let memberNumber = Math.floor((Math.random() * 10000000) + 1);
 
-			let newUser = {username: username, password: password};
+			let newUser = {username: username, password: password, memberNumber: memberNumber};
 
 			that.users.push(newUser);
 

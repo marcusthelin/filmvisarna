@@ -11,7 +11,7 @@ Object.assign(Navbar.prototype, { template(){ return `
 		    <ul class="navbar-nav">
 		      ${this.items.render()}
 		    </ul>
-				${this.login.loggedIn ? '<li class="nav-item float-right" style="color: white">Hej</li>' : this.login.render()}
+				${this.login.loggedIn ? this.login.render('', '2') : this.login.render()}
 		  </div>
 		</div>
 	</nav>
