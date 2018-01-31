@@ -2,6 +2,7 @@ class LogIn extends Base{
 	constructor(){
 		super();
 		this.checkClickLogin();
+		this.load();
 	}
 
 	click(event){
@@ -11,17 +12,27 @@ class LogIn extends Base{
     }
   }
 
+	async load(){
+		this.users = await JSON._load('users.json');
+		console.log('JSON loaded');
+	}
+
 	checkClickLogin(){
 		let that = this;
 		$(document).on('click', '.login', function(){
 			let loginName = $('#userLogin').val();
 			let loginPW = $('#userPW').val();
+			console.log(loginName);
 
-			if (loginName === that.username) {
-				console.log('Jadå');
-			}
-			else{
-				console.log('Nej');
+			for(let obj of that.users){
+
+				if (loginName == obj.username) {
+					console.log('Jadå');
+					break;
+				}
+				else{
+					console.log('Nej');
+				}
 			}
 
 		});
