@@ -19,6 +19,11 @@ class Register extends Base{
 
 	checkClickCreateUser(){
 		let that = this;
+		$(document).keyup(function(e){
+			if (e.keyCode == 13) {
+				$('.register').click();
+			}
+		});
 		$(document).on('click', '.register', function(){
 			let username = $('#name').val();
 			let password = $('#password').val();
