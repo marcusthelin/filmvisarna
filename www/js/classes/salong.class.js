@@ -1,9 +1,30 @@
 class Salong extends Base{
-	constructor(app){
+	constructor(auditorium){
 		super();
 		this.app = app;
-		this.seatHtml = [];
-	}
+    this.seatHtml = [];
+    this.load().then(() => {
+      this.salongSize = this.getSalongSize(auditorium);
+      this.createSalong(this.salongSize);
+      this.renderSalong();
+    });
+  }
+
+  async load(){
+  	//JSON._classes(Salong);　// this code make a infinite loop
+  	this.salonger = await JSON._load('salonger.json');
+  }
+
+  getSalongSize(auditorium) {
+    let salongSize = {};
+    this.salonger.some(salong => {
+      if (salong.name === auditorium){
+        salongSize = salong.seatsPerRow;
+        return true;
+      }
+    })
+    return salongSize;
+  }
 
 	createSalong(salongObject) {
     // create all seats of the salong
@@ -23,7 +44,7 @@ class Salong extends Base{
     }
   }
 
-  renderSalong(salongObject) {
+  renderSalong() {
   const salong = `
     <svg width="470" height="500">
       ${this.seatHtml.join("")}
