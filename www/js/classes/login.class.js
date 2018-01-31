@@ -22,12 +22,15 @@ class LogIn extends Base{
 		$(document).on('click', '.login', function(){
 			let loginName = $('#userLogin').val();
 			let loginPW = $('#userPW').val();
-			console.log(loginName);
 
 			for(let obj of that.users){
 
-				if (loginName == obj.username) {
-					console.log('Jadå');
+				if (loginName == obj.username ) {
+					if(loginPW == obj.password){
+						console.log('stämmer bra');
+					}
+					$('header').empty();
+					${}
 					break;
 				}
 				else{
