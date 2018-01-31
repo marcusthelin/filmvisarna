@@ -326,6 +326,13 @@ footer p a.text-light:hover {
 footer .myheight {
   height: 100px;
 }
+.film {
+  background-color: #13141b;
+  border-radius: 5px;
+  margin-top: 80px;
+  padding: 20px;
+  height: 100%;
+}
 #accordion {
   background-color: white;
   border-radius: 0%;
