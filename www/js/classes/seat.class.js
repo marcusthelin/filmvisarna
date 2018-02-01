@@ -9,6 +9,7 @@ class Seat {
   htmlSeatTemplate(x, y) {
     return `
       <rect x="${x}" y="${y}" rx="7" ry="7" width="40" height="40"
+      class="vacant" />
     `
   }
 }
