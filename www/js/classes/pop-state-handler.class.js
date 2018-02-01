@@ -141,7 +141,9 @@ class PopStateHandler {
       $('main').empty();
       $('.karusell').empty();
       $('main').append(this.app.userPage.template());
-    } else{alert('You are not logged in!');}
+    } else{
+      location.pathname = '/';
+    }
 
   }
 
