@@ -18,8 +18,9 @@ header nav a {
 }
 header nav a:hover,
 header nav a:active,
-header nav a:focus {
-  color: #f2b600;
+header nav a:focus,
+header nav a.btn:hover {
+  color: #f2b600 !important;
 }
 header nav .btn-outline-secondary {
   color: white;

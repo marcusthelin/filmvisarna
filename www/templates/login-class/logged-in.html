@@ -6,9 +6,27 @@ Object.assign(LogIn.prototype, { template2(){ return `
 	    <ul class="dropdown-menu dropdown-menu-right mt-1 text-white log">
 	      <li class="p-3">
 	       <a class="pop btn" href="/mina_sidor">Mina sidor</a>
-				 <a class="pop btn logout" href="#">Logga ut</a>
+				 <a class="btn logoutModalBtn">Logga ut</a>
 	      </li>
 	    </ul>
 	  </li>
 	</ul>
+	<!-- Start of logout modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Vill du verkligen logga ut?</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Avbryt</button>
+	        <a class="btn btn-primary pop logout">Logga ut</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<!-- End of logout modal -->
 `;}});

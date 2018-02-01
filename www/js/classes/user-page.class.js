@@ -4,16 +4,23 @@ class UserPage extends Base{
 		this.user = "";
 		this.memberNumber = 0;
 		this.checkClickLogout();
+		this.currentUrl = location.pathname;
 	}
 
 	/* When clicking logout, set the value in session.json to 0
 	and change page to Startsida */
 	checkClickLogout(){
-		$(document).on('click', '.logout', function(){
+
+		$(document).on('click', '.logoutModalBtn', function(){
+			console.log('Clicked');
+			$('#exampleModal').appendTo('body').modal('show');
+		});
+
+		$(document).on('click', '.logout', function(e){
 			let session = JSON._load('session');
 			session = 0;
 			JSON._save('session', session);
-			location.pathname = '/';
+			$('#exampleModal').modal('hide');
 		});
 	}
 
@@ -24,21 +31,21 @@ class UserPage extends Base{
 		let mNr = await JSON._load('session');
 		let users = await JSON._load('users');
 		for(let obj of users){
-			console.log(obj);
 			if(obj.memberNumber == mNr){
-				console.log('Found the right user!!');
 				//Tell the name of the user to the class
 				this.user = obj.username;
 				this.memberNumber = obj.memberNumber;
+				console.log('Current logged in user is', obj.username);
 				return true;
-			} else {console.log('Not found');}
+				break;
+			}
 		}
+		console.log('No user logged in');
 	}
 
 	/* Method that sets the current user as logged in. Variable "user" is coming
 	from the LogIn class */
 	setLogin(user){
-		console.log('Current user', user);
 		this.user = user.username;
 		this.setSession(user.memberNumber);
 	}
