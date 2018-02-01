@@ -412,9 +412,6 @@ footer .myheight {
 .boking-header {
   background-color: #000;
 }
-.title-box {
-  background-color: #13141b;
-}
 .modal-poster {
   width: 130px;
 }
@@ -458,10 +455,12 @@ p {
 }
 .modal-body {
   padding: 0;
+  background-color: #f2b600;
+  margin-top: -1px;
 }
 .modal-body p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 .tickets {
   background-color: #f2b600;
@@ -473,9 +472,21 @@ p {
 .tickets .ticket-choice {
   font-family: 'Oswald', sans-serif;
 }
-.plus-btn,
-.minus-btn {
-  border-radius: 20px;
+.tickets .plus-btn {
+  border-radius: 15px;
+}
+.tickets .minus-btn {
+  border-radius: 14px;
+  padding: 8px 13px;
+}
+.seats {
+  background-color: #000;
+}
+.choose-seats h3 {
+  font-family: 'Oswald', sans-serif;
+}
+#salong {
+  text-align: center;
 }
 .user-page {
   margin-top: 80px;
