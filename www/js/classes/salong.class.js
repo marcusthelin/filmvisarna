@@ -1,4 +1,4 @@
-class Salong extends Base{
+class Salong extends Base {
 	constructor(auditorium){
 		super();
 		this.app = app;
@@ -7,13 +7,12 @@ class Salong extends Base{
     this.load().then(() => {
       this.salongSize = this.getSalongSize(auditorium);
       this.createSalong(this.salongSize);
-      this.renderSalong();
+      this.render('#salong');
       $(window).resize(this.scaleSalong);
     });
   }
 
   async load(){
-  	//JSON._classes(Salong);　// this code make a infinite loop
   	this.salonger = await JSON._load('salonger.json');
   }
 
@@ -73,13 +72,13 @@ class Salong extends Base{
     }
   }
 
-  renderSalong() {
+  template() {
   const salong = `
     <svg width="800" height="800">
       ${this.seatHtml.join("")}
     </svg>
   `
-  $('#salong').html(salong);
+  return salong;
   }
 
   scaleSalong() {
@@ -97,6 +96,12 @@ class Salong extends Base{
     $('#salong').css('transform', `scale(${scaling})`);
     $('#salong-holder').width(orgW * scaling);
     $('#salong-holder').height(orgH * scaling);
+  }
+
+  click(event) {
+    if ($(event.target).hasClass('vacant')) {
+      $(event.target).toggleClass('selected');
+    }
   }
 
 }
