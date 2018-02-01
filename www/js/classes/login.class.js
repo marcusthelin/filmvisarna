@@ -29,7 +29,7 @@ class LogIn extends Base {
 				$('.login').click();
 			}
 		});
-    $(document).on('click', '.login', function() {
+    $(document).on('click', '.login', function() { // TODO: Replace this with Benjamin's solution
       let loginName = $('#userLogin').val();
       let loginPW = $('#userPW').val();
 
@@ -44,8 +44,8 @@ class LogIn extends Base {
             that.loggedIn = true;
             $('header').empty();
             that.app.navbar.render('header');
-						that.app.userPage.setLogin(obj);
-						
+						that.app.userPage.setLogin(obj); //Sends the login to the User Page class
+
 
           }
           break;

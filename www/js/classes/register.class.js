@@ -29,7 +29,23 @@ class Register extends Base{
 			//makes it possible to take the values from the input fields and adds a random member number
 			let username = $('#name').val();
 			let password = $('#password').val();
-			let memberNumber = Math.floor((Math.random() * 10000000) + 1);
+			let memberNumber;
+			giveMemberNr();
+
+
+			function giveMemberNr(){
+				memberNumber = Math.floor((Math.random() * 10000000) + 1);
+
+				//If the random number that being generated is already in use,
+				//then generate a new. OBS! The odds are very small of two identical numbers.
+				for(let obj of that.user){
+					if(obj.memberNumber == memberNumber){
+						break;
+						giveMemberNr();
+					}
+				}
+			}
+
 			console.log($('#password-confirm').val());
 
 			let newUser = {username: username, password: password, memberNumber: memberNumber};

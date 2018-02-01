@@ -1,6 +1,7 @@
-class App {
+class App extends Base{
 
   constructor(){
+    super();
     moment.locale('sv');
     this.load();
 
@@ -39,12 +40,22 @@ class App {
 
   }
 
-  start(){
+  // async renderNav(){
+  //
+  //   if(await this.userPage.isLoggedIn()){
+  //     $('header').empty();
+  //     this.navbar.render('header', '2');
+  //     // $('header').append(this.navbar.template2());
+  //   } else{
+  //     this.navbar.render('header');
+  //   }
+  // }
 
+  start(){
     // Create a navbar
     this.navbar = new Navbar(this);
-    $('header').empty();
-    this.navbar.render('header');
+    // $('header').empty();
+    // this.navbar.render('header');
 
     // Create a footer
     this.footer = new Footer();

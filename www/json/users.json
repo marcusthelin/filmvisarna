@@ -1,13 +1,5 @@
 [
   {
-    "username": "marcusthelin@hej.se",
-    "password": "hej"
-  },
-  {
-    "username": "hejsan@svejsan.se",
-    "password": "hallå"
-  },
-  {
     "username": "hej@hej.se",
     "password": "hej",
     "memberNumber": 48436
@@ -16,5 +8,15 @@
     "username": "marcusthelin97@gmail.com",
     "password": "hejsan",
     "memberNumber": 877048
+  },
+  {
+    "username": "hejsan@svejsan.se",
+    "password": "hallå",
+    "memberNumber": 9866278
+  },
+  {
+    "username": "test",
+    "password": "test",
+    "memberNumber": 4125338
   }
 ]

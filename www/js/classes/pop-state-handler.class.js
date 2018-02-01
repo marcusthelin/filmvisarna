@@ -38,7 +38,7 @@ class PopStateHandler {
     });
   }
 
-  changePage(){
+   changePage(){
     // React on page changed
     // (replace part of the DOM etc.)
 
@@ -75,8 +75,13 @@ class PopStateHandler {
     // Set the right menu item active
     this.app.navbar.setActive(url);
 
+    //Render correct navbar depending if you're logged in or not
+    this.renderNav();
+
     //Scroll to top of page
-    window.scrollTo(1, 1);
+    window.scrollTo(0, 0);
+
+
   }
 
   startsidan(){
@@ -130,15 +135,24 @@ class PopStateHandler {
   }
 
   async userPage(){
+    //Need to check if user is logged in, else the user
+    //can type /mina_sidor into the url
     if(await this.app.userPage.isLoggedIn()){
       $('main').empty();
       $('.karusell').empty();
       $('main').append(this.app.userPage.template());
+    } else{alert('You are not logged in!');}
+
+  }
+
+  async renderNav(){
+    if(await this.app.userPage.isLoggedIn()){
+      $('.navbar').empty();
+      this.app.navbar.render('header', '2');
     } else {
-      location.pathname = '/';
-
+      $('.navbar').empty();
+      this.app.navbar.render('header');
     }
-
   }
 
 }
