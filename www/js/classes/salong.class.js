@@ -57,9 +57,9 @@ class Salong extends Base{
     for (let line in salongObject) {
       // salongObject[line] is number of seats in one line
       this.seat = new Array(salongObject[line]);
-      const y = 20 + 40 * line;
+      const y = 20 + 50 * line;
       // calculate distance from left side
-      const _x = 235 - (salongObject[line] * 30 + 5 * (salongObject[line] - 1)) / 2;
+      const _x = 400 - (salongObject[line] * 40 + 5 * (salongObject[line] - 1)) / 2;
 
       const maxSeatNumber = this.getMaxSeatNumber(line);
       // create seats in one line
@@ -68,8 +68,7 @@ class Salong extends Base{
           i++, seatNumber--) {
         this.seat[i] = new Seat(x, y, seatNumber);
         this.seatHtml.push(this.seat[i].htmlTemplate);
-        console.log(this.seat[i].seatNumber);
-        x += 35;
+        x += 45;
       }
     }
   }
