@@ -38,6 +38,7 @@ header nav .yellow:hover {
 }
 header nav .log {
   background-color: #13141b;
+  width: 300px;
 }
 header nav .show > .btn-outline-secondary.dropdown-toggle {
   background-color: #0b0c10;
