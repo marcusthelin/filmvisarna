@@ -28,8 +28,94 @@ Object.assign(Movie.prototype, { template3(){ return `
       </div>
       <h2 class="mt-2 text-center">${this.title}</h2>
       <p>${this.description}</p>
+      <div id="accordion">
+        <div class="card mt-4">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Produktions Information
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <ul class="film-produkt-info pl-0 pl-md-4">
+                <li><b>Land:</b> ${this.productionCountries.join(', ')}</li>
+                <li><b>Produktionsår:</b> ${this.productionYear}</li>
+                <li><b>Längd:</b> ${this.length}</li>
+                <li><b>Genre:</b> ${this.genre}</li>
+                <li><b>Distributör:</b> ${this.distributor}</li>
+                <li><b>Språk:</b> ${this.language}</li>
+                <li><b>Textning:</b> ${this.subtitles}</li>
+                <li><b>Regissör:</b> ${this.director}</li>
+                <li><b>Skådespelare:</b> ${this.actors.join(', ')}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Recensioner
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+             <div class="card">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[0].stars}<small>/${this.reviews[0].max}</small></h4>
+                  <p>${this.reviews[0].quote}</p>
+                  <div class="blockquote-footer">${this.reviews[0].source}</div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[1].stars}<small>/${this.reviews[1].max}</small></h4>
+                  <p>${this.reviews[1].quote}</p>
+                  <div class="blockquote-footer">${this.reviews[1].source}</div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <h4><i class="fa fa-star" aria-hidden="true"></i> ${this.reviews[2].stars}<small>/${this.reviews[2].max}</small></h4>
+                  <p>${this.reviews[2].quote}</p>
+                  <div class="blockquote-footer">${this.reviews[2].source}</div>
+                </blockquote>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="imdb-info text-center my-2">
+          <a target="blank" href="http://www.imdb.com/title/${this.imdblinks}"><span class="fa fa-imdb mr-3 imdb"></span>Filmen på imdb</span></a>
+        </div>
+        </div>
+      </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="col-lg-3 col-md-12 mt-2 mt-lg-0 booking">
     <h3 class="mb-2 text-center">Stora Salongen</h3>
       ${this.storaSalongen.render('', '2') || '<li class="booking-list text-center text-light list-group-item no-word-space">Inga visningar</li>'}

@@ -23,51 +23,35 @@
   }
 }
 
-
 #accordion{
-  background-color: white;
-  border-radius: 0%;
-  a{
-    color: black;
-  }
-  a:hover{
-    text-decoration: none;
-  }
-  h4{
-    color: black;
-  }
-  .card {
-    border-radius: 0%;
-  }
-  .card-header {
+  .card-header{
     background-color: @somecolor;
-    opacity: 0.7;
-    &:hover {
-      opacity: 1.0;
-    }
-   button {
-      background-color: white;
-      font-weight: bold;
-      color:@somecolor;
-      &:hover {
-        background-color: @somecolor;
-        color: white;
+    h5{
+      button{
+        color: #000;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        &:hover{
+          color: #fff;
+        }
+        &:focus{
+          text-decoration: none;
+        }
       }
     }
   }
-}
-
-.om-film{
-  border-radius: 10px;
-  h2{
-    font-family: 'Oswald', sans-serif;
+  .card-body{
+    color: #fff;
   }
 }
 
 .blockquote{
     a{
       text-decoration: none;
-      color: black;
+      color: #fff;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
   .film-produkt-info{
@@ -87,7 +71,7 @@
   }
 
   .fa-star{
-    color: #e6e629;
+    color: @somecolor;
   }
 
 .calendar {
