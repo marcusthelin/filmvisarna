@@ -488,6 +488,13 @@ p {
 #salong {
   text-align: center;
 }
+.modal-finish {
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+}
+.modal-footer p {
+  color: #000;
+}
 .user-page {
   margin-top: 80px;
 }
