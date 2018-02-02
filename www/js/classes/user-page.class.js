@@ -4,7 +4,6 @@ class UserPage extends Base{
 		this.user = "";
 		this.memberNumber = 0;
 		this.checkClickLogout();
-		this.currentUrl = location.pathname;
 	}
 
 	/* When clicking logout, set the value in session.json to 0
