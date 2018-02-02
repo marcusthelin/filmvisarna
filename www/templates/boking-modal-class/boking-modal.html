@@ -6,7 +6,7 @@ Object.assign(bokingModal.prototype, { template(){ return `
         <div class="modal-header boking-header">
           <div class="d-flex">
             <div class="p-2"><img class="modal-poster" src="/imgs/${this.movieClass.images[2]}" alt=""></div>
-            <div class="pl-2 title-box"><h5 class="modal-title modal-film-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small><i class="fa fa-clock-o" aria-hidden="true"></i> ${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p><p><small>Plats: ${this.movieClass.auditorium}</small></p><p><small>Tid: ${$(event.target)[0].innerText}</small></p></div>
+            <div class="pl-2"><h5 class="modal-title modal-film-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small><i class="fa fa-clock-o" aria-hidden="true"></i> ${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p><p><small>Plats: ${this.movieClass.auditorium}</small></p><p><small>Tid: ${$(event.target)[0].innerText}</small></p></div>
           </div>
           <button type="button" class="close close-modal align-self-start" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -15,35 +15,72 @@ Object.assign(bokingModal.prototype, { template(){ return `
         <div class="modal-body boking-body">
           <div class="tickets">
             <h2 class="ticket-choice pt-3 text-center">Antal Biljetter<i class="fa fa-ticket" aria-hidden="true"></i></h2>
-            <div class="container pt-4">
+            <div class="container pb-5">
               <div class="row">
                 <div class="col-4 text-center">
                   <div class="ordinary">
                     <p>Ordinarie</p>
+                    <div class="mt-2 btn-group-vertical">
+                      <button type="button" class="btn font-weight-bold btn-light plus-btn">+</button>
+                      <button type="button" class="btn font-weight-bold btn-light minus-btn">-</button>
+                    </div>
                   </div>
                 </div>
                 <div class="col-4 text-center">
                   <div class="pensioner">
                     <p>Pensionär</p>
+                    <div class="mt-2 btn-group-vertical">
+                      <button type="button" class="btn font-weight-bold btn-light plus-btn">+</button>
+                      <button type="button" class="btn font-weight-bold btn-light minus-btn">-</button>
+                    </div>
                   </div>
                 </div>
                 <div class="col-4 text-center">
                   <div class="child">
-                    <p>Barn</p>
+                    <p>Barn<small class="d-none d-md-inline-block">(under 12 år)</small></p>
+                    <div class="mt-2 btn-group-vertical">
+                      <button type="button" class="btn font-weight-bold btn-light plus-btn">+</button>
+                      <button type="button" class="btn font-weight-bold btn-light minus-btn">-</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div id="salong-holder">
-            <div id="salong">
+          <div class="seats">
+            <div class="choose-seats">
+              <h3 class="pt-4 text-center">Välja platser</h3>
+              <div class="dropdown text-center">
+                <button class="btn btn-sm btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                  Information
+                  <ul class="dropdown-menu dropdown-menu-seats">
+                    <li class="dropdown-item"><span class=""></span><span class="">Vald plats</span></li>
+                    <li class="dropdown-item">Ledig plats</li>
+                    <li class="dropdown-item">Upptagen plats</li>
+                  </ul>
+              </div>
+              <div id="salong-holder">
+                <div id="salong">
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+          <div class=" justify-content-center">
+            <h2 class="modal-finish">Sammanställning</h2>
+          </div>
+          <div class="">
+            <p>ksdfjsnfskdlnfkdskdfselkdjk</p>
+          </div>
+          <div class="float-right">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Avbryt</button>
+            <button type="button" class="btn boking-btn">Boka biljetter</button>
+          </div>
+          </div>
+
+
       </div>
     </div>
   </div>

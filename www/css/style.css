@@ -8,7 +8,7 @@ header .d-lg-none {
   width: 150px;
 }
 header nav {
-  background-color: #13141b;
+  background-color: #262626;
 }
 header nav .nav-item.active {
   font-weight: bold;
@@ -36,7 +36,7 @@ header nav .yellow:hover {
   opacity: 0.7;
 }
 header nav .log {
-  background-color: #13141b;
+  background-color: #262626;
 }
 header nav .show > .btn-outline-secondary.dropdown-toggle {
   background-color: #0b0c10;
@@ -135,7 +135,7 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
 }
 /* End of fading transition */
 .biljett-info {
-  background-color: #13141b;
+  background-color: #262626;
   border-radius: 5px;
   padding: 50px;
   height: 100%;
@@ -151,7 +151,7 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   line-height: 1.5;
 }
 .om-oss {
-  background-color: #13141b;
+  background-color: #262626;
   border-radius: 5px;
   padding: 50px;
   height: 100%;
@@ -192,7 +192,7 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   bottom: 30px !important;
 }
 .lala {
-  background-color: #13141b;
+  background-color: #262626;
   border-color: #000;
 }
 .lala .btn {
@@ -323,7 +323,7 @@ footer {
   height: auto;
   line-height: 30px;
   /* Vertically center the text there */
-  background-color: #13141b;
+  background-color: #262626;
 }
 footer p {
   line-height: 1.6em;
@@ -352,7 +352,7 @@ footer .myheight {
 }
 .booking .booking-list {
   font-family: 'Oswald', sans-serif;
-  background-color: #13141b;
+  background-color: #262626;
   border-color: #000;
   font-weight: 700;
   text-transform: uppercase;
@@ -421,9 +421,6 @@ footer .myheight {
 .boking-body #salong .selected {
   fill: red;
 }
-.title-box {
-  background-color: #13141b;
-}
 .modal-poster {
   width: 130px;
 }
@@ -467,10 +464,12 @@ p {
 }
 .modal-body {
   padding: 0;
+  background-color: #f2b600;
+  margin-top: -1px;
 }
 .modal-body p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 .tickets {
   background-color: #f2b600;
@@ -482,9 +481,28 @@ p {
 .tickets .ticket-choice {
   font-family: 'Oswald', sans-serif;
 }
-.plus-btn,
-.minus-btn {
-  border-radius: 20px;
+.tickets .plus-btn {
+  border-radius: 15px;
+}
+.tickets .minus-btn {
+  border-radius: 14px;
+  padding: 8px 13px;
+}
+.seats {
+  background-color: #000;
+}
+.choose-seats h3 {
+  font-family: 'Oswald', sans-serif;
+}
+#salong {
+  text-align: center;
+}
+.modal-finish {
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+}
+.modal-footer p {
+  color: #000;
 }
 .user-page {
   margin-top: 80px;
@@ -508,7 +526,7 @@ p {
   border-bottom-left-radius: 0;
 }
 .user-page .content {
-  background-color: #13141b;
+  background-color: #262626;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding: 20px 50px;

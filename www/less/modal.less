@@ -18,10 +18,6 @@
   }
 }
 
-.title-box {
-  background-color: @bg-gray;
-}
-
 .modal-poster {
   width: 130px;
 }
@@ -71,11 +67,12 @@ p {
 
 .modal-body {
   padding: 0;
+  background-color: @somecolor;
+  margin-top: -1px;
   p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
   }
-
 
 }
 
@@ -89,10 +86,41 @@ p {
     font-family: @oswald;
   }
 
+  .plus-btn {
+    border-radius: 15px;
+  }
 
+  .minus-btn {
+    border-radius: 14px;
+    padding: 8px 13px;
+  }
+}
 
+.seats {
+  background-color: #000;
+}
+
+.choose-seats {
+  h3 {
+    font-family: @oswald;
+  }
+}
+
+#salong {
+  text-align: center;
+}
+
+.boking-btn {
 
 }
-.plus-btn, .minus-btn {
-  border-radius: 20px;
+
+.modal-finish {
+  font-family: @oswald;
+  color: #000;
+}
+
+.modal-footer {
+  p {
+    color: #000;
+  }
 }
