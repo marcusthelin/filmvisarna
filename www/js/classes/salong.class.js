@@ -109,11 +109,11 @@ class Salong extends Base {
   //   }
   // }
 
-  click(event) {
-    console.log('click', event);
-    if ($(event.target).hasClass('vacant')) {
-      $(event.target).toggleClass('selected');
-    }
-  }
+  // click(event) {
+  //   console.log('click', event);
+  //   if ($(event.target).hasClass('vacant')) {
+  //     $(event.target).toggleClass('selected');
+  //   }
+  // }
 
 }

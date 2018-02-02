@@ -16,9 +16,17 @@ class Seat extends Base {
 
   click(event) {
     console.log('click in seat', event);
-
-    $(event.target).removeClass('vacant');
     $(event.target).addClass('mouseentered');
+    if ($(event.target).hasClass('vacant')) {
+      $(event.target).toggleClass('selected');
+    }
+    $(event.target).removeClass('vacant');
+  }
+  mouseenter(event) {
+    console.log('mouseenter',event);
+  }
 
+  mouseleave(event) {
+    console.log('mouseleave',event);
   }
 }
