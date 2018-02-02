@@ -149,11 +149,11 @@ class PopStateHandler {
 
   async renderNav(){
     if(await this.app.userPage.isLoggedIn()){
-      $('.navbar').empty();
+      $('header').empty();
       this.app.navbar.render('header', '2');
     } else {
-      $('.navbar').empty();
-      this.app.navbar.render('header');
+      $('header').empty();
+      this.app.navbar.render('header')
     }
   }
 

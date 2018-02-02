@@ -9,7 +9,7 @@ class LogIn extends Base {
 
   click(event) {
     if ($(event.target).hasClass('skapa-konto')) {
-      this.register = new Register();
+      this.register = new Register(this.app);
       this.register.drawRegisterModal();
     }
   }
