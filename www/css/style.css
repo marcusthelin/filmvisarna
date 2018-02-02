@@ -344,54 +344,51 @@ footer p a.text-light:hover {
 footer .myheight {
   height: 100px;
 }
-.film {
+.booking h3 {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f2b600;
+  padding: 5px;
+  color: #000;
+}
+.booking .booking-list {
+  font-family: 'Oswald', sans-serif;
   background-color: #13141b;
-  border-radius: 5px;
-  margin-top: 80px;
-  padding: 20px;
-  height: 100%;
+  border-color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-#accordion {
-  background-color: white;
-  border-radius: 0%;
+.booking .booking-list .btn-link {
+  color: #fff;
 }
-#accordion a {
-  color: black;
+.booking .booking-list .btn-link:hover {
+  color: #000;
 }
-#accordion a:hover {
-  text-decoration: none;
-}
-#accordion h4 {
-  color: black;
-}
-#accordion .card {
-  border-radius: 0%;
+.booking .booking-list:hover {
+  background-color: #f2b600;
 }
 #accordion .card-header {
   background-color: #f2b600;
-  opacity: 0.7;
 }
-#accordion .card-header:hover {
-  opacity: 1.0;
-}
-#accordion .card-header button {
-  background-color: white;
-  font-weight: bold;
-  color: #f2b600;
-}
-#accordion .card-header button:hover {
-  background-color: #f2b600;
-  color: white;
-}
-.om-film {
-  border-radius: 10px;
-}
-.om-film h2 {
+#accordion .card-header h5 button {
+  color: #000;
   font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+#accordion .card-header h5 button:hover {
+  color: #fff;
+}
+#accordion .card-header h5 button:focus {
+  text-decoration: none;
+}
+#accordion .card-body {
+  color: #fff;
 }
 .blockquote a {
   text-decoration: none;
-  color: black;
+  color: #fff;
+}
+.blockquote a:hover {
+  text-decoration: underline;
 }
 .film-produkt-info li {
   list-style: none;
@@ -404,13 +401,28 @@ footer .myheight {
   color: #f2b600;
 }
 .fa-star {
-  color: #e6e629;
+  color: #f2b600;
 }
 .calendar .list-group-item.no-word-space.head {
   background-color: #f2b600;
 }
 .boking-header {
   background-color: #000;
+}
+.boking-body #salong .vacant {
+  fill: gray;
+}
+.boking-body #salong .occupied {
+  fill: blue;
+}
+.boking-body #salong .mouseentered {
+  fill: yellow;
+}
+.boking-body #salong .selected {
+  fill: red;
+}
+.title-box {
+  background-color: #13141b;
 }
 .modal-poster {
   width: 130px;
