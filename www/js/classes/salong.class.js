@@ -4,6 +4,7 @@ class Salong extends Base {
 		this.app = app;
     this.seatHtml = [];
     this.auditorium = auditorium;
+    this.selectedSeatNumbers = [];
     this.load().then(() => {
       this.salongSize = this.getSalongSize(auditorium);
       this.createSalong(this.salongSize);
@@ -99,9 +100,23 @@ class Salong extends Base {
   }
 
   click(event) {
-    if ($(event.target).hasClass('vacant')) {
-      $(event.target).toggleClass('selected');
+    const id = $(event.target).attr("id");
+    let index;
+    if ($(event.target).hasClass('vacant') && !($(event.target).hasClass('selected'))) {
+      $(event.target).addClass('selected');
+      this.selectedSeatNumbers.push(id);
     }
+    else if ($(event.target).hasClass('vacant') && $(event.target).hasClass('selected')) {
+      $(event.target).removeClass('selected');
+      this.selectedSeatNumbers.some((number) => {
+        if (number === id) {
+          index = this.selectedSeatNumbers.indexOf(number);
+          this.selectedSeatNumbers.splice(index, 1);
+          return true;
+        }
+      })
+    }
+    console.log(this.selectedSeatNumbers);
   }
 
 }

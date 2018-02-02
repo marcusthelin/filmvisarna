@@ -9,7 +9,7 @@ class Seat {
   htmlSeatTemplate(x, y, seatNumber) {
     return `
       <rect x="${x}" y="${y}" rx="7" ry="7" width="40" height="40"
-      id="${seatNumber}" class="vacant"/>
+      id="${seatNumber}" class="vacant" />
     `
   }
 }
