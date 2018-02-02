@@ -463,6 +463,9 @@ footer .myheight {
   border-color: #f2b600;
   background-color: #f2b600;
 }
+.errorMessage {
+  display: none;
+}
 nav {
   background-color: #13141b;
 }

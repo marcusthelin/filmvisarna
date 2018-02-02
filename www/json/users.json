@@ -43,5 +43,10 @@
     "username": "hej@hallo.se",
     "password": "hej",
     "memberNumber": 2116555
+  },
+  {
+    "username": "markus@hej.se",
+    "password": "hej",
+    "memberNumber": 4743384
   }
 ]

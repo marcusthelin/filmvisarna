@@ -35,14 +35,13 @@ class LogIn extends Base {
         check if the password is also correct and if so re-render navbar */
         if (loginName == obj.username) {
           if (loginPW == obj.password) {
-            console.log('stämmer bra');
             $('header').empty();
 						that.app.userPage.setLogin(obj); //Sends the login to the User Page class
             that.app.popState.renderNav();
           }
           break;
         } else {
-          console.log('Nej');
+          $('.errorMessage').show();
         }
       }
 
