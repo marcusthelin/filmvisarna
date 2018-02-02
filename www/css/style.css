@@ -409,6 +409,18 @@ footer .myheight {
 .boking-header {
   background-color: #000;
 }
+.boking-body #salong .vacant {
+  fill: gray;
+}
+.boking-body #salong .occupied {
+  fill: blue;
+}
+.boking-body #salong .mouseentered {
+  fill: yellow;
+}
+.boking-body #salong .selected {
+  fill: red;
+}
 .title-box {
   background-color: #13141b;
 }
