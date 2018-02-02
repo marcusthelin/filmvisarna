@@ -441,3 +441,18 @@ footer .myheight {
   color: #fff;
   font-weight: normal;
 }
+.logout-modal {
+  background-color: #13141b;
+  max-width: 80%;
+}
+.logout-modal .logout-modal-header {
+  background-color: #f2b600;
+}
+.logout-modal .logout-modal-header h5 {
+  font-family: 'Oswald', sans-serif;
+}
+.logout-modal .logout {
+  color: white;
+  border-color: #f2b600;
+  background-color: #f2b600;
+}
