@@ -43,6 +43,12 @@ header nav .log {
   background-color: #13141b;
   width: 300px;
 }
+header nav .log a {
+  color: black !important;
+}
+header nav .log a:hover {
+  color: black !important;
+}
 header nav .show > .btn-outline-secondary.dropdown-toggle {
   background-color: #0b0c10;
   border-color: #f2b600;
