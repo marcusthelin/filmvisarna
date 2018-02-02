@@ -70,7 +70,7 @@ class App extends Base{
     this.userPage = new UserPage();
 
     // Initiate handling of SPA push/pop-state
-    new PopStateHandler(this);
+    this.popState = new PopStateHandler(this);
 
   }
 

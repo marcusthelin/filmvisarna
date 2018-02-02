@@ -37,8 +37,8 @@ class LogIn extends Base {
           if (loginPW == obj.password) {
             console.log('stämmer bra');
             $('header').empty();
-            that.app.navbar.render('header');
 						that.app.userPage.setLogin(obj); //Sends the login to the User Page class
+            that.app.popState.renderNav();
           }
           break;
         } else {
