@@ -60,11 +60,11 @@ class Base {
   addEvents(templateNo){
     // Add events to baseElements - so that an event calls a corresponding
     // method in the class (named event type + templateNo)
-    let types = ['click', 'keyup', 'mouseenter', 'mouseleave','change'];
+    let types = ['click', 'keyup', 'mouseenter', 'mouseleave','change','hover'];
     for(let type of types){
       let methodName = type + templateNo;
       if(this[methodName]){
-        console.log(this.baseEl);
+        console.log('addEvents', this, type, this[methodName], this.baseEl[type]);
         this.baseEl[type]((e) => this[methodName](e));
       }
     }

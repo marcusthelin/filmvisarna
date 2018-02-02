@@ -55,7 +55,7 @@ class Salong extends Base {
     // create all seats of the salong
     for (let line in salongObject) {
       // salongObject[line] is number of seats in one line
-      this.seat = new Array(salongObject[line]);
+      this.seats = new Array(salongObject[line]);
       const y = 20 + 50 * line;
       // calculate distance from left side
       const distanceFromLeft = 400 - (salongObject[line] * 40 + 5 * (salongObject[line] - 1)) / 2;
@@ -65,40 +65,52 @@ class Salong extends Base {
       for (let i = 0, x = distanceFromLeft, seatNumber = maxSeatNumber;
           i < salongObject[line];
           i++, seatNumber--) {
-        this.seat[i] = new Seat(x, y, seatNumber);
-        this.seatHtml.push(this.seat[i].htmlTemplate);
+        this.seats[i] = new Seat(x, y, seatNumber);
+        console.log('this.seat[i]', this.seats[i]);
+        // this.seatHtml.push(this.seats[i].htmlTemplate);
         x += 45;
       }
     }
   }
 
-  template() {
-  const salong = `
-    <svg width="800" height="800">
-      ${this.seatHtml.join("")}
-    </svg>
-  `
-  return salong;
-  }
+  // template() {
+  // const salong = `
+  //   <svg width="800" height="800">
+  //     ${this.seatHtml}
+  //   </svg>
+  // `
+  // return salong;
+  // }
 
   scaleSalong() {
-    let orgW = 800,
-        orgH = 800;
-    let w = $(window).width() - $("#salong").offset().left;
-    let h = $(window).height();
-    w -= 20 * 2;
-    h -= 20 * 2;
-    const wScale = w / orgW;
-    const hScale = h / orgH;
-    let scaling = Math.min(wScale, hScale);1
-    scaling > 1 && (scaling = 1);
+      let orgW = 800,
+          orgH = 800;
+      let w = $(window).width() - $("#salong").offset().left;
+      let h = $(window).height();
+      w -= 20 * 2;
+      h -= 20 * 2;
+      const wScale = w / orgW;
+      const hScale = h / orgH;
+      let scaling = Math.min(wScale, hScale);1
+      scaling > 1 && (scaling = 1);
 
-    $('#salong').css('transform', `scale(${scaling})`);
-    $('#salong-holder').width(orgW * scaling);
-    $('#salong-holder').height(orgH * scaling);
+      $('#salong').css('transform', `scale(${scaling})`);
+      $('#salong-holder').width(orgW * scaling);
+      $('#salong-holder').height(orgH * scaling);
   }
 
+
+
+  // mouseleave(event) {
+  //   console.log('mouseleave', event);
+  //   if ($(event.target).is('rect')) {
+  //     $(event.relatedTarget).removeClass('mouseentered');
+  //     $(event.relatedTarget).addClass('vacant');
+  //   }
+  // }
+
   click(event) {
+    console.log('click', event);
     if ($(event.target).hasClass('vacant')) {
       $(event.target).toggleClass('selected');
     }
