@@ -21,8 +21,8 @@ class Register extends Base{
 	checkClickCreateUser(){
 		let that = this;
 		//function so pressing enter works to register a new account
-		$(document).keyup(function(e){
-			if (e.keyCode == 13) {
+		$(document).keypress(function(e){
+			if (e.keyCode == 13 || e.which == 13) {
 				$('.register').click();
 			}
 		});
@@ -50,7 +50,7 @@ class Register extends Base{
 			//fixes for password validation so they have to be the same.
 			if(username.length > 2 && password.length > 2){
 				if($('#password-confirm').val() !== password){
-					alert('Lösenord stämmer inte överrens!');
+					console.log('Lösenord stämmer inte överrens!');
 				} else if(that.checkDuplicate()){
 					console.log('Användarnamn upptaget!');
 				} else {
@@ -61,7 +61,7 @@ class Register extends Base{
 					//Reload login to make it possible to login after registration
 					that.app.navbar.login.load();
 				}
-			} else {alert('Användarnamn och lösenord måste vara minst 2 tecken långt');}
+			} else {console.log('Användarnamn och lösenord måste vara minst 2 tecken långt');}
 		});
 	}
 	checkDuplicate(){
