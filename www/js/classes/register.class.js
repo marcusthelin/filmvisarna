@@ -1,6 +1,7 @@
 class Register extends Base{
-	constructor(){
+	constructor(app){
 		super();
+		this.app = app;
 		this.checkClickCreateUser();
 		this.load();
 	}
@@ -32,13 +33,12 @@ class Register extends Base{
 			let memberNumber;
 			giveMemberNr();
 
-
-			function giveMemberNr(){
+			async function giveMemberNr(){
 				memberNumber = Math.floor((Math.random() * 10000000) + 1);
-
+				let users = await JSON._load('users');
 				//If the random number that being generated is already in use,
 				//then generate a new. OBS! The odds are very small of two identical numbers.
-				for(let obj of that.user){
+				for(let obj of users){
 					if(obj.memberNumber == memberNumber){
 						break;
 						giveMemberNr();
@@ -46,23 +46,33 @@ class Register extends Base{
 				}
 			}
 
-			console.log($('#password-confirm').val());
-
-			let newUser = {username: username, password: password, memberNumber: memberNumber};
+			console.log(that.checkDuplicate());
 			//fixes for password validation so they have to be the same.
 			if(username.length > 2 && password.length > 2){
 				if($('#password-confirm').val() !== password){
 					alert('Lösenord stämmer inte överrens!');
-				} else {that.users.push(newUser);}
+				} else if(that.checkDuplicate()){
+					console.log('Användarnamn upptaget!');
+				} else {
+					let newUser = {username: username, password: password, memberNumber: memberNumber};
+					that.users.push(newUser);
+					JSON._save('users.json', that.users);
+					$('#register-modal').modal('hide');
+					//Reload login to make it possible to login after registration
+					that.app.navbar.login.load();
+				}
 			} else {alert('Användarnamn och lösenord måste vara minst 2 tecken långt');}
-
-
-			JSON._save('users.json', that.users);
-
-			console.log(that.users);
 		});
-
-
 	}
-
+	checkDuplicate(){
+		let users = this.users;
+		console.log(users);
+		let username = $('#name').val();
+		for(let obj of users){
+			if(obj.username == username){
+				return true;
+				break;
+			}
+		}
+	}
 }

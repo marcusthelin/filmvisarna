@@ -18,5 +18,20 @@
     "username": "test",
     "password": "test",
     "memberNumber": 4125338
+  },
+  {
+    "username": "sdfsdf",
+    "password": "hej",
+    "memberNumber": 4448185
+  },
+  {
+    "username": "hejsan",
+    "password": "hej",
+    "memberNumber": 837934
+  },
+  {
+    "username": "banan",
+    "password": "hej",
+    "memberNumber": 4770527
   }
 ]

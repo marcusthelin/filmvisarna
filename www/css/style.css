@@ -10,6 +10,9 @@ header .d-lg-none {
 header nav {
   background-color: #13141b;
 }
+header nav .container .logo-mobile {
+  margin: 10px auto;
+}
 header nav .nav-item.active {
   font-weight: bold;
 }
