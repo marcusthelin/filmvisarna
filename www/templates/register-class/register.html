@@ -14,7 +14,6 @@ Object.assign(Register.prototype, { template(){ return `
             <div class="row">
               <div class="col-md-3 field-label-responsive">
                 <label for="name">Användarnamn</label>
-								<label for="name">(email)</label>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
@@ -23,6 +22,9 @@ Object.assign(Register.prototype, { template(){ return `
                     <input type="email" name="name" class="form-control" id="name"
                     placeholder="Användarnamn" required autofocus>
                   </div>
+									<small id="emailHelp" class="text-muted d-block">
+										Fyll i din email
+									</small>
                 </div>
               </div>
               <div class="col-md-3">
@@ -30,6 +32,23 @@ Object.assign(Register.prototype, { template(){ return `
                   <span class="text-danger align-middle">
                     <!-- Put name validation error messages here -->
                   </span>
+                </div>
+              </div>
+            </div>
+						<div class="row">
+              <div class="col-md-3 field-label-responsive">
+                <label for="password">Namn</label>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group has-danger">
+                  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                    <input type="text" name="namn" class="form-control" id="namnRegister"
+                    placeholder="tex. Sven Svensson" required>
+                  </div>
+									<small id="namnHelp" class="text-muted d-block">
+										Fyll i för och efternamn
+									</small>
                 </div>
               </div>
             </div>
@@ -66,7 +85,7 @@ Object.assign(Register.prototype, { template(){ return `
             <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-6">
-                <input type="submit" class="btn btn-success register"><i class="fa fa-user-plus"></i>Skapa konto</input>
+                <input type="submit" class="btn btn-success register" value="Registrera"></input>
               </div>
             </div>
           </form>

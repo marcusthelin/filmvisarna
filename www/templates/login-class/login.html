@@ -6,15 +6,18 @@ Object.assign(LogIn.prototype, { template(){ return `
 	    <ul class="dropdown-menu dropdown-menu-right mt-1 text-white log">
 	      <li class="p-3">
 	        <form class="px-3 py-2" id="loginForm">
-	          <div class="form-group">
-	            <label for="exampleDropdownFormEmail1">E-mail:</label>
-	            <input type="email" class="form-control" id="userLogin" placeholder="e-post@example.com">
-	          </div>
-	          <div class="form-group">
-	            <label for="exampleDropdownFormPassword1">Lösenord:</label>
-	            <input type="password" class="form-control" id="userPW" placeholder="Lösenord">
-	          </div>
-	          <input type="submit" class="btn btn-block yellow login pop" value="Logga in"><i class="fas fa-sign-in-alt"></i></input>
+						<div class="form-group">
+					    <label for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="userLogin" aria-describedby="emailHelp" placeholder="Enter email">
+					  </div>
+						<div class="form-group">
+					    <label for="exampleInputPassword1">Lösenord</label>
+					    <input type="password" class="form-control" id="userPW" placeholder="Password">
+					  </div>
+						<div class="errorMessage">
+							<p>Användarnamnet eller lösenordet stämmer inte</p>
+						</div>
+	          <input type="submit" class="btn btn-block yellow login pop" value="Logga in"></input>
 						<button type="button" class="btn skapa-konto btn-sm btn-block yellow" data-toggle="modal" data-target="#register-modal">Skapa konto <i class="far fa-plus-square"></i></button>
 	        </form>
 	      </li>
