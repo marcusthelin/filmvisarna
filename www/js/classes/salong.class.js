@@ -58,11 +58,11 @@ class Salong extends Base {
       this.seat = new Array(salongObject[line]);
       const y = 20 + 50 * line;
       // calculate distance from left side
-      const _x = 400 - (salongObject[line] * 40 + 5 * (salongObject[line] - 1)) / 2;
+      const distanceFromLeft = 400 - (salongObject[line] * 40 + 5 * (salongObject[line] - 1)) / 2;
 
       const maxSeatNumber = this.getMaxSeatNumber(line);
       // create seats in one line
-      for (let i = 0, x = _x, seatNumber = maxSeatNumber;
+      for (let i = 0, x = distanceFromLeft, seatNumber = maxSeatNumber;
           i < salongObject[line];
           i++, seatNumber--) {
         this.seat[i] = new Seat(x, y, seatNumber);
