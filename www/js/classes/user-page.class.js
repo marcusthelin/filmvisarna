@@ -52,6 +52,7 @@ class UserPage extends Base{
 
 	/* Save the session(member number) to session.json */
 	setSession(mNr){
+		console.log(mNr);
 		JSON._save('session', mNr);
 	}
 }

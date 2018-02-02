@@ -5,12 +5,12 @@ Object.assign(Register.prototype, { template(){ return `
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <h2 class="modal-title text-danger">Skapa Konto</h2>
-	        <a  class="btn close" data-dismiss="modal" aria-label="Close">
+	        <a type="button" class="btn close" data-dismiss="modal" aria-label="Close">
 	        &times;
 	      </a>
 	      </div>
 	      <div class="modal-body mx-4">
-	        <form class="form-horizontal" role="form">
+	        <form class="form-horizontal" role="form" id="registerForm" method="POST">
             <div class="row">
               <div class="col-md-3 field-label-responsive">
                 <label for="name">Användarnamn</label>
@@ -66,13 +66,13 @@ Object.assign(Register.prototype, { template(){ return `
             <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-6">
-                <a class="btn btn-success register"><i class="fa fa-user-plus"></i>Skapa konto</a>
+                <input type="submit" class="btn btn-success register"><i class="fa fa-user-plus"></i>Skapa konto</input>
               </div>
             </div>
           </form>
 	      </div>
 	      <div class="modal-footer">
-	        <a  class="close btn" data-dismiss="modal" aria-label="Close">
+	        <a type="button" class="close btn" data-dismiss="modal" aria-label="Close">
 	        Stäng
 	      </a>
 	      </div>

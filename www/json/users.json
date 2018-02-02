@@ -33,5 +33,15 @@
     "username": "banan",
     "password": "hej",
     "memberNumber": 4770527
+  },
+  {
+    "username": "hejsan@gmail.se",
+    "password": "hej",
+    "memberNumber": 2234331
+  },
+  {
+    "username": "hej@hallo.se",
+    "password": "hej",
+    "memberNumber": 2116555
   }
 ]

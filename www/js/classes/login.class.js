@@ -4,7 +4,6 @@ class LogIn extends Base {
     this.app = app;
     this.checkClickLogin();
     this.load();
-    this.loggedIn = false;
   }
 
   click(event) {
@@ -24,12 +23,8 @@ class LogIn extends Base {
   to watch for click event */
   checkClickLogin() {
     let that = this;
-		$(document).keyup(function(e){
-			if (e.keyCode == 13) {
-				$('.login').click();
-			}
-		});
-    $(document).on('click', '.login', function() { // TODO: Replace this with Benjamin's solution
+    $(document).on('submit', '#loginForm', function(e) { // TODO: Replace this with Benjamin's solution
+      e.preventDefault();
       let loginName = $('#userLogin').val();
       let loginPW = $('#userPW').val();
 
@@ -41,12 +36,9 @@ class LogIn extends Base {
         if (loginName == obj.username) {
           if (loginPW == obj.password) {
             console.log('stämmer bra');
-            that.loggedIn = true;
             $('header').empty();
             that.app.navbar.render('header');
 						that.app.userPage.setLogin(obj); //Sends the login to the User Page class
-
-
           }
           break;
         } else {

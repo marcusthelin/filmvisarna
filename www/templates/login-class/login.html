@@ -5,7 +5,7 @@ Object.assign(LogIn.prototype, { template(){ return `
 	    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Mitt konto<span class="caret"></span></button>
 	    <ul class="dropdown-menu dropdown-menu-right mt-1 text-white log">
 	      <li class="p-3">
-	        <form class="px-3 py-2">
+	        <form class="px-3 py-2" id="loginForm">
 	          <div class="form-group">
 	            <label for="exampleDropdownFormEmail1">E-mail:</label>
 	            <input type="email" class="form-control" id="userLogin" placeholder="e-post@example.com">
@@ -14,7 +14,7 @@ Object.assign(LogIn.prototype, { template(){ return `
 	            <label for="exampleDropdownFormPassword1">Lösenord:</label>
 	            <input type="password" class="form-control" id="userPW" placeholder="Lösenord">
 	          </div>
-	          <a class="btn btn-block yellow login pop">Logga in <i class="fas fa-sign-in-alt"></i></a>
+	          <input type="submit" class="btn btn-block yellow login pop" value="Logga in"><i class="fas fa-sign-in-alt"></i></input>
 						<button type="button" class="btn skapa-konto btn-sm btn-block yellow" data-toggle="modal" data-target="#register-modal">Skapa konto <i class="far fa-plus-square"></i></button>
 	        </form>
 	      </li>
