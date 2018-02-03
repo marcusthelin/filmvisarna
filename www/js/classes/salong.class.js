@@ -99,14 +99,28 @@ class Salong extends Base {
     $('#salong-holder').height(orgH * scaling);
   }
 
+  mouseover(event) {
+    if ($(event.target).is('rect') && $(event.target).hasClass('vacant')) {
+      $(event.target).removeClass('vacant');
+      $(event.target).addClass('mouseentered');
+    }
+  }
+
+  mouseout(event) {
+    if ($(event.target).is('rect')) {
+      $(event.target).removeClass('mouseentered');
+      $(event.target).addClass('vacant');
+    }
+  }
+
   click(event) {
     const id = $(event.target).attr("id");
     let index;
-    if ($(event.target).hasClass('vacant') && !($(event.target).hasClass('selected'))) {
+    if (!($(event.target).hasClass('selected'))) {
       $(event.target).addClass('selected');
       this.selectedSeatNumbers.push(id);
     }
-    else if ($(event.target).hasClass('vacant') && $(event.target).hasClass('selected')) {
+    else if ($(event.target).hasClass('selected')) {
       $(event.target).removeClass('selected');
       this.selectedSeatNumbers.some((number) => {
         if (number === id) {
