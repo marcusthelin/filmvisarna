@@ -52,9 +52,9 @@ class Register extends Base{
 		//fixes for password validation so they have to be the same.
 		if(username.length > 2 && password.length > 2){
 			if($('#password-confirm').val() !== password){
-				console.log('Lösenord stämmer inte överrens!');
+				$('#errorMessagePWConfirm').removeClass('d-none');
 			} else if(this.checkDuplicate()){
-				console.log('Användarnamn upptaget!');
+				$('#userNameTaken').removeClass('d-none');
 			} else {
 				let newUser = {username: username, password: password, memberNumber: memberNumber};
 				this.users.push(newUser);
@@ -63,7 +63,7 @@ class Register extends Base{
 				//Reload login to make it possible to login after registration
 				this.app.navbar.login.load();
 			}
-		} else {console.log('Användarnamn och lösenord måste vara minst 2 tecken långt');}
+		} else {$('#checkInput').removeClass('d-none');}
 	}
 	checkDuplicate(){
 		let users = this.users;

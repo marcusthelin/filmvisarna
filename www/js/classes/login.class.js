@@ -41,7 +41,7 @@ class LogIn extends Base {
           }
           break;
         } else {
-          $('.errorMessage').show();
+          $('.errorMessageLogin').removeClass('d-none');
         }
       }
 
