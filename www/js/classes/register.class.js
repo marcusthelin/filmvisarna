@@ -32,6 +32,7 @@ class Register extends Base{
 		//makes it possible to take the values from the input fields and adds a random member number
 		let username = $('#name').val();
 		let password = $('#password').val();
+		let personName = $('#namnRegister').val();
 		let memberNumber;
 		giveMemberNr();
 
@@ -48,7 +49,6 @@ class Register extends Base{
 			}
 		}
 
-		console.log(this.checkDuplicate());
 		//fixes for password validation so they have to be the same.
 		if(username.length > 2 && password.length > 2){
 			if($('#password-confirm').val() !== password){
@@ -56,7 +56,7 @@ class Register extends Base{
 			} else if(this.checkDuplicate()){
 				$('#userNameTaken').removeClass('d-none');
 			} else {
-				let newUser = {username: username, password: password, memberNumber: memberNumber};
+				let newUser = {username: username, password: password, memberNumber: memberNumber, personName: personName};
 				this.users.push(newUser);
 				JSON._save('users.json', this.users);
 				$('#register-modal').modal('hide');

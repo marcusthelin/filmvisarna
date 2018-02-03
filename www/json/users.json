@@ -1,52 +1,14 @@
 [
   {
-    "username": "hej@hej.se",
+    "username": "make_99@hotmail.com",
     "password": "hej",
-    "memberNumber": 48436
+    "memberNumber": 6293151,
+    "personName": "Markus"
   },
   {
-    "username": "marcusthelin97@gmail.com",
-    "password": "hejsan",
-    "memberNumber": 877048
-  },
-  {
-    "username": "hejsan@svejsan.se",
-    "password": "hallå",
-    "memberNumber": 9866278
-  },
-  {
-    "username": "test",
-    "password": "test",
-    "memberNumber": 4125338
-  },
-  {
-    "username": "sdfsdf",
+    "username": "markus@markus.se",
     "password": "hej",
-    "memberNumber": 4448185
-  },
-  {
-    "username": "hejsan",
-    "password": "hej",
-    "memberNumber": 837934
-  },
-  {
-    "username": "banan",
-    "password": "hej",
-    "memberNumber": 4770527
-  },
-  {
-    "username": "hejsan@gmail.se",
-    "password": "hej",
-    "memberNumber": 2234331
-  },
-  {
-    "username": "hej@hallo.se",
-    "password": "hej",
-    "memberNumber": 2116555
-  },
-  {
-    "username": "markus@hej.se",
-    "password": "hej",
-    "memberNumber": 4743384
+    "memberNumber": 6832573,
+    "personName": "David"
   }
 ]

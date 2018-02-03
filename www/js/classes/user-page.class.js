@@ -32,7 +32,7 @@ class UserPage extends Base{
 		for(let obj of users){
 			if(obj.memberNumber == mNr){
 				//Tell the name of the user to the class
-				this.user = obj.username;
+				this.user = obj.personName;
 				this.memberNumber = obj.memberNumber;
 				console.log('Current logged in user is', obj.username);
 				return true;
@@ -45,7 +45,7 @@ class UserPage extends Base{
 	/* Method that sets the current user as logged in. Variable "user" is coming
 	from the LogIn class */
 	setLogin(user){
-		this.user = user.username;
+		this.user = user.personName;
 		this.setSession(user.memberNumber);
 	}
 
