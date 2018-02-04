@@ -28,7 +28,7 @@ class Salong extends Base {
     return salongSize;
   }
 
-  getMaxSeatNumber(line, salongObject) {
+  getMaxSeatNumber(line) {
     if (this.auditorium === "Lilla Salongen") {
       switch(line) {
         case "1": return 6;
