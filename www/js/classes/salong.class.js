@@ -116,7 +116,7 @@ class Salong extends Base {
   click(event) {
     const id = $(event.target).attr("id");
     let index;
-    if (!($(event.target).hasClass('selected'))) {
+    if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
       $(event.target).addClass('selected');
       this.selectedSeatNumbers.push(id);
     }
