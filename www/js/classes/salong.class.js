@@ -28,9 +28,9 @@ class Salong extends Base {
     return salongSize;
   }
 
-  getMaxSeatNumber(line) {
+  getMaxSeatNumber(row) {
     if (this.auditorium === "Lilla Salongen") {
-      switch(line) {
+      switch(row) {
         case "1": return 6;
         case "2": return 14;
         case "3": return 23;
@@ -39,7 +39,7 @@ class Salong extends Base {
         case "6": return 55;
       }
     } else {
-      switch(line) {
+      switch(row) {
         case "1": return 8;
         case "2": return 17;
         case "3": return 27;
@@ -54,17 +54,17 @@ class Salong extends Base {
 
 	createSalong(salongObject) {
     // create all seats of the salong
-    for (let line in salongObject) {
-      // salongObject[line] is number of seats in one line
-      this.seat = new Array(salongObject[line]);
-      const y = 20 + 50 * line;
+    for (let row in salongObject) {
+      // salongObject[row] is number of seats in one row
+      this.seat = new Array(salongObject[row]);
+      const y = 20 + 50 * row;
       // calculate distance from left side
-      const distanceFromLeft = 400 - (salongObject[line] * 40 + 5 * (salongObject[line] - 1)) / 2;
+      const distanceFromLeft = 400 - (salongObject[row] * 40 + 5 * (salongObject[row] - 1)) / 2;
 
-      const maxSeatNumber = this.getMaxSeatNumber(line);
-      // create seats in one line
+      const maxSeatNumber = this.getMaxSeatNumber(row);
+      // create seats in one row
       for (let i = 0, x = distanceFromLeft, seatNumber = maxSeatNumber;
-          i < salongObject[line];
+          i < salongObject[row];
           i++, seatNumber--) {
         this.seat[i] = new Seat(x, y, seatNumber);
         this.seatHtml.push(this.seat[i].htmlTemplate);
