@@ -82,6 +82,26 @@ class Salong extends Base {
   return salong;
   }
 
+  getRow(seatNumber) {
+    if (this.auditorium === "Lilla Salongen") {
+      if (seatNumber > 0 && seatNumber <= 6){ return 1; }
+      if (seatNumber > 6 && seatNumber <= 14){ return 2; }
+      if (seatNumber > 14 && seatNumber <= 23){ return 3; }
+      if (seatNumber > 23 && seatNumber <= 33){ return 4; }
+      if (seatNumber > 33 && seatNumber <= 43){ return 5; }
+      if (seatNumber > 43 && seatNumber <= 55){ return 6; }
+    } else {
+      if (seatNumber > 0 && seatNumber <= 8){ return 1; }
+      if (seatNumber > 8 && seatNumber <= 17){ return 2; }
+      if (seatNumber > 17 && seatNumber <= 27){ return 3; }
+      if (seatNumber > 27 && seatNumber <= 37){ return 4; }
+      if (seatNumber > 37 && seatNumber <= 47){ return 5; }
+      if (seatNumber > 47 && seatNumber <= 57){ return 6; }
+      if (seatNumber > 57 && seatNumber <= 69){ return 7; }
+      if (seatNumber > 69 && seatNumber <= 81){ return 8; }
+    }
+  }
+
   scaleSalong() {
     let orgW = 800,
         orgH = 800;
