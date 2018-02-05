@@ -134,22 +134,29 @@ class Salong extends Base {
   }
 
   click(event) {
-    const id = $(event.target).attr("id");
+    const seatNumber = $(event.target).attr("id");
     let index;
+    let rowNumber;
     if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
       $(event.target).addClass('selected');
-      this.selectedSeatNumbers.push(id);
+      rowNumber = this.getRow(seatNumber);
+      this.selectedSeatNumbers.push({'RowNumber': rowNumber, 'SeatNumber': seatNumber});
     }
     else if ($(event.target).hasClass('selected')) {
       $(event.target).removeClass('selected');
-      this.selectedSeatNumbers.some((number) => {
-        if (number === id) {
-          index = this.selectedSeatNumbers.indexOf(number);
+      this.selectedSeatNumbers.some((seat) => {
+        if (seat.SeatNumber === seatNumber) {
+          index = this.selectedSeatNumbers.indexOf(seat.SeatNumber);
           this.selectedSeatNumbers.splice(index, 1);
           return true;
         }
       })
     }
+    // show ticket information here temporary
+    $('.ticket').empty();
+    this.selectedSeatNumbers.forEach(seat => {
+      $('.ticket').append(`Rad: ${seat.RowNumber}, plats:  ${seat.SeatNumber}`);
+    })
     console.log(this.selectedSeatNumbers);
   }
 
