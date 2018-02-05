@@ -146,7 +146,8 @@ class Salong extends Base {
       $(event.target).removeClass('selected');
       this.selectedSeatNumbers.some((seat) => {
         if (seat.SeatNumber === seatNumber) {
-          index = this.selectedSeatNumbers.indexOf(seat.SeatNumber);
+          index = this.selectedSeatNumbers.findIndex((oneSeat) => {return oneSeat.SeatNumber === seatNumber;});// おかしい
+          console.log(index);
           this.selectedSeatNumbers.splice(index, 1);
           return true;
         }
@@ -155,7 +156,7 @@ class Salong extends Base {
     // show ticket information here temporary
     $('.ticket').empty();
     this.selectedSeatNumbers.forEach(seat => {
-      $('.ticket').append(`Rad: ${seat.RowNumber}, plats:  ${seat.SeatNumber}`);
+      $('.ticket').append(`<div>Rad: ${seat.RowNumber}, plats:  ${seat.SeatNumber}</div>`);
     })
     console.log(this.selectedSeatNumbers);
   }
