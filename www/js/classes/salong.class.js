@@ -4,7 +4,7 @@ class Salong extends Base {
 		this.app = app;
     this.seatHtml = [];
     this.auditorium = auditorium;
-    this.selectedSeatNumbers = [];
+    this.selectedSeats = [];
     this.load().then(() => {
       this.salongSize = this.getSalongSize(auditorium);
       this.createSalong(this.salongSize);
@@ -133,33 +133,60 @@ class Salong extends Base {
     }
   }
 
-  click(event) {
-    const seatNumber = $(event.target).attr("id");
-    let index;
-    let rowNumber;
-    if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
-      $(event.target).addClass('selected');
-      rowNumber = this.getRow(seatNumber);
-      this.selectedSeatNumbers.push({'RowNumber': rowNumber, 'SeatNumber': seatNumber});
+  getSeatIndex(row) {
+    // return an index in the array if an element passes the test; otherwise, -1
+    return this.selectedSeats.findIndex(seat => {
+      return seat.row === row;
+    })
+  }
+
+  addSeat({row, seatNumber}) {
+    const index = this.getSeatIndex(row);
+    if (index === -1){
+      this.selectedSeats.push({row, seatNumbers: [seatNumber]});
+    } else {
+      this.selectedSeats[index].seatNumbers.push(seatNumber);
     }
-    else if ($(event.target).hasClass('selected')) {
-      $(event.target).removeClass('selected');
-      this.selectedSeatNumbers.some((seat) => {
-        if (seat.SeatNumber === seatNumber) {
-          index = this.selectedSeatNumbers.findIndex((oneSeat) => {return oneSeat.SeatNumber === seatNumber;});// おかしい
-          console.log(index);
-          this.selectedSeatNumbers.splice(index, 1);
+  }
+
+  removeSeat({row, seatNumber}) {
+    const index = this.getSeatIndex(row);
+    if (index === -1) {
+      return;
+    }
+    if (this.selectedSeats[index].seatNumbers.length === 1) {
+      this.selectedSeats.splice(index, 1);
+    } else {
+      this.selectedSeats[index].seatNumbers.some((seat, i) => {
+        if (seat === seatNumber) {
+          this.selectedSeats[index].seatNumbers.splice(i, 1);
           return true;
         }
       })
     }
-    // show ticket information here temporary
+  }
+
+  click(event) {
+    const seatNumber = $(event.target).attr("id");
+    let row;
+    if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
+      $(event.target).addClass('selected');
+      row = this.getRow(seatNumber);
+      this.addSeat({row, seatNumber});
+    }
+    else if ($(event.target).hasClass('selected')) {
+      $(event.target).removeClass('selected');
+      row = this.getRow(seatNumber);
+      this.removeSeat({row, seatNumber});
+    }
+
     $('.ticket').empty();
-    this.selectedSeatNumbers.sort((a, b) => { return a.SeatNumber - b.SeatNumber; });
-    this.selectedSeatNumbers.forEach(seat => {
-      $('.ticket').append(`<div>Rad: ${seat.RowNumber}, plats:  ${seat.SeatNumber}</div>`);
+    this.selectedSeats.sort((a, b) => { return a.row - b.row });
+
+    this.selectedSeats.forEach(seat => {
+      seat.seatNumbers.sort((a, b) => { return a - b });
+      $('.ticket').append(`<div>Rad: ${seat.row}, plats: ${seat.seatNumbers.join(' ')}</div>`);
     })
-    console.log(this.selectedSeatNumbers);
   }
 
 }
