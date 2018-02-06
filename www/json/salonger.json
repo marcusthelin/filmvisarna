@@ -1,4 +1,4 @@
-[  
+[
   {
     "name": "Stora Salongen",
     "seats": 81,
@@ -16,7 +16,7 @@
   },
   {
     "name": "Lilla Salongen",
-    "seats": 56,
+    "seats": 55,
     "seatsPerRow": {
       "1":6,
       "2":8,
