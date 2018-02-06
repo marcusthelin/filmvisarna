@@ -4,10 +4,8 @@ Object.assign(Register.prototype, { template(){ return `
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h2 class="modal-title text-danger">Skapa Konto</h2>
-	        <a type="button" class="btn close" data-dismiss="modal" aria-label="Close">
-	        &times;
-	      </a>
+	        <h2 class="modal-title text-dark">Skapa Konto <i class="far fa-plus-square"></i></h2>
+	        <a class="btn close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></a>
 	      </div>
 	      <div class="modal-body mx-4">
 					<form id="registerForm" method="post" role="form">
@@ -37,13 +35,8 @@ Object.assign(Register.prototype, { template(){ return `
 					     Lösenorden stämmer inte överrens!
 						 </p>
 					  </div>
-					  <input type="submit" class="btn btn-success register" value="Registrera"></input>
+					  <input type="submit" class="btn btn-success register btn-block" value="Registrera"></input>
 					</form>
-	      </div>
-	      <div class="modal-footer">
-	        <a type="button" class="close btn" data-dismiss="modal" aria-label="Close">
-	        Stäng
-	      </a>
 	      </div>
 	    </div>
 	  </div>
