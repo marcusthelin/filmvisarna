@@ -3,6 +3,9 @@ class App {
   constructor(){
     moment.locale('sv');
     this.load();
+    $("body").tooltip({
+      selector: '[data-toggle="tooltip"]'
+    });
 
   }
 
