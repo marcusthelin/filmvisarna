@@ -74,6 +74,7 @@ Object.assign(bokingModal.prototype, { template(){ return `
               </div>
               <div class="p-2">
                 <h4 class="film-info">${this.movieClass.title}</h4><p><small>${this.movieClass.auditorium}</small></p><p><small>Tid: ${$(event.target)[0].innerText}</small></p>
+                <p><small class="ticket"></small></p>
               </div>
             </div>
             <div class="price">
@@ -85,9 +86,6 @@ Object.assign(bokingModal.prototype, { template(){ return `
             <button type="button" class="btn btn-light" data-dismiss="modal">Avbryt</button>
             <button type="button" class="btn boking-btn btn-dark">Boka biljetter</button>
        </div>
-            <p class="ticket"></p>
-
-
       </div>
     </div>
   </div>
