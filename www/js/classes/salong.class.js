@@ -75,7 +75,7 @@ class Salong extends Base {
 
   template() {
   const salong = `
-    <svg width="800" height="800">
+    <svg width="800" height="550">
       ${this.seatHtml.join("")}
     </svg>
   `
@@ -104,7 +104,7 @@ class Salong extends Base {
 
   scaleSalong() {
     let orgW = 800,
-        orgH = 800;
+        orgH = 550;
     let w = $(window).width() - $("#salong").offset().left;
     let h = $(window).height();
     w -= 20 * 2;
