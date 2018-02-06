@@ -14,7 +14,7 @@ app.use(express.static('www'));
 // Serve the index.html page on every request that
 // doesn't have a file extension in its url
 // (so that single page apps work on page reload)
-app.all(/^[^\.]*$/, (req, res) => {
+app.get(/^[^\.]*$/, (req, res) => {
   res.sendFile(__dirname + '/www/index.html');
 });
 
