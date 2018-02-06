@@ -464,15 +464,12 @@ p {
 }
 .modal-body {
   padding: 0;
-  background-color: #f2b600;
   margin-top: -1px;
+  background-color: #f2b600;
 }
 .modal-body p {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-}
-.tickets {
-  background-color: #f2b600;
 }
 .tickets p,
 .tickets h2 {
@@ -503,6 +500,30 @@ p {
 }
 .modal-footer p {
   color: #000;
+}
+.buy .finish-box {
+  background-color: rgba(255, 255, 255, 0.68);
+  width: 50%;
+  margin: 0 auto;
+}
+.buy .finish-box p {
+  color: #000;
+  font-family: 'PT Serif', serif;
+}
+.buy .img-calendar {
+  width: 79px;
+  height: 107px;
+}
+.buy .film-info {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+}
+.buy .finish-price {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+}
+.modal-footer {
+  background-color: #f2b600;
 }
 .user-page {
   margin-top: 80px;

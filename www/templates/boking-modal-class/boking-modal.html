@@ -5,7 +5,7 @@ Object.assign(bokingModal.prototype, { template(){ return `
       <div class="modal-content">
         <div class="modal-header boking-header">
           <div class="d-flex">
-            <div class="p-2"><img class="modal-poster" src="/imgs/${this.movieClass.images[2]}" alt=""></div>
+            <div class="p-2"><img class="modal-poster" src="/imgs/${this.movieClass.images[2]}" alt="Film poster"></div>
             <div class="pl-2"><h5 class="modal-title modal-film-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small><i class="fa fa-clock-o" aria-hidden="true"></i> ${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p><p><small>Plats: ${this.movieClass.auditorium}</small></p><p><small>Tid: ${$(event.target)[0].innerText}</small></p></div>
           </div>
           <button type="button" class="close close-modal align-self-start" data-dismiss="modal" aria-label="Close">
@@ -51,8 +51,9 @@ Object.assign(bokingModal.prototype, { template(){ return `
             <div class="choose-seats">
               <h3 class="pt-4 text-center">Välja platser</h3>
               <div class="dropdown text-center">
-                <button class="btn btn-sm btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                  Information
+                <!-- Info button for Information about different seats (in progress) -->
+                <!-- <button class="btn btn-sm btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                  Information</button> -->
                   <ul class="dropdown-menu dropdown-menu-seats">
                     <li class="dropdown-item"><span class=""></span><span class="">Vald plats</span></li>
                     <li class="dropdown-item">Ledig plats</li>
@@ -65,21 +66,26 @@ Object.assign(bokingModal.prototype, { template(){ return `
               </div>
             </div>
           </div>
-
+          <div class="buy justify-content-center">
+            <h2 class="modal-finish text-center pt-4">Sammanställning</h2>
+            <div class="d-flex finish-box mt-5 mb-3">
+              <div class="p-2">
+                <img class="img-calendar" src="/imgs/${this.movieClass.images[2]}" alt="Film poster">
+              </div>
+              <div class="p-2">
+                <h4 class="film-info">${this.movieClass.title}</h4><p><small>${this.movieClass.auditorium}</small></p><p><small>Tid: ${$(event.target)[0].innerText}</small></p>
+              </div>
+            </div>
+            <div class="price">
+              <h3 class="finish-price text-center mt-4 mb-5">Kostnad</h3>
+            </div>
+          </div>
         </div>
-        <div class="modal-footer">
-          <div class=" justify-content-center">
-            <h2 class="modal-finish">Sammanställning</h2>
+        <div class="modal-footer justify-content-center border-0 pt-5">
+            <button type="button" class="btn btn-light" data-dismiss="modal">Avbryt</button>
+            <button type="button" class="btn boking-btn btn-dark">Boka biljetter</button>
+       </div>
             <p class="ticket"></p>
-          </div>
-          <div class="">
-            <p>ksdfjsnfskdlnfkdskdfselkdjk</p>
-          </div>
-          <div class="float-right">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Avbryt</button>
-            <button type="button" class="btn boking-btn">Boka biljetter</button>
-          </div>
-          </div>
 
 
       </div>
