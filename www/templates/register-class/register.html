@@ -4,14 +4,12 @@ Object.assign(Register.prototype, { template(){ return `
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h2 class="modal-title text-danger">Skapa Konto</h2>
-	        <a type="button" class="btn close" data-dismiss="modal" aria-label="Close">
-	        &times;
-	      </a>
+	        <h2 class="modal-title text-dark">Skapa Konto <i class="far fa-plus-square"></i></h2>
+	        <a class=" btn close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></a>
 	      </div>
 	      <div class="modal-body mx-4">
 					<form id="registerForm" method="post" role="form">
-						<p class="text-muted border border-danger text-center mt-2 d-none" id="checkInput">Användarnamn och lösenord måste vara minst 2 tecken långt</p>
+						<p class="text-dark border border-danger text-center mt-2 d-none" id="checkInput">Användarnamn och lösenord måste vara minst 2 tecken</p>
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">Email address</label>
 					    <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter email">
@@ -37,14 +35,14 @@ Object.assign(Register.prototype, { template(){ return `
 					     Lösenorden stämmer inte överrens!
 						 </p>
 					  </div>
-					  <input type="submit" class="btn btn-success register" value="Registrera"></input>
+					  <input type="submit" class="btn btn-success register btn-block" value="Registrera"></input>
 					</form>
 	      </div>
-	      <div class="modal-footer">
-	        <a type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+	      <!-- <div class="modal-footer">
+	        <a class="close btn" data-dismiss="modal" aria-label="Close">
 	        Stäng
 	      </a>
-	      </div>
+	      </div> -->
 	    </div>
 	  </div>
 	</div>

@@ -53,8 +53,14 @@ class Register extends Base{
 		if(username.length > 2 && password.length > 2){
 			if($('#password-confirm').val() !== password){
 				$('#errorMessagePWConfirm').removeClass('d-none');
+				setTimeout(function(){
+            $('#errorMessagePWConfirm').addClass('d-none');
+    }, 2000);
 			} else if(this.checkDuplicate()){
 				$('#userNameTaken').removeClass('d-none');
+				setTimeout(function(){
+            $('#userNameTaken').addClass('d-none');
+    }, 2000);
 			} else {
 				let newUser = {username: username, password: password, memberNumber: memberNumber, personName: personName};
 				this.users.push(newUser);
@@ -63,7 +69,11 @@ class Register extends Base{
 				//Reload login to make it possible to login after registration
 				this.app.navbar.login.load();
 			}
-		} else {$('#checkInput').removeClass('d-none');}
+		} else {$('#checkInput').removeClass('d-none');
+		setTimeout(function(){
+				$('#checkInput').addClass('d-none');
+}, 3000);
+	}
 	}
 	checkDuplicate(){
 		let users = this.users;
