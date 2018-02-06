@@ -100,30 +100,15 @@ Object.assign(Movie.prototype, { template3(){ return `
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="col-lg-3 col-md-12 mt-2 mt-lg-0 booking">
     <h3 class="mb-2 text-center">Stora Salongen</h3>
+    <ul class="list-group">
       ${this.storaSalongen.render('', '2') || '<li class="booking-list text-center text-light list-group-item no-word-space">Inga visningar</li>'}
-    </ul>    
+    </ul>
     <h3 class="my-2 text-center">Lilla Salongen</h3>
     <ul class="list-group">
       ${this.lillaSalongen.render('', '2') || '<li class="booking-list text-center text-light list-group-item no-word-space">Inga visningar</li>'}
-    </ul>    
+    </ul>
   </div>
 </div>
 
