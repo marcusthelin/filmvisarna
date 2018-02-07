@@ -41,8 +41,7 @@ class LogIn extends Base {
           }
           break;
         } else {
-          $('#loginErrorMessage').removeClass('d-none');
-          setTimeout(() => {$('#loginErrorMessage').addClass('d-none');}, 3000);
+          $('.errorMessageLogin').removeClass('d-none');
         }
       }
 
