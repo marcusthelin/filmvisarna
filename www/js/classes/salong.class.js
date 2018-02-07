@@ -185,7 +185,7 @@ class Salong extends Base {
 
     this.selectedSeats.forEach(seat => {
       seat.seatNumbers.sort((a, b) => { return a - b });
-      $('.ticket').append(`<div>Rad: ${seat.row}, plats: ${seat.seatNumbers.join(' ')}</div>`);
+      $('.ticket').append(`<div>Rad: ${seat.row}, plats: ${seat.seatNumbers.join(', ')}</div>`);
     })
   }
 
