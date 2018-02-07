@@ -439,7 +439,17 @@ footer .myheight {
 #boking-modal .boking-body #salong .selected {
   fill: red;
 }
+<<<<<<< HEAD
 #boking-modal .modal-poster {
+=======
+.quantity {
+  background-color: #f8f9fa;
+  display: block;
+  width: 50px;
+  padding: 5px;
+}
+.modal-poster {
+>>>>>>> film-modal
   width: 130px;
 }
 #boking-modal .modal-film-title {
