@@ -199,15 +199,12 @@ class Salong extends Base {
 
     }
 
-   
-    // show ticket information here temporary
-
-    $('.ticket').empty();
+    $('.info-tickets').empty();
     this.selectedSeats.sort((a, b) => { return a.row - b.row });
 
     this.selectedSeats.forEach(seat => {
       seat.seatNumbers.sort((a, b) => { return a - b });
-      $('.ticket').append(`<div>Rad: ${seat.row}, plats: ${seat.seatNumbers.join(', ')}</div>`);
+      $('.info-tickets').append(`<p><small>Rad: ${seat.row}, plats: ${seat.seatNumbers.join(', ')}</small></p>`);
     })
   }
 
