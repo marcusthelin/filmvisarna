@@ -53,14 +53,10 @@ class Register extends Base {
     if (username.length > 2 && password.length > 5) {
       if ($('#password-confirm').val() !== password) {
         $('#errorMessagePWConfirm').removeClass('d-none');
-        setTimeout(function() {
-          $('#errorMessagePWConfirm').addClass('d-none');
-        }, 2000);
+        setTimeout(() => {$('#errorMessagePWConfirm').addClass('d-none');}, 2000);
       } else if (this.checkDuplicate()) {
         $('#userNameTaken').removeClass('d-none');
-        setTimeout(function() {
-          $('#userNameTaken').addClass('d-none');
-        }, 2000);
+        setTimeout(() => {$('#userNameTaken').addClass('d-none');}, 2000);
       } else {
         let newUser = {
           username: username,
@@ -70,15 +66,14 @@ class Register extends Base {
         };
         this.users.push(newUser);
         JSON._save('users.json', this.users);
-        $('#register-modal').modal('hide');
+        $('#regSuccess').removeClass('d-none');
+        setTimeout(() => {$('#register-modal').modal('hide');}, 2000);
         //Reload login to make it possible to login after registration
         this.app.navbar.login.load();
       }
     } else {
       $('#checkInput').removeClass('d-none');
-      setTimeout(function() {
-        $('#checkInput').addClass('d-none');
-      }, 3000);
+      setTimeout(() => {$('#checkInput').addClass('d-none');}, 3000);
     }
   }
   checkDuplicate() {

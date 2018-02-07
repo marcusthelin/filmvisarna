@@ -40,7 +40,7 @@ header nav .yellow:hover {
   opacity: 0.7;
 }
 header nav .log {
-  background-color: #13141b;
+  background-color: #262626;
   width: 300px;
 }
 header nav .log a,
@@ -415,40 +415,49 @@ footer .myheight {
 .calendar .list-group-item.no-word-space.head {
   background-color: #f2b600;
 }
-.boking-header {
+#boking-modal .boking-header {
   background-color: #000;
 }
-.boking-body #salong .vacant {
+#boking-modal .boking-body {
+  padding: 0;
+  margin-top: -1px;
+  background-color: #f2b600;
+}
+#boking-modal .boking-body p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+#boking-modal .boking-body #salong .vacant {
   fill: gray;
 }
-.boking-body #salong .occupied {
+#boking-modal .boking-body #salong .occupied {
   fill: blue;
 }
-.boking-body #salong .mouseentered {
+#boking-modal .boking-body #salong .mouseentered {
   fill: yellow;
 }
-.boking-body #salong .selected {
+#boking-modal .boking-body #salong .selected {
   fill: red;
 }
-.modal-poster {
+#boking-modal .modal-poster {
   width: 130px;
 }
-.modal-film-title {
+#boking-modal .modal-film-title {
   font-size: 35px;
   font-family: 'Oswald', sans-serif;
 }
-p {
+#boking-modal p {
   margin-bottom: 0;
 }
-.close-modal {
+#boking-modal .close-modal {
   color: #fff;
   opacity: 1;
 }
-.close-modal:hover {
+#boking-modal .close-modal:hover {
   color: #f2b600;
 }
 @media only screen and (min-width: 992px) {
-  .modal-dialog {
+  #boking-modal .modal-dialog {
     position: relative;
     display: table;
     /* This is important */
@@ -459,80 +468,77 @@ p {
   }
 }
 @media only screen and (max-width: 991.98px) {
-  .modal-dialog {
+  #boking-modal .modal-dialog {
     max-width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
   }
-  .modal-content {
+  #boking-modal .modal-content {
     height: auto;
     min-height: 100%;
     border-radius: 0;
   }
 }
-.modal-body {
-  padding: 0;
-  margin-top: -1px;
-  background-color: #f2b600;
-}
-.modal-body p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-}
-.tickets p,
-.tickets h2 {
+#boking-modal .tickets h2,
+#boking-modal .tickets p {
   color: black;
 }
-.tickets .ticket-choice {
+#boking-modal .tickets .ticket-choice {
   font-family: 'Oswald', sans-serif;
 }
-.tickets .plus-btn {
+#boking-modal .tickets .plus-btn {
   border-radius: 15px;
 }
-.tickets .minus-btn {
+#boking-modal .tickets .minus-btn {
   border-radius: 14px;
   padding: 8px 13px;
 }
-.seats {
+#boking-modal .seats {
   background-color: #000;
 }
-.choose-seats h3 {
+#boking-modal .choose-seats h3 {
   font-family: 'Oswald', sans-serif;
 }
-#salong {
+#boking-modal #salong {
   text-align: center;
 }
-.modal-finish {
+#boking-modal .modal-finish {
   font-family: 'Oswald', sans-serif;
   color: #000;
 }
-.modal-footer p {
+#boking-modal .modal-footer p {
   color: #000;
 }
-.buy .finish-box {
+#boking-modal .buy .finish-box {
   background-color: rgba(255, 255, 255, 0.68);
   width: 50%;
   margin: 0 auto;
 }
-.buy .finish-box p {
+#boking-modal .buy .finish-box p {
   color: #000;
   font-family: 'PT Serif', serif;
 }
-.buy .img-calendar {
+#boking-modal .buy .img-calendar {
   width: 79px;
   height: 107px;
 }
-.buy .film-info {
+#boking-modal .buy .film-info {
   color: #000;
   font-family: 'Oswald', sans-serif;
 }
-.buy .finish-price {
+#boking-modal .buy .finish-price {
   color: #000;
   font-family: 'Oswald', sans-serif;
 }
-.modal-footer {
+#boking-modal .modal-footer {
   background-color: #f2b600;
+}
+#register-modal {
+  font-family: 'PT Serif', serif;
+}
+#register-modal h2 {
+  font-family: 'Oswald', sans-serif;
 }
 .user-page {
   margin-top: 80px;
@@ -586,7 +592,7 @@ p {
   font-weight: normal;
 }
 .logout-modal {
-  background-color: #13141b;
+  background-color: #262626;
   max-width: 80%;
 }
 .logout-modal .logout-modal-header {
@@ -604,7 +610,7 @@ p {
   display: none;
 }
 nav {
-  background-color: #13141b;
+  background-color: #262626;
 }
 nav .container .logo-mobile {
   margin: 10px auto;
@@ -636,7 +642,7 @@ nav .yellow:hover {
   opacity: 0.7;
 }
 nav .log-2 {
-  background-color: #13141b;
+  background-color: #262626;
   width: 300px;
 }
 nav .show > .btn-outline-secondary.dropdown-toggle {
