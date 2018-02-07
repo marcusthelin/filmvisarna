@@ -1,14 +1,15 @@
 class Navbar extends Base {
 
-  constructor(){
+  constructor(app){
     super();
+    this.app = app;
     this.items = [
       new NavbarItem('Startsidan', '/'),
       new NavbarItem('Filmer', '/filmer'),
       new NavbarItem('Biljetter', '/biljetter'),
       new NavbarItem('Om oss', '/om_oss')
     ];
-    this.login = new LogIn();
+    this.login = new LogIn(this.app); // TODO: Remove app reference
   }
 
   setActive(url){

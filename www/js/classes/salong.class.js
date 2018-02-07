@@ -4,6 +4,7 @@ class Salong extends Base {
 		this.app = app;
     this.seatHtml = [];
     this.auditorium = auditorium;
+    this.selectedSeats = [];
     this.selectedSeatNumbers = [];
     this.quantity = 0;
     this.co = 0;
@@ -77,7 +78,7 @@ class Salong extends Base {
 
   template() {
   const salong = `
-    <svg width="800" height="800">
+    <svg width="800" height="550">
       ${this.seatHtml.join("")}
     </svg>
   `
@@ -106,7 +107,7 @@ class Salong extends Base {
 
   scaleSalong() {
     let orgW = 800,
-        orgH = 800;
+        orgH = 550;
     let w = $(window).width() - $("#salong").offset().left;
     let h = $(window).height();
     w -= 20 * 2;
@@ -132,6 +133,39 @@ class Salong extends Base {
     if ($(event.target).is('rect')) {
       $(event.target).removeClass('mouseentered');
       $(event.target).addClass('vacant');
+    }
+  }
+
+  getSeatIndex(row) {
+    // return an index in the array if an element passes the test; otherwise, -1
+    return this.selectedSeats.findIndex(seat => {
+      return seat.row === row;
+    })
+  }
+
+  addSeat({row, seatNumber}) {
+    const index = this.getSeatIndex(row);
+    if (index === -1){
+      this.selectedSeats.push({row, seatNumbers: [seatNumber]});
+    } else {
+      this.selectedSeats[index].seatNumbers.push(seatNumber);
+    }
+  }
+
+  removeSeat({row, seatNumber}) {
+    const index = this.getSeatIndex(row);
+    if (index === -1) {
+      return;
+    }
+    if (this.selectedSeats[index].seatNumbers.length === 1) {
+      this.selectedSeats.splice(index, 1);
+    } else {
+      this.selectedSeats[index].seatNumbers.some((seat, i) => {
+        if (seat === seatNumber) {
+          this.selectedSeats[index].seatNumbers.splice(i, 1);
+          return true;
+        }
+      })
     }
   }
 
@@ -167,11 +201,14 @@ class Salong extends Base {
 
    
     // show ticket information here temporary
+
     $('.ticket').empty();
-    this.selectedSeatNumbers.forEach(seat => {
-      $('.ticket').append(`<div>Rad: ${seat.RowNumber}, plats:  ${seat.SeatNumber}</div>`);
+    this.selectedSeats.sort((a, b) => { return a.row - b.row });
+
+    this.selectedSeats.forEach(seat => {
+      seat.seatNumbers.sort((a, b) => { return a - b });
+      $('.ticket').append(`<div>Rad: ${seat.row}, plats: ${seat.seatNumbers.join(' ')}</div>`);
     })
-    console.log(this.selectedSeatNumbers);
   }
 
 }

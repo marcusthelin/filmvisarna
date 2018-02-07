@@ -38,7 +38,7 @@ class PopStateHandler {
     });
   }
 
-  changePage(){
+   changePage(){
     // React on page changed
     // (replace part of the DOM etc.)
 
@@ -64,7 +64,8 @@ class PopStateHandler {
       '/film/Interstellar': 'filmInfo',
       '/film/The_Incredibles': 'filmInfo',
       '/film/Downsizing': 'filmInfo',
-      '/film/Three_Billboards_Outside_Ebbing,_Missouri': 'filmInfo'
+      '/film/Three_Billboards_Outside_Ebbing,_Missouri': 'filmInfo',
+      '/mina_sidor': 'userPage'
     };
 
     // Call the right method
@@ -74,8 +75,13 @@ class PopStateHandler {
     // Set the right menu item active
     this.app.navbar.setActive(url);
 
+    //Render correct navbar depending if you're logged in or not
+    this.renderNav();
+
     //Scroll to top of page
-    window.scrollTo(1, 1);
+    window.scrollTo(0, 0);
+
+
   }
 
   startsidan(){
@@ -128,9 +134,27 @@ class PopStateHandler {
     this.app.startsidan.callCarousel();
   }
 
-  userPage(){
-    this.userPage = new UserPage();
-    $('main').append(this.userPage.template());
+  async userPage(){
+    //Need to check if user is logged in, else the user
+    //can type /mina_sidor into the url
+    if(await this.app.userPage.isLoggedIn()){
+      $('main').empty();
+      $('.karusell').empty();
+      $('main').append(this.app.userPage.template());
+    } else{
+      location.pathname = '/';
+    }
+
+  }
+
+  async renderNav(){
+    if(await this.app.userPage.isLoggedIn()){
+      $('header').empty();
+      this.app.navbar.render('header', '2');
+    } else {
+      $('header').empty();
+      this.app.navbar.render('header')
+    }
   }
 
 }
