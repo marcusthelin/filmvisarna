@@ -12,7 +12,7 @@ Object.assign(Register.prototype, { template(){ return `
 						<p class="text-dark border border-danger text-center mt-2 d-none" id="checkInput">Användarnamn och lösenord måste vara minst 2 tecken långt!</p>
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">Email address</label>
-					    <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter email">
+					    <input type="email" class="form-control" required id="name" aria-describedby="emailHelp" placeholder="Enter email">
 					    <small id="emailHelp" class="form-text text-muted">Vi delar aldrig ut dina uppgifter till någon</small>
 							<p class="text-dark border border-danger text-center mt-2 d-none" id="userNameTaken">Användarnamnet är upptaget, fyll i ett nytt!</p>
 					  </div>
