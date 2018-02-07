@@ -1,8 +1,9 @@
 class bokingModal extends Base {
-  constructor(auditorium, movieClass) {
+  constructor(auditorium, movieClass, dateTime) {
     super();
     this.salong = new Salong(auditorium);
     this.movieClass = movieClass;
+    this.date = dateTime;
     this.tickets = [
       {type: "Ordinarie", price: 85, quantity: 0, total: 0},
       {type: "Pensionär", price: 75, quantity: 0, total: 0},
@@ -27,40 +28,67 @@ class bokingModal extends Base {
   click(event){
     let person, inputValue, quantity;
     if($(event.target).hasClass('quantity-btn')){
+
         person = $(event.target).data('ticket-type');
         inputValue = parseInt($(`#${person}`).text());
-    }
-    if($(event.target).hasClass('plus-btn')){
-       $(`#${person}`).text(inputValue + 1);
-      this.loopTickets(person).total += this.loopTickets(person).price;
-    }else{
-      if(inputValue == 0){return;}
+
+      if($(event.target).hasClass('plus-btn')){
+
+         $(`#${person}`).text(inputValue + 1);
+        this.loopTickets(person).total += this.loopTickets(person).price;
+
+      }else{
+
+        if(inputValue == 0){return;}
         $(`#${person}`).text(inputValue - 1);
         this.loopTickets(person).total -= this.loopTickets(person).price;
+
+      }
+
+      quantity = parseInt($(`#${person}`).text());
+      this.loopTickets(person).quantity = quantity;
+      this.sortTickets();
+
+    }else{
+
+      if($(event.target).hasClass('boking-btn')) {
+        this.bookedTickets();
+      }
     }
-    quantity = parseInt($(`#${person}`).text());
-    this.loopTickets(person).quantity = quantity;
-    this.sortTickets();
+
   }
 
   sortTickets(){
     let reservedTickets = this.tickets.filter(ticket => ticket.quantity > 0);
-    console.log(reservedTickets);
     $('.info-tickets').empty();
     reservedTickets.forEach(ticket => {
       $('.info-tickets').append(`<p>${ticket.quantity}st ${ticket.type} ${ticket.price} ${ticket.total} </p>`);
     });
-    this.totalPrice(reservedTickets);
+    this.summary(reservedTickets);
   }
 
-  totalPrice(tickets){
+  summary(tickets){
+    tickets.length == 0 ? $('.boking-btn').prop("disabled", true) : $('.boking-btn').prop("disabled", false);
     let price = 0;
-    let quantity = 0;
+    this.quantity = 0;
     $('.price').empty();
     for(let ticket of tickets){
+      this.quantity += ticket.quantity;
+      this.salong.quantity = this.quantity;
       price += ticket.total;
-      quantity += ticket.quantity;
     }
-    $('.price').append(`<p>${price}</p>`);
+    $('.price').text(`${price == 0 ? '' : price}`);
   }
+
+  bookedTickets(){
+    JSON._save('tickets.json', {
+        title: this.movieClass.title,
+        date: this.date,
+        auditorium: this.movieClass.auditorium,
+        quantity: this.quantity
+      }).then(function(){
+      console.log('Saved!');
+    });    
+  }
+
 }
