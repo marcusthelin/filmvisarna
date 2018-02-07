@@ -5,6 +5,8 @@ class Salong extends Base {
     this.seatHtml = [];
     this.auditorium = auditorium;
     this.selectedSeatNumbers = [];
+    this.quantity = 0;
+    this.co = 0;
     this.load().then(() => {
       this.salongSize = this.getSalongSize(auditorium);
       this.createSalong(this.salongSize);
@@ -111,8 +113,8 @@ class Salong extends Base {
     h -= 20 * 2;
     const wScale = w / orgW;
     const hScale = h / orgH;
-    let scaling = Math.min(wScale, hScale);1
-    scaling > 1 && (scaling = 1);
+    let scaling = Math.min(wScale, hScale);
+
 
     $('#salong').css('transform', `scale(${scaling})`);
     $('#salong-holder').width(orgW * scaling);
@@ -137,13 +139,20 @@ class Salong extends Base {
     const seatNumber = $(event.target).attr("id");
     let index;
     let rowNumber;
-    if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
-      $(event.target).addClass('selected');
-      rowNumber = this.getRow(seatNumber);
-      this.selectedSeatNumbers.push({'RowNumber': rowNumber, 'SeatNumber': seatNumber});
+
+    if(this.co === this.quantity){
+      return;
+    }else{
+
+       if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
+        $(event.target).addClass('selected');
+        rowNumber = this.getRow(seatNumber);
+        this.selectedSeatNumbers.push({'RowNumber': rowNumber, 'SeatNumber': seatNumber});
+        this.co++;
     }
     else if ($(event.target).hasClass('selected')) {
       $(event.target).removeClass('selected');
+      this.co--;
       this.selectedSeatNumbers.some((seat) => {
         if (seat.SeatNumber === seatNumber) {
           index = this.selectedSeatNumbers.findIndex((oneSeat) => {return oneSeat.SeatNumber === seatNumber;});// おかしい
@@ -153,6 +162,10 @@ class Salong extends Base {
         }
       })
     }
+
+    }
+
+   
     // show ticket information here temporary
     $('.ticket').empty();
     this.selectedSeatNumbers.forEach(seat => {

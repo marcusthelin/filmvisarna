@@ -6,7 +6,7 @@ Object.assign(bokingModal.prototype, { template(){ return `
         <div class="modal-header boking-header">
           <div class="d-flex">
             <div class="p-2"><img class="modal-poster" src="/imgs/${this.movieClass.images[2]}" alt="Film poster"></div>
-            <div class="pl-2"><h5 class="modal-title modal-film-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small><i class="fa fa-clock-o" aria-hidden="true"></i> ${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p><p><small>Plats: ${this.movieClass.auditorium}</small></p><p><small>Tid: ${$(event.target)[0].innerText}</small></p></div>
+            <div class="pl-2"><h5 class="modal-title modal-film-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small><i class="fa fa-clock-o" aria-hidden="true"></i> ${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p><p><small>Plats: ${this.movieClass.auditorium}</small></p><p><small>Tid: ${this.date}</small></p></div>
           </div>
           <button type="button" class="close close-modal align-self-start" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -21,8 +21,9 @@ Object.assign(bokingModal.prototype, { template(){ return `
                   <div class="ordinary">
                     <p>Ordinarie</p>
                     <div class="mt-2 btn-group-vertical">
-                      <button type="button" class="btn font-weight-bold btn-light plus-btn">+</button>
-                      <button type="button" class="btn font-weight-bold btn-light minus-btn">-</button>
+                      <button type="button"  data-ticket-type="Ordinarie" class="quantity-btn btn font-weight-bold btn-light plus-btn">+</button>
+                      <span class="quantity" id="Ordinarie">0</span>
+                      <button type="button" data-ticket-type="Ordinarie" class="quantity-btn btn font-weight-bold btn-light minus-btn">-</button>
                     </div>
                   </div>
                 </div>
@@ -30,8 +31,9 @@ Object.assign(bokingModal.prototype, { template(){ return `
                   <div class="pensioner">
                     <p>Pensionär</p>
                     <div class="mt-2 btn-group-vertical">
-                      <button type="button" class="btn font-weight-bold btn-light plus-btn">+</button>
-                      <button type="button" class="btn font-weight-bold btn-light minus-btn">-</button>
+                      <button type="button" data-ticket-type="Pensionär" class="quantity-btn btn font-weight-bold btn-light plus-btn">+</button>
+                      <span class="quantity" id="Pensionär">0</span>
+                      <button type="button" data-ticket-type="Pensionär" class="quantity-btn btn font-weight-bold btn-light minus-btn">-</button>
                     </div>
                   </div>
                 </div>
@@ -39,8 +41,9 @@ Object.assign(bokingModal.prototype, { template(){ return `
                   <div class="child">
                     <p>Barn<small class="d-none d-md-inline-block">(under 12 år)</small></p>
                     <div class="mt-2 btn-group-vertical">
-                      <button type="button" class="btn font-weight-bold btn-light plus-btn">+</button>
-                      <button type="button" class="btn font-weight-bold btn-light minus-btn">-</button>
+                      <button type="button" data-ticket-type="Barn" class="quantity-btn btn font-weight-bold btn-light plus-btn">+</button>
+                      <span class="quantity" id="Barn">0</span>
+                      <button type="button" data-ticket-type="Barn" class="quantity-btn btn font-weight-bold btn-light minus-btn">-</button>
                     </div>
                   </div>
                 </div>
@@ -73,17 +76,21 @@ Object.assign(bokingModal.prototype, { template(){ return `
                 <img class="img-calendar" src="/imgs/${this.movieClass.images[2]}" alt="Film poster">
               </div>
               <div class="p-2">
-                <h4 class="film-info">${this.movieClass.title}</h4><p><small>${this.movieClass.auditorium}</small></p><p><small>Tid: ${$(event.target)[0].innerText}</small></p>
+                <h4 class="film-info">${this.movieClass.title}</h4>
+                <p><small>${this.movieClass.auditorium}</small></p>
+                <p><small>Tid: ${this.date}</small></p>
+                <div class="info-tickets"></div>
               </div>
             </div>
-            <div class="price">
+            <div>
               <h3 class="finish-price text-center mt-4 mb-5">Kostnad</h3>
+              <p class="price"></p>
             </div>
           </div>
         </div>
         <div class="modal-footer justify-content-center border-0 pt-5">
             <button type="button" class="btn btn-light" data-dismiss="modal">Avbryt</button>
-            <button type="button" class="btn boking-btn btn-dark">Boka biljetter</button>
+            <button type="button" class="btn boking-btn btn-dark" disabled >Boka biljetter</button>
        </div>
             <p class="ticket"></p>
 
