@@ -50,7 +50,7 @@ class Register extends Base {
     }
 
     //fixes for password validation so they have to be the same.
-    if (username.length > 2 && password.length > 2) {
+    if (username.length > 2 && password.length > 5) {
       if ($('#password-confirm').val() !== password) {
         $('#errorMessagePWConfirm').removeClass('d-none');
         setTimeout(function() {
