@@ -35,6 +35,7 @@ class UserPage extends Base{
 				this.user = obj.personName;
 				this.memberNumber = obj.memberNumber;
 				console.log('Current logged in user is', obj.username);
+				this.orderHistory = obj.orderHistory;
 				return true;
 				break;
 			}

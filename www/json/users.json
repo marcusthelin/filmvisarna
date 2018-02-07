@@ -3,7 +3,19 @@
     "username": "make_99@hotmail.com",
     "password": "hej",
     "memberNumber": 6293151,
-    "personName": "Markus"
+    "personName": "Markus",
+    "orderHistory": [
+      {
+        "title": "The Martian",
+        "date": "2018-01-18",
+        "⚙": "UserPage"
+      },
+      {
+        "title": "iganianhian",
+        "date": "2018-02-18",
+        "⚙": "UserPage"
+      }
+    ]
   },
   {
     "username": "markus@markus.se",
