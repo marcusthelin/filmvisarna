@@ -111,8 +111,8 @@ class Salong extends Base {
     h -= 20 * 2;
     const wScale = w / orgW;
     const hScale = h / orgH;
-    let scaling = Math.min(wScale, hScale);1
-    scaling > 1 && (scaling = 1);
+    let scaling = Math.min(wScale, hScale);
+
 
     $('#salong').css('transform', `scale(${scaling})`);
     $('#salong-holder').width(orgW * scaling);
