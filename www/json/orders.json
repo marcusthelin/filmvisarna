@@ -1,0 +1,11 @@
+[
+  {
+    "orderNr": 12345,
+    "orderInfo": {
+      "title": "The Martian",
+      "mNr": 54321,
+      "date": "2018-02-07",
+      "salong": "Stora Salongen"
+    }
+  }
+]
