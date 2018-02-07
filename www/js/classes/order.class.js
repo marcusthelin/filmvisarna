@@ -8,4 +8,20 @@ class Order extends Base {
     this.salong = salong;
   }
   
+  async save(){
+    let allOrders = await JSON._load('orders');
+    console.log(allOrders);
+    let props = {
+      orderNr: this.orderNr,
+      orderInfo: {
+        title: this.title,
+        mNr: this.mNr,
+        date: this.date,
+        salong: this.salong
+      },
+      "⚙": "Order"
+    }
+    allOrders.push(props);
+    JSON._save('orders', allOrders);
+  }
 }

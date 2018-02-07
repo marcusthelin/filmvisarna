@@ -1,5 +1,8 @@
-Object.assign(UserPage.prototype, { template2(){ return `
-  <li class="list-group-item"> ${this.title} och ${this.date}</li>
+Object.assign(Order.prototype, { template(){ return `
+  
+  <li class="list-group-item">
+     ${this.orderInfo.title}, ${this.orderInfo.date}, ${this.orderInfo.salong}
+  </li>
 
 
 

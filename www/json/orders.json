@@ -3,9 +3,40 @@
     "orderNr": 12345,
     "orderInfo": {
       "title": "The Martian",
-      "mNr": 54321,
+      "mNr": 123456,
       "date": "2018-02-07",
       "salong": "Stora Salongen"
-    }
+    },
+    "⚙": "Order"
+  },
+  {
+    "orderNr": 123423,
+    "orderInfo": {
+      "title": "Interstellar",
+      "mNr": 6293151,
+      "date": "2018-03-04",
+      "salong": "Stora Salongen"
+    },
+    "⚙": "Order"
+  },
+  {
+    "orderNr": 346346,
+    "orderInfo": {
+      "title": "IT",
+      "mNr": 6293151,
+      "date": "2018-02-20",
+      "salong": "Stora Salongen"
+    },
+    "⚙": "Order"
+  },
+  {
+    "orderNr": 45345215,
+    "orderInfo": {
+      "title": "The Martian",
+      "mNr": 6293151,
+      "date": "2018-01-01",
+      "salong": "Lilla Salongen"
+    },
+    "⚙": "Order"
   }
 ]

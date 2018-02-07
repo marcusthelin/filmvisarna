@@ -10,7 +10,6 @@ Object.assign(Array.prototype, {
     let html = '';
 
     for(let item of this){
-      console.log(item);
       html += item.render(selector, templateNo);
     }
 

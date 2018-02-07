@@ -12,7 +12,7 @@ class App extends Base{
   async load(){
 
     // Tell jsonflex to recreate instances of the class Garment
-    JSON._classes(Movie, Calendar, UserPage);
+    JSON._classes(Movie, Calendar, Order);
 
     this.movies = await JSON._load('movies.json');
 
@@ -29,7 +29,6 @@ class App extends Base{
         }
       }
     }
-
     for(let x = 0; x < this.movies.length; x++){
       this.movies[x].gatherMovies();
     }
