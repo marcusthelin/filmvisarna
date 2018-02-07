@@ -4,6 +4,9 @@ class App extends Base{
     super();
     moment.locale('sv');
     this.load();
+    $("body").tooltip({
+      selector: '[data-toggle="tooltip"]'
+    });
 
   }
 

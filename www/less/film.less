@@ -1,40 +1,57 @@
-#accordion{
-  background-color: white;
-  border-radius: 2%;
-  a{
-    color: black;
+.booking{
+  h3{
+    font-family: 'Oswald', sans-serif;
+    background-color: @somecolor;
+    padding: 5px;
+    color: #000;
   }
-  a:hover{
-    color: rgb(45, 9, 112);
-    text-decoration: none;
-
-  }
-  h4{
-    color: black;
+  .booking-list{
+    font-family: 'Oswald', sans-serif;
+    background-color: @bg-gray;
+    border-color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    .btn-link{
+      color: #fff;
+      &:hover{
+        color: #000;
+      }
+    }
+    &:hover{
+      background-color: @somecolor;
+    } 
   }
 }
 
-.movie-btn{
-  button {
+#accordion{
+  .card-header{
     background-color: @somecolor;
-    opacity: 0.5;
-    &:hover {
-      opacity: 1.0;
+    h5{
+      button{
+        color: #000;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        &:hover{
+          color: #fff;
+        }
+        &:focus{
+          text-decoration: none;
+        }
+      }
     }
   }
-}
-
-.om-film{
-  border-radius: 10px;
-  h2{
-    font-family: 'Oswald', sans-serif;
+  .card-body{
+    color: #fff;
   }
 }
 
 .blockquote{
     a{
       text-decoration: none;
-      color: black;
+      color: #fff;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
   .film-produkt-info{
@@ -54,5 +71,11 @@
   }
 
   .fa-star{
-    color: #e6e629;
+    color: @somecolor;
   }
+
+.calendar {
+  .list-group-item.no-word-space.head {
+      background-color: @somecolor;
+  }
+}

@@ -1,0 +1,158 @@
+.boking-header {
+  background-color: #000;
+}
+.boking-body {
+  #salong {
+    .vacant {
+      fill: gray;
+    }
+    .occupied {
+      fill: blue;
+    }
+    .mouseentered {
+      fill: yellow;
+    }
+    .selected {
+      fill: red;
+    }
+  }
+}
+
+.modal-poster {
+  width: 130px;
+}
+
+.modal-film-title {
+  font-size: 35px;
+  font-family: @oswald;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.close-modal {
+  color: #fff;
+  opacity: 1;
+  &:hover {
+    color: @somecolor;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .modal-dialog{
+      position: relative;
+      display: table; /* This is important */
+      overflow-y: auto;
+      overflow-x: auto;
+      width: auto;
+      min-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .modal-dialog {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }
+}
+
+.modal-body {
+  padding: 0;
+  margin-top: -1px;
+  background-color: @somecolor;
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+  }
+
+}
+
+.tickets {
+  p, h2 {
+    color: black;
+  }
+
+  .ticket-choice {
+    font-family: @oswald;
+  }
+
+  .plus-btn {
+    border-radius: 15px;
+  }
+
+  .minus-btn {
+    border-radius: 14px;
+    padding: 8px 13px;
+  }
+}
+
+.seats {
+  background-color: #000;
+}
+
+.choose-seats {
+  h3 {
+    font-family: @oswald;
+  }
+}
+
+#salong {
+  text-align: center;
+}
+
+.boking-btn {
+
+}
+
+.modal-finish {
+  font-family: @oswald;
+  color: #000;
+}
+
+.modal-footer {
+  p {
+    color: #000;
+  }
+}
+
+.buy {
+
+  .finish-box {
+    background-color: rgba(255, 255, 255, 0.68);
+    width: 50%;
+    margin: 0 auto;
+    p {
+      color: #000;
+      font-family: 'PT Serif', serif;
+    }
+  }
+
+  .img-calendar{
+    width: 79px;
+    height: 107px;
+  }
+
+  .film-info {
+    color: #000;
+    font-family: @oswald;
+  }
+
+  .finish-price {
+    color: #000;
+    font-family: @oswald;
+  }
+
+}
+
+.modal-footer {
+  background-color: @somecolor;
+}
