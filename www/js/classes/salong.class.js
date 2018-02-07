@@ -4,13 +4,10 @@ class Salong extends Base {
 		this.app = app;
     this.seatHtml = [];
     this.auditorium = auditorium;
-<<<<<<< HEAD
     this.selectedSeats = [];
-=======
     this.selectedSeatNumbers = [];
     this.quantity = 0;
     this.co = 0;
->>>>>>> film-modal
     this.load().then(() => {
       this.salongSize = this.getSalongSize(auditorium);
       this.createSalong(this.salongSize);
@@ -174,7 +171,6 @@ class Salong extends Base {
 
   click(event) {
     const seatNumber = $(event.target).attr("id");
-<<<<<<< HEAD
     let row;
     if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
       $(event.target).addClass('selected');
@@ -187,7 +183,7 @@ class Salong extends Base {
       this.removeSeat({row, seatNumber});
     }
 
-=======
+
     let index;
     let rowNumber;
 
@@ -218,7 +214,7 @@ class Salong extends Base {
 
    
     // show ticket information here temporary
->>>>>>> film-modal
+
     $('.ticket').empty();
     this.selectedSeats.sort((a, b) => { return a.row - b.row });
 
