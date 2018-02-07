@@ -115,8 +115,6 @@ class Salong extends Base {
     const wScale = w / orgW;
     const hScale = h / orgH;
     let scaling = Math.min(wScale, hScale);
-
-
     $('#salong').css('transform', `scale(${scaling})`);
     $('#salong-holder').width(orgW * scaling);
     $('#salong-holder').height(orgH * scaling);
@@ -150,6 +148,7 @@ class Salong extends Base {
     } else {
       this.selectedSeats[index].seatNumbers.push(seatNumber);
     }
+    this.co++;
   }
 
   removeSeat({row, seatNumber}) {
@@ -167,36 +166,27 @@ class Salong extends Base {
         }
       })
     }
+    this.co--;
   }
 
   click(event) {
     const seatNumber = $(event.target).attr("id");
     let index;
     let rowNumber;
+    let row;
 
-    if(this.co === this.quantity){
-      return;
-    }else{
+    if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
+      if (this.co === this.quantity) {
+        return;
+      }
 
-       if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
-        $(event.target).addClass('selected');
-        rowNumber = this.getRow(seatNumber);
-        this.selectedSeatNumbers.push({'RowNumber': rowNumber, 'SeatNumber': seatNumber});
-        this.co++;
-    }
-    else if ($(event.target).hasClass('selected')) {
+      $(event.target).addClass('selected');
+      row = this.getRow(seatNumber);
+      this.addSeat({row, seatNumber});
+    } else if ($(event.target).hasClass('selected')) {
       $(event.target).removeClass('selected');
-      this.co--;
-      this.selectedSeatNumbers.some((seat) => {
-        if (seat.SeatNumber === seatNumber) {
-          index = this.selectedSeatNumbers.findIndex((oneSeat) => {return oneSeat.SeatNumber === seatNumber;});// おかしい
-          console.log(index);
-          this.selectedSeatNumbers.splice(index, 1);
-          return true;
-        }
-      })
-    }
-
+      row = this.getRow(seatNumber);
+      this.removeSeat({row, seatNumber});
     }
 
     $('.info-tickets').empty();
