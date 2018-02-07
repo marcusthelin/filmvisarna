@@ -13,6 +13,12 @@ header {
   }
 
   nav{
+    .container{
+      .logo-mobile{
+        margin: 10px auto;
+      }
+    }
+
     .nav-item.active{
       font-weight: bold;
     }
@@ -22,8 +28,8 @@ header {
     background-color: @bg-gray;
     a{
       color: white;
-      &:hover,&:active,&:focus{
-        color: @somecolor;
+      &:hover,&:active,&:focus,&.btn:hover{
+        color: @somecolor !important;
       }
     }
     .btn-outline-secondary{
@@ -42,6 +48,10 @@ header {
     }
     .log{
       background-color: @bg-gray;
+      width: 300px;
+      a, a:hover{
+        color: black !important;
+      }
     }
     .show>.btn-outline-secondary.dropdown-toggle{
       background-color: #0b0c10;

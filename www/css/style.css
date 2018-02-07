@@ -10,6 +10,9 @@ header .d-lg-none {
 header nav {
   background-color: #262626;
 }
+header nav .container .logo-mobile {
+  margin: 10px auto;
+}
 header nav .nav-item.active {
   font-weight: bold;
 }
@@ -18,8 +21,9 @@ header nav a {
 }
 header nav a:hover,
 header nav a:active,
-header nav a:focus {
-  color: #f2b600;
+header nav a:focus,
+header nav a.btn:hover {
+  color: #f2b600 !important;
 }
 header nav .btn-outline-secondary {
   color: white;
@@ -36,7 +40,12 @@ header nav .yellow:hover {
   opacity: 0.7;
 }
 header nav .log {
-  background-color: #262626;
+  background-color: #13141b;
+  width: 300px;
+}
+header nav .log a,
+header nav .log a:hover {
+  color: black !important;
 }
 header nav .show > .btn-outline-secondary.dropdown-toggle {
   background-color: #0b0c10;
@@ -575,4 +584,65 @@ p {
 .user-page .content .bokningar li {
   color: #fff;
   font-weight: normal;
+}
+.logout-modal {
+  background-color: #13141b;
+  max-width: 80%;
+}
+.logout-modal .logout-modal-header {
+  background-color: #f2b600;
+}
+.logout-modal .logout-modal-header h5 {
+  font-family: 'Oswald', sans-serif;
+}
+.logout-modal .logout {
+  color: white;
+  border-color: #f2b600;
+  background-color: #f2b600;
+}
+.errorMessage {
+  display: none;
+}
+nav {
+  background-color: #13141b;
+}
+nav .container .logo-mobile {
+  margin: 10px auto;
+}
+nav .nav-item.active {
+  font-weight: bold;
+}
+nav a {
+  color: white;
+}
+nav a:hover,
+nav a:active,
+nav a:focus,
+nav a.btn:hover {
+  color: #f2b600 !important;
+}
+nav .btn-outline-secondary {
+  color: white;
+  border-color: #f2b600;
+}
+nav .btn-outline-secondary:hover {
+  background-color: #f2b600;
+  color: #000;
+}
+nav .yellow {
+  background-color: #f2b600;
+}
+nav .yellow:hover {
+  opacity: 0.7;
+}
+nav .log-2 {
+  background-color: #13141b;
+  width: 300px;
+}
+nav .show > .btn-outline-secondary.dropdown-toggle {
+  background-color: #0b0c10;
+  border-color: #f2b600;
+}
+nav .show > .btn-outline-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 2px rgba(193, 175, 15, 0.55);
 }
