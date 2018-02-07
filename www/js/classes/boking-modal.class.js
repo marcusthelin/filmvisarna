@@ -5,7 +5,7 @@ class bokingModal extends Base {
     this.movieClass = movieClass;
     this.tickets = [
       {type: "Ordinarie", price: 85, quantity: 0, total: 0},
-      {type: "Pensionär", price: 85, quantity: 0, total: 0},
+      {type: "Pensionär", price: 75, quantity: 0, total: 0},
       {type: "Barn", price: 65, quantity: 0, total: 0}
     ];
   }
@@ -46,9 +46,9 @@ class bokingModal extends Base {
   sortTickets(){
     let reservedTickets = this.tickets.filter(ticket => ticket.quantity > 0);
     $('.info-tickets').empty();
+    $('.price').empty();
     reservedTickets.forEach(ticket => {
-      $('.info-tickets').append(`<p>${ticket.type}, ${ticket.quantity}st</p>`);
-      $('.price').append()
+      $('.info-tickets').append(`<p>${ticket.quantity}st ${ticket.type} ${ticket.price} ${ticket.total} </p>`);
     });
   }
 }
