@@ -1,6 +1,7 @@
-class App {
+class App extends Base{
 
   constructor(){
+    super();
     moment.locale('sv');
     this.load();
     $("body").tooltip({
@@ -42,10 +43,20 @@ class App {
 
   }
 
-  start(){
+  // async renderNav(){
+  //
+  //   if(await this.userPage.isLoggedIn()){
+  //     $('header').empty();
+  //     this.navbar.render('header', '2');
+  //     // $('header').append(this.navbar.template2());
+  //   } else{
+  //     this.navbar.render('header');
+  //   }
+  // }
 
+  start(){
     // Create a navbar
-    this.navbar = new Navbar();
+    this.navbar = new Navbar(this);
     $('header').empty();
     this.navbar.render('header');
 
@@ -59,10 +70,10 @@ class App {
     this.filmer = new Filmer(this);
     this.biljetter = new Biljetter(this);
     this.omOss = new OmOss(this);
-    
+    this.userPage = new UserPage();
 
     // Initiate handling of SPA push/pop-state
-    new PopStateHandler(this);
+    this.popState = new PopStateHandler(this);
 
   }
 

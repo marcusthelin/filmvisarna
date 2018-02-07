@@ -98,6 +98,12 @@ Object.assign(Movie.prototype, { template3(){ return `
         </div>
         </div>
       </div>
+      <div class="mt-2 movie-btn">
+      <button type="button" class=" mt-2 btn btn-lg btn-block">Boka</button>
+      </div>
+      <div class="imdb-info text-center mt-2">
+        <a target="blank" href="http://www.imdb.com/title/${this.imdblinks}"><span class="fab fa-imdb mr-3 imdb"></span>Filmen på imdb</span></a>
+      </div>
     </div>
   </div>
   <div class="col-lg-3 col-md-12 mt-2 mt-lg-0 booking">
