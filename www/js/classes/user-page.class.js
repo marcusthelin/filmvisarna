@@ -1,8 +1,6 @@
 class UserPage extends Base{
 	constructor(){
 		super();
-		this.user = "";
-		this.memberNumber = 0;
 		this.checkClickLogout();
 	}
 
@@ -36,6 +34,7 @@ class UserPage extends Base{
 				this.memberNumber = obj.memberNumber;
 				console.log('Current logged in user is', obj.username);
 				this.orderHistory = obj.orderHistory;
+				console.log('User: ', obj);
 				return true;
 				break;
 			}

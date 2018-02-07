@@ -21,6 +21,13 @@
     "username": "markus@markus.se",
     "password": "hej",
     "memberNumber": 6832573,
-    "personName": "David"
+    "personName": "David",
+    "orderHistory": [
+      {
+        "title": "The Martian",
+        "date": "2018-01-18",
+        "⚙": "UserPage"
+      }
+    ]
   }
 ]

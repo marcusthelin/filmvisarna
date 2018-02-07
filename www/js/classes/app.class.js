@@ -7,13 +7,12 @@ class App extends Base{
     $("body").tooltip({
       selector: '[data-toggle="tooltip"]'
     });
-
   }
 
   async load(){
 
     // Tell jsonflex to recreate instances of the class Garment
-    JSON._classes(Movie, Calendar);
+    JSON._classes(Movie, Calendar, UserPage);
 
     this.movies = await JSON._load('movies.json');
 
@@ -70,7 +69,7 @@ class App extends Base{
     this.filmer = new Filmer(this);
     this.biljetter = new Biljetter(this);
     this.omOss = new OmOss(this);
-    this.userPage = new UserPage();
+    this.userPage = new UserPage;
 
     // Initiate handling of SPA push/pop-state
     this.popState = new PopStateHandler(this);

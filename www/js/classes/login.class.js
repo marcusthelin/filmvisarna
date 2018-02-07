@@ -33,12 +33,10 @@ class LogIn extends Base {
 
         /* If the the object's username corresponds with our input value,
         check if the password is also correct and if so re-render navbar */
-        if (loginName == obj.username) {
-          if (loginPW == obj.password) {
-            $('header').empty();
-						that.app.userPage.setLogin(obj); //Sends the login to the User Page class
-            that.app.popState.renderNav();
-          }
+        if (loginName == obj.username && loginPW == obj.password) {
+          $('header').empty();
+          that.app.userPage.setLogin(obj); //Sends the login to the User Page class
+          that.app.popState.renderNav();
           break;
         } else {
           $('#loginErrorMessage').removeClass('d-none');
