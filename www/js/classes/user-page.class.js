@@ -2,7 +2,6 @@ class UserPage extends Base{
 	constructor(){
 		super();
 		this.checkClickLogout();
-		this.getUserOrders();
 	}
 
 	/* When clicking logout, set the value in session.json to 0
@@ -56,7 +55,7 @@ class UserPage extends Base{
 		console.log(mNr);
 		JSON._save('session', mNr);
 	}
-	
+
 	async getUserOrders(){
 		let userOrders = await JSON._load('orders');
 		let currentUser = await JSON._load('session');
@@ -64,7 +63,12 @@ class UserPage extends Base{
 		userOrders.filter(order => {
 			order.orderInfo.mNr == currentUser ? this.orders.push(order) : console.log('NEJ');
 		});
-		this.orders.render('.order-history-list');
-		console.log(this.orders);
+
+		this.renderCurrentBookings();		
+		console.log('FOUND', this.orders);
+	}
+
+	renderCurrentBookings(){
+		this.orders.render('.aktuella', '2');
 	}
 }

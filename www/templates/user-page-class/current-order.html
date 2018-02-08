@@ -1,0 +1,16 @@
+Object.assign(Order.prototype, { template2(){
+  console.log('this', this);
+  return `
+    <div class=" col-12 col-md-4 col-lg-3 mb-2 bokningar">
+      <div class="card">
+        <a href="/film/${this.orderInfo.title.replace(/ /g,'_')}" class="pop"><img class="card-img-top" src="/imgs/${this.orderInfo.image}" alt="Card image cap"></a>
+        <div class="card-body">
+          <a href="#"><h5 class="card-title">${this.orderInfo.title}</h5></a>
+          <ul class="list-unstyled">
+            <li>${this.orderInfo.date}</li>
+            <li>${this.orderInfo.salong}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+`;}});
