@@ -6,6 +6,7 @@ class Movie extends Base {
     this.lillaSalongen = [];
   }
 
+
   gatherMovies(){
 
 

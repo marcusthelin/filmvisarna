@@ -1,9 +1,8 @@
 class UserPage extends Base{
 	constructor(){
 		super();
-		this.user = "";
-		this.memberNumber = 0;
 		this.checkClickLogout();
+		this.getUserOrders();
 	}
 
 	/* When clicking logout, set the value in session.json to 0
@@ -35,6 +34,9 @@ class UserPage extends Base{
 				this.user = obj.personName;
 				this.memberNumber = obj.memberNumber;
 				console.log('Current logged in user is', obj.username);
+				console.log('User: ', obj);
+				$('.tooltipBook').attr('data-original-title', 'Boka');
+				$('.tooltipBook button').removeClass('disabled');
 				return true;
 				break;
 			}
@@ -53,5 +55,16 @@ class UserPage extends Base{
 	setSession(mNr){
 		console.log(mNr);
 		JSON._save('session', mNr);
+	}
+	
+	async getUserOrders(){
+		let userOrders = await JSON._load('orders');
+		let currentUser = await JSON._load('session');
+		this.orders = [];
+		userOrders.filter(order => {
+			order.orderInfo.mNr == currentUser ? this.orders.push(order) : console.log('NEJ');
+		});
+		this.orders.render('.order-history-list');
+		console.log(this.orders);
 	}
 }

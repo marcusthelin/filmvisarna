@@ -80,14 +80,24 @@ class bokingModal extends Base {
     $('.price').text(`${price == 0 ? '' : price}`);
   }
 
-  bookedTickets(){
+  async bookedTickets(){
+    let mNr = await JSON._load('session');
+    let orderNr = 0;
+    generateOrdernumber();
+    function generateOrdernumber(){
+      orderNr = Math.floor(Math.random() * 10000 + 1);
+    }
     JSON._save('tickets.json', {
+        orderNumber: orderNr,
+        memberNumber: mNr,
         title: this.movieClass.title,
         date: this.date,
         auditorium: this.movieClass.auditorium,
         quantity: this.quantity
       }).then(function(){
       console.log('Saved!');
+      let newOrder = new Order();
+      newOrder.makeOrder();
     });
   }
 

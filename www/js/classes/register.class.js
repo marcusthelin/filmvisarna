@@ -54,7 +54,7 @@ class Register extends Base {
       if ($('#password-confirm').val() !== password) {
         $('#errorMessagePWConfirm').removeClass('d-none');
         setTimeout(() => {$('#errorMessagePWConfirm').addClass('d-none');}, 2000);
-      } else if (this.checkDuplicate()) {
+      } else if (this.checkDuplicate(username)) {
         $('#userNameTaken').removeClass('d-none');
         setTimeout(() => {$('#userNameTaken').addClass('d-none');}, 2000);
       } else {
@@ -76,14 +76,12 @@ class Register extends Base {
       setTimeout(() => {$('#checkInput').addClass('d-none');}, 3000);
     }
   }
-  checkDuplicate() {
+  checkDuplicate(username) {
     let users = this.users;
     console.log(users);
-    let username = $('#name').val();
     for (let obj of users) {
       if (obj.username == username) {
         return true;
-        break;
       }
     }
   }
