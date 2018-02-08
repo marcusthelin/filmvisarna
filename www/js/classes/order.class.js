@@ -1,26 +1,26 @@
 class Order extends Base {
-  constructor(orderNr, title, mNr, date, salong) {
+  constructor() {
     super();
-    this.orderNr = orderNr;
-    this.title = title
-    this.mNr = mNr
-    this.date = date
-    this.salong = salong;
   }
   
-  async save(){
-    let allOrders = await JSON._load('orders');
-    console.log(allOrders);
+  makeOrder(orderNr, title, mNr, date, salong){
     let props = {
-      orderNr: this.orderNr,
+      orderNr: orderNr,
       orderInfo: {
-        title: this.title,
-        mNr: this.mNr,
-        date: this.date,
-        salong: this.salong
+        title: title,
+        mNr: mNr,
+        date: date,
+        salong: salong
       },
       "⚙": "Order"
     }
+    console.log(props)
+    this.save(props);
+  }
+
+  async save(props){
+    let allOrders = await JSON._load('orders');
+    console.log(allOrders);
     allOrders.push(props);
     JSON._save('orders', allOrders);
   }
