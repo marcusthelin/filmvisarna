@@ -5,6 +5,9 @@ class Salong extends Base {
     this.seatHtml = [];
     this.auditorium = auditorium;
     this.selectedSeats = [];
+    this.selectedSeatNumbers = [];
+    this.quantity = 0;
+    this.co = 0;
     this.load().then(() => {
       this.salongSize = this.getSalongSize(auditorium);
       this.createSalong(this.salongSize);
@@ -111,9 +114,7 @@ class Salong extends Base {
     h -= 20 * 2;
     const wScale = w / orgW;
     const hScale = h / orgH;
-    let scaling = Math.min(wScale, hScale);1
-    scaling > 1 && (scaling = 1);
-
+    let scaling = Math.min(wScale, hScale);
     $('#salong').css('transform', `scale(${scaling})`);
     $('#salong-holder').width(orgW * scaling);
     $('#salong-holder').height(orgH * scaling);
@@ -140,20 +141,22 @@ class Salong extends Base {
     })
   }
 
-  addSeat({row, seatNumber}) {
+  addSeat({row, seatNumber, target}) {
+    target.addClass('selected');
     const index = this.getSeatIndex(row);
     if (index === -1){
       this.selectedSeats.push({row, seatNumbers: [seatNumber]});
     } else {
       this.selectedSeats[index].seatNumbers.push(seatNumber);
     }
+    this.co++;
   }
 
-  removeSeat({row, seatNumber}) {
+  removeSeat({row, seatNumber, target}) {
     const index = this.getSeatIndex(row);
-    if (index === -1) {
-      return;
-    }
+    if (index === -1) return;
+
+    target.removeClass('selected');
     if (this.selectedSeats[index].seatNumbers.length === 1) {
       this.selectedSeats.splice(index, 1);
     } else {
@@ -164,28 +167,37 @@ class Salong extends Base {
         }
       })
     }
+    this.co--;
+  }
+
+  removeAllSeat() {
+    this.co = 0;
+    this.selectedSeats.length = 0;
+    $('rect').removeClass('selected');
   }
 
   click(event) {
     const seatNumber = $(event.target).attr("id");
+    let index;
+    let rowNumber;
     let row;
+
     if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
-      $(event.target).addClass('selected');
+      if (this.co === this.quantity) return;
+
       row = this.getRow(seatNumber);
-      this.addSeat({row, seatNumber});
-    }
-    else if ($(event.target).hasClass('selected')) {
-      $(event.target).removeClass('selected');
+      this.addSeat({row, seatNumber, target: $(event.target)});
+    } else if ($(event.target).hasClass('selected')) {
       row = this.getRow(seatNumber);
-      this.removeSeat({row, seatNumber});
+      this.removeSeat({row, seatNumber, target: $(event.target)});
     }
 
-    $('.ticket').empty();
+    $('.info-tickets').empty();
     this.selectedSeats.sort((a, b) => { return a.row - b.row });
 
     this.selectedSeats.forEach(seat => {
       seat.seatNumbers.sort((a, b) => { return a - b });
-      $('.ticket').append(`<div>Rad: ${seat.row}, plats: ${seat.seatNumbers.join(' ')}</div>`);
+      $('.info-tickets').append(`<p><small>Rad: ${seat.row}, plats: ${seat.seatNumbers.join(', ')}</small></p>`);
     })
   }
 

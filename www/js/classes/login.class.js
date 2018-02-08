@@ -39,8 +39,7 @@ class LogIn extends Base {
           that.app.popState.renderNav();
           break;
         } else {
-          $('#loginErrorMessage').removeClass('d-none');
-          setTimeout(() => {$('#loginErrorMessage').addClass('d-none');}, 3000);
+          $('.errorMessageLogin').removeClass('d-none');
         }
       }
 
