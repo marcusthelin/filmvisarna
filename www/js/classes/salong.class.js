@@ -4,6 +4,7 @@ class Salong extends Base {
 		this.app = app;
     this.seatHtml = [];
     this.auditorium = auditorium;
+    this.selectedSeats = [];
     this.selectedSeatNumbers = [];
     this.quantity = 0;
     this.co = 0;
@@ -77,7 +78,7 @@ class Salong extends Base {
 
   template() {
   const salong = `
-    <svg width="800" height="800">
+    <svg width="800" height="550">
       ${this.seatHtml.join("")}
     </svg>
   `
@@ -106,7 +107,7 @@ class Salong extends Base {
 
   scaleSalong() {
     let orgW = 800,
-        orgH = 800;
+        orgH = 550;
     let w = $(window).width() - $("#salong").offset().left;
     let h = $(window).height();
     w -= 20 * 2;
@@ -114,8 +115,6 @@ class Salong extends Base {
     const wScale = w / orgW;
     const hScale = h / orgH;
     let scaling = Math.min(wScale, hScale);
-
-
     $('#salong').css('transform', `scale(${scaling})`);
     $('#salong-holder').width(orgW * scaling);
     $('#salong-holder').height(orgH * scaling);
@@ -135,43 +134,71 @@ class Salong extends Base {
     }
   }
 
-  click(event) {
-    const seatNumber = $(event.target).attr("id");
-    let index;
-    let rowNumber;
+  getSeatIndex(row) {
+    // return an index in the array if an element passes the test; otherwise, -1
+    return this.selectedSeats.findIndex(seat => {
+      return seat.row === row;
+    })
+  }
 
-    if(this.co === this.quantity){
-      return;
-    }else{
-
-       if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
-        $(event.target).addClass('selected');
-        rowNumber = this.getRow(seatNumber);
-        this.selectedSeatNumbers.push({'RowNumber': rowNumber, 'SeatNumber': seatNumber});
-        this.co++;
+  addSeat({row, seatNumber, target}) {
+    target.addClass('selected');
+    const index = this.getSeatIndex(row);
+    if (index === -1){
+      this.selectedSeats.push({row, seatNumbers: [seatNumber]});
+    } else {
+      this.selectedSeats[index].seatNumbers.push(seatNumber);
     }
-    else if ($(event.target).hasClass('selected')) {
-      $(event.target).removeClass('selected');
-      this.co--;
-      this.selectedSeatNumbers.some((seat) => {
-        if (seat.SeatNumber === seatNumber) {
-          index = this.selectedSeatNumbers.findIndex((oneSeat) => {return oneSeat.SeatNumber === seatNumber;});// おかしい
-          console.log(index);
-          this.selectedSeatNumbers.splice(index, 1);
+    this.co++;
+  }
+
+  removeSeat({row, seatNumber, target}) {
+    const index = this.getSeatIndex(row);
+    if (index === -1) return;
+
+    target.removeClass('selected');
+    if (this.selectedSeats[index].seatNumbers.length === 1) {
+      this.selectedSeats.splice(index, 1);
+    } else {
+      this.selectedSeats[index].seatNumbers.some((seat, i) => {
+        if (seat === seatNumber) {
+          this.selectedSeats[index].seatNumbers.splice(i, 1);
           return true;
         }
       })
     }
+    this.co--;
+  }
 
+  removeAllSeat() {
+    this.co = 0;
+    this.selectedSeats.length = 0;
+    $('rect').removeClass('selected');
+  }
+
+  click(event) {
+    const seatNumber = $(event.target).attr("id");
+    let index;
+    let rowNumber;
+    let row;
+
+    if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
+      if (this.co === this.quantity) return;
+
+      row = this.getRow(seatNumber);
+      this.addSeat({row, seatNumber, target: $(event.target)});
+    } else if ($(event.target).hasClass('selected')) {
+      row = this.getRow(seatNumber);
+      this.removeSeat({row, seatNumber, target: $(event.target)});
     }
 
-   
-    // show ticket information here temporary
-    $('.ticket').empty();
-    this.selectedSeatNumbers.forEach(seat => {
-      $('.ticket').append(`<div>Rad: ${seat.RowNumber}, plats:  ${seat.SeatNumber}</div>`);
+    $('.info-tickets').empty();
+    this.selectedSeats.sort((a, b) => { return a.row - b.row });
+
+    this.selectedSeats.forEach(seat => {
+      seat.seatNumbers.sort((a, b) => { return a - b });
+      $('.info-tickets').append(`<p><small>Rad: ${seat.row}, plats: ${seat.seatNumbers.join(', ')}</small></p>`);
     })
-    console.log(this.selectedSeatNumbers);
   }
 
 }

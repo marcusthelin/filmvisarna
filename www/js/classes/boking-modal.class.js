@@ -28,13 +28,13 @@ class bokingModal extends Base {
   click(event){
     let person, inputValue, quantity;
     if($(event.target).hasClass('quantity-btn')){
-
-        person = $(event.target).data('ticket-type');
-        inputValue = parseInt($(`#${person}`).text());
+      this.salong.removeAllSeat();
+      person = $(event.target).data('ticket-type');
+      inputValue = parseInt($(`#${person}`).text());
 
       if($(event.target).hasClass('plus-btn')){
 
-         $(`#${person}`).text(inputValue + 1);
+        $(`#${person}`).text(inputValue + 1);
         this.loopTickets(person).total += this.loopTickets(person).price;
 
       }else{
@@ -88,7 +88,7 @@ class bokingModal extends Base {
         quantity: this.quantity
       }).then(function(){
       console.log('Saved!');
-    });    
+    });
   }
 
 }
