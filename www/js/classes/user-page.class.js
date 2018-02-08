@@ -64,7 +64,11 @@ class UserPage extends Base{
 			order.orderInfo.mNr == currentUser ? this.orders.push(order) : console.log('NEJ');
 		});
 
-		this.orders.render('.aktuella', '2');
+		this.renderCurrentBookings();		
 		console.log('FOUND', this.orders);
+	}
+
+	renderCurrentBookings(){
+		this.orders.render('.aktuella', '2');
 	}
 }

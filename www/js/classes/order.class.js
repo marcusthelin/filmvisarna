@@ -12,7 +12,7 @@ class Order extends Base {
     this.title = ticket.title;
     this.mNr = ticket.memberNumber;
     this.date = ticket.date;
-    this.salong = ticket.auditorium;
+    this.auditorium = ticket.auditorium;
     this.quantity = ticket.quantity;
 
     console.log('title', this.title);
