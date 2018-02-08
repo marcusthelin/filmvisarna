@@ -3,19 +3,24 @@ class Order extends Base {
     super();
   }
   
-  makeOrder(orderNr, title, mNr, date, salong){
+  async makeOrder(orderNr, title, mNr, date, salong){
+    let ticket = await JSON._load('tickets');
+    
     let props = {
-      orderNr: orderNr,
+      orderNr: ticket.orderNumber,
       orderInfo: {
-        title: title,
-        mNr: mNr,
-        date: date,
-        salong: salong
+        title: ticket.title,
+        mNr: ticket.memberNumber,
+        date: ticket.date,
+        salong: ticket.auditorium,
+        quantity: ticket.quantity
       },
       "⚙": "Order"
     }
     console.log(props)
     this.save(props);
+    ticket = null;
+    JSON._save('tickets', ticket);
   }
 
   async save(props){

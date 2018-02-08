@@ -35,6 +35,8 @@ class UserPage extends Base{
 				this.memberNumber = obj.memberNumber;
 				console.log('Current logged in user is', obj.username);
 				console.log('User: ', obj);
+				$('.tooltipBook').attr('data-original-title', 'Boka');
+				$('.tooltipBook button').removeClass('disabled');
 				return true;
 				break;
 			}
