@@ -142,6 +142,7 @@ class PopStateHandler {
       $('.karusell').empty();
       this.app.userPage.getUserOrders(); //Run method that gets all orders the user have done
       $('main').append(this.app.userPage.template());
+      this.app.userPage.getUserOrders();
     } else{
       location.pathname = '/';
     }

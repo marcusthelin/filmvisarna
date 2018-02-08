@@ -2,31 +2,59 @@ class Order extends Base {
   constructor() {
     super();
   }
-  
-  async makeOrder(orderNr, title, mNr, date, salong){
-    let ticket = await JSON._load('tickets');
-    
+
+  async makeOrder(){
+    let ticket = await JSON._load('ticket');
+
+    let orderNr = await JSON._load('latest-order') + 1;
+
+    this.orderNr = orderNr;
+    this.title = ticket.title;
+    this.mNr = ticket.memberNumber;
+    this.date = ticket.date;
+    this.salong = ticket.auditorium;
+    this.quantity = ticket.quantity;
+
+    console.log('title', this.title);
+    this.getMovieInfo();
+
+
+
+    ticket = null;
+    JSON._save('ticket', ticket);
+    JSON._save('latest-order', orderNr);
+
+  }
+
+  async getMovieInfo() {
+    let movies = await JSON._load('movies');
+    console.log('info', this.title);
+    for(let obj of movies){
+      if (this.title == obj.title) {
+        console.log('found movie');
+        this.movieImage = obj.images[0];
+        console.log(this.movieImage);
+      }
+    }
     let props = {
-      orderNr: ticket.orderNumber,
+      orderNr: this.orderNr,
       orderInfo: {
-        title: ticket.title,
-        mNr: ticket.memberNumber,
-        date: ticket.date,
-        salong: ticket.auditorium,
-        quantity: ticket.quantity
+        title: this.title,
+        mNr: this.mNr,
+        date: this.date,
+        salong: this.auditorium,
+        quantity: this.quantity,
+        image: this.movieImage
       },
       "⚙": "Order"
     }
-    console.log(props)
     this.save(props);
-    ticket = null;
-    JSON._save('tickets', ticket);
   }
 
   async save(props){
     let allOrders = await JSON._load('orders');
     console.log(allOrders);
-    allOrders.push(props);
+    allOrders.unshift(props);
     JSON._save('orders', allOrders);
   }
 }

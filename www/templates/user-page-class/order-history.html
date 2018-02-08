@@ -1,8 +1,8 @@
 Object.assign(Order.prototype, { template(){ return `
-  
+
   <li class="list-group-item history-list">
-    
-     ${this.orderInfo.title}, ${this.orderInfo.date}
+
+     ${this.orderInfo.title}, ${this.orderInfo.date}, OrderNr: ${this.orderNr}
   </li>
 
 

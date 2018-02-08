@@ -1,0 +1,17 @@
+Object.assign(Order.prototype, { template2(){
+  console.log('this', this);
+  return `
+    <div class=" col-12 col-md-4 col-lg-3 mb-2 bokningar">
+      <div class="card">
+        <a href="#"><img class="card-img-top" src="/imgs/${this.orderInfo.image}" alt="Card image cap"></a>
+        <div class="card-body">
+          <a href="#"><h5 class="card-title">Thor: Ragnarok</h5></a>
+          <ul class="list-unstyled">
+            <li>1 februari, 11:50</li>
+            <li>Stora salongen</li>
+            <li>Giltig till 31 januari, 23:45</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+`;}});

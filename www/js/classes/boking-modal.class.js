@@ -82,13 +82,7 @@ class bokingModal extends Base {
 
   async bookedTickets(){
     let mNr = await JSON._load('session');
-    let orderNr = 0;
-    generateOrdernumber();
-    function generateOrdernumber(){
-      orderNr = Math.floor(Math.random() * 10000 + 1);
-    }
-    JSON._save('tickets.json', {
-        orderNumber: orderNr,
+    await JSON._save('ticket.json', {
         memberNumber: mNr,
         title: this.movieClass.title,
         date: this.date,
