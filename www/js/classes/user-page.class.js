@@ -57,18 +57,38 @@ class UserPage extends Base{
 	}
 
 	async getUserOrders(){
+		let today = moment(new Date(), 'ddd DD, LT');
 		let userOrders = await JSON._load('orders');
 		let currentUser = await JSON._load('session');
-		this.orders = [];
+		this.currentBookings = [];
+		this.historyBookings = [];
 		userOrders.filter(order => {
-			order.orderInfo.mNr == currentUser ? this.orders.push(order) : console.log('NEJ');
+			let viewDate = moment(order.orderInfo.date,  'ddd DD, LT');
+			if(order.orderInfo.mNr == currentUser && (viewDate >= today)){
+				this.currentBookings.unshift(order);
+			} else if((order.orderInfo.mNr == currentUser) && (viewDate < today)){
+				this.historyBookings.unshift(order);
+			}
+			
 		});
 
-		this.renderCurrentBookings();		
-		console.log('FOUND', this.orders);
+		this.renderHistoryBookings();	
+		this.renderCurrentBookings();
+			
+		console.log('Current', this.currentBookings);
+		console.log('Past', this.historyBookings);
+
 	}
 
 	renderCurrentBookings(){
-		this.orders.render('.aktuella', '2');
+		if(!(this.currentBookings.length > 0)){
+			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar.');	
+		} else this.currentBookings.render('.aktuella', '2');
+	}
+
+	renderHistoryBookings(){
+		if(!(this.historyBookings.length > 0)){
+			$('.order-history > h2').after('<h3>Du har ingen historik.');
+		} else this.historyBookings.render('.order-history-list');
 	}
 }

@@ -594,7 +594,11 @@ footer .myheight {
   color: #fff;
   font-weight: normal;
 }
-.user-page .order-history .history-list {
+.user-page .order-history-div .order-history-list {
+  height: 300px;
+  overflow-y: auto;
+}
+.user-page .order-history-div .order-history-list .history-list {
   font-family: 'Oswald', sans-serif;
   background-color: #f2b600;
   border-color: #000;

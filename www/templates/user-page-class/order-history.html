@@ -1,9 +1,17 @@
 Object.assign(Order.prototype, { template(){ return `
 
-  <li class="list-group-item history-list">
+  <li class="list-group-item history-list border-bottom-2">
 
-     ${this.orderInfo.title}, ${this.orderInfo.date}, OrderNr: ${this.orderNr}
+     ${this.orderInfo.title}
   </li>
+  <li class="list-group-item history-list border-top-0">
+
+      ${this.orderInfo.date}
+   </li>
+   <li class="list-group-item history-list border-top-0">
+
+      OrderNr: ${this.orderNr}
+   </li>
 
 
   `;}});
