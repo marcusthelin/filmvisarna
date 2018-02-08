@@ -56,39 +56,66 @@ class UserPage extends Base{
 		JSON._save('session', mNr);
 	}
 
-	async getUserOrders(){
+	async filterOrdersByDate(){
 		let today = moment(new Date(), 'ddd DD, LT');
 		let userOrders = await JSON._load('orders');
 		let currentUser = await JSON._load('session');
+		let index;
 		this.currentBookings = [];
-		this.historyBookings = [];
+		this.historyBookings = await JSON._load('order-history');
 		userOrders.filter(order => {
 			let viewDate = moment(order.orderInfo.date,  'ddd DD, LT');
-			if(order.orderInfo.mNr == currentUser && (viewDate >= today)){
+			//If the booking's view date is today or later, add to this.currentBookings array
+			if(viewDate >= today){
 				this.currentBookings.unshift(order);
-			} else if((order.orderInfo.mNr == currentUser) && (viewDate < today)){
+			} 
+				//If booking's viewdate has past, save the order object to
+				//order-history.json and remove it from order.json
+				else if(viewDate < today){
 				this.historyBookings.unshift(order);
+				index = userOrders.indexOf(order);
+				userOrders.splice(index, 1);
+				JSON._save('order-history', this.historyBookings);
+				JSON._save('orders', userOrders);
 			}
 			
 		});
 
-		this.renderHistoryBookings();	
-		this.renderCurrentBookings();
+		//Functions that renders the user's orders
+		this.renderHistoryBookings(currentUser);	
+		this.renderCurrentBookings(currentUser);
 			
 		console.log('Current', this.currentBookings);
 		console.log('Past', this.historyBookings);
 
 	}
 
-	renderCurrentBookings(){
-		if(!(this.currentBookings.length > 0)){
+	renderCurrentBookings(currentUser){
+		let userCurrentBookings = [];
+
+		this.currentBookings.filter(booking => {
+			if(booking.orderInfo.mNr == currentUser){
+				userCurrentBookings.unshift(booking);
+			}
+		});
+
+		if(!(userCurrentBookings.length > 0)){
 			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar.');	
-		} else this.currentBookings.render('.aktuella', '2');
+		} else userCurrentBookings.render('.aktuella', '2');
 	}
 
-	renderHistoryBookings(){
-		if(!(this.historyBookings.length > 0)){
+	async renderHistoryBookings(currentUser){
+		let oldBookings = await JSON._load('order-history');
+		let userOldBookings = [];
+
+		oldBookings.filter(booking => {
+			if(booking.orderInfo.mNr == currentUser){
+				userOldBookings.unshift(booking);
+			}
+		});
+
+		if(!(userOldBookings.length > 0)){
 			$('.order-history > h2').after('<h3>Du har ingen historik.');
-		} else this.historyBookings.render('.order-history-list');
+		} else userOldBookings.render('.order-history-list');
 	}
 }
