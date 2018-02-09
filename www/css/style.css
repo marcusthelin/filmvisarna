@@ -375,6 +375,9 @@ footer .myheight {
 .booking .booking-list:hover {
   background-color: #f2b600;
 }
+.booking .booking-list button.disabled {
+  pointer-events: none !important;
+}
 #accordion .card-header {
   background-color: #f2b600;
 }
@@ -613,6 +616,13 @@ footer .myheight {
 .user-page .content .bokningar li {
   color: #fff;
   font-weight: normal;
+}
+.user-page .order-history-div .order-history-list .history-list {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f2b600;
+  border-color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .logout-modal {
   background-color: #262626;

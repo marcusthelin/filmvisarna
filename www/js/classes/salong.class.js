@@ -173,6 +173,7 @@ class Salong extends Base {
   removeAllSeat() {
     this.co = 0;
     this.selectedSeats.length = 0;
+    this.quantity = 0;
     $('rect').removeClass('selected');
   }
 

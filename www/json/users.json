@@ -10,5 +10,11 @@
     "password": "hej",
     "memberNumber": 6832573,
     "personName": "David"
+  },
+  {
+    "username": "marcusthelin97@gmail.com",
+    "password": "marcus",
+    "memberNumber": 3002448,
+    "personName": "Marcus"
   }
 ]
