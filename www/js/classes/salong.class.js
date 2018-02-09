@@ -25,14 +25,13 @@ class Salong extends Base {
 
   getBookedSeats(auditorium, dateTime, title) {
     let bookedSeats = [];
-    this.orders.some(order => {
+    this.orders.forEach(order => {
       if (order.orderInfo.salong === auditorium && order.orderInfo.date === dateTime && order.orderInfo.title === title) {
         order.orderInfo.seats.forEach(seat => {
           seat.seatNumbers.forEach(number => {
             bookedSeats.push(number);
           })
         })
-        return true;
       }
     })
 
