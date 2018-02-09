@@ -15,7 +15,7 @@ Object.assign(Order.prototype, { template2(){
                 (this.orderInfo.quantity > 1) ? 'biljetter' : 'biljett'
               }
             </li>
-            <li>Rad ${this.orderInfo.seats[0].row}, plats ${this.orderInfo.seats[0].seatNumbers.join(', ')}</li>
+            <div class="reserved-seats" data-order-nr="${this.orderNr}"></div>
             <li>Pris: ${this.orderInfo.price}kr</li>
           </ul>
           <button type="button" class="btn btn-primary cancel-order">Avboka</button>

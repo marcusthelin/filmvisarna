@@ -14,10 +14,18 @@ class Order extends Base {
     this.date = ticket.date;
     this.auditorium = ticket.auditorium;
     this.quantity = ticket.quantity;
-    this.seats = ticket.seats;
     this.price = ticket.price;
-
-    console.log('title', this.title);
+    this.reservedSeats = [];
+    ticket.seats.filter(seatObj => {
+      let reservedRow = seatObj.row;
+      let reservedSeats = seatObj.seatNumbers.join(', ');
+      let reserved = {
+        row: reservedRow,
+        seats: reservedSeats
+      }
+      this.reservedSeats.push(reserved);
+    })
+    console.log('Reserved seats:', this.reservedSeats);
     this.getMovieInfo();
 
 
@@ -46,7 +54,7 @@ class Order extends Base {
         date: this.date,
         salong: this.auditorium,
         quantity: this.quantity,
-        seats: this.seats,
+        seats: this.reservedSeats,
         price: this.price,
         image: this.movieImage
       },
