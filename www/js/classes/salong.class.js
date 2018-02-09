@@ -1,23 +1,45 @@
 class Salong extends Base {
-	constructor(auditorium){
+	constructor(auditorium, dateTime, title){
 		super();
 		this.app = app;
     this.seatHtml = [];
     this.auditorium = auditorium;
+    this.dateTime = dateTime;
+    this.title = title;
     this.selectedSeats = [];
-    this.selectedSeatNumbers = [];
     this.quantity = 0;
     this.co = 0;
     this.load().then(() => {
       this.salongSize = this.getSalongSize(auditorium);
       this.createSalong(this.salongSize);
       this.render('#salong');
+      this.getBookedSeats(this.auditorium, this.dateTime, this.title);
       $(window).resize(this.scaleSalong);
     });
   }
 
   async load(){
-  	this.salonger = await JSON._load('salonger.json');
+    this.salonger = await JSON._load('salonger.json');
+    this.orders = await JSON._load('orders.json');
+  }
+
+  getBookedSeats(auditorium, dateTime, title) {
+    let bookedSeats = [];
+    this.orders.some(order => {
+      if (order.orderInfo.salong === auditorium && order.orderInfo.date === dateTime && order.orderInfo.title === title) {
+        order.orderInfo.seats.forEach(seat => {
+          seat.seatNumbers.forEach(number => {
+            bookedSeats.push(number);
+          })
+        })
+        return true;
+      }
+    })
+
+    bookedSeats.forEach(seatId => {
+      $(`#${seatId}`).addClass(`occupied`);
+    })
+    return bookedSeats;
   }
 
   getSalongSize(auditorium) {
@@ -183,7 +205,7 @@ class Salong extends Base {
     let rowNumber;
     let row;
 
-    if (!($(event.target).hasClass('selected')) && $(event.target).is('rect')) {
+    if (!($(event.target).hasClass('selected')) && !($(event.target).hasClass('occupied')) && $(event.target).is('rect')) {
       if (this.co === this.quantity) return;
 
       row = this.getRow(seatNumber);
