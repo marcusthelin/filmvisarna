@@ -69,15 +69,15 @@ class bokingModal extends Base {
 
   summary(tickets){
     tickets.length == 0 ? $('.boking-btn').prop("disabled", true) : $('.boking-btn').prop("disabled", false);
-    let price = 0;
+    this.totalPrice = 0;
     this.quantity = 0;
     $('.price').empty();
     for(let ticket of tickets){
       this.quantity += ticket.quantity;
       this.salong.quantity = this.quantity;
-      price += ticket.total;
+      this.totalPrice += ticket.total;
     }
-    $('.price').text(`${price == 0 ? '' : price}`);
+    $('.price').text(`${this.totalPrice == 0 ? '' : this.totalPrice}`);
   }
 
   async bookedTickets(){
@@ -87,7 +87,9 @@ class bokingModal extends Base {
         title: this.movieClass.title,
         date: this.date,
         auditorium: this.movieClass.auditorium,
-        quantity: this.quantity
+        quantity: this.quantity,
+        seats: this.salong.selectedSeats,
+        price: this.totalPrice
       }).then(function(){
       console.log('Saved!');
       let newOrder = new Order();
