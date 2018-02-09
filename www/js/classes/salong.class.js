@@ -5,7 +5,6 @@ class Salong extends Base {
     this.seatHtml = [];
     this.auditorium = auditorium;
     this.selectedSeats = [];
-    this.selectedSeatNumbers = [];
     this.quantity = 0;
     this.co = 0;
     this.load().then(() => {
