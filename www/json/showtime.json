@@ -1,814 +1,1906 @@
 [
   {
     "auditorium": "Stora Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-09",
+    "time": "15:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
     "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-18",
+    "date": "2018-02-09",
     "time": "18:40",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-01-18",
+    "film": "Downsizing",
+    "date": "2018-02-09",
     "time": "18:50",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
     "film": "Interstellar",
-    "date": "2018-01-18",
-    "time": "21:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "The Martian",
-    "date": "2018-01-18",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Incredibles",
-    "date": "2018-01-19",
-    "time": "15:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-19",
-    "time": "17:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-01-19",
-    "time": "19:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-01-19",
-    "time": "19:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-19",
-    "time": "21:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-20",
-    "time": "17:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "The Martian",
-    "date": "2018-01-20",
-    "time": "19:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-20",
-    "time": "21:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Incredibles",
-    "date": "2018-01-21",
-    "time": "17:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-01-21",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-21",
-    "time": "19:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-21",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Martian",
-    "date": "2018-01-22",
-    "time": "17:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-22",
-    "time": "18:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-01-22",
-    "time": "19:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-01-22",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-22",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Incredibles",
-    "date": "2018-01-23",
-    "time": "16:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-01-23",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-23",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-24",
-    "time": "17:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Martian",
-    "date": "2018-01-24",
-    "time": "19:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-24",
-    "time": "19:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-01-24",
-    "time": "21:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-01-24",
-    "time": "22:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-25",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-01-25",
-    "time": "18:50",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-25",
-    "time": "21:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "The Martian",
-    "date": "2018-01-25",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Incredibles",
-    "date": "2018-01-26",
-    "time": "15:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-26",
-    "time": "17:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-01-26",
-    "time": "19:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-01-26",
-    "time": "19:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-26",
-    "time": "21:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-27",
-    "time": "17:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "The Martian",
-    "date": "2018-01-27",
-    "time": "19:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-27",
-    "time": "21:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Incredibles",
-    "date": "2018-01-28",
-    "time": "17:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-01-28",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-28",
-    "time": "19:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-28",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Martian",
-    "date": "2018-01-29",
-    "time": "17:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-29",
-    "time": "18:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-01-29",
-    "time": "19:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-01-29",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-29",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Incredibles",
-    "date": "2018-01-30",
-    "time": "16:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-01-30",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-30",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-01-31",
-    "time": "17:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Martian",
-    "date": "2018-01-31",
-    "time": "19:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-01-31",
-    "time": "19:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-01-31",
-    "time": "21:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-01-31",
-    "time": "22:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-01",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-02-01",
-    "time": "18:50",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-02-01",
-    "time": "21:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "The Martian",
-    "date": "2018-02-01",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Incredibles",
-    "date": "2018-02-02",
-    "time": "15:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-02",
-    "time": "17:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-02-02",
-    "time": "19:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-02-02",
-    "time": "19:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-02-02",
-    "time": "21:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-02-03",
-    "time": "17:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "The Martian",
-    "date": "2018-02-03",
-    "time": "19:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-03",
-    "time": "21:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Incredibles",
-    "date": "2018-02-04",
-    "time": "17:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-02-04",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-02-04",
-    "time": "19:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-04",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Martian",
-    "date": "2018-02-05",
-    "time": "17:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-05",
-    "time": "18:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-02-05",
-    "time": "19:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-02-05",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-02-05",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Incredibles",
-    "date": "2018-02-06",
-    "time": "16:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-02-06",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-06",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-02-07",
-    "time": "17:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Martian",
-    "date": "2018-02-07",
-    "time": "19:30",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-07",
-    "time": "19:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-02-07",
-    "time": "21:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-02-07",
-    "time": "22:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-08",
-    "time": "18:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Thor: Ragnarok",
-    "date": "2018-02-08",
-    "time": "18:50",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-02-08",
-    "time": "21:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Stora Salongen",
-    "film": "The Martian",
-    "date": "2018-02-08",
-    "time": "21:10",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "The Incredibles",
     "date": "2018-02-09",
-    "time": "15:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-09",
-    "time": "17:00",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Call Me by Your Name",
-    "date": "2018-02-09",
-    "time": "19:30",
+    "time": "21:00",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Stora Salongen",
-    "film": "Thor: Ragnarok",
+    "film": "The Martian",
     "date": "2018-02-09",
-    "time": "19:40",
+    "time": "21:10",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
-    "date": "2018-02-09",
-    "time": "21:40",
-    "⚙": "Calendar"
-  },
-  {
-    "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
+    "film": "The Incredibles",
     "date": "2018-02-10",
-    "time": "17:30",
+    "time": "15:00",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Stora Salongen",
-    "film": "The Martian",
+    "film": "Downsizing",
     "date": "2018-02-10",
-    "time": "19:00",
+    "time": "16:40",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
     "film": "Star Wars: The Last Jedi",
     "date": "2018-02-10",
-    "time": "21:00",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-02-10",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-02-10",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-10",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-10",
+    "time": "22:00",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
     "film": "The Incredibles",
     "date": "2018-02-11",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-11",
+    "time": "16:15",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-02-11",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-11",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-11",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-11",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-12",
     "time": "17:00",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-12",
+    "time": "15:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
     "film": "Call Me by Your Name",
-    "date": "2018-02-11",
+    "date": "2018-02-12",
     "time": "18:40",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
     "film": "Interstellar",
-    "date": "2018-02-11",
+    "date": "2018-02-12",
     "time": "19:00",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Stora Salongen",
     "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-11",
+    "date": "2018-02-12",
     "time": "21:10",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
-    "film": "The Martian",
+    "film": "Three Billboards Outside Ebbing, Missouri",
     "date": "2018-02-12",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-02-13",
     "time": "17:30",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Stora Salongen",
-    "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-12",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-13",
     "time": "18:30",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
     "film": "Call Me by Your Name",
-    "date": "2018-02-12",
+    "date": "2018-02-13",
     "time": "19:00",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Stora Salongen",
     "film": "Thor: Ragnarok",
-    "date": "2018-02-12",
+    "date": "2018-02-13",
     "time": "21:10",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
     "film": "Interstellar",
-    "date": "2018-02-12",
+    "date": "2018-02-13",
     "time": "21:10",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
     "film": "The Incredibles",
-    "date": "2018-02-13",
+    "date": "2018-02-14",
     "time": "16:30",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
     "film": "Thor: Ragnarok",
-    "date": "2018-02-13",
+    "date": "2018-02-14",
     "time": "18:40",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Stora Salongen",
     "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-13",
+    "date": "2018-02-14",
     "time": "18:40",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
-    "film": "Interstellar",
+    "film": "Downsizing",
     "date": "2018-02-14",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-14",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-15",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-15",
     "time": "17:00",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
     "film": "The Martian",
-    "date": "2018-02-14",
+    "date": "2018-02-15",
     "time": "19:30",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Stora Salongen",
     "film": "Star Wars: The Last Jedi",
-    "date": "2018-02-14",
+    "date": "2018-02-15",
     "time": "19:40",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Lilla Salongen",
     "film": "Call Me by Your Name",
-    "date": "2018-02-14",
+    "date": "2018-02-15",
     "time": "21:00",
     "⚙": "Calendar"
   },
   {
     "auditorium": "Stora Salongen",
     "film": "Thor: Ragnarok",
-    "date": "2018-02-14",
+    "date": "2018-02-15",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-16",
+    "time": "15:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-16",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-16",
+    "time": "18:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-16",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-02-16",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-17",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-17",
+    "time": "16:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-17",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-02-17",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-02-17",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-17",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-17",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-18",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-18",
+    "time": "16:15",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-02-18",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-18",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-18",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-18",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-19",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-19",
+    "time": "15:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-02-19",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-19",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-19",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-02-20",
+    "time": "17:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-20",
+    "time": "18:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-02-20",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-02-20",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-20",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-21",
+    "time": "16:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-02-21",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-21",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-21",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-21",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-22",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-22",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-02-22",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-22",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-02-22",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-02-22",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-23",
+    "time": "15:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-23",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-23",
+    "time": "18:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-23",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-02-23",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-24",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-24",
+    "time": "16:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-24",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-02-24",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-02-24",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-24",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-24",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-25",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-25",
+    "time": "16:15",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-02-25",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-25",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-25",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-25",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-26",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-26",
+    "time": "15:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-02-26",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-26",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-26",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-26",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-02-27",
+    "time": "17:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-27",
+    "time": "18:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-02-27",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-02-27",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-02-27",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-02-28",
+    "time": "16:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-02-28",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-02-28",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-02-28",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-02-28",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-01",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-01",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-03-01",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-01",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-01",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-01",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-02",
+    "time": "15:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-02",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-02",
+    "time": "18:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-02",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-03-02",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-03",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-03",
+    "time": "16:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-03",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-03",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-03",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-03",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-03",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-04",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-04",
+    "time": "16:15",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-03-04",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-04",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-04",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-04",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-05",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-05",
+    "time": "15:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-05",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-05",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-05",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-05",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-03-06",
+    "time": "17:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-06",
+    "time": "18:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-06",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-06",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-06",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-07",
+    "time": "16:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-07",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-07",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-07",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-07",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-08",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-08",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-03-08",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-08",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-08",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-08",
     "time": "22:00",
     "⚙": "Calendar"
   }
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-09",
+    "time": "15:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-09",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-09",
+    "time": "18:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-09",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-03-09",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-10",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-10",
+    "time": "16:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-10",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-10",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-10",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-10",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-10",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-11",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-11",
+    "time": "16:15",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-03-11",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-11",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-11",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-11",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-12",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-12",
+    "time": "15:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-12",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-12",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-12",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-12",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-03-13",
+    "time": "17:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-13",
+    "time": "18:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-13",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-13",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-13",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-14",
+    "time": "16:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-14",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-14",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-14",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-14",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-15",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-15",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-03-15",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-15",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-15",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-15",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-16",
+    "time": "15:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-16",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-16",
+    "time": "18:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-16",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-03-16",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-17",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-17",
+    "time": "16:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-17",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-17",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-17",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-17",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-17",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-18",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-18",
+    "time": "16:15",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-03-18",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-18",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-18",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-18",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-19",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-19",
+    "time": "15:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-19",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-19",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-19",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-03-20",
+    "time": "17:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-20",
+    "time": "18:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-20",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-20",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-20",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-21",
+    "time": "16:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-21",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-21",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-21",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-21",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-22",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-22",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-03-22",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-22",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-22",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-22",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-23",
+    "time": "15:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-23",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-23",
+    "time": "18:50",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-23",
+    "time": "21:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-03-23",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-24",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-24",
+    "time": "16:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-24",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-24",
+    "time": "19:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-24",
+    "time": "19:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-24",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-24",
+    "time": "22:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-25",
+    "time": "15:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-25",
+    "time": "16:15",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "The Martian",
+    "date": "2018-03-25",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-25",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-25",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-25",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-26",
+    "time": "17:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-26",
+    "time": "15:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-26",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-26",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-26",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-26",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Martian",
+    "date": "2018-03-27",
+    "time": "17:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-27",
+    "time": "18:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Call Me by Your Name",
+    "date": "2018-03-27",
+    "time": "19:00",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-27",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Interstellar",
+    "date": "2018-03-27",
+    "time": "21:10",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "The Incredibles",
+    "date": "2018-03-28",
+    "time": "16:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Thor: Ragnarok",
+    "date": "2018-03-28",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Star Wars: The Last Jedi",
+    "date": "2018-03-28",
+    "time": "18:40",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Lilla Salongen",
+    "film": "Downsizing",
+    "date": "2018-03-28",
+    "time": "21:30",
+    "⚙": "Calendar"
+  },
+  {
+    "auditorium": "Stora Salongen",
+    "film": "Three Billboards Outside Ebbing, Missouri",
+    "date": "2018-03-28",
+    "time": "21:40",
+    "⚙": "Calendar"
+  },
 ]
