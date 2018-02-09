@@ -1,7 +1,7 @@
 class bokingModal extends Base {
-  constructor(auditorium, movieClass, dateTime) {
+  constructor(auditorium, movieClass, dateTime, title) {
     super();
-    this.salong = new Salong(auditorium);
+    this.salong = new Salong(auditorium, dateTime, title);
     this.movieClass = movieClass;
     this.date = dateTime;
     this.tickets = [
