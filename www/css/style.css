@@ -537,6 +537,29 @@ footer .myheight {
 #boking-modal .modal-footer {
   background-color: #f2b600;
 }
+#boking-modal .quantity {
+  background-color: #f8f9fa;
+  display: block;
+  width: 50px;
+  padding: 5px;
+}
+#boking-modal .btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#boking-modal .btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+#boking-modal .total-price p {
+  color: #000;
+  font-family: 'PT Serif', serif;
+  font-size: 15px;
+}
+#boking-modal .price {
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+}
 #register-modal {
   font-family: 'PT Serif', serif;
 }

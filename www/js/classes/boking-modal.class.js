@@ -1,7 +1,7 @@
 class bokingModal extends Base {
-  constructor(auditorium, movieClass, dateTime) {
+  constructor(auditorium, movieClass, dateTime, title) {
     super();
-    this.salong = new Salong(auditorium);
+    this.salong = new Salong(auditorium, dateTime, title);
     this.movieClass = movieClass;
     this.date = dateTime;
     this.tickets = [
@@ -60,11 +60,12 @@ class bokingModal extends Base {
 
   sortTickets(){
     let reservedTickets = this.tickets.filter(ticket => ticket.quantity > 0);
-    $('.info-tickets').empty();
+    $('.total-price').empty();
     reservedTickets.forEach(ticket => {
-      $('.info-tickets').append(`<p>${ticket.quantity}st ${ticket.type} ${ticket.price} ${ticket.total} </p>`);
+      $('.total-price').append(`<p>${ticket.quantity}st ${ticket.type}  ${ticket.price} kr </p>`);
     });
     this.summary(reservedTickets);
+    console.log(reservedTickets);
   }
 
   summary(tickets){
@@ -77,7 +78,7 @@ class bokingModal extends Base {
       this.salong.quantity = this.quantity;
       this.totalPrice += ticket.total;
     }
-    $('.price').text(`${this.totalPrice == 0 ? '' : this.totalPrice}`);
+    $('.price').text(`${this.totalPrice == 0 ? '' : this.totalPrice} kr`);
   }
 
   async bookedTickets(){

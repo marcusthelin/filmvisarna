@@ -54,12 +54,12 @@ class Movie extends Base {
       const regexp = /([a-zåäö]{3}\s\d{2})\,\s(\d{2}\:\d{2})/;
       /*/(\w{3}\s\d{2}-\d{2})\s\|\s(\d+\.\d{2})/;*/
       // get date and time ex. tor 01, 21.00 from $(event.target)[0].innerText
-      const dateTime = $(event.target)[0].innerText;
+      this.dateTime = $(event.target)[0].innerText;
       // ignore if there are not any screenings
-      if (dateTime) {
+      if (this.dateTime) {
         // ignore first element that contains entire matched string
-        const [,date, time] = dateTime.match(regexp);
-        this.bokingModal = new bokingModal(this.getAuditorium(date, time),this,dateTime);
+        const [,date, time] = this.dateTime.match(regexp);
+        this.bokingModal = new bokingModal(this.getAuditorium(date, time), this, this.dateTime, this.title);
         this.bokingModal.drawBokingModal();
       }
     }
