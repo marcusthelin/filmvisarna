@@ -14,6 +14,8 @@ class Order extends Base {
     this.date = ticket.date;
     this.auditorium = ticket.auditorium;
     this.quantity = ticket.quantity;
+    this.seats = ticket.seats;
+    this.price = ticket.price;
 
     console.log('title', this.title);
     this.getMovieInfo();
@@ -44,6 +46,8 @@ class Order extends Base {
         date: this.date,
         salong: this.auditorium,
         quantity: this.quantity,
+        seats: this.seats,
+        price: this.price,
         image: this.movieImage
       },
       "⚙": "Order"

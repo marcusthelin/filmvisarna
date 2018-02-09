@@ -18,12 +18,15 @@ class UserPage extends Base{
 			JSON._save('session', session);
 			$('#exampleModal').modal('hide');
 		});
+		
 
-		$(document).on('click', '.cancel-order', () => {
-			let orderNumber = $('.cancel-order').parent().find('ul').find(':first').text().slice(13); //Just get the ordernumber from card
-			console.log(orderNumber);
-			this.cancelOrder(orderNumber);
-		});
+		// TODO: Fix confirm modal for cancel order
+
+		// $(document).on('click', '.cancel-order', () => {
+		// 	let orderNumber = $('.cancel-order').parent().find('ul').find(':first').text().slice(13); //Just get the ordernumber from card
+		// 	console.log(orderNumber);
+		// 	this.cancelOrder(orderNumber);
+		// });
 	}
 
 
