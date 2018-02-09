@@ -78,7 +78,7 @@ class bokingModal extends Base {
       this.salong.quantity = this.quantity;
       this.totalPrice += ticket.total;
     }
-    $('.price').text(`${this.totalPrice == 0 ? '' : this.totalPrice}`);
+    $('.price').text(`${this.totalPrice == 0 ? '' : this.totalPrice} kr`);
   }
 
   async bookedTickets(){
