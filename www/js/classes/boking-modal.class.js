@@ -60,11 +60,12 @@ class bokingModal extends Base {
 
   sortTickets(){
     let reservedTickets = this.tickets.filter(ticket => ticket.quantity > 0);
-    $('.info-tickets').empty();
+    $('.total-price').empty();
     reservedTickets.forEach(ticket => {
-      $('.info-tickets').append(`<p>${ticket.quantity}st ${ticket.type} ${ticket.price} ${ticket.total} </p>`);
+      $('.total-price').append(`<p>${ticket.quantity}st ${ticket.type}  ${ticket.price} kr </p>`);
     });
     this.summary(reservedTickets);
+    console.log(reservedTickets);
   }
 
   summary(tickets){

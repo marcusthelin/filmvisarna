@@ -56,8 +56,7 @@
   @media only screen and (min-width: 992px) {
     .modal-dialog {
       position: relative;
-      display: table;
-      /* This is important */
+      display: table; /* This is important */
       overflow-y: auto;
       overflow-x: auto;
       width: auto;
@@ -113,8 +112,6 @@
     text-align: center;
   }
 
-  .boking-btn {}
-
   .modal-finish {
     font-family: @oswald;
     color: #000;
@@ -156,5 +153,36 @@
 
   .modal-footer {
     background-color: @somecolor;
+  }
+
+  .quantity{
+    background-color: #f8f9fa;
+    display: block;
+    width: 50px;
+    padding: 5px;
+  }
+
+  .btn-group-vertical > .btn:first-child:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .btn-group-vertical > .btn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+
+  .total-price {
+    p {
+      color: #000;
+      font-family: 'PT Serif', serif;
+      font-size: 15px;
+    }
+  }
+  .price {
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    // border-top: 1px solid #000;
   }
 }
