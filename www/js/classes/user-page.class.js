@@ -19,13 +19,17 @@ class UserPage extends Base{
 			JSON._save('session', session);
 			$('#exampleModal').modal('hide');
 		});
-		
+
 		//Click event that triggers cancelOrder()
-		$(document).on('click', '.cancel-order', function() {
-			let orderNumber = parseInt($('.cancel-btn-card').parent().find('div.reserved-seats').attr('data-order-nr')); //Just get the ordernumber from card
+		$(document).on('click', '.cancel-btn-card', function() {
+			let orderNumber = parseInt($(this).parent().find('div.reserved-seats').attr('data-order-nr')); //Just get the ordernumber from card
 			console.log(orderNumber);
-			that.cancelOrder(orderNumber);
-			$('#cancel-order-modal').modal('hide');
+			$('.cancel-order').click(() => {
+				console.log(this);
+				$('#cancel-order-modal').modal('hide');
+				that.cancelOrder(orderNumber);
+			});
+
 		});
 	}
 
@@ -65,6 +69,9 @@ class UserPage extends Base{
 	}
 
 	async filterOrdersByDate(){
+		$('.user-page').remove();
+		this.render('main');
+		// $('main').append(this.template());
 		let today = moment(new Date(), 'ddd DD, LT');
 		let userOrders = await JSON._load('orders');
 		let currentUser = await JSON._load('session');
@@ -76,23 +83,22 @@ class UserPage extends Base{
 			//If the booking's view date is today or later, add to this.currentBookings array
 			if(viewDate >= today){
 				this.currentBookings.unshift(order);
-			} 
-				//If booking's viewdate has past, save the order object to
-				//order-history.json and remove it from order.json
-				else if((viewDate < today) || (viewDate != today)){
-				this.historyBookings.unshift(order);
-				index = userOrders.indexOf(order);
-				userOrders.splice(index, 1);
-				JSON._save('order-history', this.historyBookings);
-				JSON._save('orders', userOrders);
-			}
-			
+			} else if((viewDate < today) || (viewDate != today)){
+					//If booking's viewdate has past, save the order object to
+					//order-history.json and remove it from order.json
+					this.historyBookings.unshift(order);
+					index = userOrders.indexOf(order);
+					userOrders.splice(index, 1);
+					JSON._save('order-history', this.historyBookings);
+					JSON._save('orders', userOrders);
+				}
+
 		});
 
 		//Functions that renders the user's orders
-		this.renderHistoryBookings(currentUser);	
+		this.renderHistoryBookings(currentUser);
 		this.renderCurrentBookings(currentUser);
-			
+
 		console.log('Current', this.currentBookings);
 		console.log('Past', this.historyBookings);
 
@@ -109,7 +115,7 @@ class UserPage extends Base{
 
 		if(!(this.userCurrentBookings.length > 0)){
 			$('.aktuella').empty();
-			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar. <i class="fas fa-frown"></i></h3>');	
+			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar. <i class="fas fa-frown"></i></h3>');
 		} else {
 			console.log('HEJSAN SVEJSAN:', this.userCurrentBookings);
 			this.userCurrentBookings.render('.aktuella', '2');
@@ -119,7 +125,7 @@ class UserPage extends Base{
 					console.log('SEAT OBJECT' ,seatObj);
 					let reservedSeats = ('Rad: ' + seatObj.row.toString() + ', plats: ' + seatObj.seatNumbers.join(', ')); //Seats for one row
 					$(`.reserved-seats[data-order-nr=${this.userCurrentBookings[i].orderNr}]`).append('<li>' + reservedSeats + '</li>');
-				}	
+				}
 			}
 		}
 	}
@@ -140,16 +146,20 @@ class UserPage extends Base{
 		} else userOldBookings.render('.order-history-list');
 	}
 
-	cancelOrder(orderNumber){
+	async cancelOrder(orderNumber){
 		let index;
-
+		let orders = await JSON._load('orders');
+		console.log('Current bookings array:', orders);
 		//this.currentBooking is data from orders.json
-		this.currentBookings.filter(order => {
+		orders.filter(order => {
 			if(order.orderNr == orderNumber){
-				index = this.currentBookings.indexOf(order);
-				this.currentBookings.splice(index, 1);
-				JSON._save('orders', this.currentBookings.splice(index, 1)).then(() => this.renderCurrentBookings());
+				console.log('Found order number', order.orderNr);
+				index = orders.indexOf(order);
+				console.log('Index is', index);
+				orders.splice(index, 1);
 			}
 		});
+		await JSON._save('orders', orders)
+		this.filterOrdersByDate();
 	}
 }

@@ -24,7 +24,7 @@ class Order extends Base {
         seatNumbers: reservedSeats
       }
       console.log(reserved);
-      this.reservedSeats.push(reserved);
+      this.reservedSeats.unshift(reserved);
     })
     console.log('Reserved seats:', this.reservedSeats);
     this.getMovieInfo();
