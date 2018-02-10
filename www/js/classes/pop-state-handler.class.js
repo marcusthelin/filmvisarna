@@ -141,7 +141,6 @@ class PopStateHandler {
       $('main').empty();
       $('.karusell').empty();
       this.app.userPage.filterOrdersByDate(); //Run method that gets all orders the user have done
-      $('main').append(this.app.userPage.template());
     } else{
       this.startsidan();
       $('.access-denied-modal').modal('show');
