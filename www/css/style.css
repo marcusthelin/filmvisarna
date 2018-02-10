@@ -589,8 +589,6 @@ footer .myheight {
 }
 .user-page .content {
   background-color: #262626;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
   padding: 20px 50px;
 }
 .user-page .content h2 {
@@ -624,6 +622,21 @@ footer .myheight {
   font-weight: 700;
   text-transform: uppercase;
 }
+#cancel-order-modal .cancel-modal {
+  background-color: #262626;
+  max-width: 80%;
+}
+#cancel-order-modal .cancel-modal .cancel-modal-header {
+  background-color: #f2b600;
+}
+#cancel-order-modal .cancel-modal .cancel-modal-header h5 {
+  font-family: 'Oswald', sans-serif;
+}
+#cancel-order-modal .cancel-modal button.cancel-order {
+  color: #000000;
+  border-color: #f2b600;
+  background-color: #f2b600;
+}
 .logout-modal {
   background-color: #262626;
   max-width: 80%;
@@ -641,9 +654,6 @@ footer .myheight {
 }
 .errorMessage {
   display: none;
-}
-nav {
-  background-color: #262626;
 }
 nav .container .logo-mobile {
   margin: 10px auto;

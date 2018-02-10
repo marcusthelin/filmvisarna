@@ -18,11 +18,12 @@ class Order extends Base {
     this.reservedSeats = [];
     ticket.seats.filter(seatObj => {
       let reservedRow = seatObj.row;
-      let reservedSeats = seatObj.seatNumbers.join(', ');
+      let reservedSeats = seatObj.seatNumbers;
       let reserved = {
         row: reservedRow,
-        seats: reservedSeats
+        seatNumbers: reservedSeats
       }
+      console.log(reserved);
       this.reservedSeats.push(reserved);
     })
     console.log('Reserved seats:', this.reservedSeats);

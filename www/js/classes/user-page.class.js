@@ -22,9 +22,10 @@ class UserPage extends Base{
 		
 		//Click event that triggers cancelOrder()
 		$(document).on('click', '.cancel-order', function() {
-			let orderNumber = parseInt($(this).parent().find('div.reserved-seats').attr('data-order-nr')); //Just get the ordernumber from card
+			let orderNumber = parseInt($('.cancel-btn-card').parent().find('div.reserved-seats').attr('data-order-nr')); //Just get the ordernumber from card
 			console.log(orderNumber);
-			// that.cancelOrder(orderNumber); UNCOMMENT TO IMPLEMENT
+			that.cancelOrder(orderNumber);
+			$('#cancel-order-modal').modal('hide');
 		});
 	}
 
@@ -108,7 +109,7 @@ class UserPage extends Base{
 
 		if(!(this.userCurrentBookings.length > 0)){
 			$('.aktuella').empty();
-			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar.');	
+			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar. <i class="fas fa-frown"></i></h3>');	
 		} else {
 			console.log('HEJSAN SVEJSAN:', this.userCurrentBookings);
 			this.userCurrentBookings.render('.aktuella', '2');
@@ -116,7 +117,7 @@ class UserPage extends Base{
 			for (let i = 0; i < this.userCurrentBookings.length; i++) {
 				for(let seatObj of this.userCurrentBookings[i].orderInfo.seats){
 					console.log('SEAT OBJECT' ,seatObj);
-					let reservedSeats = ('Rad: ' + seatObj.row.toString() + ', plats: ' + seatObj.seats); //Seats for one row
+					let reservedSeats = ('Rad: ' + seatObj.row.toString() + ', plats: ' + seatObj.seatNumbers.join(', ')); //Seats for one row
 					$(`.reserved-seats[data-order-nr=${this.userCurrentBookings[i].orderNr}]`).append('<li>' + reservedSeats + '</li>');
 				}	
 			}
@@ -135,7 +136,7 @@ class UserPage extends Base{
 		});
 
 		if(!(userOldBookings.length > 0)){
-			$('.order-history > h2').after('<h3>Du har ingen historik.');
+			$('.order-history > h2').after('<h3>Du har ingen historik.</h3>');
 		} else userOldBookings.render('.order-history-list');
 	}
 
@@ -147,7 +148,7 @@ class UserPage extends Base{
 			if(order.orderNr == orderNumber){
 				index = this.currentBookings.indexOf(order);
 				this.currentBookings.splice(index, 1);
-				JSON._save('orders', this.currentBookings.splice(index, 1)).then(() => this.filterOrdersByDate());
+				JSON._save('orders', this.currentBookings.splice(index, 1)).then(() => this.renderCurrentBookings());
 			}
 		});
 	}

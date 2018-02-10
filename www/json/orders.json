@@ -1,20 +1,23 @@
 [
   {
-    "orderNr": 2132,
+    "orderNr": 2147,
     "orderInfo": {
-      "title": "Interstellar",
+      "title": "The Incredibles",
       "mNr": 3002448,
-      "date": "fre 09, 21:40",
+      "date": "lör 10, 15:00",
       "salong": "Lilla Salongen",
       "quantity": 2,
       "seats": [
         {
-          "row": 5,
-          "seats": "40, 41"
+          "row": 1,
+          "seatNumbers": [
+            "5",
+            "6"
+          ]
         }
       ],
       "price": 170,
-      "image": "intersteller-poster1.jpg"
+      "image": "incredibles-poster1.jpg"
     },
     "⚙": "Order"
   }

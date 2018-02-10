@@ -20,8 +20,6 @@
 	}
 	 .content{
 		 	background-color: @bg-gray;
-	    border-bottom-right-radius: 5px;
-	    border-bottom-left-radius: 5px;
 		  padding: 20px 50px;
 		 	h2{
 	    font-family: 'Oswald', sans-serif;
@@ -59,6 +57,24 @@
 				font-weight: 700;
 				text-transform: uppercase;
 			}
+		}
+	}
+}
+#cancel-order-modal{
+	.cancel-modal{
+		background-color: @bg-gray;
+		max-width: 80%;
+		.cancel-modal-header{
+			background-color: @somecolor;
+			h5{
+				font-family: @oswald;
+			}
+		}
+	
+		button.cancel-order{
+			color: rgb(0, 0, 0);
+			border-color: @somecolor;
+			background-color: @somecolor;
 		}
 	}
 }
