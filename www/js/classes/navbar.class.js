@@ -12,11 +12,17 @@ class Navbar extends Base {
     this.login = new LogIn(this.app); // TODO: Remove app reference
   }
 
-  setActive(url){
+  async setActive(url){
     for(let item of this.items){
       item.active = url == item.url;
     }
-    this.render();
+
+    //Render correct nav depending on if the user is logged in or not
+    if(await this.app.userPage.isLoggedIn()){
+      this.render('', '2');
+    } else{
+      this.render();
+    }
   }
 
 

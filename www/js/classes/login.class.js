@@ -36,7 +36,7 @@ class LogIn extends Base {
         if (loginName == obj.username && loginPW == obj.password) {
           $('header').empty();
           that.app.userPage.setLogin(obj); //Sends the login to the User Page class
-          that.app.popState.renderNav();
+          that.app.popState.renderCorrectNav();
           break;
         } else {
           $('.errorMessageLogin').removeClass('d-none');
