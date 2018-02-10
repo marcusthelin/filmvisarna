@@ -1,25 +1,3 @@
 [
-  {
-    "orderNr": 2131,
-    "orderInfo": {
-      "title": "Thor: Ragnarok",
-      "mNr": 3002448,
-      "date": "ons 07, 22:00",
-      "salong": "Stora Salongen",
-      "quantity": 2,
-      "seats": [
-        {
-          "row": 1,
-          "seats": "8"
-        },
-        {
-          "row": 2,
-          "seats": "16"
-        }
-      ],
-      "price": 170,
-      "image": "thor-ragnarok-poster2.jpg"
-    },
-    "⚙": "Order"
-  }
+  
 ]
