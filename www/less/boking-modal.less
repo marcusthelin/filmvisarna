@@ -16,18 +16,24 @@
     #salong {
       .vacant {
         fill: gray;
+        cursor: pointer;
       }
 
       .occupied {
         fill: blue;
+        &.mouseentered{
+          cursor: not-allowed;
+        }
       }
 
       .mouseentered {
         fill: yellow;
+        cursor: pointer;
       }
 
       .selected {
         fill: red;
+        cursor: pointer;
       }
     }
   }

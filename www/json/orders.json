@@ -1,25 +1,3 @@
 [
-  {
-    "orderNr": 2114,
-    "orderInfo": {
-      "title": "Star Wars: The Last Jedi",
-      "mNr": 3002448,
-      "date": "sön 11, 21:10",
-      "salong": "Stora Salongen",
-      "quantity": 3,
-      "seats": [
-        {
-          "row": 5,
-          "seatNumbers": [
-            "45",
-            "46",
-            "47"
-          ]
-        }
-      ],
-      "price": 255,
-      "image": "last-jedi-poster2.jpg"
-    },
-    "⚙": "Order"
-  }
+  
 ]
