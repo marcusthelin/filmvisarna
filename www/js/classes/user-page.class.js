@@ -7,6 +7,7 @@ class UserPage extends Base{
 	/* When clicking logout, set the value in session.json to 0
 	and change page to Startsida */
 	clickEvents(){
+		let that = this;
 		$(document).on('click', '.logoutModalBtn', function(){
 			console.log('Clicked');
 			$('#exampleModal').appendTo('body').modal('show');
@@ -19,14 +20,13 @@ class UserPage extends Base{
 			$('#exampleModal').modal('hide');
 		});
 		
-
-		// TODO: Fix confirm modal for cancel order
-
-		// $(document).on('click', '.cancel-order', () => {
-		// 	let orderNumber = $('.cancel-order').parent().find('ul').find(':first').text().slice(13); //Just get the ordernumber from card
-		// 	console.log(orderNumber);
-		// 	this.cancelOrder(orderNumber);
-		// });
+		//Click event that triggers cancelOrder()
+		$(document).on('click', '.cancel-order', function() {
+			let orderNumber = parseInt($('.cancel-btn-card').parent().find('div.reserved-seats').attr('data-order-nr')); //Just get the ordernumber from card
+			console.log(orderNumber);
+			that.cancelOrder(orderNumber);
+			$('#cancel-order-modal').modal('hide');
+		});
 	}
 
 
@@ -109,8 +109,19 @@ class UserPage extends Base{
 
 		if(!(this.userCurrentBookings.length > 0)){
 			$('.aktuella').empty();
-			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar.');	
-		} else this.userCurrentBookings.render('.aktuella', '2');
+			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar. <i class="fas fa-frown"></i></h3>');	
+		} else {
+			console.log('HEJSAN SVEJSAN:', this.userCurrentBookings);
+			this.userCurrentBookings.render('.aktuella', '2');
+			//Iterate through all the user's current bookings and get row and seat information
+			for (let i = 0; i < this.userCurrentBookings.length; i++) {
+				for(let seatObj of this.userCurrentBookings[i].orderInfo.seats){
+					console.log('SEAT OBJECT' ,seatObj);
+					let reservedSeats = ('Rad: ' + seatObj.row.toString() + ', plats: ' + seatObj.seatNumbers.join(', ')); //Seats for one row
+					$(`.reserved-seats[data-order-nr=${this.userCurrentBookings[i].orderNr}]`).append('<li>' + reservedSeats + '</li>');
+				}	
+			}
+		}
 	}
 
 	async renderHistoryBookings(currentUser){
@@ -125,17 +136,19 @@ class UserPage extends Base{
 		});
 
 		if(!(userOldBookings.length > 0)){
-			$('.order-history > h2').after('<h3>Du har ingen historik.');
+			$('.order-history > h2').after('<h3>Du har ingen historik.</h3>');
 		} else userOldBookings.render('.order-history-list');
 	}
 
 	cancelOrder(orderNumber){
 		let index;
+
+		//this.currentBooking is data from orders.json
 		this.currentBookings.filter(order => {
 			if(order.orderNr == orderNumber){
 				index = this.currentBookings.indexOf(order);
-				console.log(this.currentBookings.splice(index, 1));
-				JSON._save('orders', this.currentBookings.splice(index, 1)).then(() => this.filterOrdersByDate());
+				this.currentBookings.splice(index, 1);
+				JSON._save('orders', this.currentBookings.splice(index, 1)).then(() => this.renderCurrentBookings());
 			}
 		});
 	}
