@@ -324,6 +324,13 @@ main .currentMoviesHeader h2 {
   font-family: 'Oswald', sans-serif;
   color: #000;
 }
+.access-denied-modal {
+  cursor: wait;
+}
+.access-denied-modal h3,
+.access-denied-modal p {
+  color: black;
+}
 footer {
   position: absolute;
   bottom: 0;
@@ -654,7 +661,7 @@ footer .myheight {
   font-family: 'Oswald', sans-serif;
 }
 .logout-modal .logout {
-  color: white;
+  color: black;
   border-color: #f2b600;
   background-color: #f2b600;
 }

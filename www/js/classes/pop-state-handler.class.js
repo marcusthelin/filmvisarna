@@ -76,7 +76,7 @@ class PopStateHandler {
     this.app.navbar.setActive(url);
 
     //Render correct navbar depending if you're logged in or not
-    this.renderNav();
+    window.onload = () => this.renderCorrectNav();
 
     //Scroll to top of page
     window.scrollTo(0, 0);
@@ -143,18 +143,23 @@ class PopStateHandler {
       this.app.userPage.filterOrdersByDate(); //Run method that gets all orders the user have done
       $('main').append(this.app.userPage.template());
     } else{
-      location.pathname = '/';
+      this.startsidan();
+      $('.access-denied-modal').modal('show');
+      setTimeout(() => {
+        $('.access-denied-modal').modal('hide');
+      }, 3000);
     }
 
   }
 
-  async renderNav(){
+  async renderCorrectNav(){
+    console.log('called!');
     if(await this.app.userPage.isLoggedIn()){
       $('header').empty();
       this.app.navbar.render('header', '2');
-    } else {
+    } else if(!(await this.app.userPage.isLoggedIn())) {
       $('header').empty();
-      this.app.navbar.render('header')
+      await this.app.navbar.render('header')
     }
   }
 
