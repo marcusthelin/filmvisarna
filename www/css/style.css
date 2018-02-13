@@ -653,6 +653,11 @@ footer .myheight {
   border-color: #f2b600;
   background-color: #f2b600;
 }
+#cancleBoking {
+  color: #000000;
+  border-color: #f2b600;
+  background-color: #f2b600;
+}
 .logout-modal {
   background-color: #262626;
   max-width: 80%;
