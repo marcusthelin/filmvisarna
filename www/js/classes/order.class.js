@@ -4,9 +4,22 @@ class Order extends Base {
   }
 
   async makeOrder(){
+    let orderNr;
     let ticket = await JSON._load('ticket');
+    giveOrderNr();
 
-    let orderNr = await JSON._load('latest-order') + 1;
+    async function giveOrderNr() {
+      orderNr = Math.floor((Math.random() * 10000000) + 1);
+      let orders = await JSON._load('orders');
+      //If the random number that being generated is already in use,
+      //then generate a new. OBS! The odds are very small of two identical numbers.
+      for (let obj of orders) {
+        if (obj.orderNr == orderNr) {
+          giveOrderNr();
+          break;
+        }
+      }
+    }
 
     this.orderNr = orderNr;
     this.title = ticket.title;
