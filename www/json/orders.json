@@ -1,23 +1,29 @@
 [
   {
-    "orderNr": 2121,
+    "orderNr": 2124,
     "orderInfo": {
-      "title": "Downsizing",
+      "title": "Call Me by Your Name",
       "mNr": 6293151,
-      "date": "ons 14, 21:30",
+      "date": "lör 17, 19:30",
       "salong": "Lilla Salongen",
-      "quantity": 2,
+      "quantity": 3,
       "seats": [
         {
           "row": 6,
           "seatNumbers": [
-            "44",
-            "45"
+            "54",
+            "55"
+          ]
+        },
+        {
+          "row": 5,
+          "seatNumbers": [
+            "42"
           ]
         }
       ],
-      "price": 170,
-      "image": "downsizing-1.jpg"
+      "price": 255,
+      "image": "call-me-poster1.jpg"
     },
     "⚙": "Order"
   }
