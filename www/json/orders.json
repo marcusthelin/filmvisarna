@@ -1,30 +1,3 @@
 [
-  {
-    "orderNr": 2124,
-    "orderInfo": {
-      "title": "Call Me by Your Name",
-      "mNr": 6293151,
-      "date": "lör 17, 19:30",
-      "salong": "Lilla Salongen",
-      "quantity": 3,
-      "seats": [
-        {
-          "row": 6,
-          "seatNumbers": [
-            "54",
-            "55"
-          ]
-        },
-        {
-          "row": 5,
-          "seatNumbers": [
-            "42"
-          ]
-        }
-      ],
-      "price": 255,
-      "image": "call-me-poster1.jpg"
-    },
-    "⚙": "Order"
-  }
+  
 ]
