@@ -68,7 +68,6 @@ class bokingModal extends Base {
       $('.total-price').append(`<p>${ticket.quantity}st ${ticket.type}  ${ticket.price} kr </p>`);
     });
     this.summary(reservedTickets);
-    console.log(reservedTickets);
   }
 
   summary(tickets){
@@ -95,7 +94,6 @@ class bokingModal extends Base {
         seats: this.salong.selectedSeats,
         price: this.totalPrice
       }).then(function(){
-      console.log('Saved!');
       let newOrder = new Order();
       newOrder.makeOrder();
     });

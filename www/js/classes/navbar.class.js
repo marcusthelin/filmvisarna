@@ -9,7 +9,7 @@ class Navbar extends Base {
       new NavbarItem('Biljetter', '/biljetter'),
       new NavbarItem('Om oss', '/om_oss')
     ];
-    this.login = new LogIn(this.app); // TODO: Remove app reference
+    this.login = new LogIn(this.app);
   }
 
   async setActive(url){
@@ -24,6 +24,5 @@ class Navbar extends Base {
       this.render();
     }
   }
-
 
 }

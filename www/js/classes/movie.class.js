@@ -6,12 +6,10 @@ class Movie extends Base {
     this.lillaSalongen = [];
   }
 
-
   gatherMovies(){
 
     let date = moment().format('YYYY-MM-DD');
     let time = moment().format('LT');
-
 
     for(let i = 0; i < this.app.showtime.length; i++){
       let m = this.app.showtime[i];
@@ -19,7 +17,6 @@ class Movie extends Base {
         this.movies.push(m)
       }
     }
-
     this.movies.length > 7 && (this.movies = this.movies.slice(0,7));
     // same but an alternative way of writing it
     // this.movies = this.movies.length > 7 ? this.movies.slice(0,7) : this.movies;
@@ -32,7 +29,6 @@ class Movie extends Base {
         this.lillaSalongen.push(this.movies[i]);
       }
     }
-
   }
 
   // getting which size of salon that was selected
@@ -51,7 +47,6 @@ class Movie extends Base {
   click3(event) {
     if ($(event.target).hasClass('boka-btn')) {
       const regexp = /([a-zåäö]{3}\s\d{2}\s[a-zåäö]{3})\,\s(\d{2}\:\d{2})/;
-      /*/(\w{3}\s\d{2}-\d{2})\s\|\s(\d+\.\d{2})/;*/
       // get date and time ex. tis 12 feb, 21:10 from $(event.target)[0].innerText
       this.dateTime = $(event.target)[0].innerText;
       // ignore if there are not any screenings

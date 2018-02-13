@@ -23,13 +23,9 @@ class Order extends Base {
         row: reservedRow,
         seatNumbers: reservedSeats
       }
-      console.log(reserved);
       this.reservedSeats.unshift(reserved);
     })
-    console.log('Reserved seats:', this.reservedSeats);
     this.getMovieInfo();
-
-
 
     ticket = null;
     JSON._save('ticket', ticket);
@@ -39,12 +35,9 @@ class Order extends Base {
 
   async getMovieInfo() {
     let movies = await JSON._load('movies');
-    console.log('info', this.title);
     for(let obj of movies){
       if (this.title == obj.title) {
-        console.log('found movie');
         this.movieImage = obj.images[0];
-        console.log(this.movieImage);
       }
     }
     let props = {
@@ -66,7 +59,6 @@ class Order extends Base {
 
   async save(props){
     let allOrders = await JSON._load('orders');
-    console.log(allOrders);
     allOrders.unshift(props);
     JSON._save('orders', allOrders);
   }
