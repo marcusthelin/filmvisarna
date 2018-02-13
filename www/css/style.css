@@ -639,6 +639,9 @@ footer .myheight {
   background-color: #262626;
   max-width: 80%;
 }
+#cancel-order-modal .cancel-modal h4 {
+  color: white;
+}
 #cancel-order-modal .cancel-modal .cancel-modal-header {
   background-color: #f2b600;
 }
