@@ -9,14 +9,13 @@ class Movie extends Base {
 
   gatherMovies(){
 
+    let date = moment().format('YYYY-MM-DD');
+    let time = moment().format('LT');
 
-    let date = new Date();
-
-    date = new Date(date.getFullYear()+'-0'+(date.getMonth()+1)+'-'+date.getDate());
 
     for(let i = 0; i < this.app.showtime.length; i++){
       let m = this.app.showtime[i];
-      if(m.film == this.title && date <= new Date(m.date)){
+      if(m.film == this.title && date <= m.date && time < m.time){
         this.movies.push(m)
       }
     }
