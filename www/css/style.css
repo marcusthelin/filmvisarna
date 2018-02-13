@@ -496,6 +496,15 @@ footer .myheight {
     border-radius: 0;
   }
 }
+#boking-modal .modal-body {
+  padding: 0;
+  margin-top: -1px;
+  background-color: #f2b600;
+}
+#boking-modal .modal-body p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
 #boking-modal .tickets h2,
 #boking-modal .tickets p {
   color: black;
@@ -534,6 +543,11 @@ footer .myheight {
 #boking-modal .buy .finish-box p {
   color: #000;
   font-family: 'PT Serif', serif;
+}
+@media only screen and (max-width: 576px) {
+  #boking-modal .buy .finish-box {
+    width: 70%;
+  }
 }
 #boking-modal .buy .img-calendar {
   width: 79px;

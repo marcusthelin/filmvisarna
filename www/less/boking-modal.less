@@ -84,6 +84,17 @@
     }
   }
 
+  .modal-body {
+    padding: 0;
+    margin-top: -1px;
+    background-color: @somecolor;
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+    }
+
+  }
+
   .tickets {
     h2,
     p {
@@ -138,6 +149,9 @@
       p {
         color: #000;
         font-family: 'PT Serif', serif;
+      }
+      @media only screen and (max-width: 576px) {
+        width: 70%;
       }
     }
 
