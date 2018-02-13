@@ -1,6 +1,6 @@
 Object.assign(UserPage.prototype, { template(){ return `
 
-<div class="row user-page">
+<div class="row user-page empty-space">
 	<div class="col-12 mt-4 heading">
 		<div class="card bg-warning text-center">
 			<i class="fa fa-user-circle" aria-hidden="true"><h1>${this.user}</h1></i>
@@ -9,11 +9,11 @@ Object.assign(UserPage.prototype, { template(){ return `
 	<div class="col-12 content">
 		<h2 class="" id="aktuella-heading">Aktuella bokningar <i class="fas fa-film"></i></h2>
 		<div class="row aktuella">
-			
+
 		</div>
 	</div>
 	<div class="col-12 order-history content">
-		<h2 class="">Orderhistorik <i class="fas fa-history"></i></h2> 
+		<h2 class="">Orderhistorik <i class="fas fa-history"></i></h2>
 		<div class="row">
 			<div class="col-12  col-md-4 col-lg-4 order-history-div">
 				<ul class="list-group order-history-list">
@@ -24,8 +24,8 @@ Object.assign(UserPage.prototype, { template(){ return `
 </div>
 
 <!-- Start of confirm modal -->
-<div class="modal fade" id="cancel-order-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
+<div class="modal fade ml-4" id="cancel-order-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered h-100 d-flex flex-column justify-content-center my-0" role="document">
 		<div class="modal-content cancel-modal">
 			<div class="modal-header cancel-modal-header border-0 text-align-center">
 				<h5 class="modal-title" id="exampleModalLabel">Är du säker på att du vill avboka?</h5>
@@ -35,7 +35,7 @@ Object.assign(UserPage.prototype, { template(){ return `
       </div>
 			<div class="modal-footer border-0">
 				<button type="button" class="btn bg-danger" data-dismiss="modal">Avbryt <i class="fas fa-times"></i></button>
-				<button type="button" class="btn cancel-order">Bekräfta <i class="fas fa-check"></i></button>
+				<button type="button" class="btn cancel-order" data-dismiss="modal">Bekräfta <i class="fas fa-check"></i></button>
 			</div>
 		</div>
 	</div>

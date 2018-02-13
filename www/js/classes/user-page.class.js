@@ -1,7 +1,8 @@
 class UserPage extends Base{
-	constructor(){
+	constructor(app){
 		super();
 		this.clickEvents();
+		this.app = app;
 	}
 
 	/* When clicking logout, set the value in session.json to 0
@@ -22,11 +23,11 @@ class UserPage extends Base{
 
 		//Click event that triggers cancelOrder()
 		$(document).on('click', '.cancel-btn-card', function() {
+			$('#cancel-order-modal').appendTo('body').modal('show');
 			let orderNumber = parseInt($(this).parent().find('div.reserved-seats').attr('data-order-nr')); //Just get the ordernumber from card
 			console.log(orderNumber);
 			$('.cancel-order').click(() => {
 				console.log(this);
-				$('#cancel-order-modal').modal('hide');
 				that.cancelOrder(orderNumber);
 			});
 
@@ -69,7 +70,7 @@ class UserPage extends Base{
 	}
 
 	async filterOrdersByDate(){
-		$('.user-page').remove();
+		$('main').empty();
 		this.render('main');
 		// $('main').append(this.template());
 		let today = moment(new Date(), 'ddd DD, LT');
@@ -83,7 +84,7 @@ class UserPage extends Base{
 			//If the booking's view date is today or later, add to this.currentBookings array
 			if(viewDate >= today){
 				this.currentBookings.unshift(order);
-			} else if((viewDate < today) || (viewDate != today)){
+			} else if((viewDate < today) && (viewDate != today)){
 					//If booking's viewdate has past, save the order object to
 					//order-history.json and remove it from order.json
 					this.historyBookings.unshift(order);
@@ -95,12 +96,15 @@ class UserPage extends Base{
 
 		});
 
+
+
 		//Functions that renders the user's orders
 		this.renderHistoryBookings(currentUser);
 		this.renderCurrentBookings(currentUser);
 
 		console.log('Current', this.currentBookings);
 		console.log('Past', this.historyBookings);
+		console.log('RENDERED!');
 
 	}
 
@@ -113,7 +117,7 @@ class UserPage extends Base{
 			}
 		});
 
-		if(!(this.userCurrentBookings.length > 0)){
+		if(this.userCurrentBookings.length == 0){
 			$('.aktuella').empty();
 			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar. <i class="fas fa-frown"></i></h3>');
 		} else {
@@ -160,6 +164,7 @@ class UserPage extends Base{
 			}
 		});
 		await JSON._save('orders', orders)
+		$('div.modal-backdrop').remove();
 		this.filterOrdersByDate();
 	}
 }

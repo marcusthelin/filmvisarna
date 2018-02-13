@@ -4,7 +4,7 @@ Object.assign(Calendar.prototype, { template2(){
     <li class="booking-list text-center list-group-item list-group-item-action py-1">
     <div data-toggle="tooltip" data-original-title="Logga in för att boka" data-placement="top" class="tooltipBook">
       <button type="button" class="boka-btn btn btn-link disabled"   data-target="#boking-modal">
-        ${moment(this.date).format('ddd DD')}, ${this.time}
+        ${moment(this.date).format('ddd DD MMM')}, ${this.time}
       </button>
     </div>
   </li>
