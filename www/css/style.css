@@ -149,6 +149,11 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   padding: 50px;
   height: 100%;
 }
+@media only screen and (max-width: 576px) {
+  .biljett-info {
+    padding: 20px;
+  }
+}
 .biljett-info h2,
 .biljett-info h3,
 .biljett-info h4 {
@@ -164,6 +169,11 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   border-radius: 5px;
   padding: 50px;
   height: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .om-oss {
+    padding: 20px;
+  }
 }
 .om-oss h2,
 .om-oss h3 {
