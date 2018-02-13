@@ -1,7 +1,6 @@
 class PopStateHandler {
 
   // Note: Only instantiate PopStateHandler once!
-
   constructor(app){
 
     this.app = app;
@@ -147,11 +146,9 @@ class PopStateHandler {
         $('.access-denied-modal').modal('hide');
       }, 3000);
     }
-
   }
 
   async renderCorrectNav(){
-    console.log('called!');
     if(await this.app.userPage.isLoggedIn()){
       $('header').empty();
       this.app.navbar.render('header', '2');

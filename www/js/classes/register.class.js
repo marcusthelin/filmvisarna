@@ -17,7 +17,6 @@ class Register extends Base {
     $('#register-modal').modal();
   }
 
-
   checkClickCreateUser() {
     let that = this;
     //function so pressing enter works to register a new account
@@ -77,7 +76,6 @@ class Register extends Base {
   }
   checkDuplicate(username) {
     let users = this.users;
-    console.log(users);
     for (let obj of users) {
       if (obj.username == username) {
         return true;

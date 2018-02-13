@@ -254,7 +254,7 @@ main .card {
   background-color: rgba(0, 0, 0, 0.15);
 }
 main .empty-space {
-  padding-top: 70px;
+  padding-top: 85px;
 }
 main .current-movies a,
 main .coming-movies a {
@@ -446,6 +446,12 @@ footer .myheight {
 #boking-modal .boking-body p {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+}
+#boking-modal .boking-body #salong-holder {
+  margin: 0 auto;
+}
+#boking-modal .boking-body #salong {
+  transform-origin: 0 0;
 }
 #boking-modal .boking-body #salong .vacant {
   fill: gray;

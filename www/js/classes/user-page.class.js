@@ -10,7 +10,6 @@ class UserPage extends Base{
 	clickEvents(){
 		let that = this;
 		$(document).on('click', '.logoutModalBtn', function(){
-			console.log('Clicked');
 			$('#exampleModal').appendTo('body').modal('show');
 		});
 
@@ -25,15 +24,12 @@ class UserPage extends Base{
 		$(document).on('click', '.cancel-btn-card', function() {
 			$('#cancel-order-modal').appendTo('body').modal('show');
 			let orderNumber = parseInt($(this).parent().find('div.reserved-seats').attr('data-order-nr')); //Just get the ordernumber from card
-			console.log(orderNumber);
 			$('.cancel-order').click(() => {
-				console.log(this);
 				that.cancelOrder(orderNumber);
 			});
 
 		});
 	}
-
 
 	/* Checks if the member number stored in session.json is the same
 	as the member number of the user. Returns true for logged in */
@@ -45,15 +41,12 @@ class UserPage extends Base{
 				//Tell the name of the user to the class
 				this.user = obj.personName;
 				this.memberNumber = obj.memberNumber;
-				console.log('Current logged in user is', obj.username);
-				console.log('User: ', obj);
 				$('.tooltipBook').attr('data-original-title', 'Boka');
 				$('.tooltipBook button').removeClass('disabled');
 				return true;
 				break;
 			}
 		}
-		console.log('No user logged in');
 	}
 
 	/* Method that sets the current user as logged in. Variable "user" is coming
@@ -65,14 +58,12 @@ class UserPage extends Base{
 
 	/* Save the session(member number) to session.json */
 	setSession(mNr){
-		console.log(mNr);
 		JSON._save('session', mNr);
 	}
 
 	async filterOrdersByDate(){
 		$('main').empty();
 		this.render('main');
-		// $('main').append(this.template());
 		let today = moment(new Date(), 'ddd DD, LT');
 		let userOrders = await JSON._load('orders');
 		let currentUser = await JSON._load('session');
@@ -96,16 +87,9 @@ class UserPage extends Base{
 
 		});
 
-
-
 		//Functions that renders the user's orders
 		this.renderHistoryBookings(currentUser);
 		this.renderCurrentBookings(currentUser);
-
-		console.log('Current', this.currentBookings);
-		console.log('Past', this.historyBookings);
-		console.log('RENDERED!');
-
 	}
 
 	renderCurrentBookings(currentUser){
@@ -121,12 +105,10 @@ class UserPage extends Base{
 			$('.aktuella').empty();
 			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar. <i class="fas fa-frown"></i></h3>');
 		} else {
-			console.log('HEJSAN SVEJSAN:', this.userCurrentBookings);
 			this.userCurrentBookings.render('.aktuella', '2');
 			//Iterate through all the user's current bookings and get row and seat information
 			for (let i = 0; i < this.userCurrentBookings.length; i++) {
 				for(let seatObj of this.userCurrentBookings[i].orderInfo.seats){
-					console.log('SEAT OBJECT' ,seatObj);
 					let reservedSeats = ('Rad: ' + seatObj.row.toString() + ', plats: ' + seatObj.seatNumbers.join(', ')); //Seats for one row
 					$(`.reserved-seats[data-order-nr=${this.userCurrentBookings[i].orderNr}]`).append('<li>' + reservedSeats + '</li>');
 				}
@@ -153,13 +135,10 @@ class UserPage extends Base{
 	async cancelOrder(orderNumber){
 		let index;
 		let orders = await JSON._load('orders');
-		console.log('Current bookings array:', orders);
 		//this.currentBooking is data from orders.json
 		orders.filter(order => {
 			if(order.orderNr == orderNumber){
-				console.log('Found order number', order.orderNr);
 				index = orders.indexOf(order);
-				console.log('Index is', index);
 				orders.splice(index, 1);
 			}
 		});

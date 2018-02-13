@@ -16,14 +16,13 @@ class LogIn extends Base {
   async load() {
     //This makes sure that we always have the json file loaded
     this.users = await JSON._load('users.json');
-    console.log('JSON loaded');
   }
 
   /* Method that runs when login instance is made. Purpose of this method is
   to watch for click event */
   checkClickLogin() {
     let that = this;
-    $(document).on('submit', '#loginForm', function(e) { // TODO: Replace this with Benjamin's solution
+    $(document).on('submit', '#loginForm', function(e) {
       e.preventDefault();
       let loginName = $('#userLogin').val();
       let loginPW = $('#userPW').val();
@@ -42,7 +41,6 @@ class LogIn extends Base {
           $('.errorMessageLogin').removeClass('d-none');
         }
       }
-
     });
   }
 
