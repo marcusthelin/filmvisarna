@@ -142,17 +142,37 @@ class Salong extends Base {
     $('#salong-holder').height(orgH * scaling);
   }
 
+  getMouseoverOrOutTargets(baseTarget) {
+    const targets = [baseTarget];
+    const targetNumber = this.quantity - this.co;
+    const baseTargetId = parseInt(baseTarget.attr("id"));
+
+    for (let i = baseTargetId + 1; i < baseTargetId + targetNumber; i++) {
+      targets.push(baseTarget.siblings(`#${i}`));
+    }
+    return targets;
+  }
+
   mouseover(event) {
-    if ($(event.target).is('rect') && $(event.target).hasClass('vacant')) {
-      $(event.target).removeClass('vacant');
-      $(event.target).addClass('mouseentered');
+    const target = $(event.target);
+
+    if (target.is('rect') && target.hasClass('vacant')) {
+      const targets = this.getMouseoverOrOutTargets(target);
+      targets.forEach(element => {
+        element.removeClass('vacant');
+        element.addClass('mouseentered');
+      })
     }
   }
 
   mouseout(event) {
-    if ($(event.target).is('rect')) {
-      $(event.target).removeClass('mouseentered');
-      $(event.target).addClass('vacant');
+    const target = $(event.target);
+    if (target.is('rect')) {
+      const targets = this.getMouseoverOrOutTargets(target);
+      targets.forEach(element => {
+        element.removeClass('mouseentered');
+        element.addClass('vacant');
+      })
     }
   }
 
