@@ -7,6 +7,7 @@ class UserPage extends Base{
 	/* When clicking logout, set the value in session.json to 0
 	and change page to Startsida */
 	clickEvents(){
+		let that = this;
 		$(document).on('click', '.logoutModalBtn', function(){
 			console.log('Clicked');
 			$('#exampleModal').appendTo('body').modal('show');
@@ -18,15 +19,18 @@ class UserPage extends Base{
 			JSON._save('session', session);
 			$('#exampleModal').modal('hide');
 		});
-		
 
-		// TODO: Fix confirm modal for cancel order
+		//Click event that triggers cancelOrder()
+		$(document).on('click', '.cancel-btn-card', function() {
+			let orderNumber = parseInt($(this).parent().find('div.reserved-seats').attr('data-order-nr')); //Just get the ordernumber from card
+			console.log(orderNumber);
+			$('.cancel-order').click(() => {
+				console.log(this);
+				$('#cancel-order-modal').modal('hide');
+				that.cancelOrder(orderNumber);
+			});
 
-		// $(document).on('click', '.cancel-order', () => {
-		// 	let orderNumber = $('.cancel-order').parent().find('ul').find(':first').text().slice(13); //Just get the ordernumber from card
-		// 	console.log(orderNumber);
-		// 	this.cancelOrder(orderNumber);
-		// });
+		});
 	}
 
 
@@ -65,6 +69,9 @@ class UserPage extends Base{
 	}
 
 	async filterOrdersByDate(){
+		$('.user-page').remove();
+		this.render('main');
+		// $('main').append(this.template());
 		let today = moment(new Date(), 'ddd DD, LT');
 		let userOrders = await JSON._load('orders');
 		let currentUser = await JSON._load('session');
@@ -76,23 +83,22 @@ class UserPage extends Base{
 			//If the booking's view date is today or later, add to this.currentBookings array
 			if(viewDate >= today){
 				this.currentBookings.unshift(order);
-			} 
-				//If booking's viewdate has past, save the order object to
-				//order-history.json and remove it from order.json
-				else if((viewDate < today) || (viewDate != today)){
-				this.historyBookings.unshift(order);
-				index = userOrders.indexOf(order);
-				userOrders.splice(index, 1);
-				JSON._save('order-history', this.historyBookings);
-				JSON._save('orders', userOrders);
-			}
-			
+			} else if((viewDate < today) || (viewDate != today)){
+					//If booking's viewdate has past, save the order object to
+					//order-history.json and remove it from order.json
+					this.historyBookings.unshift(order);
+					index = userOrders.indexOf(order);
+					userOrders.splice(index, 1);
+					JSON._save('order-history', this.historyBookings);
+					JSON._save('orders', userOrders);
+				}
+
 		});
 
 		//Functions that renders the user's orders
-		this.renderHistoryBookings(currentUser);	
+		this.renderHistoryBookings(currentUser);
 		this.renderCurrentBookings(currentUser);
-			
+
 		console.log('Current', this.currentBookings);
 		console.log('Past', this.historyBookings);
 
@@ -109,8 +115,19 @@ class UserPage extends Base{
 
 		if(!(this.userCurrentBookings.length > 0)){
 			$('.aktuella').empty();
-			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar.');	
-		} else this.userCurrentBookings.render('.aktuella', '2');
+			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar. <i class="fas fa-frown"></i></h3>');
+		} else {
+			console.log('HEJSAN SVEJSAN:', this.userCurrentBookings);
+			this.userCurrentBookings.render('.aktuella', '2');
+			//Iterate through all the user's current bookings and get row and seat information
+			for (let i = 0; i < this.userCurrentBookings.length; i++) {
+				for(let seatObj of this.userCurrentBookings[i].orderInfo.seats){
+					console.log('SEAT OBJECT' ,seatObj);
+					let reservedSeats = ('Rad: ' + seatObj.row.toString() + ', plats: ' + seatObj.seatNumbers.join(', ')); //Seats for one row
+					$(`.reserved-seats[data-order-nr=${this.userCurrentBookings[i].orderNr}]`).append('<li>' + reservedSeats + '</li>');
+				}
+			}
+		}
 	}
 
 	async renderHistoryBookings(currentUser){
@@ -125,18 +142,24 @@ class UserPage extends Base{
 		});
 
 		if(!(userOldBookings.length > 0)){
-			$('.order-history > h2').after('<h3>Du har ingen historik.');
+			$('.order-history > h2').after('<h3>Du har ingen historik.</h3>');
 		} else userOldBookings.render('.order-history-list');
 	}
 
-	cancelOrder(orderNumber){
+	async cancelOrder(orderNumber){
 		let index;
-		this.currentBookings.filter(order => {
+		let orders = await JSON._load('orders');
+		console.log('Current bookings array:', orders);
+		//this.currentBooking is data from orders.json
+		orders.filter(order => {
 			if(order.orderNr == orderNumber){
-				index = this.currentBookings.indexOf(order);
-				console.log(this.currentBookings.splice(index, 1));
-				JSON._save('orders', this.currentBookings.splice(index, 1)).then(() => this.filterOrdersByDate());
+				console.log('Found order number', order.orderNr);
+				index = orders.indexOf(order);
+				console.log('Index is', index);
+				orders.splice(index, 1);
 			}
 		});
+		await JSON._save('orders', orders)
+		this.filterOrdersByDate();
 	}
 }

@@ -1,7 +1,7 @@
 class bokingModal extends Base {
-  constructor(auditorium, movieClass, dateTime) {
+  constructor(auditorium, movieClass, dateTime, title) {
     super();
-    this.salong = new Salong(auditorium);
+    this.salong = new Salong(auditorium, dateTime, title);
     this.movieClass = movieClass;
     this.date = dateTime;
     this.tickets = [
@@ -78,7 +78,7 @@ class bokingModal extends Base {
       this.salong.quantity = this.quantity;
       this.totalPrice += ticket.total;
     }
-    $('.price').text(`${this.totalPrice == 0 ? '' : this.totalPrice}`);
+    $('.price').text(`${this.totalPrice == 0 ? '' : this.totalPrice} kr`);
   }
 
   async bookedTickets(){
