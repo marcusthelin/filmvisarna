@@ -14,6 +14,7 @@ class Salong extends Base {
       this.createSalong(this.salongSize);
       this.render('#salong');
       this.getBookedSeats(this.auditorium, this.dateTime, this.title);
+      this.scaleSalong();
       $(window).resize(this.scaleSalong);
     });
   }
@@ -82,9 +83,8 @@ class Salong extends Base {
       // salongObject[row] is number of seats in one row
       this.seat = new Array(salongObject[row]);
       const y = 20 + 50 * row;
-      // calculate distance from left side
-      const distanceFromLeft = 400 - (salongObject[row] * 40 + 5 * (salongObject[row] - 1)) / 2;
-
+      // calculate distance from left side (800 is size of svg width)
+      const distanceFromLeft = (800 - (salongObject[row] * 40 + 5 * (salongObject[row] - 1))) / 2;
       const maxSeatNumber = this.getMaxSeatNumber(row);
       // create seats in one row
       for (let i = 0, x = distanceFromLeft, seatNumber = maxSeatNumber;
@@ -129,13 +129,14 @@ class Salong extends Base {
   scaleSalong() {
     let orgW = 800,
         orgH = 550;
-    let w = $(window).width() - $("#salong").offset().left;
+    let w = $(window).width();
     let h = $(window).height();
     w -= 20 * 2;
     h -= 20 * 2;
     const wScale = w / orgW;
     const hScale = h / orgH;
     let scaling = Math.min(wScale, hScale);
+    scaling > 1 && (scaling = 1);
     $('#salong').css('transform', `scale(${scaling})`);
     $('#salong-holder').width(orgW * scaling);
     $('#salong-holder').height(orgH * scaling);

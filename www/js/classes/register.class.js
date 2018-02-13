@@ -66,7 +66,6 @@ class Register extends Base {
         this.users.push(newUser);
         JSON._save('users.json', this.users);
         $('#regSuccess').removeClass('d-none');
-        setTimeout(() => {$('#register-modal').modal('hide');}, 2000);
         //Reload login to make it possible to login after registration
         this.app.navbar.login.load();
       }
