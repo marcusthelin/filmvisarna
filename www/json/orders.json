@@ -1,24 +1,3 @@
 [
-  {
-    "orderNr": 2121,
-    "orderInfo": {
-      "title": "Downsizing",
-      "mNr": 6293151,
-      "date": "ons 14, 21:30",
-      "salong": "Lilla Salongen",
-      "quantity": 2,
-      "seats": [
-        {
-          "row": 6,
-          "seatNumbers": [
-            "44",
-            "45"
-          ]
-        }
-      ],
-      "price": 170,
-      "image": "downsizing-1.jpg"
-    },
-    "⚙": "Order"
-  }
+  
 ]

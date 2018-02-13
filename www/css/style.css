@@ -639,6 +639,9 @@ footer .myheight {
   background-color: #262626;
   max-width: 80%;
 }
+#cancel-order-modal .cancel-modal h4 {
+  color: white;
+}
 #cancel-order-modal .cancel-modal .cancel-modal-header {
   background-color: #f2b600;
 }
@@ -646,6 +649,11 @@ footer .myheight {
   font-family: 'Oswald', sans-serif;
 }
 #cancel-order-modal .cancel-modal button.cancel-order {
+  color: #000000;
+  border-color: #f2b600;
+  background-color: #f2b600;
+}
+#cancleBoking {
   color: #000000;
   border-color: #f2b600;
   background-color: #f2b600;

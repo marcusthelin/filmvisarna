@@ -138,7 +138,6 @@ class PopStateHandler {
     //Need to check if user is logged in, else the user
     //can type /mina_sidor into the url
     if(await this.app.userPage.isLoggedIn()){
-      $('main').empty();
       $('.karusell').empty();
       this.app.userPage.filterOrdersByDate(); //Run method that gets all orders the user have done
     } else{
