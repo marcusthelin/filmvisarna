@@ -437,6 +437,12 @@ footer .myheight {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
+#boking-modal .boking-body #salong-holder {
+  margin: 0 auto;
+}
+#boking-modal .boking-body #salong {
+  transform-origin: 0 0;
+}
 #boking-modal .boking-body #salong .vacant {
   fill: gray;
   cursor: pointer;
