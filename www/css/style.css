@@ -160,7 +160,6 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
   border-bottom: 3px solid #f2b600;
-  border-width: 50%;
   display: inline-block;
   line-height: 1.5;
 }
@@ -180,7 +179,6 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
   border-bottom: 3px solid #f2b600;
-  border-width: 50%;
   display: inline-block;
   line-height: 1.5;
 }
@@ -633,7 +631,6 @@ footer .myheight {
 .user-page .heading h1 {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
-  border-width: 50%;
   display: inline-block;
   line-height: 1.5;
   padding: 20px;
@@ -653,7 +650,6 @@ footer .myheight {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
   border-bottom: 3px solid #f2b600;
-  border-width: 50%;
   display: inline-block;
   line-height: 1.5;
 }
