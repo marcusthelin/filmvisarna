@@ -447,6 +447,8 @@ footer .myheight {
 #boking-modal {
   overflow-x: hidden;
   overflow-y: auto;
+  /*Up-left pointing*/
+  /*Up-right pointing*/
 }
 #boking-modal .boking-header {
   background-color: #000;
@@ -615,6 +617,47 @@ footer .myheight {
 #boking-modal .price {
   font-family: 'PT Serif', serif;
   font-size: 20px;
+}
+#boking-modal .scen {
+  width: 80%;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+#boking-modal .triangle-up-left {
+  width: 0;
+  height: 0;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  overflow: hidden;
+  margin-top: -5px;
+}
+#boking-modal .triangle-up-left:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -500px;
+  border-bottom: 500px solid transparent;
+  border-left: 500px solid #8c1616;
+}
+#boking-modal .triangle-up-right {
+  width: 0;
+  height: 0;
+  padding-left: 10%;
+  padding-top: 10%;
+  overflow: hidden;
+  margin-top: -5px;
+}
+#boking-modal .triangle-up-right:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-left: 500px solid transparent;
+  border-top: 500px solid #8c1616;
 }
 #register-modal {
   font-family: 'PT Serif', serif;
