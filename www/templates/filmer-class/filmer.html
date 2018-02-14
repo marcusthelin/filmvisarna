@@ -1,14 +1,26 @@
 Object.assign(Filmer.prototype, { template(){ return `
-
 	<div class="row mt-5 mt-md-0 filmer empty-space">
 		<div class="col-12 mt-3 mt-md-0">
+			<div class="dropdown mb-3">
+		  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Välj Dag
+		  </button>
+		  <div class="dropdown-menu position-absolute text-center" aria-labelledby="dropdownMenuButton">
+		    <a class="nav-link text-light" href="#${moment(this.schedule[1][0].date).format('DD MMMM')}">${moment(this.schedule[1][0].date).format('dddd DD MMMM')}</a>
+		    <a class="nav-link text-light" href="#${moment(this.schedule[2][0].date).format('DD MMMM')}">${moment(this.schedule[2][0].date).format('dddd DD MMMM')}</a>
+		    <a class="nav-link text-light" href="#${moment(this.schedule[3][0].date).format('DD MMMM')}">${moment(this.schedule[3][0].date).format('dddd DD MMMM')}</a>
+				<a class="nav-link text-light" href="#${moment(this.schedule[4][0].date).format('DD MMMM')}">${moment(this.schedule[4][0].date).format('dddd DD MMMM')}</a>
+				<a class="nav-link text-light" href="#${moment(this.schedule[5][0].date).format('DD MMMM')}">${moment(this.schedule[5][0].date).format('dddd DD MMMM')}</a>
+				<a class="nav-link text-light" href="#${moment(this.schedule[6][0].date).format('DD MMMM')}">${moment(this.schedule[6][0].date).format('dddd DD MMMM')}</a>
+		  </div>
+		</div>
 	    <h2 class="mb-2">Idag, ${moment(this.schedule[0][0].date).format('dddd DD MMMM')}</h2>
 			<ul class="list-group listor">
 	        ${this.schedule[0].render()}
 	    </ul>
 		</div>
 	</div>
-	<div class="row mt-5 mt-md-0 filmer">
+	<div class="row mt-5 mt-md-0 filmer" id="${moment(this.schedule[1][0].date).format('DD MMMM')}">
 		<div class="col-12 mt-3 mt-md-0">
 	    <h2 class="mt-3">Imorgon, ${moment(this.schedule[1][0].date).format('dddd DD MMMM')}</h2>
 			<ul class="list-group listor">
@@ -16,7 +28,7 @@ Object.assign(Filmer.prototype, { template(){ return `
 	    </ul>
 		</div>
 	</div>
-	<div class="row mt-5 mt-md-0 filmer">
+	<div class="row mt-5 mt-md-0 filmer" id="${moment(this.schedule[2][0].date).format('DD MMMM')}">
 		<div class="col-12 mt-3 mt-md-0">
 	    <h2 class="mt-3">${moment(this.schedule[2][0].date).format('dddd DD MMMM')}</h2>
 			<ul class="list-group listor">
@@ -24,7 +36,7 @@ Object.assign(Filmer.prototype, { template(){ return `
 	    </ul>
 		</div>
 	</div>
-	<div class="row mt-5 mt-md-0 filmer">
+	<div class="row mt-5 mt-md-0 filmer" id="${moment(this.schedule[3][0].date).format('DD MMMM')}">
 		<div class="col-12 mt-3 mt-md-0">
 	    <h2 class="mt-3">${moment(this.schedule[3][0].date).format('dddd DD MMMM')}</h2>
 			<ul class="list-group listor">
@@ -32,7 +44,7 @@ Object.assign(Filmer.prototype, { template(){ return `
 	    </ul>
 		</div>
 	</div>
-		<div class="row mt-5 mt-md-0 filmer">
+		<div class="row mt-5 mt-md-0 filmer" id="${moment(this.schedule[4][0].date).format('DD MMMM')}">
 		<div class="col-12 mt-3 mt-md-0">
 	    <h2 class="mt-3">${moment(this.schedule[4][0].date).format('dddd DD MMMM')}</h2>
 			<ul class="list-group listor">
@@ -40,7 +52,7 @@ Object.assign(Filmer.prototype, { template(){ return `
 	    </ul>
 		</div>
 	</div>
-	<div class="row mt-5 mt-md-0 filmer">
+	<div class="row mt-5 mt-md-0 filmer" id="${moment(this.schedule[5][0].date).format('DD MMMM')}">
 		<div class="col-12 mt-3 mt-md-0">
 	    <h2 class="mt-3">${moment(this.schedule[5][0].date).format('dddd DD MMMM')}</h2>
 			<ul class="list-group listor">
@@ -48,9 +60,9 @@ Object.assign(Filmer.prototype, { template(){ return `
 	    </ul>
 		</div>
 	</div>
-		<div class="row mt-5 mt-md-0 filmer">
+		<div class="row mt-5 mt-md-0 filmer" id="${moment(this.schedule[6][0].date).format('DD MMMM')}">
 		<div class="col-12 mt-3 mt-md-0">
-	    <h2 class="mt-3">${moment(this.schedule[5][0].date).format('dddd DD MMMM')}</h2>
+	    <h2 class="mt-3">${moment(this.schedule[6][0].date).format('dddd DD MMMM')}</h2>
 			<ul class="list-group listor">
 	        ${this.schedule[6].render()}
 	    </ul>

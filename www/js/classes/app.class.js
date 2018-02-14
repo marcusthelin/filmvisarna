@@ -52,6 +52,7 @@ class App extends Base{
     this.biljetter = new Biljetter();
     this.omOss = new OmOss();
     this.userPage = new UserPage(this);
+    this.moviePage = new Movie(this);
 
     // Initiate handling of SPA push/pop-state
     this.popState = new PopStateHandler(this);

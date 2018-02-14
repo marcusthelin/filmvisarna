@@ -53,6 +53,7 @@ Object.assign(bokingModal.prototype, { template(){ return `
           <div class="seats">
             <div class="choose-seats">
               <h3 class="pt-4 text-center">Välja platser</h3>
+              <p class="mt-2 text-center d-none" id="changeSeat"><i class="fas fa-info-circle"> Om du vill byta någon plats, klicka igen på samma plats och välj en ny plats.</i></p>
               <div class="dropdown text-center">
                 <!-- Info button for Information about different seats (in progress) -->
                 <!-- <button class="btn btn-sm btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
@@ -87,13 +88,14 @@ Object.assign(bokingModal.prototype, { template(){ return `
               <div class="total-price"></div>
               <h3 class="finish-price pt-5">Totalt</h3>
               <div class="price"></div>
-              <div class="boking-success d-none"><p>Bokningen lyckades, tack för din bokning</p></div>
+              <div class="boking-success d-none"><p><i class="fas fa-check text-success"></i> Bokningen lyckades, tack för din bokning.</p></div>
             </div>
           </div>
         </div>
         <div class="modal-footer justify-content-center border-0 pt-5">
-            <button type="button" class="btn btn-light" data-dismiss="modal">Avbryt</button>
+            <button type="button" class="btn btn-light close-boking-btn" data-dismiss="modal">Avbryt</button>
             <button type="button" class="btn boking-btn btn-dark" disabled>Boka biljetter</button>
+            <a href="/mina_sidor" class="pop btn-to-mypage btn btn-dark d-none">Se dina bokningar</a>
        </div>
       </div>
     </div>

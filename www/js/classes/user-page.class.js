@@ -9,6 +9,7 @@ class UserPage extends Base{
 	and change page to Startsida */
 	clickEvents(){
 		let that = this;
+		//Start of click events for logout
 		$(document).on('click', '.logoutModalBtn', function(){
 			$('#exampleModal').appendTo('body').modal('show');
 		});
@@ -19,6 +20,7 @@ class UserPage extends Base{
 			JSON._save('session', session);
 			$('#exampleModal').modal('hide');
 		});
+		//End of logout click click events
 
 		//Click event that triggers cancelOrder()
 		$(document).on('click', '.cancel-btn-card', function() {
@@ -29,6 +31,11 @@ class UserPage extends Base{
 			});
 
 		});
+		$(document).on('click', '.btn-to-mypage', function(){
+			$('div.modal-backdrop').remove();
+			$('html').css({'overflow-x': 'hidden', 'overflow-y': 'auto'}); //To fix no scroll problem when coming from booking modal
+		});
+
 	}
 
 	/* Checks if the member number stored in session.json is the same
@@ -41,8 +48,6 @@ class UserPage extends Base{
 				//Tell the name of the user to the class
 				this.user = obj.personName;
 				this.memberNumber = obj.memberNumber;
-				$('.tooltipBook').attr('data-original-title', 'Boka');
-				$('.tooltipBook button').removeClass('disabled');
 				return true;
 				break;
 			}
@@ -103,7 +108,7 @@ class UserPage extends Base{
 
 		if(this.userCurrentBookings.length == 0){
 			$('.aktuella').empty();
-			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar. <i class="fas fa-frown"></i></h3>');
+			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar.</h3>');
 		} else {
 			this.userCurrentBookings.render('.aktuella', '2');
 			//Iterate through all the user's current bookings and get row and seat information

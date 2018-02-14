@@ -12,7 +12,7 @@ class bokingModal extends Base {
   }
 
   drawBokingModal() {
-    $('main #boking-modal').remove();
+    $('#boking-modal').remove();
     this.render('main');
     $('#boking-modal').modal();
   }
@@ -48,12 +48,16 @@ class bokingModal extends Base {
       quantity = parseInt($(`#${person}`).text());
       this.loopTickets(person).quantity = quantity;
       this.sortTickets();
+      $('#changeSeat').removeClass('d-none');
 
     }else{
 
       if($(event.target).hasClass('boking-btn')) {
         $('.boking-success').removeClass('d-none');
         $('.boking-btn').prop('disabled', true);
+        $('.boking-btn').addClass('d-none');
+        $('.close-boking-btn').text('Stäng');
+        $('.btn-to-mypage').removeClass('d-none');
         this.bookedTickets();
       }
     }
