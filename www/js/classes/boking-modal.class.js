@@ -98,7 +98,7 @@ class bokingModal extends Base {
         price: this.totalPrice
       }).then(function(){
       let newOrder = new Order();
-      newOrder.makeOrder();
+      newOrder.makeOrder(); //Create order based on information from ticket.json and the session's member number
     });
   }
 
