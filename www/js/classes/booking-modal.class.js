@@ -1,4 +1,4 @@
-class bokingModal extends Base {
+class BookingModal extends Base {
   constructor(auditorium, movieClass, dateTime, title) {
     super();
     this.salong = new Salong(auditorium, dateTime, title);
@@ -11,10 +11,10 @@ class bokingModal extends Base {
     ];
   }
 
-  drawBokingModal() {
-    $('#boking-modal').remove();
+  drawBookingModal() {
+    $('#booking-modal').remove();
     this.render('main');
-    $('#boking-modal').modal();
+    $('#booking-modal').modal();
   }
 
   loopTickets(type){
@@ -52,11 +52,11 @@ class bokingModal extends Base {
 
     }else{
 
-      if($(event.target).hasClass('boking-btn')) {
-        $('.boking-success').removeClass('d-none');
-        $('.boking-btn').prop('disabled', true);
-        $('.boking-btn').addClass('d-none');
-        $('.close-boking-btn').text('Stäng');
+      if($(event.target).hasClass('booking-btn')) {
+        $('.booking-success').removeClass('d-none');
+        $('.booking-btn').prop('disabled', true);
+        $('.booking-btn').addClass('d-none');
+        $('.close-booking-btn').text('Stäng');
         $('.btn-to-mypage').removeClass('d-none');
         this.bookedTickets();
       }
@@ -74,7 +74,7 @@ class bokingModal extends Base {
   }
 
   summary(tickets){
-    tickets.length == 0 ? $('.boking-btn').prop("disabled", true) : $('.boking-btn').prop("disabled", false);
+    tickets.length == 0 ? $('.booking-btn').prop("disabled", true) : $('.booking-btn').prop("disabled", false);
     this.totalPrice = 0;
     this.quantity = 0;
     $('.price').empty();

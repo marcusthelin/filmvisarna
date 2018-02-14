@@ -444,67 +444,67 @@ footer .myheight {
 .calendar .list-group-item.no-word-space.head {
   background-color: #f2b600;
 }
-#boking-modal {
+#booking-modal {
   overflow-x: hidden;
   overflow-y: auto;
   /*Up-left pointing*/
   /*Up-right pointing*/
 }
-#boking-modal .boking-header {
+#booking-modal .booking-header {
   background-color: #000;
 }
-#boking-modal .boking-body {
+#booking-modal .booking-body {
   padding: 0;
   margin-top: -1px;
   background-color: #f2b600;
 }
-#boking-modal .boking-body p {
+#booking-modal .booking-body p {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
-#boking-modal .boking-body #salong-holder {
+#booking-modal .booking-body #salong-holder {
   margin: 0 auto;
 }
-#boking-modal .boking-body #salong {
+#booking-modal .booking-body #salong {
   transform-origin: 0 0;
 }
-#boking-modal .boking-body #salong .vacant {
+#booking-modal .booking-body #salong .vacant {
   fill: gray;
   cursor: pointer;
 }
-#boking-modal .boking-body #salong .occupied {
+#booking-modal .booking-body #salong .occupied {
   fill: red;
 }
-#boking-modal .boking-body #salong .occupied.mouseentered {
+#booking-modal .booking-body #salong .occupied.mouseentered {
   cursor: not-allowed;
 }
-#boking-modal .boking-body #salong .mouseentered {
+#booking-modal .booking-body #salong .mouseentered {
   fill: #f2b600;
   cursor: pointer;
 }
-#boking-modal .boking-body #salong .selected {
+#booking-modal .booking-body #salong .selected {
   fill: blue;
   cursor: pointer;
 }
-#boking-modal .modal-poster {
+#booking-modal .modal-poster {
   width: 130px;
 }
-#boking-modal .modal-film-title {
+#booking-modal .modal-film-title {
   font-size: 35px;
   font-family: 'Oswald', sans-serif;
 }
-#boking-modal p {
+#booking-modal p {
   margin-bottom: 0;
 }
-#boking-modal .close-modal {
+#booking-modal .close-modal {
   color: #fff;
   opacity: 1;
 }
-#boking-modal .close-modal:hover {
+#booking-modal .close-modal:hover {
   color: #f2b600;
 }
 @media only screen and (min-width: 992px) {
-  #boking-modal .modal-dialog {
+  #booking-modal .modal-dialog {
     position: relative;
     display: table;
     /* This is important */
@@ -515,116 +515,116 @@ footer .myheight {
   }
 }
 @media only screen and (max-width: 991.98px) {
-  #boking-modal .modal-dialog {
+  #booking-modal .modal-dialog {
     max-width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
   }
-  #boking-modal .modal-content {
+  #booking-modal .modal-content {
     height: auto;
     min-height: 100%;
     border-radius: 0;
   }
 }
-#boking-modal .modal-body {
+#booking-modal .modal-body {
   padding: 0;
   margin-top: -1px;
   background-color: #f2b600;
 }
-#boking-modal .modal-body p {
+#booking-modal .modal-body p {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
-#boking-modal .tickets h2,
-#boking-modal .tickets p {
+#booking-modal .tickets h2,
+#booking-modal .tickets p {
   color: black;
 }
-#boking-modal .tickets .ticket-choice {
+#booking-modal .tickets .ticket-choice {
   font-family: 'Oswald', sans-serif;
 }
-#boking-modal .tickets .plus-btn {
+#booking-modal .tickets .plus-btn {
   border-radius: 15px;
 }
-#boking-modal .tickets .minus-btn {
+#booking-modal .tickets .minus-btn {
   border-radius: 14px;
   padding: 8px 13px;
 }
-#boking-modal .seats {
+#booking-modal .seats {
   background-color: #000;
 }
-#boking-modal .choose-seats h3 {
+#booking-modal .choose-seats h3 {
   font-family: 'Oswald', sans-serif;
 }
-#boking-modal #salong {
+#booking-modal #salong {
   text-align: center;
 }
-#boking-modal .modal-finish {
+#booking-modal .modal-finish {
   font-family: 'Oswald', sans-serif;
   color: #000;
 }
-#boking-modal .modal-footer p {
+#booking-modal .modal-footer p {
   color: #000;
 }
-#boking-modal .buy .finish-box {
+#booking-modal .buy .finish-box {
   background-color: rgba(255, 255, 255, 0.68);
   width: 50%;
   margin: 0 auto;
 }
-#boking-modal .buy .finish-box p {
+#booking-modal .buy .finish-box p {
   color: #000;
   font-family: 'PT Serif', serif;
 }
 @media only screen and (max-width: 576px) {
-  #boking-modal .buy .finish-box {
+  #booking-modal .buy .finish-box {
     width: 70%;
   }
 }
-#boking-modal .buy .img-calendar {
+#booking-modal .buy .img-calendar {
   width: 79px;
   height: 107px;
 }
-#boking-modal .buy .film-info {
+#booking-modal .buy .film-info {
   color: #000;
   font-family: 'Oswald', sans-serif;
 }
-#boking-modal .buy .finish-price {
+#booking-modal .buy .finish-price {
   color: #000;
   font-family: 'Oswald', sans-serif;
 }
-#boking-modal .modal-footer {
+#booking-modal .modal-footer {
   background-color: #f2b600;
 }
-#boking-modal .quantity {
+#booking-modal .quantity {
   background-color: #f8f9fa;
   display: block;
   width: 50px;
   padding: 5px;
 }
-#boking-modal .btn-group-vertical > .btn:first-child:not(:last-child) {
+#booking-modal .btn-group-vertical > .btn:first-child:not(:last-child) {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-#boking-modal .btn-group-vertical > .btn:last-child:not(:first-child) {
+#booking-modal .btn-group-vertical > .btn:last-child:not(:first-child) {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-#boking-modal .total-price p {
+#booking-modal .total-price p {
   color: #000;
   font-family: 'PT Serif', serif;
   font-size: 15px;
 }
-#boking-modal .price {
+#booking-modal .price {
   font-family: 'PT Serif', serif;
   font-size: 20px;
 }
-#boking-modal .scen {
+#booking-modal .scen {
   width: 80%;
   height: 5px;
   background-color: #ffffff;
   margin: 0 auto;
 }
-#boking-modal .triangle-up-left {
+#booking-modal .triangle-up-left {
   width: 0;
   height: 0;
   padding-bottom: 10%;
@@ -632,7 +632,7 @@ footer .myheight {
   overflow: hidden;
   margin-top: -5px;
 }
-#boking-modal .triangle-up-left:after {
+#booking-modal .triangle-up-left:after {
   content: "";
   display: block;
   width: 0;
@@ -641,7 +641,7 @@ footer .myheight {
   border-bottom: 500px solid transparent;
   border-left: 500px solid #8c1616;
 }
-#boking-modal .triangle-up-right {
+#booking-modal .triangle-up-right {
   width: 0;
   height: 0;
   padding-left: 10%;
@@ -649,7 +649,7 @@ footer .myheight {
   overflow: hidden;
   margin-top: -5px;
 }
-#boking-modal .triangle-up-right:after {
+#booking-modal .triangle-up-right:after {
   content: "";
   display: block;
   width: 0;

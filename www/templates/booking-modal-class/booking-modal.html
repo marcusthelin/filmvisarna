@@ -1,9 +1,9 @@
-Object.assign(bokingModal.prototype, { template(){ return `
+Object.assign(BookingModal.prototype, { template(){ return `
 
-  <div class="modal fade" id="boking-modal" tabindex="-1" role="dialog">
+  <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header boking-header">
+        <div class="modal-header booking-header">
           <div class="d-flex">
             <div class="p-2"><img class="modal-poster" src="/imgs/${this.movieClass.images[2]}" alt="Film poster"></div>
             <div class="pl-2"><h5 class="modal-title modal-film-title" id="exampleModalLongTitle">${this.movieClass.title}</h5><p><small><i class="fa fa-clock-o" aria-hidden="true"></i> ${this.movieClass.length}</small></p><p><small>${this.movieClass.genre}</small></p><p><small>Plats: ${this.movieClass.auditorium}</small></p><p><small>Tid: ${this.date}</small></p></div>
@@ -12,7 +12,7 @@ Object.assign(bokingModal.prototype, { template(){ return `
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body boking-body">
+        <div class="modal-body booking-body">
           <div class="tickets">
             <h2 class="ticket-choice pt-3 text-center">Antal Biljetter<i class="fa fa-ticket" aria-hidden="true"></i></h2>
             <div class="container pb-5">
@@ -96,13 +96,13 @@ Object.assign(bokingModal.prototype, { template(){ return `
               <div class="total-price"></div>
               <h3 class="finish-price pt-5">Totalt</h3>
               <div class="price"></div>
-              <div class="boking-success d-none"><p><i class="fas fa-check text-success"></i> Bokningen lyckades, tack för din bokning.</p></div>
+              <div class="booking-success d-none"><p><i class="fas fa-check text-success"></i> Bokningen lyckades, tack för din bokning.</p></div>
             </div>
           </div>
         </div>
         <div class="modal-footer justify-content-center border-0 pt-5">
-            <button type="button" class="btn btn-light close-boking-btn" data-dismiss="modal">Avbryt</button>
-            <button type="button" class="btn boking-btn btn-dark" disabled>Boka biljetter</button>
+            <button type="button" class="btn btn-light close-booking-btn" data-dismiss="modal">Avbryt</button>
+            <button type="button" class="btn booking-btn btn-dark" disabled>Boka biljetter</button>
             <a href="/mina_sidor" class="pop btn-to-mypage btn btn-dark d-none">Se dina bokningar</a>
        </div>
       </div>
