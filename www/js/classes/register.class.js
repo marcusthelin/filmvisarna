@@ -75,7 +75,6 @@ class Register extends Base {
           const regex = /(\/film\/)/g;
           if(regex.test(location.pathname)){
             this.movieInstance.openBookingModal(this.clickedBtn);
-            console.log(this.clickedBtn);
           }
         }, 3000);
         currentSession = newUser.memberNumber;
