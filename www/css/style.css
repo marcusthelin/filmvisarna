@@ -719,6 +719,9 @@ footer .myheight {
   font-weight: 700;
   text-transform: uppercase;
 }
+button.cancel-btn-card {
+  background-color: #f2b600;
+}
 #cancel-order-modal .cancel-modal {
   background-color: #262626;
   max-width: 80%;
