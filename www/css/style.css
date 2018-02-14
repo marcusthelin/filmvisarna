@@ -196,6 +196,16 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   display: inline-block;
   text-transform: uppercase;
 }
+.filmer .dropdown-menu {
+  background-color: #262626;
+  text-transform: uppercase;
+}
+.filmer .dropdown-menu .nav-link:hover {
+  color: #f2b600 !important;
+}
+.filmer #dropdownMenuButton {
+  background-color: #f2b600;
+}
 .biljett-info img {
   width: 150px;
 }
