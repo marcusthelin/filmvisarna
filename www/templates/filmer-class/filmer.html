@@ -14,9 +14,13 @@ Object.assign(Filmer.prototype, { template(){ return `
 				<a class="nav-link text-light" href="#${moment(this.schedule[6][0].date).format('DD MMMM')}">${moment(this.schedule[6][0].date).format('dddd DD MMMM')}</a>
 		  </div>
 		</div>
-	    <h2 class="mb-2">Idag, ${moment(this.schedule[0][0].date).format('dddd DD MMMM')}</h2>
+	    <h2 class="mb-2">Idag, ${moment().format('dddd DD MMMM')}</h2>
 			<ul class="list-group listor">
-	        ${this.schedule[0].render()}
+	        ${this.schedule[0].length ? this.schedule[0].render() : `
+	        <li class="list-group-item p-4 lala">
+	        	<h3 class="d-inline-block pr-4">INGA FILMER</h3>
+	        </li>
+	        `}
 	    </ul>
 		</div>
 	</div>
