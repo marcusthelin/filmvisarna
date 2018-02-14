@@ -471,17 +471,17 @@ footer .myheight {
   cursor: pointer;
 }
 #boking-modal .boking-body #salong .occupied {
-  fill: blue;
+  fill: red;
 }
 #boking-modal .boking-body #salong .occupied.mouseentered {
   cursor: not-allowed;
 }
 #boking-modal .boking-body #salong .mouseentered {
-  fill: yellow;
+  fill: #f2b600;
   cursor: pointer;
 }
 #boking-modal .boking-body #salong .selected {
-  fill: red;
+  fill: blue;
   cursor: pointer;
 }
 #boking-modal .modal-poster {
