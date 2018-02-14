@@ -21,7 +21,7 @@ class UserPage extends Base{
 			$('#exampleModal').modal('hide');
 		});
 		//End of logout click click events
-		
+
 		//Click event that triggers cancelOrder()
 		$(document).on('click', '.cancel-btn-card', function() {
 			$('#cancel-order-modal').appendTo('body').modal('show');
@@ -105,7 +105,7 @@ class UserPage extends Base{
 
 		if(this.userCurrentBookings.length == 0){
 			$('.aktuella').empty();
-			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar. <i class="fas fa-frown"></i></h3>');
+			$('#aktuella-heading').after('<h3>Du har inga aktuella bokningar.</h3>');
 		} else {
 			this.userCurrentBookings.render('.aktuella', '2');
 			//Iterate through all the user's current bookings and get row and seat information
