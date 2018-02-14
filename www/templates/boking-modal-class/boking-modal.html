@@ -91,11 +91,11 @@ Object.assign(bokingModal.prototype, { template(){ return `
               <div class="boking-success d-none"><p><i class="fas fa-check text-success"></i> Bokningen lyckades, tack för din bokning.</p></div>
             </div>
           </div>
-          <p class="text-center  text-dark d-none boking-success mt-3">Dina bokningar finns under mina sidor.</p>
         </div>
         <div class="modal-footer justify-content-center border-0 pt-5">
             <button type="button" class="btn btn-light close-boking-btn" data-dismiss="modal">Avbryt</button>
             <button type="button" class="btn boking-btn btn-dark" disabled>Boka biljetter</button>
+            <a href="/mina_sidor" class="pop btn-to-mypage btn btn-dark d-none">Se dina bokningar</a>
        </div>
       </div>
     </div>
