@@ -11,9 +11,7 @@ class App extends Base{
 
   async load(){
 
-    // Tell jsonflex to recreate instances of the class Garment
     JSON._classes(Movie, Calendar, Order);
-
     this.movies = await JSON._load('movies.json');
 
     for(let obj of this.movies){
@@ -33,24 +31,9 @@ class App extends Base{
       this.movies[x].gatherMovies();
     }
 
-
-
     this.comingMovies = await JSON._load('comingMovies.json');
-
     this.start();
-
   }
-
-  // async renderNav(){
-  //
-  //   if(await this.userPage.isLoggedIn()){
-  //     $('header').empty();
-  //     this.navbar.render('header', '2');
-  //     // $('header').append(this.navbar.template2());
-  //   } else{
-  //     this.navbar.render('header');
-  //   }
-  // }
 
   start(){
     // Create a navbar
@@ -66,14 +49,13 @@ class App extends Base{
     // Create pages
     this.startsidan = new Startsidan(this);
     this.filmer = new Filmer(this);
-    this.biljetter = new Biljetter(this);
-    this.omOss = new OmOss(this);
+    this.biljetter = new Biljetter();
+    this.omOss = new OmOss();
     this.userPage = new UserPage(this);
     this.moviePage = new Movie(this);
 
     // Initiate handling of SPA push/pop-state
     this.popState = new PopStateHandler(this);
-
   }
 
 }

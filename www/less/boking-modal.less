@@ -8,14 +8,19 @@
   .boking-body {
     padding: 0;
     margin-top: -1px;
-    background-color: @somecolor;
+    background-color: @lightorange;
 
     p {
       font-family: 'Open Sans', sans-serif;
       font-size: 18px;
     }
 
+    #salong-holder {
+      margin: 0 auto;
+    }
+
     #salong {
+      transform-origin: 0 0;
       .vacant {
         fill: gray;
         cursor: pointer;
@@ -58,7 +63,7 @@
     opacity: 1;
 
     &:hover {
-      color: @somecolor;
+      color: @lightorange;
     }
   }
   @media only screen and (min-width: 992px) {
@@ -84,6 +89,17 @@
       min-height: 100%;
       border-radius: 0;
     }
+  }
+
+  .modal-body {
+    padding: 0;
+    margin-top: -1px;
+    background-color: @lightorange;
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+    }
+
   }
 
   .tickets {
@@ -141,6 +157,9 @@
         color: #000;
         font-family: 'PT Serif', serif;
       }
+      @media only screen and (max-width: 576px) {
+        width: 70%;
+      }
     }
 
     .img-calendar {
@@ -160,7 +179,7 @@
   }
 
   .modal-footer {
-    background-color: @somecolor;
+    background-color: @lightorange;
   }
 
   .quantity{

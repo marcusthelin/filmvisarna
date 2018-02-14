@@ -47,6 +47,8 @@ class Base {
       queued.obj.render.apply(queued.obj, queued.args);
     }
 
+    Footer.footerFix();
+
   }
 
   subrender(templateNo){

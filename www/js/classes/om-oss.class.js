@@ -1,6 +1,5 @@
 class OmOss extends Base {
-	constructor(app){
+	constructor(){
 		super();
-		this.app = app;
 	}
 }

@@ -149,6 +149,11 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   padding: 50px;
   height: 100%;
 }
+@media only screen and (max-width: 576px) {
+  .biljett-info {
+    padding: 20px;
+  }
+}
 .biljett-info h2,
 .biljett-info h3,
 .biljett-info h4 {
@@ -164,6 +169,11 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   border-radius: 5px;
   padding: 50px;
   height: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .om-oss {
+    padding: 20px;
+  }
 }
 .om-oss h2,
 .om-oss h3 {
@@ -244,7 +254,7 @@ main .card {
   background-color: rgba(0, 0, 0, 0.15);
 }
 main .empty-space {
-  padding-top: 70px;
+  padding-top: 85px;
 }
 main .current-movies a,
 main .coming-movies a {
@@ -442,6 +452,12 @@ footer .myheight {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
+#boking-modal .boking-body #salong-holder {
+  margin: 0 auto;
+}
+#boking-modal .boking-body #salong {
+  transform-origin: 0 0;
+}
 #boking-modal .boking-body #salong .vacant {
   fill: gray;
   cursor: pointer;
@@ -501,6 +517,15 @@ footer .myheight {
     border-radius: 0;
   }
 }
+#boking-modal .modal-body {
+  padding: 0;
+  margin-top: -1px;
+  background-color: #f2b600;
+}
+#boking-modal .modal-body p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
 #boking-modal .tickets h2,
 #boking-modal .tickets p {
   color: black;
@@ -539,6 +564,11 @@ footer .myheight {
 #boking-modal .buy .finish-box p {
   color: #000;
   font-family: 'PT Serif', serif;
+}
+@media only screen and (max-width: 576px) {
+  #boking-modal .buy .finish-box {
+    width: 70%;
+  }
 }
 #boking-modal .buy .img-calendar {
   width: 79px;

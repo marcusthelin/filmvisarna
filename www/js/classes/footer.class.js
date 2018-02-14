@@ -1,19 +1,18 @@
 class Footer extends Base{
 	constructor(){
 		super();
-		this.footerFix();
+		Footer.footerFix();
 		this.fixOnResize();
 	}
 
-	footerFix(){
+	static footerFix(){
     let height = $('footer').outerHeight() + 190;
     $('body').css({marginBottom: height});
   }
 
   fixOnResize(){
-    let that = this;
     $(window).on('resize',function(){
-      that.footerFix();
+      Footer.footerFix();
     });
   }
 }
