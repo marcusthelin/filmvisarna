@@ -56,23 +56,23 @@ class Salong extends Base {
   getMaxSeatNumber(row) {
     if (this.auditorium === "Lilla Salongen") {
       switch(row) {
-        case "1": return 6;
-        case "2": return 14;
-        case "3": return 23;
-        case "4": return 33;
-        case "5": return 43;
-        case "6": return 55;
+        case 1: return 6;
+        case 2: return 14;
+        case 3: return 23;
+        case 4: return 33;
+        case 5: return 43;
+        case 6: return 55;
       }
     } else {
       switch(row) {
-        case "1": return 8;
-        case "2": return 17;
-        case "3": return 27;
-        case "4": return 37;
-        case "5": return 47;
-        case "6": return 57;
-        case "7": return 69;
-        case "8": return 81;
+        case 1: return 8;
+        case 2: return 17;
+        case 3: return 27;
+        case 4: return 37;
+        case 5: return 47;
+        case 6: return 57;
+        case 7: return 69;
+        case 8: return 81;
       }
     }
   }
@@ -85,7 +85,7 @@ class Salong extends Base {
       const y = 20 + 50 * row;
       // calculate distance from left side (800 is size of svg width)
       const distanceFromLeft = (800 - (salongObject[row] * 40 + 5 * (salongObject[row] - 1))) / 2;
-      const maxSeatNumber = this.getMaxSeatNumber(row);
+      const maxSeatNumber = this.getMaxSeatNumber(parseInt(row));
       // create seats in one row
       for (let i = 0, x = distanceFromLeft, seatNumber = maxSeatNumber;
           i < salongObject[row];
@@ -142,17 +142,79 @@ class Salong extends Base {
     $('#salong-holder').height(orgH * scaling);
   }
 
+  getSeatsPerRow(row) {
+    if (this.auditorium == 'Lilla Salongen') {
+      return this.salonger[1].seatsPerRow[row];
+    } else {
+      return this.salonger[0].seatsPerRow[row];
+    }
+  }
+
+  getSiblingsTargetIds(baseTargetId) {
+    const targetIds = []
+    const row = this.getRow(baseTargetId);
+    const maxSeatNumber = this.getMaxSeatNumber(row);
+    const seatsPerRow = this.getSeatsPerRow(row);
+    let remainedSeatNumber = this.quantity - this.co - 1; // - 1 because baseTargetId already is selected
+
+    for (let i = baseTargetId + 1; i <= maxSeatNumber; i++) {
+      if (remainedSeatNumber <= 0) { break; }
+      if ($('.occupied#'+i).length == 0) {
+        targetIds.push(i);
+        remainedSeatNumber--;
+      } else { break; }
+    }
+
+    for (let i = baseTargetId - 1; i > maxSeatNumber - seatsPerRow; i--) {
+      if (remainedSeatNumber <= 0) { break; }
+      if ($('.occupied#'+i).length == 0) {
+        targetIds.push(i);
+        remainedSeatNumber--;
+      } else { break; }
+    }
+
+    return targetIds;
+  }
+
+  getMouseoverOrOutTargets(baseTarget) {
+    const targets = [baseTarget];
+    const baseTargetId = parseInt(baseTarget.attr("id"));
+    const targetSiblingsIds = this.getSiblingsTargetIds(baseTargetId);
+
+    targetSiblingsIds.forEach(siblingsId => {
+      targets.push(baseTarget.siblings(`#${siblingsId}`));
+    })
+    return targets;
+  }
+
   mouseover(event) {
-    if ($(event.target).is('rect') && $(event.target).hasClass('vacant')) {
-      $(event.target).removeClass('vacant');
-      $(event.target).addClass('mouseentered');
+    const target = $(event.target);
+
+    if (target.is('rect') && target.hasClass('vacant') && !(target.hasClass('occupied'))) {
+      const targets = this.getMouseoverOrOutTargets(target);
+      let canBook = true;
+
+      targets.forEach(element => {
+        if (element.hasClass('occupied')){
+          canBook = false;
+        }
+      })
+
+      if (canBook) {
+        targets.forEach(element => {
+          element.removeClass('vacant');
+          element.addClass('mouseentered');
+        });
+      }
+
     }
   }
 
   mouseout(event) {
-    if ($(event.target).is('rect')) {
-      $(event.target).removeClass('mouseentered');
-      $(event.target).addClass('vacant');
+    const target = $(event.target);
+    if (target.is('rect')) {
+      $('rect').removeClass('mouseentered');
+      $('rect').addClass('vacant');
     }
   }
 
@@ -200,19 +262,27 @@ class Salong extends Base {
   }
 
   click(event) {
-    const seatNumber = $(event.target).attr("id");
-    let index;
-    let rowNumber;
-    let row;
+    if ($(event.target).hasClass('selected')) {
+      const seatNumber = parseInt($(event.target).attr("id"));
+      let row = this.getRow(seatNumber);
+      this.removeSeat({row, seatNumber, target: $(event.target)});
+      return;
+    } else if (this.quantity - this.co == 0 && !$(event.target).hasClass('occupied')) {
+      this.co = 0;
+      this.selectedSeats.length = 0;
+      $('rect').removeClass('selected');
+    }
+
+    const seatTargets = this.getMouseoverOrOutTargets($(event.target));
 
     if (!($(event.target).hasClass('selected')) && !($(event.target).hasClass('occupied')) && $(event.target).is('rect')) {
       if (this.co === this.quantity) return;
 
-      row = this.getRow(seatNumber);
-      this.addSeat({row, seatNumber, target: $(event.target)});
-    } else if ($(event.target).hasClass('selected')) {
-      row = this.getRow(seatNumber);
-      this.removeSeat({row, seatNumber, target: $(event.target)});
+      seatTargets.forEach(seatTarget => {
+        const seatNumber = parseInt(seatTarget.attr("id"));
+        let row = this.getRow(seatNumber);
+        this.addSeat({row, seatNumber, target: seatTarget});
+      })
     }
 
     $('.info-tickets').empty();
