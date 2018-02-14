@@ -1,0 +1,24 @@
+Object.assign(Order.prototype, { template2(){
+  return `
+    <div class=" col-12 col-md-4 col-lg-3 mb-2 bokningar">
+      <div class="card">
+        <a href="/film/${this.orderInfo.title.replace(/ /g,'_')}" class="pop"><img class="card-img-top" src="/imgs/${this.orderInfo.image}" alt="Card image cap"></a>
+        <div class="card-body">
+          <a href="/film/${this.orderInfo.title.replace(/ /g,'_')}" class="pop"><h5 class="card-title">${this.orderInfo.title}</h5></a>
+          <ul class="list-unstyled">
+            <li>Ordernummer: ${this.orderNr}</li>
+            <li>Tid: ${this.orderInfo.date}</li>
+            <li>${this.orderInfo.salong}</li>
+            <li>${this.orderInfo.quantity}
+              ${
+                (this.orderInfo.quantity > 1) ? 'biljetter' : 'biljett'
+              }
+            </li>
+            <div class="reserved-seats" data-order-nr="${this.orderNr}"></div>
+            <li>Pris: ${this.orderInfo.price}kr</li>
+          </ul>
+          <button type="button" class="btn cancel-btn-card" id="cancleBoking">Avboka</button>
+        </div>
+      </div>
+    </div>
+`;}});

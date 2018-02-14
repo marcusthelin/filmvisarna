@@ -1,0 +1,85 @@
+.user-page{
+	margin-top: 80px;
+	.heading{
+		padding: 0;
+	  h1{
+	    font-family: 'Oswald', sans-serif;
+	    text-decoration: none;
+	    display: inline-block;
+	    line-height: 1.5;
+	    padding: 20px;
+	  }
+	  .fa-user-circle{
+			font-size: 50px;
+		}
+		.card{
+    	border-bottom-right-radius: 0;
+    	border-bottom-left-radius: 0;
+		}
+	}
+	 .content{
+		 	background-color: @bg-gray;
+		  padding: 20px 50px;
+		 	h2{
+	    font-family: 'Oswald', sans-serif;
+	    text-decoration: none;
+	    border-bottom: 3px solid @lightorange;
+	    display: inline-block;
+	    line-height: 1.5;
+	  }
+   .bokningar{
+   	.card{
+   		height: 100%;
+   	}
+	  	h5,a{
+	  		font-family: 'Oswald', sans-serif;
+	  		color: @lightorange;
+	  		&:hover{
+	  			text-decoration: none
+	  		}
+	  	}
+	  	li{
+	  		color: #fff;
+	  		font-weight: normal;
+	  	}
+	  }
+	}
+
+	.order-history-div{
+		.order-history-list{
+
+			.history-list{
+				font-family: 'Oswald', sans-serif;
+				background-color: @lightorange;
+				border-color: #000;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+button.cancel-btn-card{
+	background-color: @lightorange;
+}
+#cancel-order-modal{
+	.cancel-modal{
+		background-color: @bg-gray;
+		max-width: 80%;
+		h4{
+			color: white;
+		}
+		.cancel-modal-header{
+			background-color: @lightorange;
+			h5{
+				font-family: @oswald;
+			}
+		}
+
+		button.cancel-order{
+			color: rgb(0, 0, 0);
+			border-color: @lightorange;
+			background-color: @lightorange;
+		}
+	}
+}

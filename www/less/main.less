@@ -10,11 +10,33 @@ body{
 }
 
 main{
+  //Start of scrollable calendar
+  .calendar{
+    height: 245px;
+    h3{
+      color: black;
+      text-decoration: underline;
+    }
+
+    ul{
+      position: absolute;
+      right: 20px;
+      bottom: -150px;
+      top: 0;
+      overflow: scroll;
+      width: 90%;
+    }
+    .list-group-item:not(.no-word-space){
+      word-spacing: 20px;
+    }
+  }
+  //End of scrollable calendar
+
   .card{
     background-color: rgba(0,0,0,0.15);
   }
   .empty-space {
-    padding-top: 70px;
+    padding-top: 85px;
   }
   .current-movies, .coming-movies{
     a{
@@ -72,7 +94,7 @@ main{
   }
 
   .comingMoviesHeader, .currentMoviesHeader{
-    background-color: @somecolor;
+    background-color: @lightorange;
     text-align: center;
     box-shadow: 0 0 3px 3px #000 inset;
     h2{
@@ -81,6 +103,11 @@ main{
 
     }
   }
+}
 
-
+.access-denied-modal{
+	h3, p{
+		color: black;
+	}
+	cursor: wait;
 }

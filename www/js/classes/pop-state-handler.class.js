@@ -1,7 +1,6 @@
 class PopStateHandler {
 
   // Note: Only instantiate PopStateHandler once!
-
   constructor(app){
 
     this.app = app;
@@ -38,7 +37,7 @@ class PopStateHandler {
     });
   }
 
-  changePage(){
+   changePage(){
     // React on page changed
     // (replace part of the DOM etc.)
 
@@ -56,6 +55,7 @@ class PopStateHandler {
       '/biljetter': 'biljetter',
       '/om_oss': 'OmOss',
       '/filmer': 'calendar',
+      '/mina_sidor': 'userPage',
       '/film/The_Martian': 'filmInfo',
       '/film/Call_Me_by_Your_Name': 'filmInfo',
       '/film/Star_Wars:_The_Last_Jedi': 'filmInfo',
@@ -63,7 +63,8 @@ class PopStateHandler {
       '/film/Interstellar': 'filmInfo',
       '/film/The_Incredibles': 'filmInfo',
       '/film/Downsizing': 'filmInfo',
-      '/film/Three_Billboards_Outside_Ebbing,_Missouri': 'filmInfo'
+      '/film/Three_Billboards_Outside_Ebbing,_Missouri': 'filmInfo',
+      '/mina_sidor': 'userPage'
     };
 
     // Call the right method
@@ -73,8 +74,13 @@ class PopStateHandler {
     // Set the right menu item active
     this.app.navbar.setActive(url);
 
+    //Render correct navbar depending if you're logged in or not
+    window.onload = () => this.renderCorrectNav();
+
     //Scroll to top of page
-    window.scrollTo(1, 1);
+    window.scrollTo(0, 0);
+
+
   }
 
   startsidan(){
@@ -125,6 +131,31 @@ class PopStateHandler {
     $('title').text('Filmer - Filmvisarna');
     this.app.filmer.render('main');
     this.app.startsidan.callCarousel();
+  }
+
+  async userPage(){
+    //Need to check if user is logged in, else the user
+    //can type /mina_sidor into the url
+    if(await this.app.userPage.isLoggedIn()){
+      $('.karusell').empty();
+      this.app.userPage.filterOrdersByDate(); //Run method that gets all orders the user have done
+    } else{
+      this.startsidan();
+      $('.access-denied-modal').modal('show');
+      setTimeout(() => {
+        $('.access-denied-modal').modal('hide');
+      }, 3000);
+    }
+  }
+
+  async renderCorrectNav(){
+    if(await this.app.userPage.isLoggedIn()){
+      $('header').empty();
+      this.app.navbar.render('header', '2');
+    } else if(!(await this.app.userPage.isLoggedIn())) {
+      $('header').empty();
+      await this.app.navbar.render('header')
+    }
   }
 
 }

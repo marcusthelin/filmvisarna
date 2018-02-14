@@ -1,40 +1,61 @@
-#accordion{
-  background-color: white;
-  border-radius: 2%;
-  a{
-    color: black;
+.booking{
+  h3{
+    font-family: 'Oswald', sans-serif;
+    background-color: @lightorange;
+    padding: 5px;
+    color: #000;
   }
-  a:hover{
-    color: rgb(45, 9, 112);
-    text-decoration: none;
-
-  }
-  h4{
-    color: black;
+  .booking-list{
+    font-family: 'Oswald', sans-serif;
+    background-color: @bg-gray;
+    border-color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    .btn-link{
+      color: #fff;
+    }
+    &:hover{
+      background-color: @lightorange;
+      cursor: pointer;
+      .btn-link{
+        color: #000;
+      }
+    }
+    button.disabled {
+      pointer-events: none !important;
+     }
   }
 }
 
-.movie-btn{
-  button {
-    background-color: @somecolor;
-    opacity: 0.5;
-    &:hover {
-      opacity: 1.0;
+#accordion{
+  .card-header{
+    background-color: @lightorange;
+    h5{
+      button{
+        color: #000;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        &:hover{
+          color: #fff;
+        }
+        &:focus{
+          text-decoration: none;
+        }
+      }
     }
   }
-}
-
-.om-film{
-  border-radius: 10px;
-  h2{
-    font-family: 'Oswald', sans-serif;
+  .card-body{
+    color: #fff;
   }
 }
 
 .blockquote{
     a{
       text-decoration: none;
-      color: black;
+      color: #fff;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
   .film-produkt-info{
@@ -49,10 +70,16 @@
       color: white;
     }
     a:hover{
-      color: @somecolor;
+      color: @lightorange;
     }
   }
 
   .fa-star{
-    color: #e6e629;
+    color: @lightorange;
   }
+
+.calendar {
+  .list-group-item.no-word-space.head {
+      background-color: @lightorange;
+  }
+}

@@ -7,14 +7,15 @@ class Filmer extends Base {
   
   getMovies(){
   	this.schedule = [];
+  	let today = moment().format('YYYY-MM-DD');
   	for(let days = 0; days < 7; days++){
 			let date = moment().add(days, 'days').format("YYYY-MM-DD");
-  		this.movies = [this.app.showtime.filter(movie => movie.date == date)];
+			let time = moment().format('LT');
+  		this.movies = [this.app.showtime.filter(movie => movie.date == date && (movie.time > time || today != movie.date))];
 			for(let i = 0; i< this.movies.length; i++){
 				this.schedule.push(this.movies[i]);
 			}
 			this.movies = [];
   	}
   }
-
 }

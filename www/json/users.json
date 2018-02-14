@@ -1,0 +1,32 @@
+[
+  {
+    "username": "shahmineh.gh@hotmail.com",
+    "password": "hejhej",
+    "memberNumber": 588623,
+    "personName": "shamin"
+  },
+  {
+    "username": "markus@hej.se",
+    "password": "markus",
+    "memberNumber": 6539021,
+    "personName": "Markus"
+  },
+  {
+    "username": "wert@werty.se",
+    "password": "123456",
+    "memberNumber": 5925202,
+    "personName": "Håkan"
+  },
+  {
+    "username": "qawery@wertyui.se",
+    "password": "123456",
+    "memberNumber": 7300036,
+    "personName": "David"
+  },
+  {
+    "username": "markus@markus.se",
+    "password": "123456",
+    "memberNumber": 9622926,
+    "personName": "Markus"
+  }
+]

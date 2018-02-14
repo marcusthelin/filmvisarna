@@ -1,0 +1,29 @@
+Object.assign(LogIn.prototype, { template2(){ return `
+
+	<ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+	  <li class="dropdown order-1">
+	    <button type="button" id="dropdownMenu2" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Mitt konto<span class="caret"></span></button>
+	    <ul class="dropdown-menu dropdown-menu-right mt-1 text-white log-2 w-50">
+	      <li class="p-3">
+	       <a class="pop btn" href="/mina_sidor">Mina sidor <i class="far fa-id-badge"></i></a>
+				 <a class="btn logoutModalBtn">Logga ut </a>
+	      </li>
+	    </ul>
+	  </li>
+	</ul>
+	<!-- Start of logout modal -->
+	<div class="modal fade ml-4" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered h-100 d-flex flex-column justify-content-center my-0" role="document">
+	    <div class="modal-content logout-modal">
+	      <div class="modal-header logout-modal-header border-0 text-align-center">
+	        <h5 class="modal-title" id="exampleModalLabel">Vill du verkligen logga ut?</h5>
+	      </div>
+	      <div class="modal-footer border-0">
+	        <button type="button" class="btn bg-danger" data-dismiss="modal">Avbryt <i class="fas fa-times"></i></button>
+	        <a class="btn pop logout" data-dismiss="modal" href="/">Logga ut <i class="fas fa-sign-out-alt"></i></a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<!-- End of logout modal -->
+`;}});

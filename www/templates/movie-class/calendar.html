@@ -1,7 +1,11 @@
 Object.assign(Calendar.prototype, { template2(){
 
   return `
-
-    <li class="list-group-item">${this.date} | ${this.time}</li>
-
+    <li class="booking-list text-center list-group-item list-group-item-action py-1 boka-btn">
+    <div data-toggle="tooltip" data-original-title="Boka" data-placement="top" class="tooltipBook boka-btn">
+      <button type="button" class="btn boka-btn btn-link">
+        ${moment(this.date).format('ddd DD MMM')}, ${this.time}
+      </button>
+    </div>
+  </li>
 `;}});

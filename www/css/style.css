@@ -8,7 +8,10 @@ header .d-lg-none {
   width: 150px;
 }
 header nav {
-  background-color: #13141b;
+  background-color: #262626;
+}
+header nav .container .logo-mobile {
+  margin: 10px auto;
 }
 header nav .nav-item.active {
   font-weight: bold;
@@ -18,8 +21,9 @@ header nav a {
 }
 header nav a:hover,
 header nav a:active,
-header nav a:focus {
-  color: #f2b600;
+header nav a:focus,
+header nav a.btn:hover {
+  color: #f2b600 !important;
 }
 header nav .btn-outline-secondary {
   color: white;
@@ -36,7 +40,12 @@ header nav .yellow:hover {
   opacity: 0.7;
 }
 header nav .log {
-  background-color: #13141b;
+  background-color: #262626;
+  width: 300px;
+}
+header nav .log a,
+header nav .log a:hover {
+  color: black !important;
 }
 header nav .show > .btn-outline-secondary.dropdown-toggle {
   background-color: #0b0c10;
@@ -135,10 +144,15 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
 }
 /* End of fading transition */
 .biljett-info {
-  background-color: #13141b;
+  background-color: #262626;
   border-radius: 5px;
   padding: 50px;
   height: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .biljett-info {
+    padding: 20px;
+  }
 }
 .biljett-info h2,
 .biljett-info h3,
@@ -146,22 +160,25 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
   border-bottom: 3px solid #f2b600;
-  border-width: 50%;
   display: inline-block;
   line-height: 1.5;
 }
 .om-oss {
-  background-color: #13141b;
+  background-color: #262626;
   border-radius: 5px;
   padding: 50px;
   height: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .om-oss {
+    padding: 20px;
+  }
 }
 .om-oss h2,
 .om-oss h3 {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
   border-bottom: 3px solid #f2b600;
-  border-width: 50%;
   display: inline-block;
   line-height: 1.5;
 }
@@ -176,6 +193,16 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   border-bottom: 2px solid #f2b600;
   display: inline-block;
   text-transform: uppercase;
+}
+.filmer .dropdown-menu {
+  background-color: #262626;
+  text-transform: uppercase;
+}
+.filmer .dropdown-menu .nav-link:hover {
+  color: #f2b600 !important;
+}
+.filmer #dropdownMenuButton {
+  background-color: #f2b600;
 }
 .biljett-info img {
   width: 150px;
@@ -192,7 +219,7 @@ header nav .show > .btn-outline-secondary.dropdown-toggle:focus {
   bottom: 30px !important;
 }
 .lala {
-  background-color: #13141b;
+  background-color: #262626;
   border-color: #000;
 }
 .lala .btn {
@@ -213,11 +240,29 @@ body {
 body .btn {
   cursor: pointer;
 }
+main .calendar {
+  height: 245px;
+}
+main .calendar h3 {
+  color: black;
+  text-decoration: underline;
+}
+main .calendar ul {
+  position: absolute;
+  right: 20px;
+  bottom: -150px;
+  top: 0;
+  overflow: scroll;
+  width: 90%;
+}
+main .calendar .list-group-item:not(.no-word-space) {
+  word-spacing: 20px;
+}
 main .card {
   background-color: rgba(0, 0, 0, 0.15);
 }
 main .empty-space {
-  padding-top: 70px;
+  padding-top: 85px;
 }
 main .current-movies a,
 main .coming-movies a {
@@ -297,6 +342,13 @@ main .currentMoviesHeader h2 {
   font-family: 'Oswald', sans-serif;
   color: #000;
 }
+.access-denied-modal {
+  cursor: wait;
+}
+.access-denied-modal h3,
+.access-denied-modal p {
+  color: black;
+}
 footer {
   position: absolute;
   bottom: 0;
@@ -305,7 +357,7 @@ footer {
   height: auto;
   line-height: 30px;
   /* Vertically center the text there */
-  background-color: #13141b;
+  background-color: #262626;
 }
 footer p {
   line-height: 1.6em;
@@ -326,36 +378,55 @@ footer p a.text-light:hover {
 footer .myheight {
   height: 100px;
 }
-#accordion {
-  background-color: white;
-  border-radius: 2%;
+.booking h3 {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f2b600;
+  padding: 5px;
+  color: #000;
 }
-#accordion a {
-  color: black;
+.booking .booking-list {
+  font-family: 'Oswald', sans-serif;
+  background-color: #262626;
+  border-color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-#accordion a:hover {
-  color: #2d0970;
+.booking .booking-list .btn-link {
+  color: #fff;
+}
+.booking .booking-list:hover {
+  background-color: #f2b600;
+  cursor: pointer;
+}
+.booking .booking-list:hover .btn-link {
+  color: #000;
+}
+.booking .booking-list button.disabled {
+  pointer-events: none !important;
+}
+#accordion .card-header {
+  background-color: #f2b600;
+}
+#accordion .card-header h5 button {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+#accordion .card-header h5 button:hover {
+  color: #fff;
+}
+#accordion .card-header h5 button:focus {
   text-decoration: none;
 }
-#accordion h4 {
-  color: black;
-}
-.movie-btn button {
-  background-color: #f2b600;
-  opacity: 0.5;
-}
-.movie-btn button:hover {
-  opacity: 1.0;
-}
-.om-film {
-  border-radius: 10px;
-}
-.om-film h2 {
-  font-family: 'Oswald', sans-serif;
+#accordion .card-body {
+  color: #fff;
 }
 .blockquote a {
   text-decoration: none;
-  color: black;
+  color: #fff;
+}
+.blockquote a:hover {
+  text-decoration: underline;
 }
 .film-produkt-info li {
   list-style: none;
@@ -368,5 +439,362 @@ footer .myheight {
   color: #f2b600;
 }
 .fa-star {
-  color: #e6e629;
+  color: #f2b600;
+}
+.calendar .list-group-item.no-word-space.head {
+  background-color: #f2b600;
+}
+#booking-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*Up-left pointing*/
+  /*Up-right pointing*/
+}
+#booking-modal .booking-header {
+  background-color: #000;
+}
+#booking-modal .booking-body {
+  padding: 0;
+  margin-top: -1px;
+  background-color: #f2b600;
+}
+#booking-modal .booking-body p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+#booking-modal .booking-body #salong-holder {
+  margin: 0 auto;
+}
+#booking-modal .booking-body #salong {
+  transform-origin: 0 0;
+}
+#booking-modal .booking-body #salong .vacant {
+  fill: gray;
+  cursor: pointer;
+}
+#booking-modal .booking-body #salong .occupied {
+  fill: red;
+}
+#booking-modal .booking-body #salong .occupied.mouseentered {
+  cursor: not-allowed;
+}
+#booking-modal .booking-body #salong .mouseentered {
+  fill: #f2b600;
+  cursor: pointer;
+}
+#booking-modal .booking-body #salong .selected {
+  fill: blue;
+  cursor: pointer;
+}
+#booking-modal .modal-poster {
+  width: 130px;
+}
+#booking-modal .modal-film-title {
+  font-size: 35px;
+  font-family: 'Oswald', sans-serif;
+}
+#booking-modal p {
+  margin-bottom: 0;
+}
+#booking-modal .close-modal {
+  color: #fff;
+  opacity: 1;
+}
+#booking-modal .close-modal:hover {
+  color: #f2b600;
+}
+@media only screen and (min-width: 992px) {
+  #booking-modal .modal-dialog {
+    position: relative;
+    display: table;
+    /* This is important */
+    overflow-y: auto;
+    overflow-x: auto;
+    width: auto;
+    min-width: 800px;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  #booking-modal .modal-dialog {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #booking-modal .modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }
+}
+#booking-modal .modal-body {
+  padding: 0;
+  margin-top: -1px;
+  background-color: #f2b600;
+}
+#booking-modal .modal-body p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+#booking-modal .tickets h2,
+#booking-modal .tickets p {
+  color: black;
+}
+#booking-modal .tickets .ticket-choice {
+  font-family: 'Oswald', sans-serif;
+}
+#booking-modal .tickets .plus-btn {
+  border-radius: 15px;
+}
+#booking-modal .tickets .minus-btn {
+  border-radius: 14px;
+  padding: 8px 13px;
+}
+#booking-modal .seats {
+  background-color: #000;
+}
+#booking-modal .choose-seats h3 {
+  font-family: 'Oswald', sans-serif;
+}
+#booking-modal #salong {
+  text-align: center;
+}
+#booking-modal .modal-finish {
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+}
+#booking-modal .modal-footer p {
+  color: #000;
+}
+#booking-modal .buy .finish-box {
+  background-color: rgba(255, 255, 255, 0.68);
+  width: 50%;
+  margin: 0 auto;
+}
+#booking-modal .buy .finish-box p {
+  color: #000;
+  font-family: 'PT Serif', serif;
+}
+@media only screen and (max-width: 576px) {
+  #booking-modal .buy .finish-box {
+    width: 70%;
+  }
+}
+#booking-modal .buy .img-calendar {
+  width: 79px;
+  height: 107px;
+}
+#booking-modal .buy .film-info {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+}
+#booking-modal .buy .finish-price {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+}
+#booking-modal .modal-footer {
+  background-color: #f2b600;
+}
+#booking-modal .quantity {
+  background-color: #f8f9fa;
+  display: block;
+  width: 50px;
+  padding: 5px;
+}
+#booking-modal .btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#booking-modal .btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+#booking-modal .total-price p {
+  color: #000;
+  font-family: 'PT Serif', serif;
+  font-size: 15px;
+}
+#booking-modal .price {
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+}
+#booking-modal .scen {
+  width: 80%;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+#booking-modal .triangle-up-left {
+  width: 0;
+  height: 0;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  overflow: hidden;
+  margin-top: -5px;
+}
+#booking-modal .triangle-up-left:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -500px;
+  border-bottom: 500px solid transparent;
+  border-left: 500px solid #8c1616;
+}
+#booking-modal .triangle-up-right {
+  width: 0;
+  height: 0;
+  padding-left: 10%;
+  padding-top: 10%;
+  overflow: hidden;
+  margin-top: -5px;
+}
+#booking-modal .triangle-up-right:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-left: 500px solid transparent;
+  border-top: 500px solid #8c1616;
+}
+#register-modal {
+  font-family: 'PT Serif', serif;
+}
+#register-modal h2 {
+  font-family: 'Oswald', sans-serif;
+}
+.user-page {
+  margin-top: 80px;
+}
+.user-page .heading {
+  padding: 0;
+}
+.user-page .heading h1 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1.5;
+  padding: 20px;
+}
+.user-page .heading .fa-user-circle {
+  font-size: 50px;
+}
+.user-page .heading .card {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.user-page .content {
+  background-color: #262626;
+  padding: 20px 50px;
+}
+.user-page .content h2 {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid #f2b600;
+  display: inline-block;
+  line-height: 1.5;
+}
+.user-page .content .bokningar .card {
+  height: 100%;
+}
+.user-page .content .bokningar h5,
+.user-page .content .bokningar a {
+  font-family: 'Oswald', sans-serif;
+  color: #f2b600;
+}
+.user-page .content .bokningar h5:hover,
+.user-page .content .bokningar a:hover {
+  text-decoration: none;
+}
+.user-page .content .bokningar li {
+  color: #fff;
+  font-weight: normal;
+}
+.user-page .order-history-div .order-history-list .history-list {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f2b600;
+  border-color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+button.cancel-btn-card {
+  background-color: #f2b600;
+}
+#cancel-order-modal .cancel-modal {
+  background-color: #262626;
+  max-width: 80%;
+}
+#cancel-order-modal .cancel-modal h4 {
+  color: white;
+}
+#cancel-order-modal .cancel-modal .cancel-modal-header {
+  background-color: #f2b600;
+}
+#cancel-order-modal .cancel-modal .cancel-modal-header h5 {
+  font-family: 'Oswald', sans-serif;
+}
+#cancel-order-modal .cancel-modal button.cancel-order {
+  color: #000000;
+  border-color: #f2b600;
+  background-color: #f2b600;
+}
+.logout-modal {
+  background-color: #262626;
+  max-width: 80%;
+}
+.logout-modal .logout-modal-header {
+  background-color: #f2b600;
+}
+.logout-modal .logout-modal-header h5 {
+  font-family: 'Oswald', sans-serif;
+}
+.logout-modal .logout {
+  color: black;
+  border-color: #f2b600;
+  background-color: #f2b600;
+}
+.errorMessage {
+  display: none;
+}
+nav .container .logo-mobile {
+  margin: 10px auto;
+}
+nav .nav-item.active {
+  font-weight: bold;
+}
+nav a {
+  color: white;
+}
+nav a:hover,
+nav a:active,
+nav a:focus,
+nav a.btn:hover {
+  color: #f2b600 !important;
+}
+nav .btn-outline-secondary {
+  color: white;
+  border-color: #f2b600;
+}
+nav .btn-outline-secondary:hover {
+  background-color: #f2b600;
+  color: #000;
+}
+nav .yellow {
+  background-color: #f2b600;
+}
+nav .yellow:hover {
+  opacity: 0.7;
+}
+nav .log-2 {
+  background-color: #262626;
+  width: 300px;
+}
+nav .show > .btn-outline-secondary.dropdown-toggle {
+  background-color: #0b0c10;
+  border-color: #f2b600;
+}
+nav .show > .btn-outline-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 2px rgba(193, 175, 15, 0.55);
 }

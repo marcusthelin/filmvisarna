@@ -1,24 +1,25 @@
 Object.assign(LogIn.prototype, { template(){ return `
 
-<ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+	<ul class="nav navbar-nav flex-row justify-content-between ml-auto">
 	  <li class="dropdown order-1">
-	    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+	    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Logga in<span class="caret"></span></button>
 	    <ul class="dropdown-menu dropdown-menu-right mt-1 text-white log">
 	      <li class="p-3">
-	        <form class="px-2 py-2">
-	          <div class="form-group">
-	            <label for="exampleDropdownFormEmail1">E-post:</label>
-	            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="e-post@example.com">
-	          </div>
-	          <div class="form-group">
-	            <label for="exampleDropdownFormPassword1">Lösenord:</label>
-	            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Lösenord">
-	          </div>
-	          <button type="submit" class="btn yellow">Logga in</button>
+	        <form class="px-3 py-2" id="loginForm">
+						<div class="form-group">
+					    <label for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="userLogin" aria-describedby="emailHelp" placeholder="Enter email">
+					  </div>
+						<div class="form-group">
+					    <label for="exampleInputPassword1">Lösenord</label>
+					    <input type="password" class="form-control" id="userPW" placeholder="Password">
+					  </div>
+						<div class="errorMessageLogin d-none">
+							<p>Användarnamnet eller lösenordet stämmer inte</p>
+						</div>
+	          <input type="submit" class="btn btn-block yellow login pop" value="Logga in"></input>
+						<button type="button" class="btn skapa-konto btn-sm btn-block yellow" data-toggle="modal" data-target="#register-modal">Skapa konto <i class="far fa-plus-square"></i></button>
 	        </form>
-	        <div class="dropdown-divider"></div>
-          <button type="button" class="btn skapa btn-sm btn-block yellow" data-toggle="modal" data-target="#skapaKonto">Skapa konto</button>
-	        <button type="button" class="btn mt-2 btn-sm btn-block yellow" data-toggle="modal" data-target="">Glömt ditt lösenord?</button>
 	      </li>
 	    </ul>
 	  </li>
