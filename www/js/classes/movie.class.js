@@ -33,11 +33,9 @@ class Movie extends Base {
   }
 
   openBookingModal(clickedBtn){
-    console.log('Knappen du tryckt är', clickedBtn);
     const regexp = /([a-zåäö]{3}\s\d{2}\s[a-zåäö]{3})\,\s(\d{2}\:\d{2})/;
     /*/(\w{3}\s\d{2}-\d{2})\s\|\s(\d+\.\d{2})/;*/
     // get date and time ex. tis 12 feb, 21:10 from $(event.target)[0].innerText
-    console.log('KNAPP', clickedBtn);
     this.dateTime = clickedBtn.innerText;
     // ignore if there are not any screenings
     if (this.dateTime) {
@@ -68,7 +66,6 @@ class Movie extends Base {
         this.openBookingModal(clickedBtn);
       }
       else {
-        console.log(clickedBtn);
         let register = new Register(this.app, clickedBtn, this);
         register.drawRegisterModal();
         $('#register-modal').find('h2.modal-title').text('Skapa ett konto för att boka');
