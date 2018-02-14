@@ -12,7 +12,7 @@ class bokingModal extends Base {
   }
 
   drawBokingModal() {
-    $('main #boking-modal').remove();
+    $('#boking-modal').remove();
     this.render('main');
     $('#boking-modal').modal();
   }

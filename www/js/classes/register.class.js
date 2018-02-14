@@ -1,8 +1,10 @@
 class Register extends Base {
-  constructor(app) {
+  constructor(app, clickedBtn, movieInstance) {
     super();
     this.app = app;
     this.checkClickCreateUser();
+    this.clickedBtn = clickedBtn;
+    this.movieInstance = movieInstance;
     this.load();
   }
 
@@ -28,12 +30,14 @@ class Register extends Base {
     });
   }
 
-  createUser() {
+  async createUser() {
     //makes it possible to take the values from the input fields and adds a random member number
     let username = $('#name').val();
     let password = $('#password').val();
     let personName = $('#namnRegister').val();
     let memberNumber;
+    let newUser;
+    let currentSession = await JSON._load('session');
     giveMemberNr();
 
     async function giveMemberNr() {
@@ -58,7 +62,7 @@ class Register extends Base {
         $('#userNameTaken').removeClass('d-none');
         setTimeout(() => {$('#userNameTaken').addClass('d-none');}, 2000);
       } else {
-        let newUser = {
+        newUser = {
           username: username,
           password: password,
           memberNumber: memberNumber,
@@ -67,9 +71,19 @@ class Register extends Base {
         this.users.push(newUser);
         JSON._save('users.json', this.users);
         $('#regSuccess').removeClass('d-none');
-        setTimeout(() => {$('#register-modal').modal('hide');}, 2000);
-        //Reload login to make it possible to login after registration
-        this.app.navbar.login.load();
+        setTimeout(() => {
+          $('#register-modal').modal('hide');
+          const regex = /(\/film\/)/g;
+          if(regex.test(location.pathname)){
+            this.movieInstance.openBookingModal(this.clickedBtn);
+            console.log(this.clickedBtn);
+          }
+        }, 3000);
+        currentSession = newUser.memberNumber;
+        JSON._save('session', currentSession);
+        this.app.popState.renderCorrectNav();
+        // //Reload login to make it possible to login after registration
+        // this.app.navbar.login.load();
       }
     } else {
       $('#checkInput').removeClass('d-none');

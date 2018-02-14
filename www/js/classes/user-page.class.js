@@ -9,6 +9,7 @@ class UserPage extends Base{
 	and change page to Startsida */
 	clickEvents(){
 		let that = this;
+		//Start of click events for logout
 		$(document).on('click', '.logoutModalBtn', function(){
 			console.log('Clicked');
 			$('#exampleModal').appendTo('body').modal('show');
@@ -20,7 +21,8 @@ class UserPage extends Base{
 			JSON._save('session', session);
 			$('#exampleModal').modal('hide');
 		});
-
+		//End of logout click click events
+		
 		//Click event that triggers cancelOrder()
 		$(document).on('click', '.cancel-btn-card', function() {
 			$('#cancel-order-modal').appendTo('body').modal('show');
@@ -47,8 +49,6 @@ class UserPage extends Base{
 				this.memberNumber = obj.memberNumber;
 				console.log('Current logged in user is', obj.username);
 				console.log('User: ', obj);
-				$('.tooltipBook').attr('data-original-title', 'Boka');
-				$('.tooltipBook button').removeClass('disabled');
 				return true;
 				break;
 			}

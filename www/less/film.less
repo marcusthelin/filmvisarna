@@ -13,12 +13,13 @@
     text-transform: uppercase;
     .btn-link{
       color: #fff;
-      &:hover{
-        color: #000;
-      }
     }
     &:hover{
       background-color: @somecolor;
+      cursor: pointer;
+      .btn-link{
+        color: #000;
+      }
     }
     button.disabled {
       pointer-events: none !important;

@@ -376,11 +376,12 @@ footer .myheight {
 .booking .booking-list .btn-link {
   color: #fff;
 }
-.booking .booking-list .btn-link:hover {
-  color: #000;
-}
 .booking .booking-list:hover {
   background-color: #f2b600;
+  cursor: pointer;
+}
+.booking .booking-list:hover .btn-link {
+  color: #000;
 }
 .booking .booking-list button.disabled {
   pointer-events: none !important;
@@ -424,6 +425,10 @@ footer .myheight {
 }
 .calendar .list-group-item.no-word-space.head {
   background-color: #f2b600;
+}
+#boking-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 #boking-modal .boking-header {
   background-color: #000;
