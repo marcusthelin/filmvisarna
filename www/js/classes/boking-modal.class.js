@@ -48,6 +48,7 @@ class bokingModal extends Base {
       quantity = parseInt($(`#${person}`).text());
       this.loopTickets(person).quantity = quantity;
       this.sortTickets();
+      $('#changeSeat').removeClass('d-none');
 
     }else{
 
