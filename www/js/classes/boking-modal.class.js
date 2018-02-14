@@ -55,6 +55,8 @@ class bokingModal extends Base {
       if($(event.target).hasClass('boking-btn')) {
         $('.boking-success').removeClass('d-none');
         $('.boking-btn').prop('disabled', true);
+        $('.boking-btn').addClass('d-none');
+        $('.close-boking-btn').text('Stäng');
         this.bookedTickets();
       }
     }

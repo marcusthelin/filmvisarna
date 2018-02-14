@@ -88,12 +88,12 @@ Object.assign(bokingModal.prototype, { template(){ return `
               <div class="total-price"></div>
               <h3 class="finish-price pt-5">Totalt</h3>
               <div class="price"></div>
-              <div class="boking-success d-none"><p>Bokningen lyckades, tack för din bokning</p></div>
+              <div class="boking-success d-none"><p><i class="fas fa-check text-success"></i> Bokningen lyckades, tack för din bokning.</p></div>
             </div>
           </div>
         </div>
         <div class="modal-footer justify-content-center border-0 pt-5">
-            <button type="button" class="btn btn-light" data-dismiss="modal">Stäng</button>
+            <button type="button" class="btn btn-light close-boking-btn" data-dismiss="modal">Avbryt</button>
             <button type="button" class="btn boking-btn btn-dark" disabled>Boka biljetter</button>
        </div>
       </div>
