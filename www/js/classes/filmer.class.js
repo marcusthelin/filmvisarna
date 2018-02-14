@@ -15,7 +15,6 @@ class Filmer extends Base {
 			for(let i = 0; i< this.movies.length; i++){
 				this.schedule.push(this.movies[i]);
 			}
-			console.log(this.schedule);
 			this.movies = [];
   	}
   }
