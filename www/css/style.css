@@ -473,17 +473,17 @@ footer .myheight {
   cursor: pointer;
 }
 #boking-modal .boking-body #salong .occupied {
-  fill: blue;
+  fill: red;
 }
 #boking-modal .boking-body #salong .occupied.mouseentered {
   cursor: not-allowed;
 }
 #boking-modal .boking-body #salong .mouseentered {
-  fill: yellow;
+  fill: #f2b600;
   cursor: pointer;
 }
 #boking-modal .boking-body #salong .selected {
-  fill: red;
+  fill: blue;
   cursor: pointer;
 }
 #boking-modal .modal-poster {
@@ -674,7 +674,6 @@ footer .myheight {
 .user-page .heading h1 {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
-  border-width: 50%;
   display: inline-block;
   line-height: 1.5;
   padding: 20px;
@@ -734,11 +733,6 @@ footer .myheight {
   font-family: 'Oswald', sans-serif;
 }
 #cancel-order-modal .cancel-modal button.cancel-order {
-  color: #000000;
-  border-color: #f2b600;
-  background-color: #f2b600;
-}
-#cancleBoking {
   color: #000000;
   border-color: #f2b600;
   background-color: #f2b600;
