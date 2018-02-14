@@ -57,6 +57,7 @@ class bokingModal extends Base {
         $('.boking-btn').prop('disabled', true);
         $('.boking-btn').addClass('d-none');
         $('.close-boking-btn').text('Stäng');
+        $('.btn-to-mypage').removeClass('d-none');
         this.bookedTickets();
       }
     }

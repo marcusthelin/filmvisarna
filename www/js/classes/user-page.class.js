@@ -31,6 +31,11 @@ class UserPage extends Base{
 			});
 
 		});
+		$(document).on('click', '.btn-to-mypage', function(){
+			$('div.modal-backdrop').remove();
+			$('html').css({'overflow-x': 'hidden', 'overflow-y': 'auto'}); //To fix no scroll problem when coming from booking modal
+		});
+
 	}
 
 	/* Checks if the member number stored in session.json is the same

@@ -42,7 +42,6 @@ class Order extends Base {
 
     ticket = null;
     JSON._save('ticket', ticket);
-    JSON._save('latest-order', orderNr);
 
   }
 
