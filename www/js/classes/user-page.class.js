@@ -43,8 +43,6 @@ class UserPage extends Base{
 				//Tell the name of the user to the class
 				this.user = obj.personName;
 				this.memberNumber = obj.memberNumber;
-				console.log('Current logged in user is', obj.username);
-				console.log('User: ', obj);
 				return true;
 				break;
 			}
