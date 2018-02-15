@@ -13,8 +13,9 @@ class BookingModal extends Base {
 
   drawBookingModal() {
     $('#booking-modal').remove();
+    $('#register-modal').remove();
     this.render('main');
-    $('#booking-modal').modal();
+    $('#booking-modal').modal('show');
   }
 
   loopTickets(type){
