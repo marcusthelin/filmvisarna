@@ -14,7 +14,7 @@ class Movie extends Base {
 
     for(let i = 0; i < this.app.showtime.length; i++){
       let m = this.app.showtime[i];
-      if(m.film == this.title && date <= m.date && time < m.time){
+      if(m.film == this.title && date <= m.date && (m.time > time || date != m.date)){
         this.movies.push(m)
       }
     }
