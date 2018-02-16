@@ -42,7 +42,9 @@ class Order extends Base {
 
     ticket = null;
     JSON._save('ticket', ticket);
-
+    $('.booking-success').html(`
+      <p><i class="fas fa-check text-success"></i> Bokningen lyckades, vänligen uppge bokningsnummer <b class="text-danger">${this.orderNr}</b> i kassan.</p>
+      `)
   }
 
   async getMovieInfo() {
