@@ -106,6 +106,10 @@ class PopStateHandler {
     };
     $('.karusell').empty();
     $('main').empty();
+    $('#booking-modal').remove();
+    $(document).on("hidden.bs.modal", "#booking-modal", () => {
+      $('div.modal-backdrop').remove();
+    });
     this.app.movies[numbers[url]].render('main','3');
     $('title').text($('h2').text()+ ' - Filmvisarna');
   }
