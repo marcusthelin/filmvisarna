@@ -1,3 +1,3 @@
 # filmvisarna
 
-Version 1.0 is now live.
+New improved version 1.1 is now live.
