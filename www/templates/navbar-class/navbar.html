@@ -5,10 +5,10 @@ Object.assign(Navbar.prototype, { template(){ return `
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
-		  <a href="/" class="pop nav-logo d-none d-lg-block"><img class="navbar-brand img-fluid" src="/imgs/filmvisarna-logo.png" alt="logo"></a>
+		  <a href="/" class="pop nav-logo d-none d-lg-block ml-1"><img class="navbar-brand img-fluid" src="/imgs/filmvisarna-logo.png" alt="logo"></a>
 			<a href="/" class="pop nav-logo logo-mobile d-lg-none"><img class="navbar-brand img-fluid" src="/imgs/fv-logo.png" alt="logo"></a>
 		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-		    <ul class="navbar-nav">
+		    <ul class="navbar-nav ml-4">
 		      ${this.items.render()}
 		    </ul>
 				${this.login.render()}
