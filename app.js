@@ -2,6 +2,7 @@
 const express = require('express');
 const flexjson = require('jsonflex')();
 const compression = require('compression');
+const port = process.env.PORT || 3000;
 
 // Create express server
 const app = express();
@@ -19,6 +20,6 @@ app.get(/^[^\.]*$/, (req, res) => {
 });
 
 // Start server
-app.listen(3000, () =>
+app.listen(port, () =>
   console.log('Webserver listening on port 3000')
 );
